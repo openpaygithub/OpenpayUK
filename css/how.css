@@ -1,0 +1,198 @@
+.graphic-info-block{
+	background-color: #38465B;
+	overflow:hidden;
+}
+.graphic-info{
+	display: flex;
+	flex-direction: column;
+	padding: 5em;
+	color: white;
+	max-width: 600px;
+	justify-content: center;
+}
+.download-buttons{
+	display: flex;
+	flex-direction: row;
+}
+.download-buttons img{
+	margin-right: 10px;
+	cursor: pointer;
+}
+.h1{
+	font-weight: bold;
+}
+.graphic-info p {
+	letter-spacing: 0.43px;
+	line-height: 40px;
+	margin:20px 0;
+	font-weight: 300 !important;
+}
+.phonegraphic{
+	display: flex;
+	justify-content: center;
+	padding-right: 5em;
+	margin-bottom: -5px !important;
+	padding-bottom: -5px !important;
+}
+.phonegraphic img{
+	height: 600px;
+}
+.graphic-button{
+	color: white;
+	padding: 10px 30px;
+	letter-spacing: .3px;
+	border-radius: 8px;
+	background: linear-gradient(140.11deg, #2864FF 0%, #00E1B4 100%);
+	max-width: 213px;
+	width: 100%;
+	font-size: 14px;
+	cursor: pointer;
+}
+.list-container{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list-graphic-block{
+	width: 80%;
+	padding: 100px;
+}
+.listItem{
+	margin-bottom: 30px;
+	padding: 10px;
+	cursor: pointer;
+}
+.listItem:hover{
+	padding: 10px;
+	box-shadow: 0 0 14px 0 rgba(40,100,255,0.16);
+}
+.list-block{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 
+}
+/*.left{
+	display: flex;
+}
+*/
+.list-graphic img{
+	height: 500px;
+}
+.list-graphic{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.list-block h2{
+	margin-bottom: 30px;
+	margin-right: auto;
+}
+.step{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-size: 20px;
+}
+.number{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	border: 1px solid black;
+	color: blue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+}
+
+.location-block{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 50px;
+}
+.location-block p{
+	margin: 30px 0;
+}
+.location-images{
+	max-width: 800px;
+	width: 100%;
+}
+.location-images img{
+	width: 24%;
+}
+.location-action{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin: 50px 0;
+}
+.location-action button{
+	border-radius: 10px;
+	border-width: 0;
+	color: white;
+	max-width: 250px;
+	width: 100%;
+	padding: 13px 25px;
+	font-size: 14px;
+	cursor: pointer;
+	background: linear-gradient(140.11deg, #2864FF 0%, #00E1B4 100%);
+}
+
+
+
+@media screen and (max-width: 1100px) {
+	.list-graphic-block{
+		width: 100%;
+		padding: 20px;
+	}
+	.number{
+		height: 30px;
+		width: 30px;
+		font-size: 16px;
+	}
+	.step p{
+		width: 84%;
+	}
+	.list-graphic img{
+		height: 350px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.graphic-info{
+		padding: 1em;
+	}
+	.download-buttons img{
+		width: 150px;
+		margin-bottom: 20px;
+	}
+	.phonegraphic img{
+		height: 400px;
+	}
+	.phonegraphic{
+		padding: 5px;
+		margin-top: -5px;
+	}
+	.location-block{
+		display: flex;
+		align-items: flex-start;
+		padding: 20px;
+
+	}
+	.location-images{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.location-images img{
+		width: 40%;
+	}
+}

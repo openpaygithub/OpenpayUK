@@ -1,0 +1,108 @@
+.content{
+	display: flex;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	padding: 6em;
+	box-sizing: border-box;
+	/*justify-content: center;*/
+	align-items: center;
+}
+.form-container{
+	max-width: 500px;
+	width: 100%;
+}
+.form-container div{
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+	width: 100%;
+	
+}
+.form-container h1{
+	margin-bottom: 20px;
+}
+.form-container input{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #ececec;
+	/*padding:20px;*/
+	margin:20px 0;
+	padding: 10px 0;
+	max-width: 500px;
+	width: 100%;
+	font-size: 18px;
+	/*height: 1000px;*/
+}
+.error{
+	border-bottom: 2px solid red !important;
+}
+.checks{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.checks .in:after{
+	content: 'Product liability';
+	margin-left: 30px;
+	display: inline-block;
+}
+.checks .out:after{
+	content: 'Professional indemnity';
+	margin-left: 30px;
+	display: inline-block;
+}
+.checks .s1:after{
+	content: 'In store';
+	margin-left: 30px;
+	display: inline-block;
+}
+.checks .s2:after{
+	content: 'Online';
+	margin-left: 30px;
+	display: inline-block;
+}
+.checks .s3:after{
+	content: 'Phone';
+	margin-left: 30px;
+	display: inline-block;
+}
+.checks .agree:after{
+	content: 'By ticking this box you ackowledge accessing,rading and agreeing to the terms of this document and our privacy policy.*';
+	margin-left: 30px;
+	display: inline-block;
+}
+.next,.back{
+	border: 2px solid blue;
+	color: blue;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 30px;
+	border-radius: 10px;
+	cursor: pointer;
+	margin-top: 40px;
+	padding-top: 10px;
+	max-width: 130px !important;
+	width: 100%;
+	flex:1;
+	margin-right:20px;
+}
+.btns{
+	display: flex;
+	flex-direction: row !important;
+	justify-content: flex-start;
+	/*align-items: center;*/
+}
+
+@media screen and (max-width: 800px) {
+	.content{
+		padding: 10px;
+	}
+	.form-container input{
+		max-width: 300px;
+	}
+
+}

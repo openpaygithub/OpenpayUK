@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Ultra Tune</title>
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-84225706-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-84225706-1');
+	</script>
+
+<!-- 	FullStory Snippet -->
+	<script>
+	window['_fs_debug'] = false;
+	window['_fs_host'] = 'fullstory.com';
+	window['_fs_org'] = 'D6N17';
+	window['_fs_namespace'] = 'FS';
+	(function(m,n,e,t,l,o,g,y){
+	    if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+	    g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+	    o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+	    y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+	    g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+	    g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+	    g.consent=function(a){g("consent",!arguments.length||a)};
+	    g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+	    g.clearUserCookie=function(){};
+	})(window,document,window['_fs_namespace'],'script','user');
+</script>
+	<!-- JS -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<!-- CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style4.css">
+	<script src="js/custom1.js"></script>
+
+</head>
+<body>
+	<div class="mask"></div>
+	<div class="page">
+		<div class="main-pannel">
+			<div class="banner">
+				<div class="banner-pic"><img src="images/banner.png" alt=""></div>
+				<!-- <a class="button" href="javascript:void(0)">Merchant</a> -->
+				<article>
+					<div class="flexbox">
+						<a href="https://www.openpay.com.au"><img src='./images/oplogo.png' class="oplogo" /></a>
+						<h1>Drive now. Zero interest.  More time to pay.</h1>
+						<p>Ultra Tune now accepts Openpay, which means you can manage the payment of your service over 3, 6, 9 or 12 months - completely INTEREST FREE. </p>
+					</div>
+				</article>
+			</div>
+			<center><div class="plan">
+				<div class="extraheader">
+					<h1>Configure your Ultra Tune plan</h1>
+					<p>See for yourself how easy it is to pay for your service over time with Openpay!</p>
+				</div>
+				<div class="blocks">
+					<div class="block">
+						<div class="greencircle">
+							<div class="price-box">
+								<span class="price-title">Estimated service cost <span id="enter-amount">(Enter your amount from $100-$5000)</span></span>
+								<span class="price-amount" ><input type="text" name="price_val" id="price_val"  onkeydown='return validateQty(event);'></span>
+								<span class="price-title">Repayment terms <i class="hover"></i></span>
+								<ul class="tabs-month totes" id="tab-data">
+									<li class="active" id='3mon' data-mon="3">3 Months</li>
+									<li id='6mon' data-mon="6">6 Months</li>
+									<li id='9mon' data-mon="9">9 Months</li>
+									<li id='12mon' data-mon="12">12 Months</li>
+								</ul>
+								<div class="hover-container hide">
+										<div class="left-hover">
+											<p class="hover-months">3 months</p>
+											<p class="hover-prices">$100-$500</p>
+										</div>
+										<div class="right-hover">
+											<p class="hover-months">6, 9, 12 months</p>
+											<p class="hover-prices">$501-$5000</p>
+										</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="block">
+						<ul class="tabs">
+							<li class="tab-link current" data-tab="tab-1">weekly</li>
+							<li class="tab-link" data-tab="tab-2">Fortnightly</li>
+						</ul>
+						<div id="tab-1" class="tab-content current">						
+							<div class="price-sec">
+								<span class="title"><span id="weekly_payment">12</span> weekly payments of</span>
+								<span class="amount">$<span id="week_12_ep"></span></span>
+							</div>
+							<div class="price-sec">
+								<span class="title">Plan Establishment Fee<sup>1</sup></span>
+								<span class="amount">$<span  id="week_pef">12.00</span></span>
+							</div>
+							<div class="price-sec">
+								<span class="title">Initial Instalment (20%)</span>
+								<span class="amount">$<span  id="week_dep"></span></span>
+							</div>
+							<div class="price-sec">
+								<span class="title">Plan Management Fee<sup>2</sup></span>
+								<span class="amount">$<span >2.95</span></span>
+							</div>
+							
+							<input type="hidden" class="week_pmf" value="2.95">
+						</div>
+						<div id="tab-2" class="tab-content">
+							<div class="price-sec">
+								<span class="title"><span id="nightly_payment">6</span> fortnightly payments of</span>
+								<span class="amount">$<span id="fort_6_ep"></span></span>
+							</div>
+							<div class="price-sec">
+								<span class="title">Plan Establishment Fee<sup>1</sup></span>
+								<span class="amount">$<span id="fort_pef">12.00</span></span>
+							</div>
+							<div class="price-sec">
+								<span class="title">Initial Instalment (20%)</span>
+								<span class="amount">$<span id="fort_dep"></span></span>
+							</div>
+							<div class="price-sec">
+								<span class="title">Plan Management Fee<sup>2</sup></span>
+								<span class="amount">$<span >3.95</span></span>
+							</div>
+							
+							<input type="hidden" class="fort_pmf" value="3.95">
+						</div>
+					</div>
+				</div>
+			</div></center>
+			<center><div class="work-info">
+				<div class="blocks">
+					<div class="block">
+						<h3>How it works:</h3>
+						<ul>
+							<li>Download the Openpay app &amp; create a new account.</li>
+							<li>Head into your local authorised Ultra Tune Auto Service Centre and mention that you’d like to pay for your service using Openpay.</li>
+							<li>During checkout, choose your first payment date and set your schedule on-the-spot. Payments can be made
+								weekly or fortnightly to suit your budget and lifestyle!</li>
+						</ul>
+					</div>
+					<div class="block">
+						<h3>What do you need to get started?</h3>
+						<p class="left">To create an Openpay account, you need to be an Australian/New Zealand resident &amp; over 18 years old. <br>You’ll also need:</p>
+						<ul>
+							<li>Email address</li>
+							<li>Phone number</li>
+							<li>Photo ID</li>
+							<li>VISA or MasterCard (credit or debit)</li>
+							<li>Initial Installment: 20% of the purchase price</li>
+						</ul>
+					</div>
+				</div>
+			</div></center>
+			<div class="show-more">Things you should know</div>
+			<div class="more-text hide">
+				<ul>
+					<li>1. An account creation fee for first time customers.</li>
+					<li>2. A reoccurring payment fee which reflects the costs associated with maintaining the account.</li>
+					<li>Terms, conditions and lending criteria apply. Review the Openpay terms and conditions and fees before finalising your purchase by visiting the <a href='https://www.openpay.com.au/australian-terms-conditions/'>Openpay Website</a>.</li>
+				</ul>
+
+			</div>
+			<div class="get-checkout">
+				<h2>Get the Openpay app to <br>checkout faster</h2>
+				<div class="download-app">
+					<span>Download App</span>
+					<div class="btncontainer">
+						<a href="https://play.google.com/store/apps/details?id=com.ocean.openpay" target="_blank"><i class="fa fa-android"></i></a>
+						<a href="https://itunes.apple.com/au/app/openpay/id1166424403?mt=8" target="_blank"><i class="fa fa-apple"></i></a>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<a class="footer-logo" href="https://www.openpay.com.au/"><img src="images/logo.png" alt=""></a>
+				<nav class="footer-nav">
+					<ul>
+						<li><a href="https://www.openpay.com.au/use/">Use</a></li>
+						<li><a href="https://www.openpay.com.au/shop/">Shop</a></li>
+						<li><a href="https://www.openpay.com.au/support/">Support</a></li>
+						<li><a href="https://www.openpay.com.au/merchants/">Merchants</a></li>
+						<li><a href="https://www.openpay.com.au/support/#subscribe">Subscribe</a></li>
+					</ul>
+				</nav>
+				<div class="socila-icon">
+					<ul>
+						<li><a href="https://m.facebook.com/openpayau/"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/openpay_"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://au.linkedin.com/company/open-pay"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="https://www.instagram.com/openpay_/?hl=en"><i class="fa fa-instagram"></i></a></li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+	</div>
+	
+
+	<script>
+		// Access-Control-Allow-Headers:Content-Type, Accept, X-Requested-With,setHeader
+		// Access-Control-Allow-Method:GET,POST,PUT,OPTIONS
+		// Access-Control-Allow-Origin:*
+		// Access-Control-Expose-Headers:*
+		// var uri = "https://rs.fullstory.com/rec/page"
+		// 	$.ajax({
+		// 	    url: uri,
+		// 	    beforeSend: function (request) {
+		// 	        request.setRequestHeader("Access-Control-Allow-Origin", "*"),
+		// 	        request.setRequestHeader("Access-Control-Expose-Headers", "*"),
+		// 	        request.setRequestHeader(" Access-Control-Allow-Method", 'GET','POST','PUT','OPTIONS'),
+		// 	        request.setRequestHeader("Access-Control-Allow-Headers", "Content-Type, Accept, X-Requested-With,setHeader")
+		// 	    },
+		// 	    async: true,
+		// 	    success: function (data) {
+		// 	        alert('DATA',JSON.stringify(data));
+		// 	    },
+		// 	    error: function (xhr, textStatus, errorMessage) {
+		// 	        alert('ERROR',errorMessage);
+		// 	    }                
+		// 	});
+
+
+		$('.hover').on('click',function(){
+			$('.hover-container').toggleClass('hide')
+			$('#tab-data').toggleClass('hide')
+		})
+
+		$('.show-more').on('click',function(){
+			$('.more-text').toggleClass('hide')
+		})
+
+	</script>
+	<script>
+		jQuery(document).ready(function($){
+			jQuery('ul.tabs li').click(function(){
+				var tab_id = $(this).attr('data-tab');
+				$('ul.tabs li').removeClass('current');
+				$('.tab-content').removeClass('current');
+				$(this).addClass('current');
+				$("#"+tab_id).addClass('current');
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		jQuery(document).ready(function(){
+
+			$("#price_val").bind("keyup keydown", function() {
+				var servicePrice_bind = $(this).val();
+				var MonthData_active = $('#tab-data li.active').data("mon");
+				if (servicePrice_bind && (MonthData_active == 3 )) {
+					// if (servicePrice_bind < 100 || servicePrice_bind > 500 ) {
+					// 	// $("p.alert_for3").html("Please select an amount between<br> $100 - $500 for 3 month plan");
+					// 	// $('p.alert_for3').show();
+					// 	$('#enter-amount').addClass('bold')
+					// } else {
+					// 	// $("p.alert_for3").html("");
+					// 	// $('p.alert_for3').hide();
+					// 	$('#enter-amount').removeClass('bold')
+					// }
+					if(servicePrice_bind < 100){
+						$('#enter-amount').addClass('bold')
+					}
+					else if(servicePrice_bind >= 100 && servicePrice_bind <= 500){
+						$('#enter-amount').removeClass('bold')
+						$("#3mon").css('opacity',1);
+						$("#6mon").css('opacity',.3);
+						$("#9mon").css('opacity',.3);
+						$("#12mon").css('opacity',.3);
+						$('#3mon').click()
+
+						$("#6mon").addClass('disable')
+						$("#9mon").addClass('disable')
+						$("#12mon").addClass('disable')
+
+					}
+					else{
+						$('#enter-amount').removeClass('bold')
+						$("#3mon").css('opacity',.3);
+						$("#6mon").css('opacity',1);
+						$("#9mon").css('opacity',1);
+						$("#12mon").css('opacity',1);
+					
+
+						$('#3mon').addClass('disable')
+						$("#6mon").removeClass('disable')
+						$("#9mon").removeClass('disable')
+						$("#12mon").removeClass('disable')
+
+						$('#6mon').click()
+
+
+					}
+				} else if (servicePrice_bind || (MonthData_active == 6 ) || (MonthData_active == 9 ) || (MonthData_active == 12 )) {
+					// if (servicePrice_bind < 100 || servicePrice_bind > 5000 ) {
+					// 	$("p.alert_for3").html("Please select an amount between<br> $100 - $5,000 for 6, 9, 12 month plans");
+					// 	$('p.alert_for3').show();
+					// } else {
+					// 	$("p.alert_for3").html("");
+					// 	$('p.alert_for3').hide();
+					// }
+					if (servicePrice_bind < 100) {
+						$('#enter-amount').addClass('bold')
+					}
+					else if(servicePrice_bind <= 500){
+						$('#3mon').click()
+						$("#3mon").css('opacity',1);
+						$("#6mon").css('opacity',.3);
+						$("#9mon").css('opacity',.3);
+						$("#12mon").css('opacity',.3);
+
+						$("#3mon").removeClass('disable')
+						$("#6mon").addClass('disable')
+						$("#9mon").addClass('disable')
+						$("#12mon").addClass('disable')
+
+
+					}
+					else if (servicePrice_bind > 500 && servicePrice_bind <= 5000) {
+						$("#3mon").css('opacity',.3);
+						$("#6mon").css('opacity',1);
+						$("#9mon").css('opacity',1);
+						$("#12mon").css('opacity',1);
+
+						$("#3mon").addClass('disable')
+						$("#6mon").removeClass('disable')
+						$("#9mon").removeClass('disable')
+						$("#12mon").removeClass('disable')
+					}
+					else{
+						$('#enter-amount').addClass('bold')
+					}
+        			
+    			} else {
+    				$("p.alert_for3").html("");
+    			}
+			});
+
+			jQuery("#tab-data").on("click","li",function(event){
+				
+				var MonthData = jQuery(this).data("mon");
+				
+				jQuery( this ).parent().find( 'li.active' ).removeClass( 'active' );				
+            	jQuery( this ).addClass( 'active' );
+				var ServicePrice = jQuery('#price_val').val();	
+				if (ServicePrice && (MonthData == 3)) {
+        			if (ServicePrice < 100 || ServicePrice > 500 ) {
+						$("p.alert_for3").html("Please select an amount between<br> $100 - $500 for 3 month plan");
+						$('p.alert_for3').show();
+					} else {
+						$("p.alert_for3").html("");
+						$('p.alert_for3').hide();
+					}
+				} else if (ServicePrice || (MonthData == 6) || (MonthData == 9) || (MonthData ==12)) {
+					if (ServicePrice < 100 || ServicePrice > 5000 ) {
+						$("p.alert_for3").html("Please select an amount between<br> $100 - $5,000 for 6, 9, 12 month plans");
+						$('p.alert_for3').show();
+					} else {
+						$("p.alert_for3").html("");
+						$('p.alert_for3').hide();
+					}
+    			} else {
+    				$("p.alert_for3").html("");
+    			}
+
+
+				if(ServicePrice == ''){
+					jQuery('#enter-amount').css("color", "red");					
+					jQuery('#price_val').focus();
+				} else {
+					jQuery('#enter-amount').css("color", "");
+				}				
+
+				var data = {'MonthData' : MonthData, 'ServicePrice' : ServicePrice };
+
+				$.ajax({
+					url: 'calculate_month.php',     
+					data: data,
+					type : 'POST',          
+					success:function(response) { 
+					var resdata = JSON.parse(response);
+
+					var forweek = resdata.forWeek;
+					var fornight = resdata.forNight;
+					var get_week_pay = forweek.week_paymentFixed;
+					var get_week_deposit = forweek.Week_depPercentFixed;
+					var get_week_moth = forweek.MonthData;
+					var get_night_pay = fornight.night_paymentFixed;
+					var get_night_deposit = fornight.night_depPercentFixed;
+					var get_night_moth = fornight.MonthData;
+					
+					jQuery('#week_12_ep').text(get_week_pay);
+					jQuery('#week_dep').text(get_week_deposit);
+					jQuery('#weekly_payment').text(get_week_moth);
+
+					jQuery('#fort_6_ep').text(get_night_pay);
+					jQuery('#fort_dep').text(get_night_deposit);
+					jQuery('#nightly_payment').text(get_night_moth);
+					console.log(resdata.forWeek);
+					console.log(resdata.forNight);
+					}
+				});	
+			});
+
+		});
+	</script>
+
+	
+</body>
+</html>
