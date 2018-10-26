@@ -12,8 +12,9 @@ let selSub=''
 let keyword=''
 const state = {location,page,selCat,selSub,keyword}
 
+const apiURl = 'https://edf6f0c232.execute-api.ap-southeast-2.amazonaws.com/prod/'
 const getCategories = () => { 
-    const url = `https://58ova173oj.execute-api.ap-southeast-2.amazonaws.com/v1/categories`
+    const url = `${apiURl}categories`
 
     var settings = {
       "async": true,
@@ -63,9 +64,11 @@ $('#category').change(function(){
     $('#mobile-sub-category').find('option').remove().end()
 
     if(cat !== typeof Number){
-      selCat === ''
+      console.log('NAN',typeof cat)
+      selCat = parseInt(cat)
     }
     else{
+      console.log('Setting selCat')
       selCat = parseInt(cat)
     }
     
@@ -104,7 +107,7 @@ $('#mobile-sub-category').change(function(){
 getCategories()
 
 const getSuburbs = (string) => {
-    const url = `https://58ova173oj.execute-api.ap-southeast-2.amazonaws.com/v1/suburbs?keyword=${string}`
+    const url = `${apiURl}suburbs?keyword=${string}`
     var settings = {
       "async": true,
       "crossDomain": true,
@@ -164,11 +167,11 @@ const getBrands = (loc,cat,sub,pn,key,reset) => {
   let url
   if(cat == NaN || sub == NaN){
     console.log('NOT A NUMNER')
-      url = `https://58ova173oj.execute-api.ap-southeast-2.amazonaws.com/v1/Brands?Location=${loc}&PageNum=${pn}&PageSize=${24}&Keyword=${key}`
+      url = `${apiURl}Brands?Location=${loc}&PageNum=${pn}&PageSize=${24}&Keyword=${key}`
 
   }
   else{
-      url = `https://58ova173oj.execute-api.ap-southeast-2.amazonaws.com/v1/Brands?Location=${loc}&PageNum=${page}&PageSize=${24}&CategoryID=${cat}&SubCategoryID=${sub === NaN ? '':sub}&Keyword=${key}`
+      url = `${apiURl}Brands?Location=${loc}&PageNum=${page}&PageSize=${24}&CategoryID=${cat}&SubCategoryID=${sub === NaN ? '':sub}&Keyword=${key}`
   }
     var settings = {
       "async": true,
@@ -200,26 +203,41 @@ renderCards = (brands,reset) => {
       $('.cards').empty()
     }
 
+    brands.length === 0 ?
+        $('.cards').append(`
+                <div class='card-tile'>
+                    <div class='image-container'>
+                        <div class='image'>
+                              <h5>No Results</h5>
+                        </div>
+                    </div>
+                    <div style='background-image:url(./assets/images/placeholder.png)' class='background'>
+                        <div class='icon-box'></div>
+
+                    </div>
+                </div>`)
+    :
     brands.map((l,i) => {
         $('.cards').append(`
                 <div data=${l.brandID} name=${l.brandName} class='card-tile'>
-                    <div style='background-image:url(${l.brandImage ? l.brandImage : './assets/images/placeholder.png'})' class='background'>
-                        <div class='icon-box'>
-                            <div class='icons'>
-                                ${l.url ? `<a class='website' data='web' href=${l.url}><div></div></a>` : ''}
-                                ${l.isWebOnly ? '' : `<a class='loc'><div></div></a>`}
-                            </div>
-                        </div>
-                    </div>
                     <div class='image-container'>
                         <div class='image'>
                           ${
-                            l.brandLogo ? 
-                              `<img src=${l.brandLogo}/>`
-                              :
+                            // l.logo ? 
+                            //   `<img src='https://s3-ap-southeast-2.amazonaws.com/retailer-static.openpay.com.au/retailer-logos/${l.logo}' />`
+                            //   :
                                 `<h5>${l.brandName}</h5>`
                           }
                         </div>
+                    </div>
+                    <div style='background-image:url(./assets/images/placeholder.png)' class='background'>
+                        <div class='icon-box'>
+                            <div class='icons'>
+                                ${l.url ? `<a class='website launch'  data=${l.url} href='#'><div></div></a>` : ''}
+                                ${l.isWebOnly ? '' : `<a class='loc'><div></div></a>`}
+                            </div>
+                        </div>
+
                     </div>
                 </div>`)
     })
@@ -230,7 +248,7 @@ renderCards = (brands,reset) => {
 $(document).on('click','.card-tile',function(){
     var data = $(this).attr('data')
     var name = $(this).attr('name')
-    const url = `https://58ova173oj.execute-api.ap-southeast-2.amazonaws.com/v1/Brands/${data}`
+    const url = `${apiURl}Brands/${data}`
     var settings = {
       "async": true,
       "crossDomain": true,
@@ -241,18 +259,21 @@ $(document).on('click','.card-tile',function(){
       },
       success:(response) => { 
         console.log('Locations',response)
-            var string = JSON.stringify(response)
-            console.log(response)
-                if(response.length === 1){
-                    var lat = response[0].location.latitude
-                    var long = response[0].location.longitude
-                    // console.log(lat,long)
+          
+            var string = JSON.stringify(response.retailerLocations)
+            console.log('STRING',response.retailerLocations)
+                if(response.retailerLocations.length === 1){
+                    var lat = response.retailerLocations[0].location.latitude
+                    var long = response.retailerLocations[0].location.longitude
+                    console.log(lat,long)
                     var win = window.open(`https://www.google.com/maps/?q=${lat},${long}`,'_blank')
                     win.focus()
                 }
                 else{
                     localStorage.setItem('name', name)
                     localStorage.setItem('locations', string)
+                    // localStorage.setItem('online', response.isWebOnly)
+                    console.log(name,string)
                     window.location.href='Locations.html'
                 }
             },
@@ -263,6 +284,21 @@ $(document).on('click','.card-tile',function(){
     $.ajax(settings)
 })
 
+
+$(document).on('click','.launch',function(){
+  var site = $(this).attr('data')
+  console.log('SITE',site)
+  if(site.startsWith('http')){
+    window.open(site,"_blank")
+  }
+  else if(site.startsWith('www')){
+    window.open(`https://${site}`,"_blank")
+  }
+  else{
+    window.open(`https://www.${site}`,"_blank")
+  }
+  
+})
 
 $('#keyword').on('input',function(e){
     const search = $(this).val()
@@ -341,11 +377,11 @@ ipLookUp()
 const filterType = (t) => {
 	console.log(t)
 	if(t === 'online'){
-		const onlineOnly = brands.filter(x => x.isWebOnly === true)
+		const onlineOnly = brands.filter(x => x.retailerAvailability === 0)
 		renderCards(onlineOnly)
 	}
 	else if( t === 'store'){
-		const storeOnly = brands.filter(x => x.isWebOnly !== true)
+		const storeOnly = brands.filter(x => x.retailerAvailability === 1)
 		renderCards(storeOnly)
 	}
 	else{

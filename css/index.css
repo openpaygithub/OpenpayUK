@@ -11,6 +11,7 @@
 	border-bottom: .1px solid white;
 
 
+
 }
 .tellme{
 	display: flex;
@@ -26,7 +27,7 @@
 	display: flex;
 }
 .featured-title h1{
-	padding: 50px 0;
+	padding:30px 0 15px 0;
 	color: #3C465A;
 	/*font-weight: 600;*/
 	/*font-size: 40px;*/
@@ -48,7 +49,7 @@
 	display: flex;
 }
 .invis-logo{
-	background: url('../assets/images/openpay.png');
+	background: url('../assets/open.svg');
 	background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -167,13 +168,13 @@
 }
 .website{
     background-image: url(../assets/site.svg);
-    height:28px;
-    width: 28px;
+    height:22px;
+    width: 22px;
 }
 .loc{
     background-image: url(../assets/location.svg);
-    height:28px;
-    width: 25px;
+    height:22px;
+    width: 17px;
 }
 
 
@@ -188,6 +189,7 @@
     display: flex;
 	flex-grow: 1;
 	justify-content: flex-end;
+	font-weight: 600;
 }
 .invis-links{
 	text-align: right;
@@ -255,7 +257,7 @@
 	background-color: #F2F2F2;
 }
 .tile-content{
-	padding:6em 10% 6em 10%;
+	padding:6em 10% 1em 10%;
 }
 
 .heroImage{
@@ -369,13 +371,14 @@
 	color: #3C465A;
 	text-align: center;
 	font-weight: 300; 
+	font-size: 21px;
 	/*LIGHT*/
 }
 .curve{
 	border-bottom-left-radius: 80px;
 	border-bottom-right-radius: 80px;
 	background-color: white;
-	padding: 40px 4em 4em 4em;
+	padding: 40px 4em 9em 4em;
 }
 .align{
 	display: flex;
@@ -387,7 +390,7 @@
 	align-items: flex-start;
 	padding:6em;
 	/*justify-content: center;*/
-	width: 80%;
+	width: 66%;
 	background-color: #F2F2F2;
 ;
 	/*background-color: white;*/
@@ -472,6 +475,7 @@
 .graphic-info-block{
 	background-color: #38465B;
 	overflow:hidden;
+	height: 65vh;
 }
 .graphic-info{
 	display: flex;
@@ -488,6 +492,7 @@
 .download-buttons img{
 	margin-right: 10px;
 	cursor: pointer;
+	height: 40px;
 }
 .graphic-info p {
 	letter-spacing: 0.43px;
@@ -539,7 +544,9 @@
 .tile-heading h2{
 	font-size: 32px;
 }
-
+.tile-block{
+	padding: 20px 0 0 0;
+}
 .tile-block h2{
 	font-size: 20px;
 	/*overflow: hidden;*/
@@ -586,7 +593,7 @@
 	align-items: center;
 }
 .featured-tiles img{
-	height: 250px;
+	height: 164px;
 	margin:20px;
 	cursor: pointer;
 }
@@ -655,7 +662,7 @@
 		flex-direction: row;
 	}
 	.iconFiller{
-		margin: 0 20px;
+		margin: 0 3px;
 		height: 40px;
 		width: 40px;
 	}
@@ -666,6 +673,9 @@
 	.invis-header-container{
 		padding: 5px;
 	}
+	.graphic-info-block{
+    	height: 100%;
+    }
 	.invis-links{
 		display: none;
 	}
@@ -675,7 +685,7 @@
 	}
 	.block{
 		width: 100%;
-		align-items: flex-start;
+		
 		padding: 25px;
 	}
 	.icon-bubbles{
@@ -712,6 +722,9 @@
 	.block h3{
 		margin-left: 10px;
 	}
+	.block{
+		align-items: flex-start;
+	}
 	.icon-bubbles p{
 		text-align: left;
 		margin-top: 10px;
@@ -741,6 +754,16 @@
 
 
 @media screen and (max-width: 900px) {
+	h1,h2{
+		font-weight: 300;
+		font-size: 28px !important;
+	}
+	h3{
+		font-weight: 300;
+	}
+	/*p{
+		font-size: 14px !important;
+	}*/
     .retail-line h2:after,.home-line h2:after,.auto-line h2:after,.health-line h2:after{
         content:" ";
         display: inline-block;
@@ -757,6 +780,14 @@
     .navy-content{
     	padding: 20px;
     }
+    
+    .heroInfo h1{
+    	font-weight: 300;
+    	font-size: 35px;
+    }
+    #rotating-words{
+    	font-size: 22px;
+    }
 }
 
 
@@ -765,8 +796,16 @@
 		flex-direction: row;
 		align-items: center;
 	}
+	.invis-logo{
+		height: 16px;
+    	width: 86px;
+	}
+	.info-banner p{
+		font-size: 14px;
+	}
 	.curve{
 		padding: 10px;
+		padding-bottom: 50px;
 	}
 	.block{
 		width: 100%;

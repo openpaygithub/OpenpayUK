@@ -18,6 +18,12 @@ body,p, ol, ul{
 button:focus,input:focus{
   outline: none;
 }
+h1{
+	font-weight: 600;
+}
+p,div{
+	font-weight: 300;
+}
 
 .row{
   	display: flex;
@@ -154,12 +160,14 @@ button:focus,input:focus{
 	position: fixed;
 	width: 100%;
 	z-index: 2;
+	font-weight: 600 !important;
+	border-bottom: 1px solid #ececec;
 }
 .logoDiv{
 	display: flex;
 }
 .logo{
-	background: url('../assets/images/openpay.png');
+	background: url('../assets/open.svg');
 	background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -182,6 +190,7 @@ button:focus,input:focus{
 	color: #40354E;
 	font-weight: bolder;
 	cursor: pointer;
+	font-weight: 600;
 }
 
 .links:hover{
@@ -218,6 +227,9 @@ button:focus,input:focus{
 	align-items: center;
 	cursor: pointer;
 }
+.footer-logo img{
+	height: 70px;
+}
 .footer-download{
 	display: flex;
 	justify-content: center;
@@ -232,12 +244,13 @@ button:focus,input:focus{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 .footer-legal a,.mini{
 	font-size: 10px;
 	color: #3C465A;
 	text-align: center;
-	flex-grow: 1;
+	/*flex-grow: 1;*/
 	margin: 5px;
 	cursor: pointer;
 }

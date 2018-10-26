@@ -4,12 +4,13 @@
     background-repeat: no-repeat;
     height: 150px;
     width: 150px;
-    margin-top: -60px;
+    /*margin-top: -60px;*/
     box-shadow: 0 2px 12px -2px rgba(40,100,255,0.6);
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .website,.loc,.phone{
     background-size: cover;
@@ -19,18 +20,18 @@
 }
 .website{
     background-image: url(../assets/site.svg);
-    height:28px;
-    width: 28px;
+    height:22px;
+    width: 22px;
 }
 .loc{
     background-image: url(../assets/location.svg);
-    height:28px;
-    width: 25px;
+    height:22px;
+    width: 17px;
 }
 .phone{
     background-image: url(../assets/phone.svg);
-    height:29px;
-    width: 22px;
+    height:22px;
+    width: 16px;
 }
 .info-section{
     width: 70%;
@@ -39,11 +40,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+    height: 200px;
 }
 #location-info{
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 40%;
     justify-content: center;
     align-items: center;
 }
@@ -70,10 +72,13 @@
     display: flex;
     flex-direction: column;
     padding-left: 15px;
+    height: 100%;
 }
 .l-info-box h3{
     font-weight: 600;
+    padding: 15px 0;
 }
+
 
 .shop-gradient{
 	background: linear-gradient(90deg, rgba(255,232,234,0) 0%, #FECCD1 100%);
@@ -441,7 +446,10 @@ input[type=number]::-webkit-outer-spin-button {
 		width: 300px;
 	}
     #location-info a{
-        display: none !important;
+        /*display: none !important;*/
+    }
+    #location-info{
+        width: 100%;
     }
 }
 

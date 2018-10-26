@@ -23,7 +23,7 @@
 .option-block{
 	display: flex;
 	flex-direction: row;
-	width: 80%;
+	/*width: 80%;*/
 	flex-grow: 1;
 }
 
@@ -120,4 +120,10 @@
 		margin-right:50px;
 		padding: 0;
 	}
+	#help-text{
+		justify-content: flex-start;
+		padding-left: 50px;
+	}
 }
+
+

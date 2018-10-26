@@ -1,7 +1,4 @@
 $(document).ready(function(){
-
-
-
 	$(window).on("scroll", function () {
 	    if ($(this).scrollTop() > ($(window).height() - 10)) {
 	        $("#invis").removeClass('invis-header-container')
@@ -75,6 +72,7 @@ $(document).ready(function(){
 
 		 // $('#instagram').remove()
 		 //Config for ajax call
+
 		var settings = {
 		  "async": true,
 		  "crossDomain": true,
@@ -103,11 +101,10 @@ $(document).ready(function(){
 		$.ajax(settings)
 
 
+const apiURL = 'https://edf6f0c232.execute-api.ap-southeast-2.amazonaws.com/prod/'
 
-
-
-const getBrands = () => {
-    const url = `https://58ova173oj.execute-api.ap-southeast-2.amazonaws.com/v1/Brands?Location=${3000}&PageNum=${1}&PageSize=${30}`
+const getHome = () => {
+    const url = `${apiURL}Brands?Location=${3000}&PageNum=${1}&PageSize=${20}&CategoryId=209005`
     var settings = {
       "async": true,
       "crossDomain": true,
@@ -119,7 +116,8 @@ const getBrands = () => {
       success:(response) => { 
         console.log('Brands',response)
         brands = response
-        renderCards(response)
+        renderHome(response)
+        getAuto()
       },
       error: (err) => {
         console.log('Error',err)
@@ -128,41 +126,212 @@ const getBrands = () => {
     $.ajax(settings)
 }
 
-getBrands()
+const getAuto = () => {
+    const url = `${apiURL}Brands?Location=${3000}&PageNum=${1}&PageSize=${20}&CategoryId=209001`
+    var settings = {
+      "async": true,
+      "crossDomain": true,
+      "url":url,
+      "method": "GET",
+      "headers": {
+        "content-type": "application/json"
+      },
+      success:(response) => { 
+        console.log('Brands',response)
+        brands = response
+        renderAuto(response)
+        getHealth()
+      },
+      error: (err) => {
+        console.log('Error',err)
+      }
+    }
+    $.ajax(settings)
+}
 
-renderCards = (brands) => {
+const getHealth = () => {
+    const url = `${apiURL}Brands?Location=${3000}&PageNum=${1}&PageSize=${20}&CategoryId=209002`
+    var settings = {
+      "async": true,
+      "crossDomain": true,
+      "url":url,
+      "method": "GET",
+      "headers": {
+        "content-type": "application/json"
+      },
+      success:(response) => { 
+        console.log('Brands',response)
+        brands = response
+        renderHealth(response)
+        // getHome()
+      },
+      error: (err) => {
+        console.log('Error',err)
+      }
+    }
+    $.ajax(settings)
+}
+
+const getRetail = () => {
+    const url = `${apiURL}Brands?Location=${3000}&PageNum=${1}&PageSize=${20}&CategoryId=209003`
+    var settings = {
+      "async": true,
+      "crossDomain": true,
+      "url":url,
+      "method": "GET",
+      "headers": {
+        "content-type": "application/json"
+      },
+      success:(response) => { 
+        console.log('Brands',response)
+        brands = response
+        renderRetail(response)
+        getHome()
+      },
+      error: (err) => {
+        console.log('Error',err)
+      }
+    }
+    $.ajax(settings)
+}
+
+getRetail()
+
+
+
+renderRetail = (brands) => {
     $('#retail-slide').empty()
     brands.map((l,i) => {
-        $('#retail-slide ,#home-slide ,#automotive-slide,#health-slide').append(`
+        $('#retail-slide').append(`
                 <div data=${l.brandID} name=${l.brandName} class='retail card-tile'>
-                    <div style='background-image:url(${l.brandImage ? l.brandImage : './assets/images/placeholder.png'})' class='background'>
-                        <div class='icon-box'>
-                            <div class='icons'>
-                                ${l.url ? `<a class='website' data='web' href=${l.url}><div></div></a>` : ''}
-                                <a class='loc' href='Locations.html'><div></div></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='image-container'>
+                <div class='image-container'>
                         <div class='image'>
                         	${
-                        		l.brandLogo ? 
-                        			`<img src=${l.brandLogo}/>`
-                        			:
+                        		// l.brandLogo ? 
+                        		// 	`<img src=https://s3-ap-southeast-2.amazonaws.com/retailer-static.openpay.com.au/retailer-logos/${l.brandLogo}/>`
+                        		// 	:
                         				`<h4>${l.brandName}</h4>`
                         	}
                             
                         </div>
                     </div>
+                    <div style='background-image:url(${l.brandImage ? l.brandImage : './assets/images/placeholder.png'})' class='background'>
+                        <div class='icon-box'>
+                            <div class='icons'>
+                                ${l.url ? `<a class='website launch' data=${l.url} href='#'><div></div></a>` : ''}
+                                <a class='loc' href='Locations.html'><div></div></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>`)
+    })
+}
+renderHome = (brands) => {
+    $('#home-slide').empty()
+    brands.map((l,i) => {
+        $('#home-slide').append(`
+                <div data=${l.brandID} name=${l.brandName} class='retail card-tile'>
+                <div class='image-container'>
+                        <div class='image'>
+                        	${
+                        		// l.brandLogo ? 
+                        		// 	`<img src=https://s3-ap-southeast-2.amazonaws.com/retailer-static.openpay.com.au/retailer-logos/${l.brandLogo}/>`
+                        		// 	:
+                        				`<h4>${l.brandName}</h4>`
+                        	}
+                            
+                        </div>
+                    </div>
+                    <div style='background-image:url(${l.brandImage ? l.brandImage : './assets/images/placeholder.png'})' class='background'>
+                        <div class='icon-box'>
+                            <div class='icons'>
+                                ${l.url ? `<a class='website launch' data=${l.url} href='#'><div></div></a>` : ''}
+                                <a class='loc' href='Locations.html'><div></div></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>`)
+    })
+}
+renderAuto = (brands) => {
+    $('#automotive-slide').empty()
+    brands.map((l,i) => {
+        $('#automotive-slide').append(`
+                <div data=${l.brandID} name=${l.brandName} class='retail card-tile'>
+                <div class='image-container'>
+                        <div class='image'>
+                        	${
+                        		// l.brandLogo ? 
+                        		// 	`<img src=https://s3-ap-southeast-2.amazonaws.com/retailer-static.openpay.com.au/retailer-logos/${l.brandLogo}/>`
+                        		// 	:
+                        				`<h4>${l.brandName}</h4>`
+                        	}
+                            
+                        </div>
+                    </div>
+                    <div style='background-image:url(${l.brandImage ? l.brandImage : './assets/images/placeholder.png'})' class='background'>
+                        <div class='icon-box'>
+                            <div class='icons'>
+                                ${l.url ? `<a class='website launch' data=${l.url} href='#'><div></div></a>` : ''}
+                                <a class='loc' href='Locations.html'><div></div></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>`)
+    })
+}
+renderHealth = (brands) => {
+    $('#health-slide').empty()
+    brands.map((l,i) => {
+        $('#health-slide').append(`
+                <div data=${l.brandID} name=${l.brandName} class='retail card-tile'>
+                <div class='image-container'>
+                        <div class='image'>
+                        	${
+                        		// l.brandLogo ? 
+                        		// 	`<img src=https://s3-ap-southeast-2.amazonaws.com/retailer-static.openpay.com.au/retailer-logos/${l.brandLogo}/>`
+                        		// 	:
+                        				`<h4>${l.brandName}</h4>`
+                        	}
+                            
+                        </div>
+                    </div>
+                    <div style='background-image:url(${l.brandImage ? l.brandImage : './assets/images/placeholder.png'})' class='background'>
+                        <div class='icon-box'>
+                            <div class='icons'>
+                                ${l.url ? `<a class='website launch' data=${l.url} href='#'><div></div></a>` : ''}
+                                <a class='loc' href='Locations.html'><div></div></a>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>`)
     })
 }
 
 
+$(document).on('click','.launch',function(){
+	var site = $(this).attr('data')
+	console.log('SITE',site)
+	if(site.startsWith('http')){
+		window.open(site,"_blank")
+	}
+	else if(site.startsWith('www')){
+		window.open(`https://${site}`,"_blank")
+	}
+	else{
+		window.open(`https://www.${site}`,"_blank")
+	}
+	
+})
+
 $(document).on('click','.card-tile',function(){
     var data = $(this).attr('data')
     var name = $(this).attr('name')
-    const url = `https://58ova173oj.execute-api.ap-southeast-2.amazonaws.com/v1/Brands/${data}`
+    const url = `${apiURL}Brands/${data}`
     var settings = {
       "async": true,
       "crossDomain": true,
@@ -173,9 +342,10 @@ $(document).on('click','.card-tile',function(){
       },
       success:(response) => { 
         console.log('Locations',response)
-            var string = JSON.stringify(response)
-            console.log(response)
-            if(response.length > 0){
+            var string = JSON.stringify(response.retailerLocations)
+            console.log('RESPONSE',response)
+            console.log(string)
+            if(response.retailerLocations.length > 0){
                 localStorage.setItem('name', name)
                 localStorage.setItem('locations', string)
             }

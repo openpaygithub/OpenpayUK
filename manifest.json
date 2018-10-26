@@ -1,0 +1,27 @@
+{
+  "name": "Openpay",
+  "short_name": "Openpay",
+  "prefer_related_applications": false,
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "com.ocean.openpay"
+    }
+  ],
+  "icons": [
+    {
+      "src": "./assets/images/O.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./assets/images/O.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "?id=com.ocean.openpay",
+  "background_color": "white",
+  "display": "standalone",
+  "theme_color": "blue"
+}

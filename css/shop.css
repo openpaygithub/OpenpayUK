@@ -68,25 +68,26 @@
 }
 .website{
     background-image: url(../assets/site.svg);
-    height:28px;
-    width: 28px;
+    height:22px;
+    width: 22px;
 }
 .loc{
     background-image: url(../assets/location.svg);
-    height:28px;
-    width: 25px;
+    height:22px;
+    width: 17px;
 }
+
 
 .retail .background,.fashion .background,.auto .background,.card-tile .background{
     /*background: url(https://mojly.com/wp-content/uploads/2017/12/love-image-lovely-images-photo-gallery-629721354.jpg);*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 70%;
+    width: 60%;
     position: absolute;
     border-top-left-radius: 4px;
     top: 0;
-    left:0;
+    right:0;
     bottom: 0;
     padding: 10px;
     display: flex;
@@ -162,7 +163,7 @@
 .image-container{
     display: flex;
     align-items: center;
-    margin-left: auto;
+    margin-right: auto;
 }
 .image{
 	display: block;
@@ -308,6 +309,7 @@
     max-width: 409px;
     width: 100%;
     padding-left: 20px; 
+    position: relative;
 }
 .keyword{
     border-right: none;
@@ -317,6 +319,16 @@
     max-height: 30px;
     font-size: 14px;
     width: 100%;
+    
+}
+.keyDiv img{
+    position: absolute;
+    top: 0;
+    /*right:5;*/
+    right: 0;
+    height: 20px;
+    width:20px;
+
 }
 
 .active{

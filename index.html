@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Openpay" content="app-id=1166424403">
 	<link rel="shortcut icon" type="image/png" href="./assets/images/icon.png"/>
     <title>Openpay</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -31,14 +32,14 @@
 	    g.clearUserCookie=function(){};
 	})(window,document,window['_fs_namespace'],'script','user');
 </script>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300 800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,600" rel="stylesheet">
     <link rel="stylesheet" href="./css/global.css" /> 
     <link rel="stylesheet" href="./css/index.css" /> 
 </head>
 <body>
     <div>
     	<div class="outer-download">
-	    	<div class="download-banner">
+	    	<div class="download-banner hide">
 	    		<h3>Download the app</h3>
 	    		<div class="download-banner-buttons">
 	    			<a href='https://itunes.apple.com/au/app/openpay/id1166424403?mt=8'><img src='./assets/images/apple.png'/></a>
@@ -62,10 +63,10 @@
                      <a href='Support.html' class='invis-links changing'>Support</a>
                 </div>
                 <div class='invis-linkDiv'>
-                     <a href='Merchants.html' class='invis-links changing'>Merchants</a>
+                     <a id='download' href='#' class='invis-links changing dl-app'>Download</a>
                 </div>
                 <div class='invis-linkDiv'>
-                     <a id='download' href='#' class='invis-links changing dl-app'>Download</a>
+                     <a href='Merchants.html' class='invis-links changing'>Businesses</a>
                 </div>
                 <div class='hamburger hamburger-menu'>
                       <span></span>
@@ -78,7 +79,7 @@
                 		<li><a href="Shop.html">Shop now</a></li>
                 		<li><a href="How.html">How it works</a></li>
                 		<li><a href="Support.html">Support</a></li>
-                		<li><a href="Merchants.html">Merchants</a></li>
+                		<li><a href="Merchants.html">Businesses</a></li>
                 		<li><a class='dl-app' href="index.html">Download</a></li>
                 	</ul>
                 	<div  class='hamburger open open-hamburger'>
@@ -92,7 +93,7 @@
         <div class='row hero-home-container'>
 	    	<div class='c12 infoBox'>
 		    	<div class='heroInfo'>
-		    		<h1>Buy now, pay smarter for your…</h1>
+		    		<h1>Buy now, pay smarter for your . . .</h1>
 		    		<div class="test">
 		    		<div class='typeBox'>
 		    			<h1 id='rotating-words' class="txt-rotate" data-period="2000" data-rotate='[ "car services", "glasses","new tyres","dog beds","fresh sheets","physio","bed","cat toys","blender","tents","trampoline","vet bills","new dress","sofa","vacuum","sneakers","toaster","camping gear","activewear", "window tinting","pots and pans","waffle maker" ]'></h1>
@@ -144,7 +145,7 @@
 					<div class='c3'></div>
 				    <div class='c6 info-banner'>
 					    <h1>Take control of how you pay.</h1>
-					    <p style='padding:30px 0;'>Whether you're shopping for clothes, servicing your car or taking care of your health, have it today with more time to pay.</p>
+					    <p style='padding:20px 0;'>Whether you're shopping for clothes, servicing your car or taking care of your health, have it today with more time to pay.</p>
 					    <p>Interest-free, flexible payment plans for everything you want, need and love. Because why pay today when you could pay smarter?</p>
 				    </div>
 				    <div class='c3'></div>
@@ -262,7 +263,7 @@
 			    </div>
 			    <div class='row tile-block retail-line'>
 			        <h2>Retail</h2>
-			        <a href='#' class='tile-link' to='#'>View All</Link>
+			        <a href='Shop.html' class='tile-link' to='#'>View All</Link>
 			    </div>
 			    <div id='retail-slide' class='tile-slider'>
 			    	<!-- <img src='./assets/images/sauna.png'/>
@@ -283,7 +284,7 @@
 			   </div>
 			   <div class='row tile-block home-line'>
 			        <h2>Home</h2>
-			        <a href='#' class='tile-link' to='#'>View All</Link>
+			        <a href='Shop.html' class='tile-link' to='#'>View All</Link>
 			    </div>
 			    <div id='home-slide' class='tile-slider'>
 			    	<!-- <img src='./assets/images/sauna.png'/>
@@ -304,7 +305,7 @@
 			   </div>
 			   <div class='row tile-block health-line'>
 			        <h2>Health</h2>
-			        <a href='#' class='tile-link' to='#'>View All</Link>
+			        <a href='Shop.html' class='tile-link' to='#'>View All</Link>
 			    </div>
 			    <div id='health-slide' class='tile-slider'>
 			    	<!-- <img src='./assets/images/sauna.png'/>
@@ -325,7 +326,7 @@
 			   </div>
 			   <div class='row tile-block auto-line'>
 			        <h2>Automotive</h2>
-			        <a href='#' class='tile-link' to='#'>View All</Link>
+			        <a href='Shop.html' class='tile-link' to='#'>View All</Link>
 			    </div>
 			    <div id='automotive-slide' class='tile-slider'>
 			    	<!-- <img src='./assets/images/sauna.png'/>
@@ -352,8 +353,8 @@
 				<h1>An app for that.</h1>
 				<p>Browse for shops and services, manage your payment schedule and get exclusive offers from your favorite brands.</p>
 				<div class='download-buttons'>
-					<img src='./assets/images/apple.png'/>
-					<img src='./assets/images/android.png'/>
+					<img src='./assets/apple.svg'/>
+					<img src='./assets/android.svg'/>
 				</div>
 			</div>
 			<div class='c6 phonegraphic'>
@@ -377,13 +378,13 @@
 		<div class='footer'>
 	        <div class='row'>
 	            <div class='c12 footer-logo'>
-	                <img src='./assets/images/O.png'/>
+	                <img src='./assets/o.svg'/>
 	            </div>
 	        </div>
 	        <div class='row'>
 	            <div class='c12 footer-download'>
-	                <a href='https://itunes.apple.com/au/app/openpay/id1166424403?mt=8'><img src='./assets/images/apple.png'/></a>
-	                <a href='https://play.google.com/store/apps/details?id=com.ocean.openpay'><img src='./assets/images/android.png' /></a>
+	                <a href='https://itunes.apple.com/au/app/openpay/id1166424403?mt=8'><img src='./assets/apple.svg'/></a>
+	                <a href='https://play.google.com/store/apps/details?id=com.ocean.openpay'><img src='./assets/android.svg' /></a>
 	            </div>
 	        </div>
 	        <div class='footer-linkOuter'>
@@ -412,12 +413,12 @@
 	        </div>
 	        <div class='row'>
 	            <div class='c12 footer-legal'>
-	                   <a href="#">Privacy Policy</a>
-	                   <a href="#">AU Terms & Conditions</a>
-	                   <a href="#">NZ Terms & Conditions</a>
+	                   <a href="Privacy.html">Privacy Policy</a>
+	                   <a href="Terms.html">Terms & Conditions</a>
+	                 <!--   <a href="#">NZ Terms & Conditions</a>
 	                   <a href="#">End User License Agreement</a>
 	                   <a href="#">PCI Data Security Statement</a>
-	                   <a href="#">Terms & Conditions Promitions</a>
+	                   <a href="#">Terms & Conditions Promitions</a> -->
 	            </div>
 	        </div>
 	        <div class='row'>

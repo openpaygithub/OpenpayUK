@@ -32,15 +32,14 @@
 	    g.clearUserCookie=function(){};
 	})(window,document,window['_fs_namespace'],'script','user');
 </script>
-	
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300 600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,600" rel="stylesheet">
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/how.css" /> 
 </head>
 <body>
     <div>
       <div class="outer-download">
-          <div class="download-banner">
+          <div class="download-banner hide">
               <h3>Download the app</h3>
               <div class="download-banner-buttons">
                     <a href='https://itunes.apple.com/au/app/openpay/id1166424403?mt=8'><img src='./assets/images/apple.png'/></a>
@@ -64,10 +63,10 @@
                      <a href='Support.html' class='links'>Support</a>
                 </div>
                 <div class='linkDiv'>
-                     <a href='Merchants.html' class='links'>Merchants</a>
+                     <a id='download' href='#' class='links dl-app'>Download</a>
                 </div>
                 <div class='linkDiv'>
-                     <a id='download' href='#' class='links dl-app'>Download</a>
+                     <a href='Merchants.html' class='links'>Businesses</a>
                 </div>
                 <div class='hamburger hamburger-menu'>
                       <span></span>
@@ -80,7 +79,7 @@
                     <li><a href="Shop.html">Shop now</a></li>
                     <li><a href="How.html">How it works</a></li>
                     <li><a href="Support.html">Support</a></li>
-                    <li><a href="Merchants.html">Merchants</a></li>
+                    <li><a href="Merchants.html">Businesses</a></li>
                     <li><a class="dl-app" href="index.html">Download</a></li>
                   </ul>
                   <div id='open-hamburger' class='hamburger'>
@@ -106,124 +105,121 @@
                 </div>
             </div>
         </div>
-        <div class='hero-gradient-header how-gradient'>
-            <div class='c2'></div>
-            <div class='c10'>
-              <h1 class="h1">Simple to use, easier for you.</h1>
-              <p>Complicated is overrated (sorry Avril Lavigne ). We made Openpay so simple, even we can use it.</p>
-            </div>
-        </div>
-        <div class="list-container">
-            <div class='row list-graphic-block'>
-                <div class='c6 list-block'>
-                    <h2>Shop in-store with app</h2>
-                    <ul>
-                        <li class='listItem'>
-                          <div class='step'>
-                              <div class='number'>1</div>
-                              <p>Download the Openpay app and sign up</p>
-                          </div>
-                        </li>
-                        <li class='listItem'>
-                          <div class='step'>
-                              <div class='number'>2</div>
-                              <p>Request to pay with Openpay</p>
-                          </div>
-                        </li>
-                        <li class='listItem'>
-                          <div class='step'>
-                              <div class='number'>3</div>
-                              <p>Create your plan how you want it</p>
-                          </div>
-                        </li>
-                        <li class='listItem'>
-                          <div class='step'>
-                              <div class='number'>4</div>
-                              <p>Automatic debits from your card</p>
-                          </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class='c6 list-graphic'>
-                    <img src='./assets/images/circlephone.png' />
-                </div>
-            </div>
-            <div class='row list-graphic-block'>
-                <div class='c6 list-graphic'>
-                    <img src='./assets/images/everywhere.png' />
-                </div>
-                <div class='c6 list-block'>
-                    <h2>Shop online</h2>
-                    <ul>
-                        <li class='listItem'>
-                          <div class='step'>
-                              <div class='number'>1</div>
-                              <p>Select your products and checkout</p>
-                          </div>
-                        </li>
-                        <li class='listItem'>
-                          <div class='step'>
-                              <div class='number'>2</div>
-                              <p>Select Openpay from payment options</p>
-                          </div>
-                        </li>
-                        <li class='listItem'>
-                          <div class='step'>
-                              <div class='number'>3</div>
-                              <p>Sign up & create your plan</p>
-                          </div>
-                        </li>
-                        <li class='listItem'>
-                          <div class='step'>
-                              <div class='number'>4</div>
-                              <p>Automatic debits from your card</p>
-                          </div>
-                        </li>
-                    </ul>
+        <div class="curve-hero">
+            <div class="header-info">
+                <div class="testbox">
+                    <h1>Empowering you to pay smarter.</h1>
+                    <p>We are a buy now, pay later service with a difference. With longer terms across a variety of industries, we allow you to pay over time for the things you need and want.</p>
                 </div>
             </div>
         </div>
-        <div class='row graphic-info-block'>
-            <div class='c1'></div>
-            <div class='c6 graphic-info'>
-                <h1>Download the app.</h1>
-                <p>Browse for shops and services, manage your payment schedule and get exclusive offers from your favorite brands</p>
-                <div class='download-buttons'>
-                    <img src='./assets/images/apple.png'/>
-                    <img src='./assets/images/android.png'/>
+        <div class="grey-content">
+            <div class="how-info-con">
+                <div class="row">
+                    <div class="c3"></div>
+                    <div class="c6 how-info-box">
+                        <h1>So you're intrigued</h1>
+                        <p>Start by downloading the app and signing up, you can sign up instore or during online checkout too.</p>
+                    </div>
+                    <div class="c3"></div>
+                </div>
+                <div class="row img-con">
+                    <div class="c6">
+                        <div class="list-con">
+                            <div>
+                                 <ol class="list-group vertical-steps">
+                                    <li class="list-group-item completed">
+                                      <div>
+                                          <h3>1. Shop</h3>
+                                          <p>Get what you want and need today across various industries.</p>
+                                      </div>
+                                    </li>
+                                    <li class="list-group-item completed">
+                                        <div>
+                                          <h3>2. Choose</h3>
+                                          <p>Select Openpay as your payment option to create a plan.</p>
+                                      </div>
+                                    </li>
+                                    <li class="list-group-item completed">
+                                        <div>
+                                          <h3>3. Customise</h3>
+                                          <p>Take control  by setting your payments to suit your schedule.</p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item completed">
+                                        <div>
+                                          <h3>4. Relax</h3>
+                                          <p>Sit back and relax, knowing that you've got time to pay. We direct debit the payments so you can focus on life.</p>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c6">
+                      <div class="blue-con">
+                          <div class="blue-img">
+                              <img src="./assets/images/blue.png">
+                          </div>
+                      </div>
+                    </div>
                 </div>
             </div>
-            <div class='c6 phonegraphic'>
-                <img src='./assets/images/Phone.png'/>
+            <div class="row how-info-con2">
+                <div class="c3"></div>
+                <div class="c6 how-info-box">
+                    <h1>Every step of the way.</h1>
+                    <p class="special">You're in control, but we've got your back.</p>
+                    <p>Once you've made your purchase you can manage your plan and payments in the app. Keep using Openpay's to manage your cashflow in every aspect of your life.</p>
+                </div>
+                <div class="c3"></div>
+            </div>
+            <div class="icon-con">
+                <div class="icon-row">
+                    <div>
+                        <img src="./assets/images/basket.png">
+                    </div>
+                    <div>
+                        <img src="./assets/images/Plant.png">
+                    </div>
+                    <div>
+                        <img src="./assets/images/Healthcare.png">
+                    </div>
+                    <div>
+                        <img src="./assets/images/Pets1.png">
+                    </div>
+                    <div>
+                        <img src="./assets/images/Tyres.png">
+                    </div>
+                </div>
             </div>
         </div>
-        <div class='row location-block'>
-            <h1>Explore 1000's of locations</h1>
-              <p>Select Openpay at checkout</p>
-              <div class='location-images'>
-                  <img src='./assets/images/UT.png'/>
-                  <img src='./assets/images/sauna.png'/>
-                  <img src='./assets/images/MSP.png'/>
-                  <img src='./assets/images/jims.png'/>
-                  <img src='./assets/images/UT.png'/>
-                  <img src='./assets/images/sauna.png'/>
-                  <img src='./assets/images/MSP.png'/>
-                  <img src='./assets/images/jims.png'/>
-              </div>
-              <div class='location-action'>
-                  <button>View all stores</button>
-              </div>
+        
+        <div class='row tile-block remove-line featured-title'>
+            <h1>Featured offers</h1>
         </div>
+        <div class='featured-tiles tile-slider'>
+            <a href="#"><img src='./assets/images/Sunglasses.png'/></a>
+            <a href="#"><img src='./assets/images/Edge.png'/></a>
+            <a href="#"><img src='./assets/images/Sunglasses.png'/></a>
+            <a href="#"><img src='./assets/images/Edge.png'/></a>
+            <a href="#"><img src='./assets/images/Sunglasses.png'/></a>
+            <a href="#"><img src='./assets/images/Edge.png'/></a>
+            <a href="#"><img src='./assets/images/Sunglasses.png'/></a>
+            <a href="#"><img src='./assets/images/Edge.png'/></a>
+            <a href="#"><img src='./assets/images/Edge.png'/></a>
+            <a href="#"><img src='./assets/images/Edge.png'/></a>
+       </div>
         <div class='footer'>
           <div class='row'>
               <div class='c12 footer-logo'>
-                  <img src='./assets/images/O.png'/>
+                  <img src='./assets/o.svg'/>
               </div>
           </div>
           <div class='row'>
               <div class='c12 footer-download'>
-                  <a href='https://itunes.apple.com/au/app/openpay/id1166424403?mt=8'><img src='./assets/images/apple.png'/></a>
-                  <a href='https://play.google.com/store/apps/details?id=com.ocean.openpay'><img src='./assets/images/android.png' /></a>
+                  <a href='https://itunes.apple.com/au/app/openpay/id1166424403?mt=8'><img src='./assets/apple.svg'/></a>
+                  <a href='https://play.google.com/store/apps/details?id=com.ocean.openpay'><img src='./assets/android.svg' /></a>
               </div>
           </div>
           <div class='footer-linkOuter'>
@@ -252,12 +248,12 @@
           </div>
           <div class='row'>
               <div class='c12 footer-legal'>
-                     <a href="#">Privacy Policy</a>
-                     <a href="#">AU Terms & Conditions</a>
-                     <a href="#">NZ Terms & Conditions</a>
+                    <a href="Privacy.html">Privacy Policy</a>
+                     <a href="Terms.html">Terms & Conditions</a>
+                    <!--  <a href="#">NZ Terms & Conditions</a>
                      <a href="#">End User License Agreement</a>
                      <a href="#">PCI Data Security Statement</a>
-                     <a href="#">Terms & Conditions Promitions</a>
+                     <a href="#">Terms & Conditions Promitions</a> -->
               </div>
           </div>
           <div class='row'>
