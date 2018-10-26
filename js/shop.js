@@ -63,9 +63,13 @@ $('#category').change(function(){
     $('#sub-category').find('option').remove().end()
     $('#mobile-sub-category').find('option').remove().end()
 
-    if(cat !== typeof Number){
-      console.log('NAN',typeof cat)
-      selCat = parseInt(cat)
+    // if(cat !== typeof Number){
+    //   console.log('CAT',cat)
+    //   console.log('NAN',typeof cat)
+    //   selCat = ''
+    // }
+    if(cat === ''){
+        selCat = ''
     }
     else{
       console.log('Setting selCat')
