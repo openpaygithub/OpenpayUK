@@ -160,6 +160,34 @@ $(document).on('click','.suburb-item',function(){
 //      $('.loading').addClass('hide')
 // }
 
+const getTopBrands = () => {
+  $('.loading-cir').removeClass('hide')
+    url = `${apiURl}Brands?Location=3000&PageNum=1&PageSize=105`
+
+    var settings = {
+      "async": true,
+      "crossDomain": true,
+      "url":url,
+      "method": "GET",
+      "headers": {
+        "content-type": "application/json"
+      },
+      success:(response) => { 
+        const filter = response.filter(x => x.isAdvertised === true)
+        console.log('Top Brands',filter)
+        brands = filter
+        $('.loading-cir').addClass('hide')
+        renderCards(filter,true)
+      },
+      error: (err) => {
+        console.log('Error',err)
+      }
+    }
+
+
+    $.ajax(settings)
+}
+
 const getBrands = (loc,cat,sub,pn,key,reset) => {
   $('.loading-cir').removeClass('hide')
   var params = {loc,cat,sub,page,key}
@@ -337,9 +365,10 @@ const ipLookUp = () => {
     console.log('ip running')
     var storedLoc = window.localStorage.getItem('saved-post')
     var ppc = JSON.parse(storedLoc)
-  if(storedLoc){
-      getBrands(ppc,selCat,selSub,page,keyword,true)
-  }
+    if(storedLoc){
+        console.log('stored')
+        getBrands(ppc,selCat,selSub,page,keyword,true)
+    }
   else{
       $.ajax('https://ip-api.com/json')
       .then(
@@ -352,19 +381,23 @@ const ipLookUp = () => {
               $('#postcode').val(postcode)
               $('#location-field').val(postcode)
               $('.modal-overlay').removeClass('hide-modal')
-              getBrands(postcode,selCat,selSub,page,keyword,true)
+              // getBrands(postcode,selCat,selSub,page,keyword,true)
 
                 $('.close-modal').on('click',function(){
                     $('.modal-overlay').addClass('hide-modal')
                     $('#location-field').val('')
+                    getTopBrands()
                 })
                 $('.activeBtn').on('click',function(){
                     $('.modal-overlay').addClass('hide-modal')
+                    getBrands(postcode,selCat,selSub,page,keyword,true)
                 })
           },
           function fail(data, status) {
               console.log('Request failed.  Returned status of',status);
-              getBrands(3000,selCat,selSub,page,keyword,true)
+              console.log('Running top brands');
+              // getBrands(3000,selCat,selSub,page,keyword,true)
+              getTopBrands()
           }
       );
   }

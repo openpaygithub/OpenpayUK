@@ -114,7 +114,7 @@ const getHome = () => {
         "content-type": "application/json"
       },
       success:(response) => { 
-        console.log('Brands',response)
+        console.log('Home Brands',response)
         brands = response
         renderHome(response)
         getAuto()
@@ -137,7 +137,7 @@ const getAuto = () => {
         "content-type": "application/json"
       },
       success:(response) => { 
-        console.log('Brands',response)
+        console.log('Auto Brands',response)
         brands = response
         renderAuto(response)
         getHealth()
@@ -160,7 +160,7 @@ const getHealth = () => {
         "content-type": "application/json"
       },
       success:(response) => { 
-        console.log('Brands',response)
+        console.log('Health Brands',response)
         brands = response
         renderHealth(response)
         // getHome()
@@ -183,7 +183,7 @@ const getRetail = () => {
         "content-type": "application/json"
       },
       success:(response) => { 
-        console.log('Brands',response)
+        console.log('Retail Brands',response)
         brands = response
         renderRetail(response)
         getHome()
