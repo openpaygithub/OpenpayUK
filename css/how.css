@@ -4,7 +4,7 @@
     padding: 60px 0;
 }
 .header-info{
-	background: url(../assets/images/cur.png);
+	background: url(../assets/images/How-it-works-header.png);
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,7 +38,7 @@
 
 .header-info h1{
     margin: 40px 0;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 47px;
     letter-spacing: .22px;
 }
