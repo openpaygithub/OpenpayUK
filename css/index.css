@@ -312,6 +312,7 @@
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+	font-weight: 600;
 }
 
 .heroInfo a{
@@ -824,6 +825,7 @@
 	}
 	.btnBox{
 		padding-top: 70px;
+		font-weight: 600;
 	}
 }
 
