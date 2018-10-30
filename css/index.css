@@ -589,11 +589,11 @@
 .featured-tiles{
 	display: flex;
 	flex-direction: row;
-	/*justify-content: center;*/
+	justify-content: center;
 	align-items: center;
 }
 .featured-tiles img{
-	height: 164px;
+	height: 200px;
 	margin:20px;
 	cursor: pointer;
 }
