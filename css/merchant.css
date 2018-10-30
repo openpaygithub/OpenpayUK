@@ -4,7 +4,7 @@
     padding: 60px 0;
 }
 .header-info{
-	background: url(../assets/images/lady.png);
+	background: url(../assets/images/Merchant-Header.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,7 +28,7 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  padding: 50px 0 0 100px;
+  padding: 10px 0 0 100px;
 }
 .header-info p{
   line-height: 29px;
@@ -39,7 +39,7 @@
 
 .header-info h1{
     margin: 40px 0;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 47px;
     letter-spacing: .22px;
 }
@@ -76,7 +76,7 @@
 	padding-bottom: 30px;
 }
 .case-con a{
-	border: 3px solid blue;
+	border: 2px solid blue;
 	border-radius: 10px;
 	padding:12px 25px;
 	color: blue;
@@ -102,6 +102,7 @@
 	width: 80%;
 	justify-content: center;
 	align-items: center;
+	padding: 150px 0px 150px;
 }
 .why-header{
 	display: flex;
@@ -114,6 +115,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	padding-top: 70px;
 }
 .apply{
 	display: flex;
@@ -125,8 +127,30 @@
 	max-width: 200px;
 	width: 100%;
 	padding:10px 40px;
-	margin-top: 20px;
+	margin-top: 30px;
+	float: left;
+	margin-right: 20px;
 }
+.apply-signup{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid blue;
+	    outline-offset: -1px;
+
+	color: white;
+	border-radius: 10px;
+	max-width: 200px;
+	width: 100%;
+	padding:10px 40px;
+	margin-top: 30px;
+	float: left;
+	margin-right: 20px;
+}
+.inline{
+	display: inline-block;
+}
+
 .text{
 	max-width: 200px;
 	width: 100%;
@@ -194,7 +218,7 @@
 #brand-row{
 	display: flex;
 	flex-wrap: wrap;
-	padding: 5em;
+	padding: 20px;
 	justify-content: center;
 }
 .extra-info p {
@@ -373,6 +397,9 @@
 	max-width: 561px;
 	width: 100%;
 	font-size: 16px;
+}
+.atv-info{
+	padding-top: 70px;
 }
 .everywhere-image{
 	height: 400px;
