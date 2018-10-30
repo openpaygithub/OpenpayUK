@@ -49,7 +49,7 @@
 	background-color: white;
 }
 .how-info-con2{
-	padding: 200px 4em 40px 4em;
+	padding: 100px 4em 40px 4em;
 	background-color: transparent;
 }
 .how-info-box{
@@ -84,7 +84,7 @@
 	width: 100%;
 }
 .icon-row{
-	padding: 0 0 200px 0;
+	padding: 0 0 100px 0;
 	max-width: 50%;
 	width: 100%;
 	display: flex;
@@ -129,6 +129,7 @@
 	flex-direction: row;
 	/*justify-content: center;*/
 	align-items: center;
+	padding-bottom: 50px;
 }
 .featured-tiles img{
 	height: 250px;
