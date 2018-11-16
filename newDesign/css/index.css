@@ -1,0 +1,15 @@
+body { background-color: #fff;}
+
+.hero-home-container {
+    margin: 0;
+    display: flex;
+    position: relative;
+    text-align: center;
+    padding: 14em 0 14em 0;
+    background: url(../assets/images/life.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    align-items: center;
+}
