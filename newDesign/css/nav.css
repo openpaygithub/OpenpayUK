@@ -81,6 +81,18 @@ p,div{
 @media (max-width: 1200px) {
     .topNav { display: none;}
 
+    nav .mainLogo {
+        background: url(../images/open.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 24px;
+        width: 129px;
+        position: absolute;
+        left: 80px;
+        top: 50px;
+        z-index: 1;
+    }
     #hamburgerMenu {
         display: block;
         position: relative;
