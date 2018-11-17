@@ -65,8 +65,9 @@ body {background-color: #fff;}
     margin: 0 auto;
 }
 
-.promotions .col-3 img {
+.promotions .col-3 img, .howItWorks .col-3 .options {
     width: calc(100% - 30px);
+    margin: 0 auto;
 }
 
 .takeControl {
