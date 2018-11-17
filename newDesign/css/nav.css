@@ -80,6 +80,9 @@ p,div{
 /*top menu hamburger*/
 @media (max-width: 1200px) {
     .topNav { display: none;}
+    .heroHomeContainer .heroInfo {
+        padding: 0 50px;
+    }
 
     nav .mainLogo {
         background: url(../images/open.svg);
@@ -89,7 +92,7 @@ p,div{
         height: 24px;
         width: 129px;
         position: absolute;
-        left: 80px;
+        left: 50px;
         top: 50px;
         z-index: 1;
     }
