@@ -101,6 +101,7 @@ body {background-color: #fff;}
 @media (max-width: 1200px) {
     .heroHomeContainer .heroInfo {
         padding-top: 120px;
+        padding: 0 50px;
     }
 }
 
@@ -108,5 +109,8 @@ body {background-color: #fff;}
     .promotions .col-3, .howItWorks .col-3 {
         width: 100%;
         padding-bottom: 20px;
+    }
+    .heroHomeContainer .heroInfo {
+        font-size: 14px;
     }
 }
