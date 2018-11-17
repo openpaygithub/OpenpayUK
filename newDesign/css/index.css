@@ -100,8 +100,7 @@ body {background-color: #fff;}
 
 @media (max-width: 1200px) {
     .heroHomeContainer .heroInfo {
-        padding-top: 120px;
-        padding: 0 50px;
+        padding: 120px 50px 0;
     }
 }
 
