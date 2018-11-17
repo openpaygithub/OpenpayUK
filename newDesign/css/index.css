@@ -65,7 +65,7 @@ body {background-color: #fff;}
     margin: 0 auto;
 }
 
-.promotions .col-3 img, .howItWorks .col-3 .options {
+.promotions .col-3 img {
     width: calc(100% - 30px);
     margin: 0 auto;
 }
@@ -97,6 +97,11 @@ body {background-color: #fff;}
 
 .howItWorks .col-3 {
     text-align: left;
+}
+
+.howItWorks .col-3 .options {
+    max-width: 300px;
+    padding-left: 15px;
 }
 
 @media (max-width: 1200px) {
