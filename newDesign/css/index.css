@@ -45,7 +45,7 @@ body {background-color: #fff;}
     clear: both;
 }
 
-.promotions h1, .takeControl h1, .howItWorks h1 {
+.promotions h1, .takeControl h1, .howItWorks h1, .whereCanShop h1 {
     color: #3C465A;
     font-size: 32px;
     font-weight: 600;
@@ -70,7 +70,7 @@ body {background-color: #fff;}
     margin: 0 auto;
 }
 
-.takeControl {
+.takeControl, .whereCanShop {
     background-color: #F2F2F2;
     margin-top: 50px;
     padding-bottom: 50px;
@@ -100,9 +100,11 @@ body {background-color: #fff;}
 }
 
 .howItWorks .col-3 .options {
-    max-width: 300px;
-    padding-left: 15px;
+    max-width: 260px;
+    margin: 0 auto;
 }
+.howItWorks .learnMoreWrapper {text-align: center;padding-top: 60px;}
+.howItWorks .button {height: 40px;width: 288px;border: 2px solid #40354E;border-radius: 4px;padding: 5px 95px;}
 
 @media (max-width: 1200px) {
     .heroHomeContainer .heroInfo {
