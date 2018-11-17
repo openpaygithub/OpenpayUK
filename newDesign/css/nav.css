@@ -14,7 +14,6 @@ h1, h2, h3, h4, h5, h6, body, a, p, ol, ul {
 
 body,p, ol, ul{
     font-weight: 300;
-    background-color: #3C465A;
 }
 
 button:focus,input:focus{
@@ -30,9 +29,6 @@ p,div{
 }
 
 .mainContent {
-    max-width: 1440px;
-    margin: 0 auto;
-    background-color: #fff;
 }
 
 
@@ -40,7 +36,7 @@ p,div{
 .topNav {
     overflow: hidden;
     height: 78px;
-    padding: 0 80px;
+    padding: 0 150px;
 }
 
 
