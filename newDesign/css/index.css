@@ -109,6 +109,10 @@ body {background-color: #fff;}
         width: 100%;
         padding-bottom: 20px;
     }
+    .howItWorks .col-3 {
+        padding: 0 50px 50px;
+    }
+
     .heroHomeContainer .heroInfo {
         font-size: 14px;
     }
