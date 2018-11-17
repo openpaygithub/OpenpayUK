@@ -9,6 +9,7 @@ body {background-color: #fff;}
     background-repeat: no-repeat;
     height: 400px;
     align-items: center;
+    top: 0;
 }
 
 .heroHomeContainer .greyWithOpacity {
@@ -43,9 +44,10 @@ body {background-color: #fff;}
 .promotions {
     background-color: #fff;
     clear: both;
+    margin-bottom: 50px;
 }
 
-.promotions h1, .takeControl h1, .howItWorks h1, .whereCanShop h1 {
+.promotions h1, .takeControl h1, .howItWorks h1, .whereCanShop h1, .instagram h1 {
     color: #3C465A;
     font-size: 32px;
     font-weight: 600;
@@ -60,7 +62,7 @@ body {background-color: #fff;}
     text-align: center;
 }
 
-.treeBannes {
+.treeBanners, .fourBanners {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -72,7 +74,7 @@ body {background-color: #fff;}
 
 .takeControl, .whereCanShop {
     background-color: #F2F2F2;
-    margin-top: 50px;
+    margin-top: 0px;
     padding-bottom: 50px;
 }
 .takeControl p {
@@ -103,12 +105,108 @@ body {background-color: #fff;}
     max-width: 260px;
     margin: 0 auto;
 }
+
 .howItWorks .learnMoreWrapper {text-align: center;padding-top: 60px;}
 .howItWorks .button {height: 40px;width: 288px;border: 2px solid #40354E;border-radius: 4px;padding: 5px 95px;}
+
+
+.whereCanShop .col-4 {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+}
+.whereCanShop .marketToProvide {
+    height: 120px;
+    width: calc(100% - 30px);
+    border: 2px solid #4A4A4A;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 0 auto 30px;
+}
+
+.whereCanShop .marketToProvide h3 {
+    color: #3C465A;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.downloadApp {
+    background-color: #3E3C53;
+    color: #fff;
+    padding: 80px 30px;
+    text-align: center;
+}
+
+.downloadApp h1 {
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+    text-align: center;
+}
+
+.downloadApp p {
+    max-width: 570px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: center;
+    margin: 25px auto 20px;
+}
+
+.downloadApp .apple {
+    height: 40px;
+    width: 135px;
+}
+.downloadApp .android {
+    height: 40px;
+    width: 134.63px;
+}
+
+.instagram {
+    max-width: 1440px;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.instagram h1 {
+    text-align: left;
+}
+.instagramWrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 0 30px;
+    height: 157px;
+    max-width: 1440px;
+    width: calc(100% - 50px);
+    margin: 0 auto;
+}
+
+#instagram .ig-tile {
+    height: 124px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    margin-right: 20px;
+    display: inline-block;
+}
+
 
 @media (max-width: 1200px) {
     .heroHomeContainer .heroInfo {
         padding: 120px 50px 0;
+    }
+
+    .whereCanShop .col-4 {
+        width: 33%;
     }
 }
 
@@ -123,5 +221,15 @@ body {background-color: #fff;}
 
     .heroHomeContainer .heroInfo {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 850px) {
+    .whereCanShop .col-4 {
+        width: 50%;
+    }
+
+    .downloadApp h1 {
+        font-size: 28px;
     }
 }

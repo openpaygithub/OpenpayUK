@@ -77,6 +77,56 @@ p,div{
 }
 #hamburgerMenu { display: none;}
 
+.footer {
+    background-color: #3C465A;
+    padding: 60px 0;
+}
+
+.footer .footerMenu {
+    text-align: center;
+}
+
+.footer .footerNav {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 0 20px;
+}
+
+.footer .socialLinks {
+
+    text-align: center;
+
+    padding: 40px 0;
+}
+
+.footer .socialLinks a {
+    background-repeat: no-repeat;
+    background-position: left center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 0 41px 0 31px;
+}
+
+.footer .socialLinks a:first-child {
+    margin-left: 31px;
+}
+
+.fb {
+    background: url(../images/Fb.png);
+}
+.twit {
+    background: url(../images/Twitter.png);
+}
+.linked {
+    background: url(../images/in.png);
+}
+.ig {
+    background: url(../images/Insta.png);
+}
 /*top menu hamburger*/
 @media (max-width: 1200px) {
     .topNav { display: none;}
