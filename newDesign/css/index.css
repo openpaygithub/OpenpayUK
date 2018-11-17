@@ -39,3 +39,15 @@ body { background-color: #F4F7FF;}
     font-weight: 600;
     letter-spacing: -0.44px;
 }
+
+
+
+
+
+@media (max-width: 1200px) {
+
+    .heroHomeContainer .heroInfo {
+        padding: 0 30px;
+        font-size: 16px;
+    }
+}
