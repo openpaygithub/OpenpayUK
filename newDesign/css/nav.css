@@ -28,8 +28,7 @@ p,div{
     font-weight: 300;
 }
 
-.mainContent {
-}
+.mainContent {}
 
 
 /*top menu*/
@@ -37,6 +36,7 @@ p,div{
     overflow: hidden;
     height: 78px;
     padding: 0 150px;
+    background-color: #fff;
 }
 
 
@@ -183,14 +183,14 @@ p,div{
         height: 24px;
         width: 129px;
         position: absolute;
-        left: 50px;
-        top: 50px;
+        left: 20px;
+        top: 30px;
         z-index: 2;
     }
     #hamburgerMenu {
         display: block;
         position: relative;
-        top: 50px;
+        top: 30px;
         right: 50px;
         z-index: 1;
         float: right;
@@ -209,7 +209,7 @@ p,div{
         width: 40px;
         height: 32px;
         position: absolute;
-        top: -7px;
+        top: -6px;
         right: -5px;
         cursor: pointer;
         opacity: 0; /* hide this */
@@ -294,6 +294,6 @@ p,div{
         margin-right: 15px;
     }
     .footer .footerNav {
-        padding: 0 10px;
+        padding: 0 5px;
     }
 }

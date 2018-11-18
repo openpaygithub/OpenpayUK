@@ -1,0 +1,150 @@
+body {
+    background-color: #F2F2F2;
+}
+
+.mainContent {
+    padding: 0 150px;
+}
+.topSearch {
+    margin-top: 20px;
+}
+.searchBar {
+
+}
+.searchBar input[type="text"] {
+    height: 48px;
+    width: 412px;
+    border: 1px solid #DDDEE2;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    float: left;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #858B98;
+    font-weight: 500;
+    line-height: 26px;
+    padding: 0 10px;
+}
+.searchBar input[type="submit"] {
+    height: 47px;
+    width: 93px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #2864FF;
+    border: none;
+}
+.moreFilters {
+    margin-top: 20px;
+}
+.moreFilters select {
+    border: 2px solid #3C465A;
+    border-radius: 4px;
+    float: left;
+    margin-right: 10px;
+    color: #3C465A;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: -0.38px;
+    line-height: 18px;
+    outline: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.moreFilters label {
+    border: 2px solid #3C465A;
+    border-radius: 4px;
+    float: left;
+    margin-right: 10px;
+    color: #3C465A;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: -0.38px;
+    line-height: 18px;
+    padding: 7px 10px 3px;
+    cursor: pointer;
+}
+.moreFilters label input[type="checkbox"] {margin-right: 10px;height: 12px;}
+
+.promotions, .byCategory {
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.promotions h1, .byCategory h1 {
+    color: #3C465A;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    padding: 50px 0 10px;
+}
+.promotions .col-3 {
+    width: 33%;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.promotions .col-3 img {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+}
+
+.promotions.brands img {
+    height: 64px;
+    width: calc(100% - 30px);
+    margin-bottom: 20px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 18px 0px rgba(0,0,0,0.8);
+}
+
+.col-4 {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+}
+.byCategory .marketToProvide {
+    height: 120px;
+    width: calc(100% - 30px);
+    border: 2px solid #4A4A4A;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 0 auto 30px;
+}
+
+.byCategory .marketToProvide h3 {
+    color: #3C465A;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+@media (max-width: 1200px) {
+    .promotions .col-3, .howItWorks .col-3 {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .promotions .col-3 img {
+        width: 100%;
+    }
+    .mainContent {
+        padding: 0 20px;
+    }
+    .topSearch {
+        padding-top: 120px;
+    }
+}
+
+@media (max-width: 850px) {
+    .col-4 {
+        width: 50%;
+    }
+}
