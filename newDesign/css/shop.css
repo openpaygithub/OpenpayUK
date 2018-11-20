@@ -241,6 +241,7 @@ body {
     font-family: Poppins;
     font-size: 12px;
     font-weight: 300;
+    max-width: 37%;
 }
 
 .brand-category {
@@ -257,6 +258,10 @@ body {
     display: flex;
 }
 
+.brand-action.retailers {
+    position: static;
+}
+
 .brand-action a {
     color: #2864FF;
     font-family: Poppins;
@@ -270,6 +275,24 @@ body {
     display: block;
     width: 24px;
     margin: 0 auto;
+}
+
+.map {
+    position: absolute;
+    right: 15px;
+    top: 10%;
+}
+
+.brand-detailed-info {
+    margin: 15px 0;
+}
+
+.brand-info .key {
+    font-family: Poppins;
+    color: #3C465A;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
 }
 
 .loading-cir {

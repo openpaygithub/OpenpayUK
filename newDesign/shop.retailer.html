@@ -118,7 +118,25 @@
             <h2 id="brand-name"></h2>
             <p class="brand-info"><span id="locations-count">0</span> locations · <span id="availability"></span></p>
             <p class="brand-category">Automotive · Auto - Car Servicing</p>
-            <div class="brand-action">
+            <div class="brand-detailed-info">
+                <p class="brand-info">
+                    <span class="key">Address: </span>
+                    <span class="value" id="brand-address"></span>
+                </p>
+                <p class="brand-info">
+                    <span class="key">Phone: </span>
+                    <span class="value" id="brand-phone"></span>
+                </p>
+                <p class="brand-info">
+                    <span class="key">Email: </span>
+                    <span class="value" id="brand-mail"></span>
+                </p>
+            </div>
+
+            <iframe id="map" width="60%" height="80%" frameborder="0" style="border:0" src="" allowfullscreen
+                    class="map"></iframe>
+
+            <div class="brand-action retailers">
                 <a href="" id="url" target="_blank" rel="noopener noreferrer">
                     <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                         <g stroke-width="1.947" transform="translate(1.474 1.22)" stroke="#2864FF" fill="none"
@@ -148,7 +166,7 @@
         </div>
     </div>
     <div class="brands-search-results" id="search-results">
-        <h1 id="search-results-heading">Available Locations (<span id="available-count">0</span>)</h1>
+        <h1 id="search-results-heading">Similar Locations</h1>
         <div class="brands-search-results-grid" id="results"></div>
         <div class="loading-cir" id="loader"></div>
     </div>
@@ -156,7 +174,7 @@
 </body>
 <script>
     $(document).ready(function () {
-        openpayUtils.fetchCurrentBrand();
+        openpayUtils.fetchCurrentRetailer();
     });
 </script>
 </html>
