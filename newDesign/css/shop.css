@@ -129,6 +129,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 
 .brand h2 {
@@ -136,6 +137,7 @@ body {
     font-family: Poppins;
     font-size: 14px;
     font-weight: 600;
+    width: 70%;
 }
 
 .brand p {
@@ -143,6 +145,29 @@ body {
     font-family: Poppins;
     font-size: 12px;
     font-weight: 300;
+    width: 70%;
+}
+
+.retailer-direction {
+    position: absolute;
+    top: calc(50% - 21px);
+    right: 10px;
+    color: #2864FF;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.retailer-direction:before {
+    content: "";
+    display: block;
+    background-color: #2864FF;
+    -webkit-mask: url(../../assets/location.svg) no-repeat center;
+    mask: url(../../assets/location.svg) no-repeat center;
+    mask-size: cover;
+    width: 62px;
+    height: 24px;
 }
 
 .brands-search-results {
@@ -269,8 +294,13 @@ body {
     font-weight: 300;
     line-height: 18px;
     text-align: center;
-    margin-left: 20px;
+    margin-right: 20px;
 }
+
+.brand-action a:last-child {
+    margin-right: 0;
+}
+
 .brand-action a svg {
     display: block;
     width: 24px;
@@ -281,6 +311,8 @@ body {
     position: absolute;
     right: 15px;
     top: 10%;
+    width: 60%;
+    height: 80%;
 }
 
 .brand-detailed-info {
@@ -349,5 +381,24 @@ body {
 @media (max-width: 850px) {
     .col-4 {
         width: 50%;
+    }
+    .brands-search-results-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .map {
+        position: static;
+        width: 100%;
+        height: 180px;
+    }
+
+    .brand-info {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .brands-search-results-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
