@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="78px" height="75px" viewBox="0 0 78 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon Chart</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ICONOGRAPHY" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Feature-Icons" transform="translate(-40.000000, -980.000000)">
+            <g id="Group-Copy-23" transform="translate(32.000000, 973.000000)">
+                <g id="icon-Chart" transform="translate(10.000000, 9.000000)">
+                    <polygon id="Rectangle-path" fill="#FF991F" fill-rule="nonzero" points="12.4137931 51.3103448 22.3448276 51.3103448 22.3448276 71.1227586 12.4137931 71.1227586"></polygon>
+                    <polygon id="Rectangle-path" fill="#FFD41D" fill-rule="nonzero" points="33.1034483 39.7241379 43.0344828 39.7241379 43.0344828 70.9406897 33.1034483 70.9406897"></polygon>
+                    <rect id="Rectangle-path" fill="#92E03F" fill-rule="nonzero" x="53.7931034" y="28.137931" width="9.93103448" height="42.6206897"></rect>
+                    <path d="M74.4827586,71.1724138 L0,71.1724138" id="Shape" stroke="#3C465A" stroke-width="2.83" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <polyline id="Shape" stroke="#3C465A" stroke-width="2.83" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" points="52.9655172 8.8817842e-16 62.9131034 8.8817842e-16 62.9131034 9.94758621"></polyline>
+                    <polyline id="Shape" stroke="#3C465A" stroke-width="2.83" stroke-linecap="round" stroke-linejoin="round" points="13.2413793 35.3296552 35.4124138 13.1586207 42.7282759 20.4662069 63.1862069 5.68434189e-14"></polyline>
+                    <polygon id="Rectangle-path" stroke="#3C465A" stroke-width="2.83" stroke-linecap="round" stroke-linejoin="round" points="12.4137931 51.3103448 22.3448276 51.3103448 22.3448276 71.1227586 12.4137931 71.1227586"></polygon>
+                    <polygon id="Rectangle-path" stroke="#3C465A" stroke-width="2.83" stroke-linecap="round" stroke-linejoin="round" points="33.1034483 39.7241379 43.0344828 39.7241379 43.0344828 70.9406897 33.1034483 70.9406897"></polygon>
+                    <rect id="Rectangle-path" stroke="#3C465A" stroke-width="2.83" stroke-linecap="round" stroke-linejoin="round" x="53.7931034" y="28.137931" width="9.93103448" height="42.6206897"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

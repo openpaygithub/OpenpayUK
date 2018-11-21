@@ -1,0 +1,171 @@
+body {background-color: #fff;}
+.clear { clear: both;}
+.heroBusinessContainer {
+    margin: 0;
+    position: relative;
+    background: url(../images/businessHero.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    align-items: center;
+    top: 0;
+}
+.heroBusinessContainer .greyWithOpacity {
+    position: absolute;
+    background-color: #3C465A;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+.heroBusinessContainer .heroInfo {
+    position: relative;
+    padding: 0 150px;
+    color: #fff;
+    padding-top: 70px;
+}
+.heroBusinessContainer .heroInfo h1 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.heroBusinessContainer .heroInfo p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    max-width: 570px;
+    margin-top: 34px;
+}
+.heroBusinessContainer .btnBox {
+    background-color: #2864FF;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    border-radius: 8px;
+    padding: 10px 10px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.44px;
+}
+
+.whyUseOpenpay {
+    padding: 50px 150px;
+}
+.whyUseOpenpay h1 {
+    color: #3C465A;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.whyUseOpenpay .col-4 {
+    text-align: left;
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 30px;
+}
+.whyUseOpenpay h2 {
+    color: #3C465A;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.whyUseOpenpay p {
+    color: #3C465A;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.whyUseOpenpayIcon {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.whyUseOpenpayIcon.chart {
+    height: 75px;
+    width: 67px;
+    background: url(../images/iconChart.svg);
+}
+.whyUseOpenpayIcon.lock {
+    height: 75px;
+    width: 51px;
+    background: url(../images/iconLock.svg);
+}
+.whyUseOpenpayIcon.risk {
+    height: 54px;
+    width: 54px;
+    margin: 15.5px 0 24px;
+    background: url(../images/iconRisk.svg);
+}
+.whyUseOpenpayIcon.customers {
+    height: 75px;
+    width: 75px;
+    background: url(../images/iconsCustomers.svg);
+}
+.col-2 {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+}
+.col-2 img {
+    width: calc(100% - 30px);
+    max-width: 420px;
+    margin: 0 auto;
+}
+.longerTerms {
+    padding: 0 165px;
+}
+.longerTerms h1 {
+    color: #3C465A;
+    text-align: left;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.longerTerms p {
+    text-align: left;
+    color: #3C465A;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+
+@media (max-width: 1280px) {
+    .whyUseOpenpay .col-4 {
+        width: 50%;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .whyUseOpenpay {
+        padding: 50px;
+    }
+    .col-2 {
+        width: 100%;
+        padding: 0 0 50px;
+    }
+}
+
+@media (max-width: 980px) {
+    .whyUseOpenpay .col-4 {
+        width: 100%;
+    }
+}
+@media (max-width: 850px) {
+    .whyUseOpenpay {
+        padding: 30px;
+    }
+}
