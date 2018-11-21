@@ -83,7 +83,7 @@ var openpayUtils = (function () {
     }
 
     function escapeURL(val) {
-        return decodeURI(val).replace(' ', '+');
+        return decodeURI(val).replace(' ', '+').replace('&', '+');
     }
 
     function getAddress(retailer) {
@@ -95,7 +95,7 @@ var openpayUtils = (function () {
     function createRetailerItem(retailer) {
         var params = parseParams(location.search.substring(1));
         var path = window.location.protocol + "//" + window.location.host + window.location.pathname.split('/').slice(0, -1).join('/');
-        var url = [path, '/shop.retailer.html?BrandID=', params.BrandID, '&RetailerID=', retailer.retailerID].join('');
+        var url = [path, '/shop.retailer.html?BrandID=', params.BrandID, '&RetailerID=', retailer.retailerLocationID].join('');
         var item = $('<a class="brand" href="' + url + '"></a>');
         var title = $('<h2>' + retailer.brandName +'</h2>');
         var retailerAvailability = $('<p>'+ getAddress(retailer) +'</p>');
@@ -251,10 +251,10 @@ var openpayUtils = (function () {
 
         fetchCurrentBrand(function (brand) {
             var currentRetailer = brand.retailerLocations.find(function(location) {
-                return location.retailerID == params.RetailerID;
+                return location.retailerLocationID == params.RetailerID;
             });
             var restRetailers = brand.retailerLocations.filter(function(location) {
-                return location.retailerID != params.RetailerID;
+                return location.retailerLocationID != params.RetailerID;
             });
 
             if (!currentRetailer) return console.error('Invalid retailer ID specified');
