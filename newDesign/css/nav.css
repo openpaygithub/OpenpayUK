@@ -3,7 +3,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box;}
 html { box-sizing: border-box; }
 *, *:before, *:after { box-sizing: inherit; }
-ol, ul { list-style: none; }
+ol, ul { list-style: none; font-weight: 300;}
 a { color: inherit; text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6, body, a, p, ol, ul {
