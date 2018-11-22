@@ -28,15 +28,19 @@ p,div{
     font-weight: 300;
 }
 
-.mainContent {}
+.greyPane {
+    background-color: #F4F7FF;
+}
 
 
 /*top menu*/
 .topNav {
     overflow: hidden;
     height: 78px;
-    padding: 0 150px;
+    padding: 0 50px;
     background-color: #fff;
+    max-width: 1240px;
+    margin: 0 auto;
 }
 
 
@@ -166,6 +170,13 @@ p,div{
     height: 24px;
     width: 129px;
     margin: 28px 30px 0  0;
+}
+
+
+
+.bodyContainer {
+    max-width: 1240px;
+    margin: 0 auto;
 }
 
 /*top menu hamburger*/
