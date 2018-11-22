@@ -233,14 +233,48 @@ body {background-color: #fff;}
     max-width: 550px;
     margin-bottom: 30px;
 }
-.seamless icons {
-
+.seamless .icons {
+    margin-left: -40px;
+    margin-right: -40px;
 }
 .seamless img {
     display: inline;
-    margin: 10px 30px;
+    margin: 10px 40px;
     height: 40px;
 }
+
+.readyRegister {
+    padding: 50px;
+}
+.readyRegister h1 {
+    color: #3C465A;
+    text-align: left;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+    margin-bottom: 20px;
+}
+.readyRegister p {
+    color: #3C465A;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+.readyRegister .btnBox {
+    background-color: #2864FF;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    border-radius: 8px;
+    padding: 10px 10px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.44px;
+}
+
 @media (max-width: 1280px) {
     .whyUseOpenpay .col-4 {
         width: 50%;
@@ -283,5 +317,14 @@ body {background-color: #fff;}
 @media (max-width: 850px) {
     .whyUseOpenpay {
         padding: 30px;
+    }
+    .seamless .icons {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .seamless img {
+        display: inline;
+        margin: 10px 20px;
+        height: 40px;
     }
 }
