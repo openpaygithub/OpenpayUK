@@ -1,0 +1,101 @@
+body {background-color: #fff;}
+.clear { clear: both;}
+.heroHelpContainer {
+    margin: 0;
+    position: relative;
+    background: url(../images/helpHero.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    align-items: center;
+    top: 0;
+}
+.heroHelpContainer .greyWithOpacity {
+    position: absolute;
+    background-color: #3C465A;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+.heroHelpContainer .heroInfo {
+    position: relative;
+    padding: 0 50px;
+    color: #fff;
+    padding-top: 70px;
+}
+.heroHelpContainer .heroInfo h1 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.heroHelpContainer .heroInfo p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    max-width: 570px;
+    margin-top: 34px;
+}
+.heroHelpContainer .btnBox {
+    color: #FFFFFF;
+    padding: 8px 25px;
+    margin: 20px 10px 0 0;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.44px;
+    line-height: 21px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.helpContent {
+    padding: 50px;
+}
+.helpContent h1 {
+    color: #3C465A;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+    margin-bottom: 10px;
+}
+.helpContent h2 {
+    color: #3C465A;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 32px;
+}
+.helpContent h3 {
+    color: #3C465A;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 8px;
+}
+.helpContent p {
+    color: #3C465A;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+.helpContent a {
+    color: #3C465A;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    line-height: 26px;
+    display: inline-block;
+    border-bottom: 1px solid #3C465A;
+}
+
+.subSection {
+    margin-bottom: 25px;
+}
