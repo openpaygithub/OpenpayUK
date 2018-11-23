@@ -11,7 +11,7 @@ var openpayUtils = (function () {
         209001: 'Automotive',
         209005: 'Home & garden',
         209006: 'Dental',
-        209009: 'Sports &amp; Outdoors'
+        209009: 'Sports & Outdoors'
     };
 
     var availabilityEnum = ['Online Store', 'In Store', 'Online And In Store'];

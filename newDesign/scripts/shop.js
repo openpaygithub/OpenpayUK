@@ -17,8 +17,8 @@ $('#search-btn').click(function () {
     openpayUtils.searchBrands();
 });
 
-$('#categories-grid').click(function (e) {
-    var CategoryID = $(e.target).data('value');
+$('#categories-grid').on('click', '.marketToProvide', function (e) {
+    var CategoryID = $(e.currentTarget).data('value');
 
     if (CategoryID) {
         openpayUtils.modifySearchParams({CategoryID: CategoryID});
