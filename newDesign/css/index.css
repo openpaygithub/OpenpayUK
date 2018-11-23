@@ -5,7 +5,7 @@ body {background-color: #fff;}
     position: relative;
     background: url(../images/hero.png);
     background-size: cover;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     height: 400px;
     align-items: center;
