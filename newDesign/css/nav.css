@@ -94,9 +94,9 @@ p,div{
 
 .footerMenu .footerNav {
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 20px;
     padding: 0 20px;
 }
 .footer .footerMoreLinksMenu {
@@ -126,7 +126,7 @@ p,div{
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    padding: 0 41px 0 31px;
+    padding: 6px 41px 6px 43px;
 }
 
 .footer .socialLinks a.fb {
@@ -134,16 +134,16 @@ p,div{
 }
 
 .fb {
-    background: url(../images/Fb.png);
+    background: url(../images/social/Fb.svg);
 }
 .twit {
-    background: url(../images/Twitter.png);
+    background: url(../images/social/Twitter.svg);
 }
 .linked {
-    background: url(../images/in.png);
+    background: url(../images/social/in.svg);
 }
 .ig {
-    background: url(../images/Insta.png);
+    background: url(../images/social/Insta.svg);
 }
 
 .footerAppWrapper {
