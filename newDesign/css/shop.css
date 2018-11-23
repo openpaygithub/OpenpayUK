@@ -8,7 +8,7 @@ body {
     padding: 0 50px;
 }
 .topSearch {
-    margin-top: 20px;
+    padding-top: 20px;
 }
 .searchBar input[type="text"] {
     height: 48px;
@@ -26,7 +26,7 @@ body {
     padding: 0 10px;
 }
 .searchBar input[type="submit"] {
-    height: 47px;
+    height: 46px;
     width: 93px;
     border-radius: 4px;
     color: #fff;
@@ -58,6 +58,7 @@ body {
     line-height: 18px;
     outline: none;
     padding: 5px 10px;
+    background-color: #F4F7FF;
     cursor: pointer;
 }
 .moreFilters label {
@@ -78,7 +79,7 @@ body {
 
 .promotions, .byCategory {
     clear: both;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 .promotions h1, .byCategory h1 {
@@ -393,8 +394,21 @@ body {
     }
 }
 
+@media (max-width: 900px) {
+    .bodyContainer {
+        padding: 0 20px;
+    }
+}
 @media (max-width: 600px) {
     .brands-search-results-grid {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .inStoreLabel { margin-top: 20px;}
+    .onlineLabel {clear: both;margin-top: 20px;}
+}
+@media (max-width: 584px) {
+    .searchBar input[type="submit"] {
+        margin-top: -6px;
     }
 }

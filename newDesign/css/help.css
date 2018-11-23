@@ -49,6 +49,9 @@ body {background-color: #fff;}
     border-radius: 4px;
     display: inline-block;
 }
+.heroHelpContainer .btnBox a {
+    font-weight: 600;
+}
 
 .helpContent {
     padding: 50px;

@@ -58,7 +58,7 @@ p,div{
 
 .topNav a:hover, .topNav a.active {
     color: #2864FF;
-    border-bottom: 2px solid #2864FF;
+    /* border-bottom: 2px solid #2864FF; */
 }
 
 .topNavRight {
