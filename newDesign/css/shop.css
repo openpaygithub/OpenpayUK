@@ -1,19 +1,19 @@
 body {
-    background-color: #F2F2F2;
+    background-color: #fff;
 }
-
-.mainContent {
-    padding: 0 150px;
+.clear {
+    clear: both;
+}
+.bodyContainer {
+    padding: 0 50px;
 }
 .topSearch {
     margin-top: 20px;
 }
-.searchBar {
-
-}
 .searchBar input[type="text"] {
     height: 48px;
-    width: 412px;
+    width: calc(100% - 103px);
+    max-width: 412px;
     border: 1px solid #DDDEE2;
     border-radius: 4px;
     background-color: #FFFFFF;
@@ -34,6 +34,7 @@ body {
     font-weight: 600;
     background-color: #2864FF;
     border: none;
+    -webkit-appearance: none;
 }
 
 .searchBar input[type="submit"]:hover {
@@ -174,12 +175,12 @@ body {
     clear: both;
     padding-bottom: 30px;
     position: relative;
+    min-height: 330px;
 }
 
 .results-count {
-    position: absolute;
-    right: 0;
-    top: 35px;
+    float: right;
+    margin-top: 35px;
     color: #3C465A;
     font-family: Poppins;
     font-size: 16px;
@@ -192,6 +193,7 @@ body {
     font-family: Poppins;
     font-size: 20px;
     font-weight: 600;
+    float: left;
 }
 
 .brands-search-results-grid {
@@ -369,12 +371,6 @@ body {
     }
     .promotions .col-3 img {
         width: 100%;
-    }
-    .mainContent {
-        padding: 0 20px;
-    }
-    .topSearch {
-        padding-top: 120px;
     }
 }
 
