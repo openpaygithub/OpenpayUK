@@ -3,7 +3,7 @@ body {background-color: #fff;}
 .heroHelpContainer {
     margin: 0;
     position: relative;
-    background: url(../images/helpHero.png);
+    background: url(../images/helpHero.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -54,7 +54,7 @@ body {background-color: #fff;}
 }
 
 .helpContent {
-    padding: 50px;
+    padding: 80px 0;
 }
 .helpContent h1 {
     color: #3C465A;

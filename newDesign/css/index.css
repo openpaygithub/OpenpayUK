@@ -1,15 +1,16 @@
 body {background-color: #fff;}
 .clear { clear: both;}
 .heroHomeContainer {
-    margin: 0;
     position: relative;
     background: url(../images/hero.png);
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 75vh;
     align-items: center;
-    top: 0;
+    overflow: auto;
+    display: table;
+    width: 100%;
 }
 
 .heroHomeContainer .greyWithOpacity {
@@ -21,11 +22,15 @@ body {background-color: #fff;}
 }
 .heroHomeContainer .heroInfo {
     position: relative;
-    padding: 0 150px;
+    max-width: 1540px;
+    margin: 0 auto;
     font-size: 18px;
     font-weight: 600;
     color: #fff;
-    padding-top: 70px;
+    clear: both;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .heroHomeContainer .btnBox {
@@ -34,7 +39,7 @@ body {background-color: #fff;}
     text-align: center;
     display: inline-block;
     border-radius: 8px;
-    padding: 10px 10px;
+    padding: 16px 16px;
     margin-top: 20px;
     font-size: 14px;
     letter-spacing: -0.44px;
@@ -47,7 +52,7 @@ body {background-color: #fff;}
 .promotions {
     background-color: #fff;
     clear: both;
-    margin-bottom: 50px;
+    padding: 80px 0;
 }
 
 .promotions h1, .takeControl h1, .howItWorks h1, .whereCanShop h1, .instagram h1 {
@@ -56,7 +61,7 @@ body {background-color: #fff;}
     font-weight: 600;
     line-height: 44px;
     text-align: center;
-    padding: 50px 25px;
+    padding: 0 25px 50px;
 }
 .promotions .col-3, .howItWorks .col-3 {
     width: 33%;
@@ -78,7 +83,7 @@ body {background-color: #fff;}
 .takeControl, .whereCanShop {
     background-color: #F4F7FF;
     margin-top: 0px;
-    padding-bottom: 50px;
+    padding: 80px 0;
 }
 .takeControl p {
     max-width: 1440px;
@@ -88,7 +93,7 @@ body {background-color: #fff;}
 }
 
 .howItWorks {
-    padding-bottom: 50px;
+    padding: 80px 0;
 }
 
 .howItWorks h2 {
@@ -109,8 +114,8 @@ body {background-color: #fff;}
     margin: 0 auto;
 }
 
-.howItWorks .learnMoreWrapper {text-align: center;padding-top: 60px;}
-.howItWorks .button {height: 40px;width: 288px;border: 2px solid #40354E;border-radius: 4px;padding: 5px 95px;}
+.howItWorks .learnMoreWrapper {text-align: center;padding-top: 60px;padding-bottom: 7px;}
+.howItWorks .button {height: 40px;width: 288px;border: 2px solid #40354E;border-radius: 4px;padding: 5px 95px;font-weight: 600;}
 
 
 .whereCanShop .col-4 {
@@ -138,7 +143,7 @@ body {background-color: #fff;}
 }
 
 .downloadApp {
-    background-color: #3E3C53;
+    background-color: #3C465A;
     color: #fff;
     padding: 80px 30px;
     text-align: center;
@@ -175,7 +180,7 @@ body {background-color: #fff;}
     max-width: 1440px;
     text-align: left;
     margin: 0 auto;
-    padding-bottom: 80px;
+    padding: 80px 0;
 }
 
 .instagram h1 {
@@ -184,14 +189,14 @@ body {background-color: #fff;}
 .instagramWrapper {
     overflow-x: scroll;
     overflow-y: hidden;
-    height: 157px;
+    height: 261px;
     max-width: 1440px;
     width: calc(100% - 50px);
     margin: 0 auto;
 }
 
 #instagram .ig-tile {
-    height: 124px;
+    height: 240px;
     border-radius: 4px;
     background-color: #FFFFFF;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
@@ -207,6 +212,16 @@ body {background-color: #fff;}
 
     .whereCanShop .col-4 {
         width: 33%;
+    }
+
+    .instagramWrapper {
+        height: 157px;
+    }
+
+
+
+    #instagram .ig-tile {
+        height: 124px;
     }
 }
 

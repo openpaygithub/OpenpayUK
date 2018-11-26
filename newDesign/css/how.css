@@ -20,7 +20,6 @@ body {background-color: #fff;}
 }
 .heroHowContainer .heroInfo {
     position: relative;
-    padding: 0 150px;
     color: #fff;
     padding-top: 70px;
 }
@@ -40,7 +39,7 @@ body {background-color: #fff;}
 .intrigued {
     background-color: #F4F7FF;
     margin-top: 0px;
-    padding-bottom: 80px;
+    padding: 80px 0;
 }
 .intrigued h1 {
     color: #3C465A;
@@ -48,7 +47,7 @@ body {background-color: #fff;}
     font-weight: 600;
     line-height: 44px;
     text-align: center;
-    padding: 50px 25px 20px;
+    padding: 0 25px 20px;
 }
 .intrigued p {
     max-width: 1440px;
@@ -57,7 +56,7 @@ body {background-color: #fff;}
     padding: 0 50px;
 }
 .howItWorks {
-    padding: 50px 150px;
+    padding: 80px 0;
     margin: 0 auto;
 }
 .howItWorks .list-group  {
@@ -133,7 +132,7 @@ body {background-color: #fff;}
 }
 
 .everyStep {
-    padding: 50px 150px;
+    padding: 80px 50px;
     margin: 0 auto;
     background-color: #F4F7FF;
 }
@@ -171,8 +170,7 @@ body {background-color: #fff;}
 .promotions {
     background-color: #fff;
     clear: both;
-    margin-bottom: 80px;
-    padding: 0 150px;
+    padding: 80px 0;
 }
 
 .promotions h1 {

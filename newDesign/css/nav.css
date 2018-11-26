@@ -56,9 +56,12 @@ p,div{
     font-weight: 600;
 }
 
-.topNav a:hover, .topNav a.active {
+.topNav a:hover {
     color: #2864FF;
-    /* border-bottom: 2px solid #2864FF; */
+}
+.topNav a.active {
+    color: #2864FF;
+    border-bottom: 2px solid #2864FF;
 }
 
 .topNavRight {
@@ -83,7 +86,7 @@ p,div{
 
 .footer {
     background-color: #3C465A;
-    padding: 50px 0;
+    padding: 80px 0;
     text-align: center;
     color: #fff;
 }
@@ -169,14 +172,15 @@ p,div{
 .footer .whiteLogo img {
     height: 24px;
     width: 129px;
-    margin: 28px 30px 0  0;
+    margin-top: 28px;
 }
 
 
 
 .bodyContainer {
-    max-width: 1240px;
+    max-width: 1540px;
     margin: 0 auto;
+    padding: 0 50px;
 }
 
 /*top menu hamburger*/
