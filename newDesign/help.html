@@ -73,8 +73,6 @@
             <div class="heroInfo">
                 <h1>We're here for you.</h1>
                 <p>Need help? we've got you. Check out our frequently asked questions or contact us directly below.</p>
-                <!--<div class="btnBox"><a href="tel:1300168359">1300 168 359</a></div>-->
-                <!--<div class="btnBox"><a href="mailto:info@openpay.com.au">info@openpay.com.au</a></div>-->
             </div>
         </div>
     </div>
@@ -82,8 +80,7 @@
     <div class="helpContent greyPane">
         <div class="bodyContainer">
             <h1>Frequently asked question</h1>
-            <p>Browse our categories to help answer the questions you have.<img
-                    src="../../../Users/kfir_m/Downloads/helpHero.jpg"/></p>
+            <p>Browse our categories to help answer the questions you have.</p>
             <a href="#about">ABOUT OPENPAY</a><br>
             <a href="#payment">PAYMENTS</a><br>
             <a href="#returns">RETURNS</a><br>
@@ -196,9 +193,23 @@
     </div>
     <div class="contactUs">
         <div class="bodyContainer">
-            <h1>Frequently asked question</h1>
-            <p>Browse our categories to help answer the questions you have.</p>
-
+            <h1>Ways to contact us</h1>
+            <p>We're available Monday to Friday 9am to 5pm AEST</p>
+            <div class="contactUsColContainer">
+                <div class="col-2">
+                    <img class="iconEmail" src="./images/iconEmail.svg">
+                    <h2>Email Us</h2>
+                    <p>For no-urgent and general help, contact by email. we'll get back to promptly.</p>
+                    <div class="btnBox"><a href="mailto:info@openpay.com.au">info@openpay.com.au</a></div>
+                </div>
+                <div class="col-2">
+                    <img class="iconPhone" src="./images/iconPhone.svg">
+                    <h2>Call Us</h2>
+                    <p>If you need urgent assistance, contact one of our friendly support staff to assist you.</p>
+                    <div class="btnBox"><a href="tel:1300168359">1300 168 359</a></div>
+                </div>
+                <div class="clear"></div>
+            </div>
         </div>
     </div>
 
@@ -252,16 +263,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("myBtn").style.display = "block";
-        } else {
-            document.getElementById("myBtn").style.display = "none";
-        }
-    }
 
     // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
