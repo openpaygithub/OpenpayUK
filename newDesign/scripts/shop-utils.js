@@ -166,6 +166,7 @@ var openpayUtils = (function () {
             if (payload.brands.length === 0) return $('#results').html(createEmptyView());
             if (parseInt(currentParams.PageSize, 10) < payload.total) $('#load-more').show();
             $('#results').html(payload.brands.map(createBrandItem));
+            window.scrollTo(0, 0);
         });
     }
 
