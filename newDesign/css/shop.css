@@ -102,6 +102,14 @@ body {
     text-align: center;
 }
 
+.promotions .col-3:first-child {
+    text-align: left;
+}
+
+.promotions .col-3:last-child {
+    text-align: right;
+}
+
 .promotions .col-3 img {
     width: calc(100% - 30px);
     margin: 0 auto;
