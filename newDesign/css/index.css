@@ -71,7 +71,7 @@ body {background-color: #fff;}
 }
 
 .treeBanners, .fourBanners {
-    max-width: 1440px;
+    max-width: 1240px;
     margin: 0 auto;
 }
 
@@ -86,7 +86,7 @@ body {background-color: #fff;}
     padding: 80px 0;
 }
 .takeControl p {
-    max-width: 1440px;
+    max-width: 1240px;
     margin: 0 auto;
     text-align: center;
     padding: 0 50px;
@@ -177,7 +177,7 @@ body {background-color: #fff;}
 }
 
 .instagram {
-    max-width: 1440px;
+    max-width: 1240px;
     text-align: left;
     margin: 0 auto;
     padding: 80px 0;
@@ -190,7 +190,7 @@ body {background-color: #fff;}
     overflow-x: scroll;
     overflow-y: hidden;
     height: 261px;
-    max-width: 1440px;
+    max-width: 1240px;
     width: calc(100% - 50px);
     margin: 0 auto;
 }
