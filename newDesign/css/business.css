@@ -104,9 +104,9 @@ body {background-color: #fff;}
     background: url(../images/iconLock.svg);
 }
 .whyUseOpenpayIcon.risk {
-    height: 54px;
-    width: 54px;
-    margin: 15.5px 0 24px;
+    height: 75px;
+    width: 75px;
+    /*margin: 15.5px 0 24px;*/
     background: url(../images/iconRisk.svg);
 }
 .whyUseOpenpayIcon.customers {
