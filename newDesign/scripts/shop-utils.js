@@ -1,6 +1,6 @@
 var openpayUtils = (function () {
     var PAGE_SIZE_OFFSET = 21;
-    var API_HOST = 'https://openpaywebapi.dev.myopenpay.com.au/';
+    var API_HOST = 'https://edf6f0c232.execute-api.ap-southeast-2.amazonaws.com/prod/';
     var API_BRANDS = 'Brands';
     var categoryIdMap = {
         209002: 'Health & wellbeing',
