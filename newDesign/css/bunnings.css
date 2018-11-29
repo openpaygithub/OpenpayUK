@@ -214,7 +214,7 @@ ul li input[type=checkbox]:checked ~ i:after {
     padding: 0 25px 20px;
 }
 .intrigued p {
-    max-width: 1440px;
+    max-width: 1240px;
     margin: 0 auto;
     text-align: center;
     padding: 0 50px;
@@ -357,7 +357,7 @@ ul li input[type=checkbox]:checked ~ i:after {
 }
 
 .imageGroupContainer{
-    max-width: 1440px;
+    max-width: 1240px;
 }
 .imageGroup{
     padding-top: 55px;
@@ -414,7 +414,7 @@ ul li input[type=checkbox]:checked ~ i:after {
 
 .howItWorks {
     padding: 80px 0;
-    max-width: 1440px;
+    max-width: 1240px;
 }
 
 .howItWorks h2 {
@@ -558,7 +558,7 @@ ul li input[type=checkbox]:checked ~ i:after {
         padding: 0 50px 50px;
     }
 .treeBanners, .fourBanners {
-    max-width: 1440px;
+    max-width: 1240px;
     margin: 0 auto;
 }
 .col-3 img {
