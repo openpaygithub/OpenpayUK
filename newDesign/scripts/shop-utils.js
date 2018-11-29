@@ -234,7 +234,7 @@ var openpayUtils = (function () {
                     url: API_HOST + API_BRANDS + '?Keyword=' + firstWord(brand.brandName) + '&PageSize=300'
                 }).done(function (payload) {
                     var targetBrand = payload.brands.find(function (item) {
-                        return params.BrandID.replace('=', '') === item.brandID.replace('=', '');
+                        return params.BrandID.replace(/=/g, '') === item.brandID.replace(/=/g, '');
                     });
 
                     $('#category').text(targetBrand.categoryName);
