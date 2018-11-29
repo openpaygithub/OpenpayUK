@@ -190,6 +190,7 @@ body {background-color: #fff;}
 .promotions .col-3 img {
     width: calc(100% - 30px);
     margin: 0 auto;
+    border-radius: 4px;
 }
 
 @media (max-width: 1200px) {
