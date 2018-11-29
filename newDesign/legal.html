@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Openpay - Shop</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84225706-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-84225706-1');
+    </script>
+
+    <!-- 	FullStory Snippet -->
+    <script>
+        window['_fs_debug'] = false;
+        window['_fs_host'] = 'fullstory.com';
+        window['_fs_org'] = 'D6N17';
+        window['_fs_namespace'] = 'FS';
+        (function(m,n,e,t,l,o,g,y){
+            if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+            g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+            o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+            y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+            g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+            g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+            g.consent=function(a){g("consent",!arguments.length||a)};
+            g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+            g.clearUserCookie=function(){};
+        })(window,document,window['_fs_namespace'],'script','user');
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,600" rel="stylesheet">
+    <link rel="stylesheet" href="./css/help.css" />
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+<div class="topNav">
+    <a class="mainLogo" href="index.html"></a>
+    <a href="shop.html">Shop now</a>
+    <a href="how.html">How it works</a>
+    <a href="business.html">I'm a business</a>
+    <a class="active" href="help.html">Help & contact</a>
+    <div class="topNavRight">
+        <a href="https://retailer.myopenpay.com.au/live/Account/Login/">Merchant log in</a>
+    </div>
+</div>
+<!--hamburger menu-->
+<nav role="navigation">
+    <a class="mainLogo" href="index.html"></a>
+    <div id="hamburgerMenu">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul>
+            <a href="shop.html"><li>Shop now</li></a>
+            <a href="how.html"><li>How it works</li></a>
+            <a href="business.html"><li>I'm a business</li></a>
+            <a class="active" href="help.html"><li>Help & contact</li></a>
+            <br>
+            <a href="https://retailer.myopenpay.com.au/live/Account/Login/"><li>Merchant log in</li></a>
+
+        </ul>
+    </div>
+</nav>
+<div class="mainContent">
+    <div class="heroHelpContainer">
+        <div class="greyWithOpacity"></div>
+        <div class="bodyContainer">
+            <div class="heroInfo">
+                <h1>Register</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="helpContent greyPane">
+        <div class="bodyContainer">
+            <h1>Join the movement</h1>
+            <p>Join the growing list of locations that are empowering previously<br>untapped audiences to live their lifestyle</p>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footerMenu">
+				<a href="shop.html" class="footerNav">Shop now</a>
+				<a href="how.html" class="footerNav">how it works</a>
+				<a href="business.html" class="footerNav">I'm a business</a>
+				<a href="help.html" class="footerNav">Help & contact</a>
+				<a href="legal.html" class="footerNav">Legal stuff</a>
+			</div>
+        <div class="socialLinks">
+				<span>
+					<a href="https://m.facebook.com/openpayau" class="footer-icon fb">
+						Facebook
+					</a>
+					<a href="https://twitter.com/openpay_" class="footer-icon twit">
+						Twitter
+					</a>
+				</span>
+            <span>
+					<a href="https://au.linkedin.com/company/open-pay" class="footer-icon linked">
+						LinkedIn
+					</a>
+					<a href="https://www.instagram.com/openpay_" class="footer-icon ig">
+						Instagram
+					</a>
+				</span>
+        </div>
+        <div class="footerAppWrapper">
+            <a href="https://itunes.apple.com/au/app/openpay/id1166424403?mt=8">
+                <img class="apple" src="./images/apple.svg">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.ocean.openpay">
+                <img class="android" src="./images/android.svg">
+            </a>
+        </div>
+        <div class="footerMoreLinksMenu">
+            <a href="privacy.html" class="footerNav">Privacy</a>
+            <a href="terms.html" class="footerNav">Terms & Conditions</a>
+            <a href="userLicence.html" class="footerNav">User Licence</a>
+            <a href="PCI.html" class="footerNav">PCI Data Security</a>
+        </div>
+        <p>© Openpay &nbsp; | &nbsp; Made with <3 in Melbourne, Australia</p>
+        <a class="whiteLogo" href="/">
+            <img src="./images/openpay_logo_white.svg">
+        </a>
+
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+</body>
+</html>
