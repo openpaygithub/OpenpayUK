@@ -127,11 +127,6 @@ var openpayUtils = (function () {
         modifySearchParams({PageSize: PAGE_SIZE_OFFSET});
     }
 
-    function maybeSetDefaultCity() {
-        var currentParams = parseParams(location.search.substring(1));
-        if (!currentParams.SuburbName) modifySearchParams({SuburbName: 'Melbourne'});
-    }
-
     function setNextPageSize() {
         var params = parseParams(location.search.substring(1));
 
@@ -159,8 +154,6 @@ var openpayUtils = (function () {
         } else {
             setDefaultPageSize();
         }
-
-        maybeSetDefaultCity();
 
         var currentParams = parseParams(location.search.substring(1));
 
@@ -241,7 +234,7 @@ var openpayUtils = (function () {
                     url: API_HOST + API_BRANDS + '?Keyword=' + firstWord(brand.brandName) + '&PageSize=300'
                 }).done(function (payload) {
                     var targetBrand = payload.brands.find(function (item) {
-                        return params.BrandID === item.brandID;
+                        return params.BrandID.replace('=', '') === item.brandID.replace('=', '');
                     });
 
                     $('#category').text(targetBrand.categoryName);
