@@ -5,7 +5,7 @@ $(document).on('click','.ig-tile',function(){
 })
 
 $(document).on('click','.facebook',function(){
-    window.open('https://m.facebook.com/openpayau', '_blank')
+    window.open('https://facebook.com/openpayau', '_blank')
 })
 
 //Initialize AJAX call
