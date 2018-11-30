@@ -5,10 +5,16 @@ body {
     clear: both;
 }
 .bodyContainer {
-    padding: 0 50px;
+    padding: 0 32px;
 }
 .topSearch {
     padding: 30px 0;
+}
+.searchBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 520px;
 }
 .searchBar input[type="text"] {
     height: 48px;
@@ -17,10 +23,9 @@ body {
     border: 1px solid #DDDEE2;
     border-radius: 4px;
     background-color: #FFFFFF;
-    float: left;
     margin-right: 10px;
     font-size: 16px;
-    color: #858B98;
+    color: #40354E;
     font-weight: 500;
     line-height: 26px;
     padding: 0 10px;
@@ -60,6 +65,7 @@ body {
     padding: 5px 10px;
     background-color: #F4F7FF;
     cursor: pointer;
+    height: 32px;
 }
 .moreFilters label {
     border: 2px solid #3C465A;
@@ -97,9 +103,18 @@ body {
     text-align: center;
 }
 
+.promotions .col-3:first-child {
+    text-align: left;
+}
+
+.promotions .col-3:last-child {
+    text-align: right;
+}
+
 .promotions .col-3 img {
     width: calc(100% - 30px);
     margin: 0 auto;
+    border-radius: 4px;
 }
 
 .promotions.brands .col-4 {
@@ -247,6 +262,7 @@ body {
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
+    text-align: left;
 }
 
 .featured-brand {
@@ -404,11 +420,17 @@ body {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .moreFilters { margin-top: 0; }
     .inStoreLabel { margin-top: 20px;}
     .onlineLabel {clear: both;margin-top: 20px;}
+    .category { margin-top: 20px; }
+    .city { margin-top: 20px; }
 }
 @media (max-width: 584px) {
     .searchBar input[type="submit"] {
         margin-top: -6px;
+    }
+    .col-4 {
+        width: 100%;
     }
 }

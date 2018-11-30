@@ -51,6 +51,7 @@ body {background-color: #fff;}
 
 .heroBusinessContainer .btnBox a {
     font-weight: 600;
+    padding: 0 8px;
 }
 
 .whyUseOpenpay {
@@ -104,9 +105,9 @@ body {background-color: #fff;}
     background: url(../images/iconLock.svg);
 }
 .whyUseOpenpayIcon.risk {
-    height: 54px;
-    width: 54px;
-    margin: 15.5px 0 24px;
+    height: 75px;
+    width: 75px;
+    /*margin: 15.5px 0 24px;*/
     background: url(../images/iconRisk.svg);
 }
 .whyUseOpenpayIcon.customers {
@@ -277,6 +278,10 @@ body {background-color: #fff;}
     font-size: 14px;
     font-weight: 600;
     letter-spacing: -0.44px;
+}
+
+.readyRegister .btnBox a {
+    padding: 0 8px;
 }
 
 @media (max-width: 1280px) {

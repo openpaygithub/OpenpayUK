@@ -47,6 +47,8 @@ body {background-color: #fff;}
 
 .heroHomeContainer .btnBox a {
     font-weight: 600;
+    padding: 0 8px;
+    text-transform: capitalize;
 }
 
 .promotions {
@@ -71,13 +73,14 @@ body {background-color: #fff;}
 }
 
 .treeBanners, .fourBanners {
-    max-width: 1440px;
+    max-width: 1240px;
     margin: 0 auto;
 }
 
 .promotions .col-3 img {
     width: calc(100% - 30px);
     margin: 0 auto;
+    border-radius: 4px;
 }
 
 .takeControl, .whereCanShop {
@@ -86,7 +89,7 @@ body {background-color: #fff;}
     padding: 80px 0;
 }
 .takeControl p {
-    max-width: 1440px;
+    max-width: 1240px;
     margin: 0 auto;
     text-align: center;
     padding: 0 50px;
@@ -114,8 +117,24 @@ body {background-color: #fff;}
     margin: 0 auto;
 }
 
-.howItWorks .learnMoreWrapper {text-align: center;padding-top: 60px;padding-bottom: 7px;}
-.howItWorks .button {height: 40px;width: 288px;border: 2px solid #40354E;border-radius: 4px;padding: 5px 95px;font-weight: 600;}
+.howItWorks .col-3 .options p a {
+    text-decoration: underline;
+}
+
+.howItWorks .learnMoreWrapper {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 7px;
+}
+
+.howItWorks .button {
+    height: 40px;
+    width: 288px;
+    border: 2px solid #40354E;
+    border-radius: 4px;
+    padding: 8px 95px;
+    font-weight: 600;
+}
 
 
 .whereCanShop .col-4 {
@@ -140,6 +159,7 @@ body {background-color: #fff;}
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
+    text-align: left;
 }
 
 .downloadApp {
@@ -177,7 +197,7 @@ body {background-color: #fff;}
 }
 
 .instagram {
-    max-width: 1440px;
+    max-width: 1240px;
     text-align: left;
     margin: 0 auto;
     padding: 80px 0;
@@ -190,7 +210,7 @@ body {background-color: #fff;}
     overflow-x: scroll;
     overflow-y: hidden;
     height: 261px;
-    max-width: 1440px;
+    max-width: 1240px;
     width: calc(100% - 50px);
     margin: 0 auto;
 }

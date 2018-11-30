@@ -1,6 +1,6 @@
 var openpayUtils = (function () {
     var PAGE_SIZE_OFFSET = 21;
-    var API_HOST = 'https://openpaywebapi.dev.myopenpay.com.au/';
+    var API_HOST = 'https://edf6f0c232.execute-api.ap-southeast-2.amazonaws.com/prod/';
     var API_BRANDS = 'Brands';
     var categoryIdMap = {
         209002: 'Health & wellbeing',
@@ -67,7 +67,7 @@ var openpayUtils = (function () {
         var url = path + '/shop.brand.html?BrandID=' + brand.brandID;
         var item = $('<a class="brand" href="' + url + '"></a>');
         var title = $('<h2>' + brand.brandName +'</h2>');
-        var retailerAvailability = $('<p>'+ availabilityEnum[brand.retailerAvailability] + ' · ' + 'Home & Garden' +'</p>');
+        var retailerAvailability = $('<p>'+ availabilityEnum[brand.retailerAvailability] + ' · ' + brand.categoryName + ' · ' + brand.subCategoryName +'</p>');
 
         item.append(title, retailerAvailability);
 
@@ -92,13 +92,21 @@ var openpayUtils = (function () {
             .join(', ');
     }
 
+    function getDistance(retailer) {
+        if (retailer.distance >= 1000) {
+            return (retailer.distance / 1000).toFixed(1).toString() + 'km';
+        }
+
+        return retailer.distance.toString() + 'm';
+    }
+
     function createRetailerItem(retailer) {
         var params = parseParams(location.search.substring(1));
         var path = window.location.protocol + "//" + window.location.host + window.location.pathname.split('/').slice(0, -1).join('/');
         var url = [path, '/shop.retailer.html?BrandID=', params.BrandID, '&RetailerID=', retailer.retailerLocationID].join('');
         var item = $('<a class="brand" href="' + url + '"></a>');
         var title = $('<h2>' + retailer.brandName +'</h2>');
-        var retailerAvailability = $('<p>'+ getAddress(retailer) +'</p>');
+        var retailerAvailability = $('<p>' + getDistance(retailer) + ' · ' + getAddress(retailer) +'</p>');
         var direction = $('<div class="retailer-direction">Directions</div>');
 
         item.append(title, retailerAvailability, direction);
@@ -117,11 +125,6 @@ var openpayUtils = (function () {
 
     function setDefaultPageSize() {
         modifySearchParams({PageSize: PAGE_SIZE_OFFSET});
-    }
-
-    function maybeSetDefaultCity() {
-        var currentParams = parseParams(location.search.substring(1));
-        if (!currentParams.SuburbName) modifySearchParams({SuburbName: 'Melbourne'});
     }
 
     function setNextPageSize() {
@@ -152,8 +155,6 @@ var openpayUtils = (function () {
             setDefaultPageSize();
         }
 
-        maybeSetDefaultCity();
-
         var currentParams = parseParams(location.search.substring(1));
 
         $('#search-results-heading').text(getSearchResultsHeading(currentParams.CategoryID));
@@ -166,6 +167,7 @@ var openpayUtils = (function () {
             if (payload.brands.length === 0) return $('#results').html(createEmptyView());
             if (parseInt(currentParams.PageSize, 10) < payload.total) $('#load-more').show();
             $('#results').html(payload.brands.map(createBrandItem));
+            window.scrollTo(0, 0);
         });
     }
 
@@ -199,19 +201,51 @@ var openpayUtils = (function () {
         return [base, '?q=', getFullAdress(location), '&key=', key].join('');
     }
 
-    function getDistance(origin, location) {
-        var key = 'AIzaSyDJTv_F4W9RS2hquqfKskuQWRivKhsnwes';
-        var base = 'https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&mode=driving';
-        var coords = [origin.coords.latitude, origin.coords.longitude].join(',');
-
-        return [base, '&key=', key, '&origins=', coords, '&destinations=', getFullAdress(location)].join('');
-    }
-
     function getDirectionUrl(origin, location) {
+        if (!origin.coords) return '';
         var base = 'https://www.google.com/maps/dir/?api=1';
         var coords = [origin.coords.latitude, origin.coords.longitude].join(',');
 
         return [base, '&origin=', coords, '&destination=', getFullAdress(location)].join('');
+    }
+
+    function firstWord(test) {
+        return test.replace(/ .*/,'');
+    }
+
+    function fetchBrand(cb, params) {
+        return function (pos) {
+            var hasLocation = !!pos.coords;
+            var maybeLocation = hasLocation ? '?location=' + pos.coords.latitude + ',' + pos.coords.longitude : '';
+
+            $.ajax({
+                url: API_HOST + API_BRANDS + '/' + params.BrandID + maybeLocation
+            }).done(function (brand) {
+                $('#brand-name').text(brand.brandName);
+                $('#available-count').text(brand.retailerLocations.length);
+                $('#locations-count').text(brand.retailerLocations.length);
+                $('#availability').text(availabilityEnum[brand.retailerAvailability]);
+                $('#loader').hide();
+                $('#url').attr('href', brand.url);
+                if (!brand.url) $('#url').hide();
+                $('#featured-brand').show();
+                $('#search-results-heading').show();
+                $.ajax({
+                    url: API_HOST + API_BRANDS + '?Keyword=' + firstWord(brand.brandName) + '&PageSize=300'
+                }).done(function (payload) {
+                    var targetBrand = payload.brands.find(function (item) {
+                        return params.BrandID.replace(/=/g, '') === item.brandID.replace(/=/g, '');
+                    });
+
+                    $('#category').text(targetBrand.categoryName);
+                    $('#subcategory').text(targetBrand.subCategoryName);
+                });
+
+                if (typeof cb === 'function') return cb(brand, pos);
+                if (brand.retailerLocations.length === 0) return $('#results').html(createEmptyView());
+                $('#results').html(brand.retailerLocations.map(createRetailerItem));
+            });
+        }
     }
 
     function fetchCurrentBrand(cb) {
@@ -224,22 +258,7 @@ var openpayUtils = (function () {
         $('#featured-brand').hide();
         $('#search-results-heading').hide();
 
-        $.ajax({
-            url: API_HOST + API_BRANDS + '/' + params.BrandID
-        }).done(function (brand) {
-            $('#brand-name').text(brand.brandName);
-            $('#available-count').text(brand.retailerLocations.length);
-            $('#locations-count').text(brand.retailerLocations.length);
-            $('#availability').text(availabilityEnum[brand.retailerAvailability]);
-            $('#loader').hide();
-            $('#url').attr('href', brand.url);
-            if (!brand.url) $('#url').hide();
-            $('#featured-brand').show();
-            $('#search-results-heading').show();
-            if (typeof cb === 'function') return cb(brand);
-            if (brand.retailerLocations.length === 0) return $('#results').html(createEmptyView());
-            $('#results').html(brand.retailerLocations.map(createRetailerItem));
-        });
+        navigator.geolocation.getCurrentPosition(fetchBrand(cb, params), fetchBrand(cb, params));
     }
 
     function fetchCurrentRetailer() {
@@ -249,7 +268,7 @@ var openpayUtils = (function () {
             return console.error('No retailer is specified');
         }
 
-        fetchCurrentBrand(function (brand) {
+        fetchCurrentBrand(function (brand, pos) {
             var currentRetailer = brand.retailerLocations.find(function(location) {
                 return location.retailerLocationID == params.RetailerID;
             });
@@ -264,9 +283,7 @@ var openpayUtils = (function () {
             $('#brand-address').text(getAddress(currentRetailer));
             $('#brand-phone').text(currentRetailer.phoneNumber);
             $('#brand-mail').text(currentRetailer.email);
-            navigator.geolocation.getCurrentPosition(function(pos) {
-                $('#direction').attr('href', getDirectionUrl(pos, currentRetailer));
-            });
+            $('#direction').attr('href', getDirectionUrl(pos, currentRetailer));
             if (!currentRetailer.phoneNumber) $('#phone').hide();
 
             if (restRetailers.length === 0) {
