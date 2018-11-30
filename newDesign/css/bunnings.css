@@ -214,7 +214,7 @@ ul li input[type=checkbox]:checked ~ i:after {
     padding: 0 25px 20px;
 }
 .intrigued p {
-    max-width: 1240px;
+    max-width: 1440px;
     margin: 0 auto;
     text-align: center;
     padding: 0 50px;
@@ -357,7 +357,7 @@ ul li input[type=checkbox]:checked ~ i:after {
 }
 
 .imageGroupContainer{
-    max-width: 1240px;
+    max-width: 1440px;
 }
 .imageGroup{
     padding-top: 55px;
@@ -414,7 +414,7 @@ ul li input[type=checkbox]:checked ~ i:after {
 
 .howItWorks {
     padding: 80px 0;
-    max-width: 1240px;
+    max-width: 1440px;
 }
 
 .howItWorks h2 {
@@ -536,6 +536,39 @@ ul li input[type=checkbox]:checked ~ i:after {
 
 
 
+@media (max-width: 375px){
+.intrigued p {
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+}
+ .bodyContainer{
+        padding: 19px !important;
+    }
+.kitchens{
+  padding: 80px 19px !important;
+}
+.downloadApp{
+  padding: 80px 19px !important;
+}
+.howItWorks .col-3 {
+      padding: 0 20px 50px !important;
+}
+.howItWorks, .promotions {
+      padding: 0 !important;
+}
+.howItWorks h1 {
+  padding-top: 80px !important;
+}
+.howItWorks .list-group {
+  padding:0 !important;
+}
+
+}
+
+
+
 
 
 
@@ -558,7 +591,7 @@ ul li input[type=checkbox]:checked ~ i:after {
         padding: 0 50px 50px;
     }
 .treeBanners, .fourBanners {
-    max-width: 1240px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 .col-3 img {
