@@ -65,6 +65,7 @@ body {
     padding: 5px 10px;
     background-color: #F4F7FF;
     cursor: pointer;
+    height: 32px;
 }
 .moreFilters label {
     border: 2px solid #3C465A;
