@@ -7,7 +7,7 @@ body {
 #msform {
     text-align: center;
     position: relative;
-    height: 935px;
+    height: 975px;
 }
 #msform fieldset {
     background: white;
@@ -59,7 +59,7 @@ body {
     border-radius: 1px;
     cursor: pointer;
     padding: 10px 5px;
-    margin: 50px 5px 10px;
+    margin: 20px 5px 10px;
 }
 #msform .action-button:hover, #msform .action-button:focus {
     box-shadow: 0 0 0 2px white, 0 0 0 3px #3C465A;
@@ -130,5 +130,10 @@ body {
     color: white;
 }
 
+.requiredNote {
+    color: #e80000 !important;
+    margin: 15px 0;
+    display: none;
+}
 .require.invalid {
     border-color: #e80000 !important;}

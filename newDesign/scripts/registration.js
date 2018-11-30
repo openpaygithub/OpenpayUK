@@ -13,6 +13,11 @@ var registration = {
                 $(require[i]).removeClass('invalid');
             }
         }
+        if(invalidCount === 0) {
+            $('.requiredNote').hide();
+        } else {
+            $('.requiredNote').show();
+        }
 
         return (invalidCount === 0);
     }
