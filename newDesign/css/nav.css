@@ -116,10 +116,14 @@ p,div{
 }
 
 .footer .socialLinks {
-
     text-align: center;
-
     padding: 40px 0;
+}
+.footer .socialLinks  img {
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    left: 10px;
 }
 
 .footer .socialLinks a {
@@ -129,24 +133,12 @@ p,div{
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    padding: 6px 41px 6px 43px;
+    padding: 6px 40px 6px 42px;
+    position: relative;
 }
 
 .footer .socialLinks a.fb {
     margin-left: 31px;
-}
-
-.fb {
-    background: url(../images/social/Fb.svg);
-}
-.twit {
-    background: url(../images/social/Twitter.svg);
-}
-.linked {
-    background: url(../images/social/in.svg);
-}
-.ig {
-    background: url(../images/social/Insta.svg);
 }
 
 .footerAppWrapper {
