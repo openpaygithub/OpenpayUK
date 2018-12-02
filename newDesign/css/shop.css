@@ -247,9 +247,41 @@ body {
     border-radius: 4px;
     background-color: rgba(255,255,255,0);
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
-    padding: 20px;
+    padding: 10px;
     margin: 0 30px 30px 0;
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
 }
+
+.marketToProvide.cat-1{
+    background-image: url(../images/categoryPics/Health.jpg);
+}
+.marketToProvide.cat-2{
+    background-image: url(../images/categoryPics/Fashion.jpg);
+}
+.marketToProvide.cat-3{
+    /*background-image: url(../images/categoryPics/Health.jpg);*/
+}
+.marketToProvide.cat-4{
+    background-image: url(../images/categoryPics/Beauty.jpg);
+}
+.marketToProvide.cat-5{
+    background-image: url(../images/categoryPics/Trades-and-Services.jpg);
+}
+.marketToProvide.cat-6{
+    background-image: url(../images/categoryPics/Auto.jpg);
+}
+.marketToProvide.cat-7{
+    background-image: url(../images/categoryPics/Home-and-Garden.jpg);
+}
+.marketToProvide.cat-8{
+    background-image: url(../images/categoryPics/Dental.jpg);
+}
+.marketToProvide.cat-9{
+    background-image: url(../images/categoryPics/Sports-Outdoors.jpg);
+}
+
 
 .byCategory .marketToProvide:hover,
 .brand:hover {
@@ -263,6 +295,9 @@ body {
     font-weight: 600;
     line-height: 30px;
     text-align: left;
+    color: #fff;
+    -webkit-text-stroke: 0.2px #fff;
+    color: #3C465A;
 }
 
 .featured-brand {
