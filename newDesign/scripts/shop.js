@@ -23,6 +23,7 @@ $('#categories-grid').on('click', '.marketToProvide', function (e) {
     if (CategoryID) {
         openpayUtils.modifySearchParams({CategoryID: CategoryID});
         openpayUtils.searchBrands();
+        $("#category").val(CategoryID);
     }
 });
 
