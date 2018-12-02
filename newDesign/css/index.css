@@ -144,16 +144,19 @@ body {background-color: #fff;}
     text-align: center;
 }
 .whereCanShop .marketToProvide {
-    height: 120px;
     width: calc(100% - 30px);
-    border: 2px solid #4A4A4A;
-    border-radius: 4px;
     background-color: rgba(255,255,255,0);
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
-    padding: 20px;
     margin: 0 auto 30px;
+    max-height: 180px;
+    overflow: hidden;
+    border-radius: 10px;
 }
-
+.whereCanShop .marketToProvide img {
+    width: 100%;
+}
+.whereCanShop .marketToProvide img.small-img {
+    width: 120%;
+}
 .whereCanShop .marketToProvide h3 {
     color: #3C465A;
     font-size: 20px;
