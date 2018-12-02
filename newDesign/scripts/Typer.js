@@ -55,3 +55,11 @@ function runTyper(){
     document.body.appendChild(css);
 };
 runTyper();
+
+
+
+
+$('.marketToProvide').click(function () {
+    var CategoryID = $(this).data('value');
+    window.location = 'shop.html?CategoryID='+CategoryID+'&PageSize=21';
+});
