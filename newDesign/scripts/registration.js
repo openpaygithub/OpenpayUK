@@ -110,8 +110,7 @@ $(function() {
     });
 
     $(".submit").click(function(){
-        if(!registration.isValid()) return false;
-        return false;
+        return registration.isValid();
     })
 
 });
