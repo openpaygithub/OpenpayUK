@@ -457,7 +457,7 @@ body {
 
     .moreFilters { margin-top: 0; }
     .inStoreLabel { margin-top: 20px;}
-    .onlineLabel {clear: both;margin-top: 20px;}
+    .onlineLabel {margin-top: 20px;}
     .category { margin-top: 20px; }
     .city { margin-top: 20px; }
 }
