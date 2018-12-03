@@ -156,6 +156,7 @@ body {background-color: #fff;}
     font-weight: 600;
 }
 
+
 @media (max-width: 980px) {
     .heroHelpContainer .heroInfo {
         padding: 70px 20px 0;
