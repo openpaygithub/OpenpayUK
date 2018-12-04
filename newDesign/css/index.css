@@ -239,6 +239,7 @@ body {background-color: #fff;}
     background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center center;
+    transition: box-shadow .2s;
 }
 
 .marketToProvide.cat-1{
