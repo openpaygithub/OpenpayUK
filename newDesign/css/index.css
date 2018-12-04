@@ -158,13 +158,13 @@ body {background-color: #fff;}
     width: 120%;
 }
 .whereCanShop .marketToProvide h3 {
-    color: #3C465A;
+    color: white;
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
     text-align: left;
     -webkit-text-stroke: 0.2px #fff;
-    color: #3C465A;
+    align-self: flex-end;
 }
 
 .downloadApp {
@@ -229,8 +229,8 @@ body {background-color: #fff;}
     display: inline-block;
 }
 .byCategory .marketToProvide {
+    display: flex;
     height: 120px;
-    border: 2px solid #4A4A4A;
     border-radius: 4px;
     background-color: rgba(255,255,255,0);
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
