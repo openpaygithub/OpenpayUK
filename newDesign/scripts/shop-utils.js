@@ -216,10 +216,10 @@ var openpayUtils = (function () {
     function fetchBrand(cb, params) {
         return function (pos) {
             var hasLocation = !!pos.coords;
-            var maybeLocation = hasLocation ? '?location=' + pos.coords.latitude + ',' + pos.coords.longitude : '';
+            var maybeLocation = hasLocation ? '&location=' + pos.coords.latitude + ',' + pos.coords.longitude : '';
 
             $.ajax({
-                url: API_HOST + API_BRANDS + '/' + params.BrandID + maybeLocation
+                url: API_HOST + API_BRANDS + '/' + params.BrandID + '?pageSize=1000' + maybeLocation
             }).done(function (brand) {
                 $('#brand-name').text(brand.brandName);
                 $('#available-count').text(brand.retailerLocations.length);
