@@ -219,7 +219,7 @@ var openpayUtils = (function () {
             var maybeLocation = hasLocation ? '&location=' + pos.coords.latitude + ',' + pos.coords.longitude : '';
 
             $.ajax({
-                url: API_HOST + API_BRANDS + '/' + params.BrandID + '?pageSize=1000' + maybeLocation
+                url: API_HOST + API_BRANDS + '/' + params.BrandID + '?pageSize=100' + maybeLocation
             }).done(function (brand) {
                 $('#brand-name').text(brand.brandName);
                 $('#available-count').text(brand.retailerLocations.length);
