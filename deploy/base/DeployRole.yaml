@@ -1,0 +1,40 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "IAM Role for build/deployment"
+Outputs:
+  RoleArn:
+    Value: !Ref "DeployRole"
+Parameters:
+  S3BucketName:
+    Description: "Name of S3 Bucket to allow access to"
+    Type: "String"
+Resources:
+  DeployRole:
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+          - Action:
+              - sts:AssumeRole
+            Effect: "Allow"
+            Principal:
+              AWS:
+              - "arn:aws:iam::687399096480:user/DeployUser"
+        Version: "2012-10-17"
+      Path: "/"
+      Policies:
+        - PolicyName: "OpenpayWeb-DeployRolePolicy"
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Action:
+                  - s3:ListBucket
+                Effect: "Allow"
+                Resource:
+                  - !Sub "arn:aws:s3:::${S3BucketName}"
+              - Action:
+                  - s3:GetObject
+                  - s3:PutObject
+                  - s3:PutObjectAcl
+                Effect: "Allow"
+                Resource:
+                  - !Sub "arn:aws:s3:::${S3BucketName}/*"
+    Type: "AWS::IAM::Role"
