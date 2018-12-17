@@ -10,11 +10,12 @@ elseif ($env -eq "ProdAU")
 }
 else
 {
-    Write-Host "Invalid account"
+    Write-Host "Invalid env"
     Exit 1
 }
 
 $cwd = Get-Location
+
 Set-Location $dir
 $files = Get-ChildItem -File -Filter "*.html" -Recurse
 
@@ -24,14 +25,11 @@ ForEach ($f in $files)
 {
     $newfile = $f.FullName -replace ".html", ""
     cp $f.FullName $newfile
-
-
     $relativePath = Get-Item $newfile | Resolve-Path -Relative 
     $s3Key = $relativePath -replace "\.\\", "" -replace "\\", "/"
-    
+
     aws s3 cp --content-type "text/html" --acl public-read $newfile $hostingBucket/$s3Key
 }
-
 
 cd $cwd
 
