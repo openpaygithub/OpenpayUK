@@ -2,19 +2,12 @@ Description: >
 
     This template deploys base resources for OpenpayWeb
 
-Parameters:
-  S3BucketName:
-    Description: "Name of S3 Bucket to allow access to"
-    Type: "String"
-
 Resources:
 
     DeployRole:
         Type: AWS::CloudFormation::Stack
         Properties:
             TemplateURL: ./DeployRole.yaml
-            Parameters:
-                S3BucketName: !Ref S3BucketName
                 
     
 Outputs:
