@@ -3,10 +3,6 @@ Description: "IAM Role for build/deployment"
 Outputs:
   RoleArn:
     Value: !Ref "DeployRole"
-Parameters:
-  S3BucketName:
-    Description: "Name of S3 Bucket to allow access to"
-    Type: "String"
 Resources:
   DeployRole:
     Properties:
