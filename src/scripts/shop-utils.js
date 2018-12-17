@@ -64,7 +64,7 @@ var openpayUtils = (function () {
 
     function createBrandItem(brand) {
         var path = window.location.protocol + "//" + window.location.host + window.location.pathname.split('/').slice(0, -1).join('/');
-        var url = path + '/shop.brand.html?BrandID=' + brand.brandID;
+        var url = path + '/shop-brand?BrandID=' + brand.brandID;
         var item = $('<a class="brand" href="' + url + '"></a>');
         var title = $('<h2>' + brand.brandName +'</h2>');
         var retailerAvailability = $('<p>'+ availabilityEnum[brand.retailerAvailability] + ' · ' + brand.categoryName + ' · ' + brand.subCategoryName +'</p>');
@@ -103,7 +103,7 @@ var openpayUtils = (function () {
     function createRetailerItem(retailer) {
         var params = parseParams(location.search.substring(1));
         var path = window.location.protocol + "//" + window.location.host + window.location.pathname.split('/').slice(0, -1).join('/');
-        var url = [path, '/shop.retailer.html?BrandID=', params.BrandID, '&RetailerID=', retailer.retailerLocationID].join('');
+        var url = [path, '/shop-retailer?BrandID=', params.BrandID, '&RetailerID=', retailer.retailerLocationID].join('');
         var item = $('<a class="brand" href="' + url + '"></a>');
         var title = $('<h2>' + retailer.brandName +'</h2>');
         var retailerAvailability = $('<p>' + getDistance(retailer) + ' · ' + getAddress(retailer) +'</p>');
