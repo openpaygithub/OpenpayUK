@@ -17,27 +17,20 @@ else
 $cwd = Get-Location
 
 Set-Location $dir
-$files = Get-ChildItem -File -Exclude "index.html" -Recurse
+$files = Get-ChildItem -File -Filter "*.html" -Recurse
 
 aws s3 sync --acl public-read $dir $hostingBucket
 
 ForEach ($f in $files)
 {
-    $extn = [IO.Path]::GetExtension($f)
-
-    if ($extn -ne ".html" -And $extn -ne "")
-    {
-        #Write-Host "Skipping" $f
-        continue;
-    }
-    
-    # $newfile = $f.FullName -replace ".html", ""
-    # cp $f.FullName $newfile
-    $relativePath = Get-Item $f | Resolve-Path -Relative 
+    $newfile = $f.FullName -replace ".html", ""
+    cp $f.FullName $newfile
+    $relativePath = Get-Item $newfile | Resolve-Path -Relative 
     $s3Key = $relativePath -replace "\.\\", "" -replace "\\", "/"
-    # Write-Host "Modifying" $f "=>" $s3Key
-    aws s3 cp --content-type "text/html" --acl public-read $f.FullName $hostingBucket/$s3Key
+
+    aws s3 cp --content-type "text/html" --acl public-read $newfile $hostingBucket/$s3Key
 }
 
 cd $cwd
+
 
