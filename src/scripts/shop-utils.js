@@ -87,7 +87,7 @@ var openpayUtils = (function () {
     }
 
     function getAddress(retailer) {
-        return [retailer.locationName, retailer.storeAddress1, retailer.storeAddress2, retailer.storePostCode]
+        return [retailer.storeAddress1, retailer.storeAddress2, retailer.locationName, retailer.storePostCode]
             .filter(notEmpty)
             .join(', ');
     }
