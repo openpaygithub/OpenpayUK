@@ -51,6 +51,10 @@ body {background-color: #fff;}
     text-transform: capitalize;
 }
 
+.heroHomeContainer #rotating-words {
+    cursor: default;
+}
+
 .promotions {
     background-color: #fff;
     clear: both;
