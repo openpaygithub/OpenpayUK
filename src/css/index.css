@@ -151,6 +151,17 @@ body {background-color: #fff;}
     overflow: hidden;
     border-radius: 10px;
 }
+
+.whereCanShop .marketToProvide:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right,#3C465A,#3C465A);
+    opacity: .3; 
+}
 .whereCanShop .marketToProvide img {
     width: 100%;
 }
@@ -163,8 +174,8 @@ body {background-color: #fff;}
     font-weight: 600;
     line-height: 30px;
     text-align: left;
-    -webkit-text-stroke: 0.2px #fff;
     align-self: flex-end;
+    z-index: 1;
 }
 
 .downloadApp {
@@ -175,7 +186,6 @@ body {background-color: #fff;}
 }
 
 .downloadApp h1 {
-    /*color: #FFFFFF;*/
     font-size: 32px;
     font-weight: 600;
     line-height: 44px;
@@ -229,6 +239,8 @@ body {background-color: #fff;}
     display: inline-block;
 }
 .byCategory .marketToProvide {
+    position: relative;
+    background-size: cover;
     display: flex;
     height: 120px;
     border-radius: 4px;
@@ -243,31 +255,31 @@ body {background-color: #fff;}
 }
 
 .marketToProvide.cat-1{
-    background-image: url(../images/categoryPics/Health.jpg);
+    background: url(../images/categoryPics/Health.jpg) center center no-repeat;
 }
 .marketToProvide.cat-2{
-    background-image: url(../images/categoryPics/Fashion.jpg);
+    background: url(../images/categoryPics/Fashion.jpg) center center no-repeat;
 }
 .marketToProvide.cat-3{
     /*background-image: url(../images/categoryPics/Health.jpg);*/
 }
 .marketToProvide.cat-4{
-    background-image: url(../images/categoryPics/Beauty.jpg);
+    background: url(../images/categoryPics/Beauty.jpg) center center no-repeat;
 }
 .marketToProvide.cat-5{
-    background-image: url(../images/categoryPics/Trades-and-Services.jpg);
+    background: url(../images/categoryPics/Trades-and-Services.jpg) center center no-repeat;
 }
 .marketToProvide.cat-6{
-    background-image: url(../images/categoryPics/Auto.jpg);
+    background: url(../images/categoryPics/Auto.jpg) center center no-repeat;
 }
 .marketToProvide.cat-7{
-    background-image: url(../images/categoryPics/Home-and-Garden.jpg);
+    background: url(../images/categoryPics/Home-and-Garden.jpg) center center no-repeat;
 }
 .marketToProvide.cat-8{
-    background-image: url(../images/categoryPics/Dental.jpg);
+    background: url(../images/categoryPics/Dental.jpg) center center no-repeat;
 }
 .marketToProvide.cat-9{
-    background-image: url(../images/categoryPics/Sports-Outdoors.jpg);
+    background: url(../images/categoryPics/Sports-Outdoors.jpg) center center no-repeat;
 }
 
 
