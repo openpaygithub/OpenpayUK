@@ -356,9 +356,14 @@ body {background-color: #fff;}
         height: 40px;
     }
 }
-    @media (max-width: 380px) {
+    @media (max-width: 375px) {
+    .heroBusinessContainer{
+        height:500px;
+    }
+}
+ @media (max-width: 320px) {
     .heroBusinessContainer{
         height:600px;
     }
-    }
+}
 }
