@@ -41,7 +41,7 @@ body {background-color: #fff;}
     background-color: #2864FF;
     color: #fff;
     text-align: center;
-    display: inline-block;
+    display: none;
     border-radius: 8px;
     padding: 10px 10px;
     margin-top: 20px;
@@ -224,6 +224,9 @@ body {background-color: #fff;}
     .everyStep .col-2 {
         width: 100%;
         padding: 0 0 50px;
+    }
+    .btnBox{
+        display: inline-block;
     }
 }
 
