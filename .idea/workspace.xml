@@ -17,16 +17,25 @@
         <entry file="file://$PROJECT_DIR$/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="531">
-              <caret line="143" column="64" selection-start-line="143" selection-start-column="64" selection-end-line="143" selection-end-column="64" />
+              <caret line="142" column="64" selection-start-line="142" selection-start-column="64" selection-end-line="142" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/how.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="202" column="55" lean-forward="true" selection-start-line="202" selection-start-column="55" selection-end-line="202" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/how.html">
+        <entry file="file://$PROJECT_DIR$/src/help.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="188" column="40" selection-start-line="188" selection-start-column="24" selection-end-line="188" selection-end-column="40" />
+            <state relative-caret-position="204">
+              <caret line="76" column="10" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -47,6 +56,9 @@
       <find>promotions</find>
       <find>Coming soon</find>
       <find>Where can I shop?</find>
+      <find>Shop now</find>
+      <find>Merchant log in</find>
+      <find>footerAppWrapper</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -56,23 +68,23 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/css/shop.css" />
+        <option value="$PROJECT_DIR$/src/404.html" />
+        <option value="$PROJECT_DIR$/src/au-terms-bunningsgiveaway.html" />
+        <option value="$PROJECT_DIR$/src/register.html" />
+        <option value="$PROJECT_DIR$/src/australian-terms-conditions.html" />
+        <option value="$PROJECT_DIR$/src/bunnings.html" />
+        <option value="$PROJECT_DIR$/src/nz-terms.html" />
         <option value="$PROJECT_DIR$/src/how.html" />
         <option value="$PROJECT_DIR$/src/au-privacy.html" />
         <option value="$PROJECT_DIR$/src/au-terms-giftcards.html" />
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/legal.html" />
-        <option value="$PROJECT_DIR$/src/au-pci-security.html" />
-        <option value="$PROJECT_DIR$/src/404.html" />
-        <option value="$PROJECT_DIR$/src/business.html" />
-        <option value="$PROJECT_DIR$/src/help.html" />
-        <option value="$PROJECT_DIR$/src/australian-terms-conditions.html" />
-        <option value="$PROJECT_DIR$/src/au-terms-bunningsgiveaway.html" />
-        <option value="$PROJECT_DIR$/src/bunnings.html" />
-        <option value="$PROJECT_DIR$/src/register.html" />
         <option value="$PROJECT_DIR$/src/au-terms-promotions.html" />
-        <option value="$PROJECT_DIR$/src/nz-terms.html" />
+        <option value="$PROJECT_DIR$/src/au-pci-security.html" />
+        <option value="$PROJECT_DIR$/src/business.html" />
         <option value="$PROJECT_DIR$/src/au-user-licence.html" />
         <option value="$PROJECT_DIR$/src/au-terms-competition.html" />
+        <option value="$PROJECT_DIR$/src/help.html" />
       </list>
     </option>
   </component>
@@ -132,22 +144,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551643178480</updated>
-      <workItem from="1551643179734" duration="483000" />
+      <workItem from="1551643179734" duration="943000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="483000" />
+    <option name="totallyTimeSpent" value="943000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
@@ -175,14 +188,21 @@
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="531">
-          <caret line="143" column="64" selection-start-line="143" selection-start-column="64" selection-end-line="143" selection-end-column="64" />
+          <caret line="142" column="64" selection-start-line="142" selection-start-column="64" selection-end-line="142" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/how.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="188" column="40" selection-start-line="188" selection-start-column="24" selection-end-line="188" selection-end-column="40" />
+        <state relative-caret-position="257">
+          <caret line="202" column="55" lean-forward="true" selection-start-line="202" selection-start-column="55" selection-end-line="202" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/help.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="76" column="10" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
         </state>
       </provider>
     </entry>
