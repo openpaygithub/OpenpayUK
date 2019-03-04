@@ -2,11 +2,11 @@ param([string] $env, [string] $dir)
 
 if ($env -eq "Dev")
 {
-    $hostingBucket = "s3://www.dev.openpay.com.au"
+    $hostingBucket = "s3://www.dev.myopenpay.co.uk"
 }
-elseif ($env -eq "ProdAU")
+elseif ($env -eq "ProdUK")
 {
-    $hostingBucket = "s3://www.openpay.com.au"
+    $hostingBucket = "s3://www.myopenpay.co.uk"
 }
 else
 {

@@ -1,18 +1,6 @@
-param([string] $account)
+param()
 
-if ($account -eq "NonProd")
-{
-    $cfBucket = "openpay-nonprod-cloudformation-ap-southeast-2"
-}
-elseif ($account -eq "Prod")
-{
-    $cfBucket = "openpay-prod-cloudformation-ap-southeast-2"
-}
-else
-{
-    Write-Host "Invalid account"
-    Exit 1
-}
+$artifactsBucket = $(aws cloudformation list-exports --query "Exports[?Name=='ArtifactsBucket'].Value" --no-paginate --output text)
 
 $cwd = Get-Location
 
@@ -20,14 +8,14 @@ cd $PSScriptRoot
 
 aws cloudformation package `
     --template-file "$PSScriptRoot/base/master.yaml" `
-    --s3-bucket $cfBucket `
-    --s3-prefix OpenpayWeb `
+    --s3-bucket $artifactsBucket `
+    --s3-prefix OpenpayWebUK `
     --output-template-file "$PSScriptRoot/base/packaged-master.yaml"
 
 aws cloudformation deploy `
     --template-file "$PSScriptRoot/base/packaged-master.yaml" `
-    --stack-name OpenpayWeb-Base `
+    --stack-name OpenpayWebUK-Base `
     --capabilities CAPABILITY_NAMED_IAM `
-    --tags project=OpenpayWeb
+    --tags project=OpenpayWebUK
 
 cd $cwd

@@ -25,14 +25,14 @@ Resources:
                   - s3:ListBucket
                 Effect: "Allow"
                 Resource:
-                  - arn:aws:s3:::www.dev.openpay.com.au
-                  - arn:aws:s3:::www.openpay.com.au
+                  - arn:aws:s3:::www.dev.myopenpay.co.uk
+                  - arn:aws:s3:::www.myopenpay.co.uk
               - Action:
                   - s3:GetObject
                   - s3:PutObject
                   - s3:PutObjectAcl
                 Effect: "Allow"
                 Resource:
-                  - arn:aws:s3:::www.dev.openpay.com.au/*
-                  - arn:aws:s3:::www.openpay.com.au/*
+                  - arn:aws:s3:::www.dev.myopenpay.co.uk/*
+                  - arn:aws:s3:::www.myopenpay.co.uk/*
     Type: "AWS::IAM::Role"
