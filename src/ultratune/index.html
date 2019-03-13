@@ -4,14 +4,12 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>Ultra Tune</title>
-	    <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-84225706-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	  gtag('config', 'UA-84225706-1');
-	</script>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-TF3JKHF');</script>
 
 <!-- 	FullStory Snippet -->
 	<script>
@@ -86,13 +84,13 @@
 							</div>
 						</div>
 					</div>
-					
+
 					<div class="block">
 						<ul class="tabs">
 							<li class="tab-link current" data-tab="tab-1">weekly</li>
 							<li class="tab-link" data-tab="tab-2">Fortnightly</li>
 						</ul>
-						<div id="tab-1" class="tab-content current">						
+						<div id="tab-1" class="tab-content current">
 							<div class="price-sec">
 								<span class="title"><span id="weekly_payment">12</span> weekly payments of</span>
 								<span class="amount">$<span id="week_12_ep"></span></span>
@@ -109,7 +107,7 @@
 								<span class="title">Plan Management Fee<sup>2</sup></span>
 								<span class="amount">$<span >2.95</span></span>
 							</div>
-							
+
 							<input type="hidden" class="week_pmf" value="2.95">
 						</div>
 						<div id="tab-2" class="tab-content">
@@ -129,7 +127,7 @@
 								<span class="title">Plan Management Fee<sup>2</sup></span>
 								<span class="amount">$<span >3.95</span></span>
 							</div>
-							
+
 							<input type="hidden" class="fort_pmf" value="3.95">
 						</div>
 					</div>
@@ -200,7 +198,7 @@
 			</footer>
 		</div>
 	</div>
-	
+
 
 	<script>
 		// Access-Control-Allow-Headers:Content-Type, Accept, X-Requested-With,setHeader
@@ -222,7 +220,7 @@
 		// 	    },
 		// 	    error: function (xhr, textStatus, errorMessage) {
 		// 	        alert('ERROR',errorMessage);
-		// 	    }                
+		// 	    }
 		// 	});
 
 
@@ -285,7 +283,7 @@
 						$("#6mon").css('opacity',1);
 						$("#9mon").css('opacity',1);
 						$("#12mon").css('opacity',1);
-					
+
 
 						$('#3mon').addClass('disable')
 						$("#6mon").removeClass('disable')
@@ -335,19 +333,19 @@
 					else{
 						$('#enter-amount').addClass('bold')
 					}
-        			
+
     			} else {
     				$("p.alert_for3").html("");
     			}
 			});
 
 			jQuery("#tab-data").on("click","li",function(event){
-				
+
 				var MonthData = jQuery(this).data("mon");
-				
-				jQuery( this ).parent().find( 'li.active' ).removeClass( 'active' );				
+
+				jQuery( this ).parent().find( 'li.active' ).removeClass( 'active' );
             	jQuery( this ).addClass( 'active' );
-				var ServicePrice = jQuery('#price_val').val();	
+				var ServicePrice = jQuery('#price_val').val();
 				if (ServicePrice && (MonthData == 3)) {
         			if (ServicePrice < 100 || ServicePrice > 500 ) {
 						$("p.alert_for3").html("Please select an amount between<br> $100 - $500 for 3 month plan");
@@ -370,19 +368,19 @@
 
 
 				if(ServicePrice == ''){
-					jQuery('#enter-amount').css("color", "red");					
+					jQuery('#enter-amount').css("color", "red");
 					jQuery('#price_val').focus();
 				} else {
 					jQuery('#enter-amount').css("color", "");
-				}				
+				}
 
 				var data = {'MonthData' : MonthData, 'ServicePrice' : ServicePrice };
 
 				$.ajax({
-					url: 'calculate_month.php',     
+					url: 'calculate_month.php',
 					data: data,
-					type : 'POST',          
-					success:function(response) { 
+					type : 'POST',
+					success:function(response) {
 					var resdata = JSON.parse(response);
 
 					var forweek = resdata.forWeek;
@@ -393,7 +391,7 @@
 					var get_night_pay = fornight.night_paymentFixed;
 					var get_night_deposit = fornight.night_depPercentFixed;
 					var get_night_moth = fornight.MonthData;
-					
+
 					jQuery('#week_12_ep').text(get_week_pay);
 					jQuery('#week_dep').text(get_week_deposit);
 					jQuery('#weekly_payment').text(get_week_moth);
@@ -404,12 +402,12 @@
 					console.log(resdata.forWeek);
 					console.log(resdata.forNight);
 					}
-				});	
+				});
 			});
 
 		});
 	</script>
 
-	
+
 </body>
 </html>
