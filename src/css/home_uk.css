@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,700,700i,900');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+.logo{
+    width: 100px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+main {
+    padding: 0 8px;
+}
+
+button {
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.banner {
+    background-blend-mode: multiply;
+    min-height: 250px;
+    background: url(../images/baner.png) no-repeat;
+    background-size: cover;
+    background-color: #868686;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.forWhomItWorks {
+    display: flex;
+    flex-direction: column;
+}
+
+.forWhomItWorks h2 {
+    padding-bottom: 30px;
+    margin: 0;
+    color: #000000;
+    line-height: 35px;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.forWhomItWorks>div:nth-of-type(1) p {
+    margin: 0;
+    color: #000000;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.forWhomItWorks>div:nth-of-type(1) {
+    background: url(../img/Component.svg) no-repeat;
+    background-position:  bottom 60px right 90px;
+    background-size: 150px;
+    padding: 20px;
+}
+
+.forWhomItWorks div:nth-of-type(2) p {
+    margin: 0;
+}
+.forWhomItWorks div:nth-of-type(2) {
+    background-color: #3C465A;
+}
+.forWhomItWorks_img_bg {
+    height: 100%;
+    background:url(../img/Asset.svg) no-repeat;
+    background-position: bottom -70px right -65px;
+    padding: 20px;
+    color: #FFFFFF;
+    line-height: 80px;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.howItWorks h2 {
+    letter-spacing: 5px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 30px;
+    color: #000000;
+    text-decoration: underline;
+}
+
+.howItWorks {
+    padding: 70px 0;
+    background: #E3E3E3;
+    text-align: center;
+}
+
+.block_howItWorks_flex {
+
+    margin: 55px auto;
+
+}
+
+.block_howItWorks {
+    margin: 20px auto;
+    width: 50%;
+}
+
+.block_howItWorks span {
+    display: block;
+}
+
+.block_howItWorks span:nth-of-type(1) {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 30px;
+
+}
+
+.block_howItWorks span:nth-of-type(2) {
+    margin-top: 15px;
+    font-weight: 300;
+    font-size: 25px;
+    color: #000000;
+}
+
+.feedback {
+    padding: 40px 0 40px;
+    text-align: center;
+}
+
+.feedback div:nth-of-type(2) {
+    margin-top: 25px;
+
+}
+
+.feedback h2 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.feedback p {
+    font-size: 20px;
+}
+
+.feedback > div {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.feedback input {
+    outline: none;
+    font-size: 29px;
+    border: none;
+    padding: 12px 45px;
+    width: 80%;
+    background: #E2E2E2;
+    border-radius: 33px;
+}
+
+.feedback input::placeholder {
+    font-size: 20px;
+    color: #000000;
+}
+
+.feedback button {
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000000;
+    width: 80%;
+    margin: auto;
+    font-weight: 600;
+    background: #9BFFBE;
+    padding: 13px 20px;
+    border-radius: 34px;
+}
+
+.feedback_btn_block {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback_btn_block span {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+footer {
+    padding: 20px 0 10px;
+    background: #3C465A;
+
+}
+
+.footer_info {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 935px;
+    justify-content: space-between;
+}
+
+.footer p {
+    margin: 18px 0 0;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+footer a {
+    display: block;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.f_logo {
+    color: #FFFFFF;
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.f_logo span {
+
+    font-weight: 500;
+    line-height: normal;
+    font-size: 18px;
+    color: #FDBD00;
+    margin-right: 20px;
+}
+
+.f_logo img {
+
+    vertical-align: middle;
+}
+
+@media screen and (min-width: 720px) {
+    .banner {
+        min-height: 400px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .forWhomItWorks {
+        flex-direction: row;
+    }
+
+    .forWhomItWorks > div {
+        width: 50%;
+    }
+
+    .forWhomItWorks div:nth-of-type(1) {
+        padding: 45px;
+    }
+
+    .forWhomItWorks_img_bg {
+        padding: 40px;
+        color: #FFFFFF;
+        line-height: 50px;
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    .forWhomItWorks h2 {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .forWhomItWorks div:nth-of-type(1) p {
+
+        font-size: 20px;
+
+    }
+
+    .howItWorks {
+        padding: 20px;
+    }
+
+    .block_howItWorks_flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .block_howItWorks {
+        width: 260px;
+    }
+
+    .feedback button {
+        font-size: 20px;
+        width: inherit;
+        padding: 13px 50px;
+    }
+
+    .feedback span {
+        font-size: 25px;
+    }
+
+    .feedback_btn_block {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .feedback {
+        padding: 10px;
+        display: flex;
+        text-align: left;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .feedback div:nth-of-type(2) {
+        margin-top: inherit;
+
+    }
+
+    .footer_info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer_info {
+        padding: inherit;
+    }
+
+    footer {
+        padding: 50px 0 10px;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+
+    .banner {
+        min-height: 520px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .forWhomItWorks {
+        flex-direction: row;
+    }
+
+    .forWhomItWorks > div {
+        width: 50%;
+    }
+
+    .forWhomItWorks div:nth-of-type(1) {
+        padding: 50px 85px;
+    }
+
+    .forWhomItWorks_img_bg {
+        padding: 45px;
+        color: #FFFFFF;
+        line-height: 100px;
+        font-size: 25px;
+        letter-spacing: 3.5px;
+    }
+
+    .forWhomItWorks h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .forWhomItWorks div:nth-of-type(1) p {
+        font-size: 25px;
+
+    }
+
+    .block_howItWorks_flex {
+        display: flex;
+    }
+
+    .block_howItWorks {
+        width: 260px;
+    }
+
+    .feedback button {
+        font-size: 20px;
+        width: inherit;
+        padding: 13px 80px;
+    }
+
+    .feedback span {
+        font-size: 25px;
+    }
+
+    .feedback_btn_block {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .feedback input {
+        padding: 4px 45px;
+    }
+
+    .feedback input::placeholder {
+        font-size: 25px;
+
+    }
+
+    .feedback {
+        display: flex;
+        text-align: left;
+        max-width: 1200px;
+        margin: 30px auto;
+    }
+
+    .feedback div:nth-of-type(2) {
+        margin-top: initial;
+
+    }
+
+    .footer_info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer_info {
+        padding: inherit;
+    }
+
+    footer {
+        padding: 50px 0 10px;
+    }
+
+}
+
+@media screen and (min-width: 1660px) {
+
+    h1 {
+        font-size: 65px;
+    }
+
+    .banner {
+        min-height: 520px;
+    }
+
+    .block_howItWorks_flex {
+        max-width: 1088px;
+        margin: 55px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .block_howItWorks {
+        width: 260px;
+    }
+
+    .howItWorks {
+        padding: 70px 0;
+    }
+
+    .howItWorks h2 {
+        font-size: 50px;
+    }
+
+    .feedback {
+        margin: auto;
+        display: flex;
+        max-width: 1650px;
+        padding: 80px 0 100px;
+    }
+
+    .feedback > div {
+        width: 50%;
+    }
+
+    .feedback h2 {
+        margin: 0;
+        font-size: 50px;
+    }
+
+    .feedback p {
+        margin: 0;
+        font-size: 35px;
+        margin-top: 20px;
+    }
+
+    .forWhomItWorks div:nth-of-type(1) {
+        background-position:  bottom 50px right 140px;
+        background-size: 200px;
+        padding: 110px 145px;
+    }
+
+    .forWhomItWorks h2 {
+        letter-spacing: 3px;
+        font-size: 50px;
+        line-height: 65px;
+    }
+
+    .forWhomItWorks_img_bg {
+        padding: 145px;
+        line-height: 130px;
+        font-size: 40px;
+        letter-spacing: 3.5px;
+    }
+
+
+
+    .feedback button {
+        padding: 13px 125px;
+    }
+
+    .feedback span {
+        font-size: 35px;
+    }
+    .feedback input {
+        margin-top: 30px;
+    }
+    .forWhomItWorks div:nth-of-type(1) p {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .forWhomItWorks div:nth-of-type(2) p {
+        margin-top: 30px;
+    }
+
+    .feedback_btn_block {
+        margin-top: 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .feedback input {
+        padding: 12px 45px;
+    }
+
+    .feedback input::placeholder {
+        font-size: 29px;
+    }
+
+    .feedback div:nth-of-type(2) {
+        margin-top: inherit;
+
+    }
+
+    footer a {
+        font-size: 25px;
+    }
+
+    footer {
+        padding: 60px 0 50px;
+        background: #3C465A;
+    }
+
+    .footer p {
+        margin: 18px 0 0;
+        font-size: 18px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    .f_logo {
+        margin-top: 100px;
+    }
+}
+
+
+
+
+
+
