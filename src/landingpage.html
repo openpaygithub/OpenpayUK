@@ -35,38 +35,37 @@
     <link rel="stylesheet" href="css/nav.css">
 </head>
 <body>
-<div class="topNav">
-    <a class="mainLogo" href="index"></a>
-    <a href="how">How it works</a>
-    <a class="active" href="business">I'm a business</a>
-    <a href="help">Help & contact</a>
-    <div class="topNavRight">
-        <!--<a href="https://retailer.myopenpay.com.au/live/Account/Login/" onclick="ga('send', 'event', 'Outbound', 'Merchant Log in');">Merchant log in</a>-->
-    </div>
+<div class="header-wrap block-wap">
+    <header class="header block-child-wrap">
+        <div class="header-logo-and-trigger">
+            <a href="#" class="logo-link">
+                <img src="./images/logo1.svg" alt="Openpay" class="logo">
+            </a>
+            <div class="trigger-menu">
+                <div class="trigger-menu__line"></div>
+            </div>
+        </div>
+        <nav class="header-nav header-nav_disable">
+            <ul class="nav-list">
+                <li>
+                    <a href="#" class="paragraphSpec-4">How it works</a>
+                </li>
+                <li>
+                    <a href="#" class="paragraphSpec-4">I'm a business</a>
+                </li>
+                <li>
+                    <a href="#" class="paragraphSpec-4">Help & Contact</a>
+                </li>
+            </ul>
+            <a href="#" class="header__log-in paragraphSpec-4">
+                Merchant log In
+            </a>
+        </nav>
+    </header>
 </div>
-<!--hamburger menu-->
-<nav role="navigation">
-    <a class="mainLogo" href="index"></a>
-    <div id="hamburgerMenu">
-        <input type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul>
-            <a href="shop"><li>Shop now</li></a>
-            <a href="how"><li>How it works</li></a>
-            <a class="active" href="business"><li>I'm a business</li></a>
-            <a href="help"><li>Help & contact</li></a>
-            <br>
-            <!--<a href="https://retailer.myopenpay.com.au/live/Account/Login/"><li>Merchant log in</li></a>-->
-
-        </ul>
-    </div>
-</nav>
-
 <div class="welcome-wrap block-wap">
     <div class="welcome block-child-wrap">
-        <img src="./images/logoNew1.svg" alt="Openpay" class="logo">
+        <img src="./images/logo.svg" alt="Openpay" class="logo">
         <p class="welcome-subtitle paragraph-1">
             Welcome to a smarter way to pay
         </p>
@@ -87,7 +86,7 @@
 <div class="works-wrap block-wap">
     <div class="works block-child-wrap">
         <h2 class="title-h2 works-title">
-            How Openpay works
+            <span>How Openpay works</span>
         </h2>
         <div class="work-list">
             <div class="work-item">
@@ -133,6 +132,7 @@
     </div>
 </div>
 <div class="empoweringPay-wrap block-wap">
+    <img src="./images/stor.svg" alt="store" class="empoweringPay-bg-icon">
     <div class="empoweringPay block-child-wrap">
         <section class="empoweringPay-section">
             <h2 class="title-h2 empoweringPay-title">
@@ -164,7 +164,7 @@
                     electronic and procedural safeguards
                     to protect your information. View the
                     Openpay privacy policy
-                    <a href="#" class="link-to"><ins>here</ins></a>.
+                    <a href="#" class="link-to"><u>here</u></a>.
                 </p>
             </article>
             <article class="empoweringPay__article">
@@ -198,69 +198,44 @@
                     Openpay will cancel payments
                     and refund what is owed. Read
                     the full terms and conditions
-                    <a href="#" class="link-to"><ins>here</ins></a>.
+                    <a href="#" class="link-to"><u>here</u></a>.
                 </p>
             </article>
-            <button class="btn-primary empoweringPay_btn">
-                Sign up now
-            </button>
+            <!--<button class="btn-primary empoweringPay_btn">-->
+            <!--Sign up now-->
+            <!--</button>-->
         </section>
     </div>
 </div>
-
-
-    <div class="footer">
-        <div class="footerMenu">
-            <a href="how" class="footerNav">How it works</a>
-            <a href="business" class="footerNav">I'm a business</a>
-            <a href="help" class="footerNav">Help & contact</a>
-            <a href="legal" class="footerNav">Legal stuff</a>
-            <!-- <a href="https://brand.openpay.com.au" class="footerNav">Merchant resources</a> -->
-
-        </div>
-        <div class="socialLinks">
-				<span>
-					<a href="https://facebook.com/openpayau" class="footer-icon fb">
-						<img src="images/social/Fb.svg">
-						Facebook
-					</a>
-					<a href="https://twitter.com/openpay_" class="footer-icon twit">
-						<img src="./images/social/Twitter.svg">
-						Twitter
-					</a>
-				</span>
-            <span>
-					<a href="https://au.linkedin.com/company/open-pay" class="footer-icon linked">
-						<img src="./images/social/in.svg">
-						LinkedIn
-					</a>
-					<a href="https://www.instagram.com/openpay_" class="footer-icon ig">
-						<img src="./images/social/Insta.svg">
-						Instagram
-					</a>
-				</span>
-        </div>
-        <!--<div class="footerAppWrapper">-->
-            <!--<a href="https://itunes.apple.com/au/app/openpay/id1166424403?mt=8" onclick="ga('send', 'event', 'App', 'iOS', 'Footer');">-->
-                <!--<img class="apple" src="./images/apple.svg">-->
-            <!--</a>-->
-            <!--<a href="https://play.google.com/store/apps/details?id=com.ocean.openpay" onclick="ga('send', 'event', 'App', 'Android', 'Footer');">-->
-                <!--<img class="android" src="./images/android.svg">-->
-            <!--</a>-->
-        <!--</div>-->
-        <div class="footerMoreLinksMenu">
-            <a href="legal" class="footerNav">Privacy</a>
-            <a href="legal" class="footerNav">Terms & Conditions</a>
-            <a href="legal" class="footerNav">User Licence</a>
-            <a href="legal" class="footerNav">PCI Data Security</a>
-        </div>
-        <p>&#169; Openpay &nbsp; | &nbsp; Made in Melbourne, Australia</p>
-        <a class="whiteLogo" href="index">
-            <img src="./images/openpay_logo_white.svg">
-        </a>
-
-    </div>
+<div class="footer-wrap block-wap">
+    <footer class="footer block-child-wrap">
+        <nav class="nav-footer">
+            <ul class="footer-nav-list">
+                <li>
+                    <a href="#" class="paragraphSpec-3">How it works</a>
+                </li>
+                <li>
+                    <a href="#" class="paragraphSpec-3">I’m a business</a>
+                </li>
+                <li>
+                    <a href="#" class="paragraphSpec-3">Contact</a>
+                </li>
+                <li>
+                    <a href="#" class="paragraphSpec-3">Legal</a>
+                </li>
+                <li>
+                    <a href="#" class="paragraphSpec-3">Terms & Conditions</a>
+                </li>
+            </ul>
+        </nav>
+        <img src="./images/logo-footer.svg" alt="logo" class="footer-logo">
+        <p class="paragraphSpec-3 copyright">
+            © Openpay | Made in Melbourne
+        </p>
+    </footer>
 </div>
+
+<script src="./js/main.js"></script>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TF3JKHF"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
