@@ -9,35 +9,11 @@ body {
     margin: 0;
 }
 
-header {
-    padding: 20px 10px 25px;
-    background: #FFFFFF;
-    margin: auto;
 
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo_text {
+.logo{
+    width: 100px;
     font-weight: 700;
     font-size: 18px;
-}
-
-nav a {
-    margin-left: 35px;
-    font-weight: 500;
-    font-size: 14px;
-    color: #3B455A;
-}
-
-.blockLogIn a {
-    font-weight: 500;
-    font-size: 14px;
-    color: #3B455A;
 }
 
 main {
@@ -87,23 +63,30 @@ h1 {
     letter-spacing: 3px;
 }
 
-.forWhomItWorks div:nth-of-type(1) p {
+.forWhomItWorks>div:nth-of-type(1) p {
     margin: 0;
     color: #000000;
     line-height: 25px;
     font-size: 20px;
 }
 
-.forWhomItWorks div:nth-of-type(1) {
+.forWhomItWorks>div:nth-of-type(1) {
+    background: url(../img/Component.svg) no-repeat;
+    background-position:  bottom 60px right 90px;
+    background-size: 150px;
     padding: 20px;
 }
 
 .forWhomItWorks div:nth-of-type(2) p {
     margin: 0;
 }
-
 .forWhomItWorks div:nth-of-type(2) {
-    background: #3C465A;
+    background-color: #3C465A;
+}
+.forWhomItWorks_img_bg {
+    height: 100%;
+    background:url(../img/Asset.svg) no-repeat;
+    background-position: bottom -70px right -65px;
     padding: 20px;
     color: #FFFFFF;
     line-height: 80px;
@@ -288,8 +271,7 @@ footer a {
         padding: 45px;
     }
 
-    .forWhomItWorks div:nth-of-type(2) {
-        background: #3C465A;
+    .forWhomItWorks_img_bg {
         padding: 40px;
         color: #FFFFFF;
         line-height: 50px;
@@ -365,10 +347,6 @@ footer a {
 }
 
 @media screen and (min-width: 1220px) {
-    header {
-        max-width: 1150px;
-        padding: 30px 0 35px;
-    }
 
     .banner {
         min-height: 520px;
@@ -390,8 +368,7 @@ footer a {
         padding: 50px 85px;
     }
 
-    .forWhomItWorks div:nth-of-type(2) {
-        background: #3C465A;
+    .forWhomItWorks_img_bg {
         padding: 45px;
         color: #FFFFFF;
         line-height: 100px;
@@ -470,10 +447,6 @@ footer a {
 }
 
 @media screen and (min-width: 1660px) {
-    header {
-        max-width: 1650px;
-        padding: 50px 0 55px;
-    }
 
     h1 {
         font-size: 65px;
@@ -520,10 +493,14 @@ footer a {
     }
 
     .feedback p {
+        margin: 0;
         font-size: 35px;
+        margin-top: 20px;
     }
 
     .forWhomItWorks div:nth-of-type(1) {
+        background-position:  bottom 50px right 140px;
+        background-size: 200px;
         padding: 110px 145px;
     }
 
@@ -533,12 +510,14 @@ footer a {
         line-height: 65px;
     }
 
-    .forWhomItWorks div:nth-of-type(2) {
+    .forWhomItWorks_img_bg {
         padding: 145px;
         line-height: 130px;
         font-size: 40px;
         letter-spacing: 3.5px;
     }
+
+
 
     .feedback button {
         padding: 13px 125px;
@@ -547,13 +526,19 @@ footer a {
     .feedback span {
         font-size: 35px;
     }
-
+    .feedback input {
+        margin-top: 30px;
+    }
     .forWhomItWorks div:nth-of-type(1) p {
         font-size: 35px;
         line-height: 50px;
     }
+    .forWhomItWorks div:nth-of-type(2) p {
+        margin-top: 30px;
+    }
 
     .feedback_btn_block {
+        margin-top: 30px;
         justify-content: space-between;
         align-items: center;
     }

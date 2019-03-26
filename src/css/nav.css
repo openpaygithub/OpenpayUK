@@ -312,7 +312,9 @@ p,div{
 @media (max-width: 650px) {
     table td, table th { display: block}
 }
-
+header {
+    padding: 0 15px;
+}
 .header, .header-nav, .header-nav .nav-list, .nav-footer .footer-nav-list {
     display: -webkit-box;
     display: -webkit-flex;
@@ -476,3 +478,10 @@ p,div{
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column; } }
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
