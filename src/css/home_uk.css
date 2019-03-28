@@ -4,6 +4,11 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
 
 body {
     margin: 0;
@@ -30,16 +35,31 @@ a {
     text-decoration: none;
 }
 
-.banner {
-    background-blend-mode: multiply;
+.banner-wrap {
     min-height: 250px;
-    background: url(../images/baner.png) no-repeat;
+    background: url(../images/home_bg.png) no-repeat;
     background-size: cover;
-    background-color: #868686;
-    opacity: 0.6;
+
+}
+.banner {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+}
+.banner-content {
+    width: 50%;
+    max-width: 812px;
+}
+.banner h1 {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font: 70px/85px "Poppins, SemiBold", sans-serif;
+    color: #ffffff;
+    margin-bottom: 55px;
+}
+.banner img {
+    width: 152px;
 }
 
 h1 {
@@ -49,18 +69,30 @@ h1 {
     color: #FFFFFF;
 }
 
+/*...forWhomItWorks...*/
+
+.forWhomItWorks-wrap {
+
+}
+
 .forWhomItWorks {
     display: flex;
     flex-direction: column;
 }
 
+.part1__wrap-text {
+    width: 76%;
+    margin: 0 auto;
+}
+
 .forWhomItWorks h2 {
-    padding-bottom: 30px;
-    margin: 0;
+    /*width: 87%;*/
+    max-width: 658px;
     color: #000000;
-    line-height: 35px;
-    font-size: 25px;
+    line-height: 65px;
+    font-size: 50px;
     letter-spacing: 3px;
+    margin-bottom: 30px;
 }
 
 .forWhomItWorks>div:nth-of-type(1) p {
@@ -71,53 +103,77 @@ h1 {
 }
 
 .forWhomItWorks>div:nth-of-type(1) {
-    background: url(../img/Component.svg) no-repeat;
-    background-position:  bottom 60px right 90px;
+    background: url(../images/dress.svg) bottom 60px right 90px no-repeat;
+    /*background-position:  ;*/
     background-size: 150px;
-    padding: 20px;
+    padding: 145px 0 168px
 }
 
 .forWhomItWorks div:nth-of-type(2) p {
-    margin: 0;
+    margin: 0 0 70px 0;
 }
 .forWhomItWorks div:nth-of-type(2) {
+    position: relative;
     background-color: #3C465A;
+    padding: 149px 0 146px;
+    z-index: 0;
+    overflow: hidden
+}
+.forWhomItWorks div:nth-of-type(2) p:last-child {
+    margin: 0;
+}
+.forWhomItWorks_image {
+    position: absolute;
+    bottom: -125px;
+    right: -59px;
+    width: 400px;
+    height: 498px;
+    z-index: 1;
 }
 .forWhomItWorks_img_bg {
     height: 100%;
-    background:url(../img/Asset.svg) no-repeat;
-    background-position: bottom -70px right -65px;
-    padding: 20px;
+    width: 70%;
+    /*background:url(../images/big-o.svg) bottom -70px right -65px no-repeat;*/
+    /*background-size: 498px 400px;*/
     color: #FFFFFF;
     line-height: 80px;
     font-size: 25px;
     letter-spacing: 2px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+/*...end forWhomItWorks...*/
+
+/*...how works...*/
+.howItWorks {
+    padding: 82px 0 68px;
+    /*padding: 70px 0;*/
+    background: #E3E3E3;
+    text-align: center;
+}
+.howItWorks-content {
+    max-width: 1089px;
+    margin: 0 auto;
 }
 
 .howItWorks h2 {
     letter-spacing: 5px;
     margin: 0;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 37px;
     color: #000000;
-    text-decoration: underline;
-}
-
-.howItWorks {
-    padding: 70px 0;
-    background: #E3E3E3;
-    text-align: center;
+    /*text-decoration: underline;*/
 }
 
 .block_howItWorks_flex {
-
     margin: 55px auto;
-
 }
 
 .block_howItWorks {
-    margin: 20px auto;
-    width: 50%;
+    margin: 5px auto;
+    width: 100%;
+    padding: 15px
 }
 
 .block_howItWorks span {
@@ -127,19 +183,28 @@ h1 {
 .block_howItWorks span:nth-of-type(1) {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 24px;
 
 }
 
 .block_howItWorks span:nth-of-type(2) {
+    min-width: 230px;
+    max-width: 300px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
     margin-top: 15px;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 19px;
+    line-height: 30px;
     color: #000000;
 }
 
+/*...feedback...*/
+.feedback-wrap {
+    padding: 63px 15px 132px;
+}
 .feedback {
-    padding: 40px 0 40px;
+    /*padding: 40px 0 40px;*/
     text-align: center;
 }
 
@@ -149,12 +214,15 @@ h1 {
 }
 
 .feedback h2 {
-    margin: 0;
+    margin: 0 ;
     font-size: 25px;
 }
 
 .feedback p {
     font-size: 20px;
+}
+.feedback__Interested {
+    margin-bottom: 73px;
 }
 
 .feedback > div {
@@ -183,17 +251,17 @@ h1 {
     font-size: 20px;
     color: #000000;
     width: 80%;
-    margin: auto;
+    /*margin: auto;*/
     font-weight: 600;
     background: #9BFFBE;
     padding: 13px 20px;
     border-radius: 34px;
 }
 
-.feedback_btn_block {
-    display: flex;
-    flex-direction: column;
-}
+/*.feedback_btn_block {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
 
 .feedback_btn_block span {
     font-size: 35px;
@@ -251,12 +319,24 @@ footer a {
 }
 
 @media screen and (min-width: 720px) {
+    .feedback h2 {
+        margin: 0 0 34px 0;
+    }
+    .feedback_btn_block {
+        margin-top: 30px;
+    }
+    .feedback input {
+        height: 67px;
+    }
+    .feedback__Interested {
+        margin-bottom: 60px;
+    }
     .banner {
         min-height: 400px;
     }
 
-    h1 {
-        font-size: 35px;
+    .banner h1 {
+        margin-bottom: 25px;
     }
 
     .forWhomItWorks {
@@ -268,11 +348,11 @@ footer a {
     }
 
     .forWhomItWorks div:nth-of-type(1) {
-        padding: 45px;
+        /*padding: 45px;*/
     }
 
     .forWhomItWorks_img_bg {
-        padding: 40px;
+        /*padding: 40px;*/
         color: #FFFFFF;
         line-height: 50px;
         font-size: 18px;
@@ -281,17 +361,20 @@ footer a {
 
     .forWhomItWorks h2 {
         font-size: 25px;
-        line-height: 25px;
+        line-height: 35px;
+        margin-bottom: 11px;
     }
 
     .forWhomItWorks div:nth-of-type(1) p {
-
         font-size: 20px;
-
+        line-height: 30px;
+    }
+    .forWhomItWorks div:nth-of-type(2) p {
+        margin: 0 0 20px 0;
     }
 
     .howItWorks {
-        padding: 20px;
+        padding: 82px 0 68px;
     }
 
     .block_howItWorks_flex {
@@ -307,17 +390,18 @@ footer a {
         font-size: 20px;
         width: inherit;
         padding: 13px 50px;
+        height: 67px;
     }
 
     .feedback span {
         font-size: 25px;
     }
 
-    .feedback_btn_block {
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-    }
+    /*.feedback_btn_block {*/
+    /*    justify-content: space-between;*/
+    /*    align-items: center;*/
+    /*    flex-direction: column;*/
+    /*}*/
 
     .feedback {
         padding: 10px;
@@ -352,10 +436,6 @@ footer a {
         min-height: 520px;
     }
 
-    h1 {
-        font-size: 40px;
-    }
-
     .forWhomItWorks {
         flex-direction: row;
     }
@@ -365,25 +445,29 @@ footer a {
     }
 
     .forWhomItWorks div:nth-of-type(1) {
-        padding: 50px 85px;
+        /*padding: 50px 85px;*/
+    }
+    .forWhomItWorks div:nth-of-type(2) p {
+        margin: 0 0 40px 0;
     }
 
     .forWhomItWorks_img_bg {
-        padding: 45px;
+        width: 77%;
+        /*padding: 45px;*/
         color: #FFFFFF;
-        line-height: 100px;
+        /*line-height: 100px;*/
         font-size: 25px;
         letter-spacing: 3.5px;
     }
 
     .forWhomItWorks h2 {
-        font-size: 30px;
-        line-height: 35px;
+        font-size: 35px;
+        line-height: 45px;
     }
 
     .forWhomItWorks div:nth-of-type(1) p {
-        font-size: 25px;
-
+        font-size: 28px;
+        line-height: 40px;
     }
 
     .block_howItWorks_flex {
@@ -398,17 +482,18 @@ footer a {
         font-size: 20px;
         width: inherit;
         padding: 13px 80px;
+        height: 67px;
     }
 
     .feedback span {
         font-size: 25px;
     }
 
-    .feedback_btn_block {
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-    }
+    /*.feedback_btn_block {*/
+    /*    justify-content: space-between;*/
+    /*    align-items: center;*/
+    /*    flex-direction: row;*/
+    /*}*/
 
     .feedback input {
         padding: 4px 45px;
@@ -458,7 +543,7 @@ footer a {
 
     .block_howItWorks_flex {
         max-width: 1088px;
-        margin: 55px auto;
+        margin: 47px auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -469,11 +554,12 @@ footer a {
     }
 
     .howItWorks {
-        padding: 70px 0;
+        padding: 82px 0 68px;
     }
 
     .howItWorks h2 {
         font-size: 50px;
+        line-height: 110px;
     }
 
     .feedback {
@@ -488,20 +574,33 @@ footer a {
     }
 
     .feedback h2 {
-        margin: 0;
+        margin: 0 0 34px 0;
         font-size: 50px;
+        line-height: 40px;
     }
 
     .feedback p {
-        margin: 0;
-        font-size: 35px;
+        margin: 20px 0 0;
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .block_howItWorks span:nth-of-type(1) {
         margin-top: 20px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .block_howItWorks span:nth-of-type(2) {
+        margin-top: 15px;
+        font-size: 25px;
+        line-height: 35px;
     }
 
     .forWhomItWorks div:nth-of-type(1) {
-        background-position:  bottom 50px right 140px;
-        background-size: 200px;
-        padding: 110px 145px;
+        background-position:  bottom 60px right 50px;
+        background-size: 240px 107px;
+        /*padding: 110px 145px;*/
     }
 
     .forWhomItWorks h2 {
@@ -509,10 +608,13 @@ footer a {
         font-size: 50px;
         line-height: 65px;
     }
+    .forWhomItWorks div:nth-of-type(2) p {
+        margin: 0 0 70px 0;
+    }
 
     .forWhomItWorks_img_bg {
-        padding: 145px;
-        line-height: 130px;
+        /*padding: 145px;*/
+        /*line-height: 130px;*/
         font-size: 40px;
         letter-spacing: 3.5px;
     }
@@ -521,6 +623,7 @@ footer a {
 
     .feedback button {
         padding: 13px 125px;
+        height: 67px;
     }
 
     .feedback span {
@@ -533,13 +636,10 @@ footer a {
         font-size: 35px;
         line-height: 50px;
     }
-    .forWhomItWorks div:nth-of-type(2) p {
-        margin-top: 30px;
-    }
 
     .feedback_btn_block {
         margin-top: 30px;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
     }
 
@@ -551,10 +651,6 @@ footer a {
         font-size: 29px;
     }
 
-    .feedback div:nth-of-type(2) {
-        margin-top: inherit;
-
-    }
 
     footer a {
         font-size: 25px;
@@ -577,8 +673,138 @@ footer a {
     }
 }
 
+@media screen and (max-width: 1220px) {
+    .banner h1 {
+        font-size: 55px;
+        line-height: 70px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .feedback {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feedback > div {
+        text-align: center;
+        width: 98%;
+    }
+    .feedback > div:nth-child(1) {
+        margin-bottom: 50px;
+    }
+    .feedback input {
+        display: block;
+        margin: 0 auto;
+        min-width: 200px;
+    }
+    .feedback_btn_block button {
+        width: 100%;
+        max-width: 398px;
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 925px) {
+    .forWhomItWorks_img_bg {
+        width: 80%;
+    }
+}
 
+@media screen and (max-width: 810px) {
+    .forWhomItWorks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .forWhomItWorks div {
+        width: 100%;
+        padding: 15px;
+    }
+    .forWhomItWorks h2 {
+        width: 75%;
+        line-height: 48px;
+        font-size: 30px;
+        margin: 0 auto 30px;
+    }
+    .part1__wrap-text {
+        text-align: center;
+    }
+    .forWhomItWorks_img_bg {
+        text-align: center;
+    }
+    .forWhomItWorks>div:nth-of-type(1) {
+        padding: 75px 0 168px;
+    }
+    .forWhomItWorks div:nth-of-type(2) {
+        padding: 75px 0 146px;
+    }
+    .forWhomItWorks_img_bg {
+        line-height: 15px;
+    }
+}
+@media screen and (max-width: 790px) {
+    .banner h1 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+}
+@media screen and (max-width: 525px) {
+    .banner-content {
+        width: 70%;
+    }
+    .banner {
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+    .banner-content {
+        width: 100%;
+        padding-top: 30px;
+    }
+    .banner h1 {
+        font-size: 45px;
+        line-height: 55px;
+        text-align: center;
+    }
+    .banner-content img {
+        display: block;
+        margin: 0 auto;
+    }
+    .howItWorks h2 {
+        font-size: 35px;
+    }
+}
 
+@media screen and (max-width: 490px) {
+    .forWhomItWorks h2 {
+        width: 90%;
+        line-height: 38px;
+        font-size: 25px;
+    }
+    .forWhomItWorks div:nth-of-type(2) p {
+        margin: 0 0 30px 0;
+        line-height: 30px;
+        font-size: 20px;
+    }
+}
 
+/*@media screen and (max-width: 480px) {*/
+/*    .banner {*/
+/*        justify-content: center;*/
+/*        padding-bottom: 10px;*/
+/*    }*/
+/*    .banner-content {*/
+/*        width: 100%;*/
+/*    }*/
+/*    .banner h1 {*/
+/*        font-size: 45px;*/
+/*        line-height: 55px;*/
+/*        text-align: center;*/
+/*    }*/
+/*    .banner-content img {*/
+/*        display: block;*/
+/*        margin: 0 auto;*/
+/*    }*/
+/*    .howItWorks h2 {*/
+/*        font-size: 35px;*/
+/*    }*/
+/*}*/
 
 

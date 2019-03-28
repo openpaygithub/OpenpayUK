@@ -31,7 +31,6 @@ p,div{
     background-color: #F4F7FF;
 }
 
-
 /*top menu*/
 .topNav {
     overflow: hidden;
@@ -389,9 +388,15 @@ header {
     white-space: nowrap;
     text-align: center; }
 
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
 .logo-link .logo {
-    width: 145px;
-    height: 42px; }
+    width: 260px;
+    height: 42px;
+}
 
 /*...end header...*/
 /*...footer...*/
@@ -428,6 +433,13 @@ header {
 @media screen and (max-width: 1366px) {
     .paragraphSpec-3 {
         font-size: 14px; } }
+
+@media screen and (max-width: 830px) {
+    .logo-link .logo {
+        width: 145px;
+        height: 42px;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .header-wrap {
@@ -485,3 +497,14 @@ header {
     outline: none;
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
+
+.block-wap {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto; }
+
+.block-child-wrap {
+    width: 100%;
+    max-width: 1364.15px;
+    padding: 0 15px;
+    margin: 0 auto; }
