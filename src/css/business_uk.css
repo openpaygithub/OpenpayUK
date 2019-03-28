@@ -20,6 +20,10 @@ html, body {
     height: 100%;
     width: 100%; }
 
+html {
+    overflow-x: hidden;
+}
+
 ol, ul {
     list-style: none; }
 
@@ -54,7 +58,7 @@ a, a:hover {
     src: url("../fonts/semiBold/PoppinsSemiBold.eot") format("embedded-opentype"), url("../fonts/semiBold/PoppinsSemiBold.woff2") format("woff2"), url("../fonts/semiBold/PoppinsSemiBold.woff") format("woff"), url("../fonts/semiBold/PoppinsSemiBold.ttf") format("truetype"), url("../fonts/semiBold/PoppinsSemiBold.svg#PoppinsSemiBold") format("svg"); }
 
 .title-h1 {
-    font-size: 57px;
+    font-size: 50px;
     font-family: "PoppinsSemiBold", sans-serif;
     line-height: 56px;
     font-weight: 600;
@@ -86,9 +90,9 @@ a, a:hover {
     color: #FFFFFF; }
 
 .paragraph-1 {
-    font-size: 40px;
-    font-family: "PoppinsLightItalic", sans-serif;
-    line-height: 56px;
+    font-size: 30px;
+    font-family: "PoppinsLight", sans-serif;
+    line-height: 40px;
     font-weight: 300;
     text-align: center;
     color: #3B455A; }
@@ -214,29 +218,45 @@ a, a:hover {
 /*...end header...*/
 /*...introduction...*/
 .introduction-wrap {
-    background: url("../images/Mask.png") center center no-repeat;
+    background: url("../images/business_bg.png") center center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    padding: 244px 0; }
-
+    padding: 153px 0; }
+.introduction-desc {
+    width: 50%;
+    max-width: 812px;
+    min-width: 800px;
+    font-size: 70px;
+    text-align: left;
+    line-height: 85px;
+    color: #ffffff;
+}
 /*...end introduction...*/
 /*...whyOpenPay...*/
 .whyOpenPay-wrap {
     background-color: #F0F0F0;
-    padding: 87px 0 129px;
+    padding: 69px 0 111px;
     position: relative;
     overflow: hidden; }
 .whyOpenPay-wrap .whyOpenPay-bg {
     position: absolute;
     width: 592px;
     height: 697px;
-    top: 140px;
-    right: -25px;
+    top: 168px;
+    right: -155px;
     z-index: 0; }
-
+.whyOpenPay {
+    max-width: 1088px !important;
+}
 .whyOpenPay-title {
-    margin-bottom: 42px; }
-
+    margin-bottom: 30px; }
+.whyOpenPay__paragraph_1 {
+    margin-bottom: 25px;
+}
+.whyOpenPay__paragraph_2 {
+    /*width: 95%;*/
+    margin: 0 auto;
+}
 /*...end whyOpenPay...*/
 /*...whatCanWeDo...*/
 .whatCanWeDo-wrap {
@@ -252,12 +272,16 @@ a, a:hover {
     -webkit-align-items: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
-    min-height: 100%; }
+    min-height: 100%;
+}
 
 .whatCanWeDo-section {
+    position: relative;
     width: 50%;
-    min-width: 406px;
-    padding: 68px 0 115px;
+    height: 1618px;
+    min-width: 475px;
+    padding: 68px 0 82px;
+    overflow: hidden;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
@@ -265,28 +289,61 @@ a, a:hover {
 .whatCanWeDo-section_1 {
     background-color: #3C465A; }
 .whatCanWeDo-section_1 .whatCanWeDo-title {
-    width: 59%; }
+    width: 59%;
+    min-width: 300px;
+}
 .whatCanWeDo-section_2 {
     background-color: #179ECF; }
 .whatCanWeDo-section_2 .whatCanWeDo-title {
-    width: 85%; }
+    width: 85%;
+    min-width: 590px;
+}
 
 .whatCanWeDo-title {
     margin: 0 auto 71px; }
 
 .whatCanWeDo-item {
-    margin-bottom: 102px; }
+    position: absolute;
+    max-width: 674px;
+    margin-left: -337px;
+    margin-bottom: 102px;
+}
+.whatCanWeDo-item_1 {
+    top: 17%;
+    left: 50%;
+}
+.whatCanWeDo-item_2 {
+    top: 41%;
+    left: 50%;
+}
+.whatCanWeDo-item_3 {
+    top: 67%;
+    left: 50%;
+}
+.whatCanWeDo-item_4 {
+    top: 17%;
+    left: 50%;
+}
+.whatCanWeDo-item_5 {
+    top: 41%;
+    left: 50%;
+}
+.whatCanWeDo-item_6 {
+    top: 70%;
+    left: 50%;
+}
 .whatCanWeDo-item .whatCanWeDo-item__icon {
     display: block;
     margin: 0 auto 13px; }
 .whatCanWeDo-item .whatCanWeDo-item-title {
+    width: 95%;
     margin: 0 auto 7px; }
 .whatCanWeDo-item .whatCanWeDo-item-paragraph {
-    width: 67%;
+    width: 91%;
     margin: 0 auto; }
 
-.whatCanWeDo-item:last-child {
-    margin-bottom: 0; }
+/*.whatCanWeDo-item:last-child {*/
+    /*margin-bottom: 0; }*/
 
 /*...end whatCanWeDo...*/
 /*...readyToChat...*/
@@ -304,7 +361,8 @@ a, a:hover {
     flex-wrap: wrap; }
 
 .readyToChat-title {
-    margin-right: 5.9146341463414634146341463414634%;
+    margin-right: 97px;
+    /*margin-right: 5.9146341463414634146341463414634%;*/
     margin-bottom: 20px;
     white-space: nowrap; }
 
@@ -360,6 +418,63 @@ a, a:hover {
     .btn-primary {
         height: 50px; } }
 
+@media screen and (max-width: 1260px){
+    .whatCanWeDo-item {
+        max-width: 500px;
+        margin-left: -225px;
+    }
+    .whatCanWeDo-section_2 .whatCanWeDo-title {
+        width: 96%;
+        min-width: 0;
+    }
+}
+@media screen and (max-width: 1024px){
+    .whatCanWeDo-item {
+        max-width: 350px;
+        margin-left: -175px;
+    }
+
+}
+@media screen and (max-width: 1025px) {
+    .whatCanWeDo-section {
+        height: 1673px;
+    }
+    .whatCanWeDo-item_3 {
+        top: 71%;
+    }
+    .whatCanWeDo-item_6 {
+        top: 73%;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .introduction-desc {
+        /*min-width: 300px;*/
+        font-size: 60px;
+        line-height: 80px;
+    }
+}
+@media screen and (max-width: 960px) {
+    .whatCanWeDo-wrap {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .whatCanWeDo-section {
+        width: 100%; }
+    .whatCanWeDo-section {
+        height: auto;
+    }
+    .whatCanWeDo-item {
+        position: static;
+        max-width: 85%;
+        margin: 0 auto 71px;
+    }
+    .whatCanWeDo-section_2 .whatCanWeDo-title {
+        width: 85%;
+    }
+}
+
+
 @media screen and (max-width: 920px) {
     .work-list {
         -webkit-flex-wrap: wrap;
@@ -370,13 +485,15 @@ a, a:hover {
         -ms-flex-pack: center;
         justify-content: center; } }
 
-@media screen and (max-width: 830px) {
-    .whatCanWeDo-wrap {
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .whatCanWeDo-section {
-        width: 100%; } }
+@media screen and (max-width: 836px) {
+    .readyToChat {
+        flex-direction: column;
+        align-items: center;
+    }
+    .readyToChat-title {
+        margin-right: 0;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .header {
@@ -431,15 +548,52 @@ a, a:hover {
     .welcome-wrap {
         padding: 140px 0; } }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 700px) {
+    .introduction-desc {
+        width: 100%;
+        min-width: 200px;
+        text-align: center;
+        font-size: 40px;
+        line-height: 55px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .title-h2 {
+        font-size: 33px;
+        line-height: 45px;
+    }
+    .title-h3 {
+        font-size: 30px;
+    }
+    .paragraph-1 {
+        font-size: 21px;
+        line-height: 35px;
+    }
+    .paragraph-2 {
+        font-size: 17px;
+        line-height: 29px;
+    }
+    .introduction-desc {
+        font-size: 35px;
+    }
     .whatCanWeDo-section {
         min-width: 310px; }
     .readyToChat-title {
         margin-right: 0; }
     .whatCanWeDo-section_1 .whatCanWeDo-title,
     .whatCanWeDo-section_2 .whatCanWeDo-title {
-        width: 90%; }
+        width: 90%;
+        min-width: 100%;
+    }
     .whatCanWeDo-item .whatCanWeDo-item-title {
         width: 85%; }
     .whatCanWeDo-item .whatCanWeDo-item-paragraph {
         width: 85%; } }
+
+@media screen and (max-width: 400px) {
+    .whatCanWeDo-item {
+        max-width: 95%;
+    }
+}
