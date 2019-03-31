@@ -226,6 +226,7 @@ a, a:hover {
     width: 50%;
     max-width: 812px;
     min-width: 800px;
+    font-weight: 600;
     font-size: 70px;
     text-align: left;
     line-height: 85px;
@@ -251,10 +252,12 @@ a, a:hover {
 .whyOpenPay-title {
     margin-bottom: 30px; }
 .whyOpenPay__paragraph_1 {
+    font-weight: 300;
     margin-bottom: 25px;
 }
 .whyOpenPay__paragraph_2 {
     /*width: 95%;*/
+    font-weight: 300;
     margin: 0 auto;
 }
 /*...end whyOpenPay...*/
@@ -300,7 +303,8 @@ a, a:hover {
 }
 
 .whatCanWeDo-title {
-    margin: 0 auto 71px; }
+    margin: 0 auto 81px;
+}
 
 .whatCanWeDo-item {
     position: absolute;
@@ -333,12 +337,14 @@ a, a:hover {
     left: 50%;
 }
 .whatCanWeDo-item .whatCanWeDo-item__icon {
+    max-width: 96px;
     display: block;
     margin: 0 auto 13px; }
 .whatCanWeDo-item .whatCanWeDo-item-title {
     width: 95%;
     margin: 0 auto 7px; }
 .whatCanWeDo-item .whatCanWeDo-item-paragraph {
+    font-weight: 300;
     width: 91%;
     margin: 0 auto; }
 
@@ -449,6 +455,7 @@ a, a:hover {
 
 @media screen and (max-width: 970px) {
     .introduction-desc {
+        font-weight: 600;
         /*min-width: 300px;*/
         font-size: 60px;
         line-height: 80px;
@@ -551,6 +558,7 @@ a, a:hover {
 @media screen and (max-width: 700px) {
     .introduction-desc {
         width: 100%;
+        font-weight: 600;
         min-width: 200px;
         text-align: center;
         font-size: 40px;
@@ -577,6 +585,7 @@ a, a:hover {
     }
     .introduction-desc {
         font-size: 35px;
+        font-weight: 600;
     }
     .whatCanWeDo-section {
         min-width: 310px; }
@@ -590,6 +599,7 @@ a, a:hover {
     .whatCanWeDo-item .whatCanWeDo-item-title {
         width: 85%; }
     .whatCanWeDo-item .whatCanWeDo-item-paragraph {
+        font-weight: 300;
         width: 85%; } }
 
 @media screen and (max-width: 400px) {
