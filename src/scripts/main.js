@@ -7,7 +7,7 @@ function triggeerMenu () {
         console.log();
         if(menuBlock.classList[1] === 'header-nav_disable') {
             menuBlock.classList.remove('header-nav_disable')
-            header.style.cssText = "height: 300px"
+            header.style.cssText = "height: 230px"
         } else {
             menuBlock.classList.add('header-nav_disable')
             header.style.cssText = "height: 115px"

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,700,700i,900');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,700,700i,800,900');
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -47,14 +47,14 @@ a {
     align-items: center;
 }
 .banner-content {
-    width: 50%;
+    width: 49%;
     max-width: 812px;
 }
 .banner h1 {
     display: block;
     width: 100%;
     text-align: left;
-    font: 70px/85px "Poppins, SemiBold", sans-serif;
+    font: 800 70px/85px "Poppins", sans-serif;
     color: #ffffff;
     margin-bottom: 55px;
 }
@@ -71,10 +71,6 @@ h1 {
 
 /*...forWhomItWorks...*/
 
-.forWhomItWorks-wrap {
-
-}
-
 .forWhomItWorks {
     display: flex;
     flex-direction: column;
@@ -86,32 +82,37 @@ h1 {
 }
 
 .forWhomItWorks h2 {
-    /*width: 87%;*/
     max-width: 658px;
-    color: #000000;
+    color: #000;
     line-height: 65px;
-    font-size: 50px;
+    font-size: 35px;
     letter-spacing: 3px;
     margin-bottom: 30px;
 }
 
-.forWhomItWorks>div:nth-of-type(1) p {
+.forWhomItWorks_subtitle {
     margin: 0;
-    color: #000000;
-    line-height: 25px;
-    font-size: 20px;
+    color: #000;
+    line-height: 40px;
+    font-size: 25px;
+}
+
+.forWhomItWorks_text {
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.forWhomItWorks_text:last-child {
+    margin-bottom: 0;
 }
 
 .forWhomItWorks>div:nth-of-type(1) {
     background: url(../images/dress.svg) bottom 60px right 90px no-repeat;
-    /*background-position:  ;*/
     background-size: 150px;
     padding: 145px 0 168px
 }
 
-.forWhomItWorks div:nth-of-type(2) p {
-    margin: 0 0 70px 0;
-}
 .forWhomItWorks div:nth-of-type(2) {
     position: relative;
     background-color: #3C465A;
@@ -119,9 +120,7 @@ h1 {
     z-index: 0;
     overflow: hidden
 }
-.forWhomItWorks div:nth-of-type(2) p:last-child {
-    margin: 0;
-}
+
 .forWhomItWorks_image {
     position: absolute;
     bottom: -125px;
@@ -148,7 +147,6 @@ h1 {
 /*...how works...*/
 .howItWorks {
     padding: 82px 0 68px;
-    /*padding: 70px 0;*/
     background: #E3E3E3;
     text-align: center;
 }
@@ -162,67 +160,70 @@ h1 {
     margin: 0;
     font-weight: 700;
     font-size: 37px;
-    color: #000000;
-    /*text-decoration: underline;*/
+    color: #000;
 }
 
 .block_howItWorks_flex {
     margin: 55px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 900px) {
+    .block_howItWorks_flex {
+        grid-template-columns: 1fr;
+    }
 }
 
 .block_howItWorks {
     margin: 5px auto;
     width: 100%;
-    padding: 15px
+    padding: 15px;
 }
 
-.block_howItWorks span {
-    display: block;
-}
-
-.block_howItWorks span:nth-of-type(1) {
+.block_howItWorks_title {
     margin-top: 20px;
     font-weight: 700;
     font-size: 24px;
-
 }
 
-.block_howItWorks span:nth-of-type(2) {
-    min-width: 230px;
+.block_howItWorks_text {
+    min-width: 240px;
     max-width: 300px;
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
     margin-top: 15px;
-    font-weight: 300;
     font-size: 19px;
-    line-height: 30px;
-    color: #000000;
+    line-height: 25px;
+    color: #000;
 }
 
 /*...feedback...*/
 .feedback-wrap {
-    padding: 63px 15px 132px;
+    padding: 63px 15px 120px;
 }
 .feedback {
-    /*padding: 40px 0 40px;*/
     text-align: center;
 }
 
 .feedback div:nth-of-type(2) {
     margin-top: 25px;
-
 }
 
-.feedback h2 {
+.feedback_title {
     margin: 0 ;
-    font-size: 25px;
+    font-size: 35px;
 }
 
-.feedback p {
-    font-size: 20px;
+.feedback_text {
+    font-size: 25px;
+    line-height: 40px;
+    padding-bottom: 25px
 }
-.feedback__Interested {
-    margin-bottom: 73px;
+
+.feedback__Interested,
+.feedback_text--height {
+    min-height: 255px;
 }
 
 .feedback > div {
@@ -232,46 +233,35 @@ h1 {
 
 .feedback input {
     outline: none;
-    font-size: 29px;
-    border: none;
+    font-size: 20px;
+    border: 1px solid #CBCBCB;
     padding: 12px 45px;
     width: 80%;
-    background: #E2E2E2;
+    background: #EFEFEF;
     border-radius: 33px;
 }
 
 .feedback input::placeholder {
     font-size: 20px;
-    color: #000000;
+    color: #000;
 }
 
-.feedback button {
+.feedback_btn_block_link {
     outline: none;
     cursor: pointer;
     font-size: 20px;
-    color: #000000;
+    color: #000;
     width: 80%;
-    /*margin: auto;*/
     font-weight: 600;
     background: #9BFFBE;
-    padding: 13px 20px;
+    padding: 19px 20px;
     border-radius: 34px;
-}
-
-/*.feedback_btn_block {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*}*/
-
-.feedback_btn_block span {
-    font-size: 35px;
-    font-weight: 700;
+    display: inline-block;
 }
 
 footer {
     padding: 20px 0 10px;
     background: #3C465A;
-
 }
 
 .footer_info {
@@ -305,7 +295,6 @@ footer a {
 }
 
 .f_logo span {
-
     font-weight: 500;
     line-height: normal;
     font-size: 18px;
@@ -314,7 +303,6 @@ footer a {
 }
 
 .f_logo img {
-
     vertical-align: middle;
 }
 
@@ -322,15 +310,10 @@ footer a {
     .feedback h2 {
         margin: 0 0 34px 0;
     }
-    .feedback_btn_block {
-        margin-top: 30px;
-    }
     .feedback input {
         height: 67px;
     }
-    .feedback__Interested {
-        margin-bottom: 60px;
-    }
+
     .banner {
         min-height: 400px;
     }
@@ -347,12 +330,7 @@ footer a {
         width: 50%;
     }
 
-    .forWhomItWorks div:nth-of-type(1) {
-        /*padding: 45px;*/
-    }
-
     .forWhomItWorks_img_bg {
-        /*padding: 40px;*/
         color: #FFFFFF;
         line-height: 50px;
         font-size: 18px;
@@ -360,48 +338,28 @@ footer a {
     }
 
     .forWhomItWorks h2 {
-        font-size: 25px;
         line-height: 35px;
-        margin-bottom: 11px;
+        margin-bottom: 20px;
     }
 
-    .forWhomItWorks div:nth-of-type(1) p {
-        font-size: 20px;
-        line-height: 30px;
-    }
-    .forWhomItWorks div:nth-of-type(2) p {
-        margin: 0 0 20px 0;
+    .forWhomItWorks_text {
+        margin-bottom: 20px;
     }
 
     .howItWorks {
         padding: 82px 0 68px;
     }
 
-    .block_howItWorks_flex {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
     .block_howItWorks {
         width: 260px;
     }
 
-    .feedback button {
+    .feedback_btn_block_link {
         font-size: 20px;
         width: inherit;
-        padding: 13px 50px;
+        padding: 19px 50px;
         height: 67px;
     }
-
-    .feedback span {
-        font-size: 25px;
-    }
-
-    /*.feedback_btn_block {*/
-    /*    justify-content: space-between;*/
-    /*    align-items: center;*/
-    /*    flex-direction: column;*/
-    /*}*/
 
     .feedback {
         padding: 10px;
@@ -444,64 +402,27 @@ footer a {
         width: 50%;
     }
 
-    .forWhomItWorks div:nth-of-type(1) {
-        /*padding: 50px 85px;*/
-    }
-    .forWhomItWorks div:nth-of-type(2) p {
-        margin: 0 0 40px 0;
-    }
 
     .forWhomItWorks_img_bg {
         width: 77%;
-        /*padding: 45px;*/
         color: #FFFFFF;
-        /*line-height: 100px;*/
         font-size: 25px;
         letter-spacing: 3.5px;
     }
 
     .forWhomItWorks h2 {
-        font-size: 35px;
         line-height: 45px;
     }
 
-    .forWhomItWorks div:nth-of-type(1) p {
-        font-size: 28px;
-        line-height: 40px;
-    }
-
-    .block_howItWorks_flex {
-        display: flex;
-    }
-
-    .block_howItWorks {
-        width: 260px;
-    }
-
-    .feedback button {
+    .feedback_btn_block_link {
         font-size: 20px;
         width: inherit;
-        padding: 13px 80px;
+        padding: 19px 80px;
         height: 67px;
     }
 
-    .feedback span {
-        font-size: 25px;
-    }
-
-    /*.feedback_btn_block {*/
-    /*    justify-content: space-between;*/
-    /*    align-items: center;*/
-    /*    flex-direction: row;*/
-    /*}*/
-
     .feedback input {
         padding: 4px 45px;
-    }
-
-    .feedback input::placeholder {
-        font-size: 25px;
-
     }
 
     .feedback {
@@ -541,16 +462,9 @@ footer a {
         min-height: 520px;
     }
 
-    .block_howItWorks_flex {
-        max-width: 1088px;
-        margin: 47px auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .block_howItWorks {
-        width: 260px;
+    .banner h1 {
+        font-size: 55px;
+        line-height: 70px;
     }
 
     .howItWorks {
@@ -566,63 +480,32 @@ footer a {
         margin: auto;
         display: flex;
         max-width: 1650px;
-        padding: 80px 0 100px;
+        padding: 80px 0 0;
+    }
+
+    .feedback__Interested,
+    .feedback_text--height {
+        min-height: 150px;
     }
 
     .feedback > div {
         width: 50%;
     }
 
-    .feedback h2 {
-        margin: 0 0 34px 0;
-        font-size: 50px;
-        line-height: 40px;
-    }
-
-    .feedback p {
-        margin: 20px 0 0;
-        font-size: 30px;
-        line-height: 45px;
-    }
-    .block_howItWorks span:nth-of-type(1) {
-        margin-top: 20px;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 40px;
-    }
-
-    .block_howItWorks span:nth-of-type(2) {
-        margin-top: 15px;
-        font-size: 25px;
-        line-height: 35px;
-    }
-
     .forWhomItWorks div:nth-of-type(1) {
         background-position:  bottom 60px right 50px;
         background-size: 240px 107px;
-        /*padding: 110px 145px;*/
-    }
-
-    .forWhomItWorks h2 {
-        letter-spacing: 3px;
-        font-size: 50px;
-        line-height: 65px;
-    }
-    .forWhomItWorks div:nth-of-type(2) p {
-        margin: 0 0 70px 0;
     }
 
     .forWhomItWorks_img_bg {
-        /*padding: 145px;*/
-        /*line-height: 130px;*/
         font-size: 40px;
         letter-spacing: 3.5px;
     }
 
 
 
-    .feedback button {
-        padding: 13px 125px;
+    .feedback_btn_block_link {
+        padding: 19px 125px;
         height: 67px;
     }
 
@@ -631,10 +514,6 @@ footer a {
     }
     .feedback input {
         margin-top: 30px;
-    }
-    .forWhomItWorks div:nth-of-type(1) p {
-        font-size: 35px;
-        line-height: 50px;
     }
 
     .feedback_btn_block {
@@ -646,11 +525,6 @@ footer a {
     .feedback input {
         padding: 12px 45px;
     }
-
-    .feedback input::placeholder {
-        font-size: 29px;
-    }
-
 
     footer a {
         font-size: 25px;
@@ -673,16 +547,14 @@ footer a {
     }
 }
 
-@media screen and (max-width: 1220px) {
-    .banner h1 {
-        font-size: 55px;
-        line-height: 70px;
-    }
-}
 @media screen and (max-width: 1100px) {
     .feedback {
         flex-direction: column;
         align-items: center;
+    }
+    .feedback__Interested,
+    .feedback_text--height {
+        min-height: initial;
     }
     .feedback > div {
         text-align: center;
@@ -696,10 +568,9 @@ footer a {
         margin: 0 auto;
         min-width: 200px;
     }
-    .feedback_btn_block button {
+    .feedback_btn_block_link {
         width: 100%;
         max-width: 398px;
-        margin-top: 50px;
     }
 }
 @media screen and (max-width: 925px) {
@@ -735,9 +606,6 @@ footer a {
     }
     .forWhomItWorks div:nth-of-type(2) {
         padding: 75px 0 146px;
-    }
-    .forWhomItWorks_img_bg {
-        line-height: 15px;
     }
 }
 @media screen and (max-width: 790px) {
@@ -784,27 +652,3 @@ footer a {
         font-size: 20px;
     }
 }
-
-/*@media screen and (max-width: 480px) {*/
-/*    .banner {*/
-/*        justify-content: center;*/
-/*        padding-bottom: 10px;*/
-/*    }*/
-/*    .banner-content {*/
-/*        width: 100%;*/
-/*    }*/
-/*    .banner h1 {*/
-/*        font-size: 45px;*/
-/*        line-height: 55px;*/
-/*        text-align: center;*/
-/*    }*/
-/*    .banner-content img {*/
-/*        display: block;*/
-/*        margin: 0 auto;*/
-/*    }*/
-/*    .howItWorks h2 {*/
-/*        font-size: 35px;*/
-/*    }*/
-/*}*/
-
-
