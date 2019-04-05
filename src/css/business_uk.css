@@ -226,7 +226,7 @@ a, a:hover {
     width: 50%;
     max-width: 812px;
     min-width: 800px;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 70px;
     text-align: left;
     line-height: 85px;
@@ -236,7 +236,7 @@ a, a:hover {
 /*...whyOpenPay...*/
 .whyOpenPay-wrap {
     background-color: #F0F0F0;
-    padding: 69px 0 111px;
+    padding: 80px 0 110px;
     position: relative;
     overflow: hidden; }
 .whyOpenPay-wrap .whyOpenPay-bg {
@@ -247,19 +247,25 @@ a, a:hover {
     right: -155px;
     z-index: 0; }
 .whyOpenPay {
-    max-width: 1088px !important;
-}
-.whyOpenPay-title {
-    margin-bottom: 30px; }
-.whyOpenPay__paragraph_1 {
-    font-weight: 300;
-    margin-bottom: 25px;
-}
-.whyOpenPay__paragraph_2 {
-    /*width: 95%;*/
-    font-weight: 300;
+    max-width: 1088px;
+    padding: 0 15px;
     margin: 0 auto;
 }
+.whyOpenPay-title {
+    font-size: 35px;
+    margin-bottom: 40px; }
+
+.whyOpenPay__text {
+    max-width: 650px;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 auto 25px;
+}
+.whyOpenPay__text:last-child {
+    max-width: initial;
+    margin-bottom: 0;
+}
+
 /*...end whyOpenPay...*/
 /*...whatCanWeDo...*/
 .whatCanWeDo-wrap {
@@ -283,7 +289,7 @@ a, a:hover {
     width: 50%;
     height: 1618px;
     min-width: 475px;
-    padding: 68px 0 82px;
+    padding: 140px 0 80px;
     overflow: hidden;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -303,7 +309,9 @@ a, a:hover {
 }
 
 .whatCanWeDo-title {
-    margin: 0 auto 81px;
+    margin: 0 auto 125px;
+    font-size: 35px;
+    line-height: 40px;
 }
 
 .whatCanWeDo-item {
@@ -313,27 +321,27 @@ a, a:hover {
     margin-bottom: 102px;
 }
 .whatCanWeDo-item_1 {
-    top: 17%;
+    top: 19%;
     left: 50%;
 }
 .whatCanWeDo-item_2 {
-    top: 41%;
+    top: 43%;
     left: 50%;
 }
 .whatCanWeDo-item_3 {
-    top: 67%;
+    top: 69%;
     left: 50%;
 }
 .whatCanWeDo-item_4 {
-    top: 17%;
+    top: 19%;
     left: 50%;
 }
 .whatCanWeDo-item_5 {
-    top: 41%;
+    top: 43%;
     left: 50%;
 }
 .whatCanWeDo-item_6 {
-    top: 70%;
+    top: 72%;
     left: 50%;
 }
 .whatCanWeDo-item .whatCanWeDo-item__icon {
@@ -341,9 +349,11 @@ a, a:hover {
     display: block;
     margin: 0 auto 13px; }
 .whatCanWeDo-item .whatCanWeDo-item-title {
+    font-size: 25px;
     width: 95%;
     margin: 0 auto 7px; }
 .whatCanWeDo-item .whatCanWeDo-item-paragraph {
+    font-size: 20px;
     font-weight: 300;
     width: 91%;
     margin: 0 auto; }
@@ -354,7 +364,7 @@ a, a:hover {
 /*...end whatCanWeDo...*/
 /*...readyToChat...*/
 .readyToChat-wrap {
-    padding: 150px 0 130px;
+    padding: 170px 0 140px;
     background-color: #F0F0F0; }
 
 .readyToChat {
@@ -367,13 +377,21 @@ a, a:hover {
     flex-wrap: wrap; }
 
 .readyToChat-title {
+    font-size: 35px;
     margin-right: 97px;
-    /*margin-right: 5.9146341463414634146341463414634%;*/
     margin-bottom: 20px;
     white-space: nowrap; }
 
 .readyToChat-btn {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    padding: 20px 0;
+ }
+
+ @media screen and (max-width: 1366px) {
+    .readyToChat-btn {
+        padding: 12px 0;
+    }
+ }
 
 /*...end readyToChat...*/
 /*...footer...*/
@@ -407,16 +425,16 @@ a, a:hover {
 
 /*...end footer...*/
 @media screen and (max-width: 1366px) {
-    .title-h1 {
-        font-size: 40px; }
-    .title-h2 {
-        font-size: 45px; }
+    /* .title-h1 {
+        font-size: 40px; } */
+    /* .title-h2 {
+        font-size: 45px; } */
     .title-h4 {
         font-size: 28px;
         line-height: 43px; }
-    .paragraph-1 {
+    /* .paragraph-1 {
         font-size: 26px;
-        line-height: 43px; }
+        line-height: 43px; } */
     .paragraph-2 {
         font-size: 20px; }
     .paragraph-3 {

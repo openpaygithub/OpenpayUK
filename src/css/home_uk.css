@@ -638,6 +638,9 @@ footer a {
     .howItWorks h2 {
         font-size: 35px;
     }
+    .feedback input::placeholder {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 490px) {
