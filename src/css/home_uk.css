@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,700,700i,800,900');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,700,700i,800,900');
 
 * {
   font-family: 'Poppins', sans-serif;
@@ -12,6 +12,7 @@ html {
 
 body {
   margin: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
 .logo {
@@ -70,14 +71,16 @@ h1 {
 /*...forWhomItWorks...*/
 
 .forWhomItWorks {
+  max-width: 1650px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
-.part1__wrap-text {
+/* .part1__wrap-text {
   width: 76%;
   margin: 0 auto;
-}
+} */
 
 .forWhomItWorks h2 {
   max-width: 658px;
@@ -96,9 +99,11 @@ h1 {
 }
 
 .forWhomItWorks_text {
-  font-weight: 600;
+  color: #fff;
+  font-weight: 700;
   font-size: 35px;
   margin-bottom: 30px;
+  letter-spacing: 3px;
 }
 
 .forWhomItWorks_text:last-child {
@@ -108,8 +113,17 @@ h1 {
 .forWhomItWorks > div:nth-of-type(1) {
   background: url(../images/dress.svg) bottom 60px right 90px no-repeat;
   background-size: 150px;
-  padding: 145px 0 168px;
+  position: relative;
+  padding: 145px 15px 168px;
 }
+
+/* .forWhomItWorks > div:nth-of-type(1):after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  background: url(../images/dress.svg) bottom right no-repeat;
+} */
 
 .forWhomItWorks div:nth-of-type(2) {
   position: relative;
@@ -219,9 +233,8 @@ h1 {
   padding-bottom: 25px;
 }
 
-.feedback__Interested,
 .feedback_text--height {
-  min-height: 255px;
+  min-height: 230px;
 }
 
 .feedback > div {
@@ -232,15 +245,20 @@ h1 {
 .feedback input {
   outline: none;
   font-size: 20px;
-  border: 1px solid #cbcbcb;
-  padding: 12px 45px;
-  width: 80%;
+  border: none;
+  margin: 30px 0 70px;
+  padding: 4px 45px;
+  min-width: 500px;
+  display: block;
+  height: 67px;
   background: #efefef;
   border-radius: 33px;
 }
 
 .feedback input::placeholder {
+  font-weight: 600;
   font-size: 20px;
+  font-style: italic;
   color: #000;
 }
 
@@ -255,6 +273,11 @@ h1 {
   padding: 19px 20px;
   border-radius: 34px;
   display: inline-block;
+}
+
+.feedback_btn_block {
+  justify-content: flex-start;
+  align-items: center;
 }
 
 footer {
@@ -307,9 +330,6 @@ footer a {
   .feedback h2 {
     margin: 0 0 34px 0;
   }
-  .feedback input {
-    height: 67px;
-  }
 
   .banner {
     min-height: 400px;
@@ -359,10 +379,8 @@ footer a {
   }
 
   .feedback {
-    padding: 10px;
     display: flex;
     text-align: left;
-    max-width: 1200px;
     margin: 0 auto;
   }
 
@@ -415,14 +433,9 @@ footer a {
     height: 67px;
   }
 
-  .feedback input {
-    padding: 4px 45px;
-  }
-
   .feedback {
     display: flex;
     text-align: left;
-    max-width: 1200px;
     margin: 30px auto;
   }
 
@@ -474,7 +487,6 @@ footer a {
     padding: 80px 0 0;
   }
 
-  .feedback__Interested,
   .feedback_text--height {
     min-height: 150px;
   }
@@ -483,10 +495,10 @@ footer a {
     width: 50%;
   }
 
-  .forWhomItWorks div:nth-of-type(1) {
+  /* .forWhomItWorks div:nth-of-type(1) {
     background-position: bottom 60px right 50px;
     background-size: 240px 107px;
-  }
+  } */
 
   .forWhomItWorks_img_bg {
     font-size: 40px;
@@ -501,12 +513,9 @@ footer a {
   .feedback span {
     font-size: 35px;
   }
-  .feedback input {
-    margin-top: 30px;
-  }
 
   .feedback_btn_block {
-    margin-top: 30px;
+    padding-top: 85px;
     justify-content: flex-start;
     align-items: center;
   }
@@ -553,9 +562,10 @@ footer a {
     margin-bottom: 50px;
   }
   .feedback input {
-    display: block;
-    margin: 0 auto;
+    margin: 30px auto;
     min-width: 200px;
+    max-width: 398px;
+    width: 100%;
   }
   .feedback_btn_block_link {
     width: 100%;
@@ -628,7 +638,7 @@ footer a {
     font-size: 35px;
   }
   .feedback input::placeholder {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
