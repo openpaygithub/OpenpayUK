@@ -367,7 +367,7 @@ a:hover {
 /*...whyOpenPay...*/
 .whyOpenPay-wrap {
   background-color: #f0f0f0;
-  padding: 80px 0 110px;
+  padding: 50px 0;
   position: relative;
   overflow: hidden;
 }
@@ -381,12 +381,12 @@ a:hover {
 }
 .whyOpenPay {
   max-width: 1088px;
-  padding: 0 15px;
+  padding: 0 15px 30px;
   margin: 0 auto;
 }
 .whyOpenPay-title {
   font-size: 35px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .whyOpenPay__text {
@@ -398,6 +398,15 @@ a:hover {
 .whyOpenPay__text:last-child {
   max-width: initial;
   margin-bottom: 0;
+}
+
+.whyOpenPay-btn {
+  padding: 20px 0;
+  max-width: 260px;
+  margin: 0 auto;
+  display: block;
+  z-index: 1;
+  position: relative;
 }
 
 /*...end whyOpenPay...*/
@@ -531,7 +540,8 @@ a:hover {
 }
 
 @media screen and (max-width: 1366px) {
-  .readyToChat-btn {
+  .readyToChat-btn,
+  .whyOpenPay-btn {
     padding: 12px 0;
   }
 }
