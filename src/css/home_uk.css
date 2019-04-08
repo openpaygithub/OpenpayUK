@@ -280,6 +280,10 @@ h1 {
   align-items: center;
 }
 
+.feedback_thankyou {
+  display: none;
+}
+
 footer {
   padding: 20px 0 10px;
   background: #3c465a;
