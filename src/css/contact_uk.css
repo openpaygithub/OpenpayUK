@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,700,700i,800,900');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900');
 
 * {
   font-family: 'Poppins', sans-serif;
@@ -28,7 +28,6 @@ a {
 .hero {
   background: url(../images/contact/contact-bg.jpg) center no-repeat;
   background-size: cover;
-  /* min-height: 520px; */
   width: 100%;
 }
 
@@ -59,11 +58,11 @@ a {
 }
 
 .contact__mail {
-    justify-self: end;
+  justify-self: end;
 }
 
 .contact__phone {
-    justify-self: start;
+  justify-self: start;
 }
 
 .contact__img--mail {
@@ -89,12 +88,12 @@ a {
 }
 
 .contact__link {
-    font-size: 17px;
-    border: 3px solid #19B8E9;
-    border-radius: 10px;
-    width: 260px;
-    padding: 10px 0;
-    display: block;
+  font-size: 17px;
+  border: 3px solid #19b8e9;
+  border-radius: 10px;
+  width: 260px;
+  padding: 10px 0;
+  display: block;
 }
 
 @media screen and (max-width: 768px) {
@@ -110,7 +109,6 @@ a {
 
   .contact__mail,
   .contact__phone {
-      justify-self: center;
+    justify-self: center;
   }
-
 }
