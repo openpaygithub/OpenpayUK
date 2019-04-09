@@ -53,8 +53,10 @@ a {
   display: block;
   width: 100%;
   text-align: left;
-  font: 800 70px/85px 'Poppins', sans-serif;
-  color: #ffffff;
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 85px;
+  color: #fff;
   margin-bottom: 55px;
 }
 .banner img {
@@ -152,9 +154,6 @@ h1 {
 }
 .forWhomItWorks_img_bg {
   height: 100%;
-  /* width: 70%; */
-  /*background:url(../images/big-o.svg) bottom -70px right -65px no-repeat;*/
-  /*background-size: 498px 400px;*/
   color: #ffffff;
   line-height: 80px;
   font-size: 25px;
@@ -260,7 +259,7 @@ h1 {
 }
 
 .feedback input::placeholder {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
   font-style: italic;
   color: #000;
@@ -345,7 +344,7 @@ footer a {
   }
 
   .banner h1 {
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
   }
 
   .forWhomItWorks {
@@ -442,11 +441,6 @@ footer a {
     min-height: 520px;
   }
 
-  .banner h1 {
-    font-size: 55px;
-    line-height: 70px;
-  }
-
   .howItWorks {
     padding: 82px 0 68px;
   }
@@ -501,19 +495,24 @@ footer a {
 }
 
 @media screen and (max-width: 1280px) {
+  .feedback-wrap {
+    padding: 70px 15px 80px;
+  }
+  
   .feedback {
     grid-template-columns: 1fr;
-    grid-row-gap: 80px;
+    grid-row-gap: 50px;
     justify-items: center;
     text-align: center;
   }
+
   .feedback__Interested,
   .feedback_text--height {
     min-height: initial;
   }
 
   .feedback input {
-    margin: 30px auto;
+    margin: 0 auto 30px;
     min-width: 200px;
     max-width: 398px;
     width: 100%;
@@ -556,10 +555,10 @@ footer a {
     padding: 75px 0 45px;
   }
 }
-@media screen and (max-width: 790px) {
-  .banner h1 {
-    font-size: 45px;
-    line-height: 55px;
+@media screen and (max-width: 1280px) {
+  .banner-content {
+    width: initial;
+    max-width: initial;
   }
 }
 @media screen and (max-width: 525px) {
@@ -572,7 +571,7 @@ footer a {
   }
   .banner-content {
     width: 100%;
-    padding-top: 30px;
+    padding: 30px 0;
   }
   .banner h1 {
     font-size: 45px;
