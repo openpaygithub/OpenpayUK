@@ -251,12 +251,6 @@ a:hover {
   opacity: 0.7;
 }
 
-.block-wap {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
 .block-child-wrap {
   width: 100%;
   max-width: 1640px;
