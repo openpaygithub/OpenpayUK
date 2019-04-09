@@ -1,294 +1,51 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-}
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-}
-
-ol,
-ul {
-  list-style: none;
-}
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,700,700i,800,900');
 
 * {
-  margin: 0;
-  padding: 0;
-  outline: none;
-  -webkit-box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
+html {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
 
-a,
-a:hover {
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.logo {
+  width: 100px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+main {
+  padding: 0 8px;
+}
+
+button {
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+}
+
+a {
   text-decoration: none;
 }
 
-@font-face {
-  font-family: 'PoppinsBold';
-  src: url('../fonts/bold/PoppinsBold.eot');
-  src: url('../fonts/bold/PoppinsBold.eot') format('embedded-opentype'),
-    url('../fonts/bold/PoppinsBold.woff2') format('woff2'),
-    url('../fonts/bold/PoppinsBold.woff') format('woff'),
-    url('../fonts/bold/PoppinsBold.ttf') format('truetype'),
-    url('../fonts/bold/PoppinsBold.svg#PoppinsBold') format('svg');
-}
-
-@font-face {
-  font-family: 'PoppinsLight';
-  src: url('../fonts/light/PoppinsLight.eot');
-  src: url('../fonts/light/PoppinsLight.eot') format('embedded-opentype'),
-    url('../fonts/light/PoppinsLight.woff2') format('woff2'),
-    url('../fonts/light/PoppinsLight.woff') format('woff'),
-    url('../fonts/light/PoppinsLight.ttf') format('truetype'),
-    url('../fonts/light/PoppinsLight.svg#PoppinsLight') format('svg');
-}
-
-@font-face {
-  font-family: 'PoppinsMedium';
-  src: url('../fonts/medium/PoppinsMedium.eot');
-  src: url('../fonts/medium/PoppinsMedium.eot') format('embedded-opentype'),
-    url('../fonts/medium/PoppinsMedium.woff2') format('woff2'),
-    url('../fonts/medium/PoppinsMedium.woff') format('woff'),
-    url('../fonts/medium/PoppinsMedium.ttf') format('truetype'),
-    url('../fonts/medium/PoppinsMedium.svg#PoppinsMedium') format('svg');
-}
-
-@font-face {
-  font-family: 'PoppinsMediumItalic';
-  src: url('../fonts/mediumItalic/PoppinsMediumItalic.eot');
-  src: url('../fonts/mediumItalic/PoppinsMediumItalic.eot')
-      format('embedded-opentype'),
-    url('../fonts/mediumItalic/PoppinsMediumItalic.woff2') format('woff2'),
-    url('../fonts/mediumItalic/PoppinsMediumItalic.woff') format('woff'),
-    url('../fonts/mediumItalic/PoppinsMediumItalic.ttf') format('truetype'),
-    url('../fonts/mediumItalic/PoppinsMediumItalic.svg#PoppinsMediumItalic')
-      format('svg');
-}
-
-@font-face {
-  font-family: 'PoppinsSemiBold';
-  src: url('../fonts/semiBold/PoppinsSemiBold.eot');
-  src: url('../fonts/semiBold/PoppinsSemiBold.eot') format('embedded-opentype'),
-    url('../fonts/semiBold/PoppinsSemiBold.woff2') format('woff2'),
-    url('../fonts/semiBold/PoppinsSemiBold.woff') format('woff'),
-    url('../fonts/semiBold/PoppinsSemiBold.ttf') format('truetype'),
-    url('../fonts/semiBold/PoppinsSemiBold.svg#PoppinsSemiBold') format('svg');
-}
-
-.title-h1 {
-  font-size: 65px;
-  font-family: 'PoppinsBold', sans-serif;
-  line-height: normal;
-  font-weight: 700;
-  text-align: center;
-  color: #fff;
-}
-
-.title-h2 {
-  font-size: 35px;
-  font-family: 'PoppinsBold', sans-serif;
-  line-height: normal;
-  font-weight: 700;
-  text-align: center;
-  color: #000;
-}
-
-.title-h3 {
-  font-size: 30px;
-  font-family: 'PoppinsSemiBold', sans-serif;
-  line-height: 40px;
-  font-weight: 600;
-  text-align: center;
-  color: #000;
-}
-
-.title-h4 {
-  font-size: 20px;
-  font-family: 'PoppinsBold', sans-serif;
-  line-height: normal;
-  font-weight: 600;
-  text-align: center;
-  color: #000;
-}
-
-.paragraph-1 {
-  font-size: 65px;
-  font-family: 'PoppinsSemiBold', sans-serif;
-  line-height: 80px;
-  font-weight: 600;
-  text-align: center;
-  color: #fff;
-}
-
-.paragraph-2 {
-  font-size: 30px;
-  font-family: 'PoppinsLight', sans-serif;
-  line-height: 50px;
-  font-weight: 300;
-  text-align: center;
-  color: #000;
-}
-
-.paragraph-3 {
-  font-size: 25px;
-  font-family: 'PoppinsLight', sans-serif;
-  line-height: 35px;
-  font-weight: 300;
-  text-align: center;
-  color: #000;
-}
-
-.paragraph-4 {
-  font-size: 20px;
-  font-family: 'PoppinsLight', sans-serif;
-  line-height: normal;
-  font-weight: 300;
-  text-align: center;
-  color: #000;
-}
-
 .link-to {
-  font-family: 'PoppinsSemiBold', sans-serif;
   line-height: normal;
-  font-weight: 300;
+  font-weight: 600;
   text-align: center;
   color: #000;
-}
-
-.btn-primary {
-  font-size: 18px;
-  font-family: 'PoppinsSemiBold', sans-serif;
-  line-height: normal;
-  font-weight: 500;
-  text-align: center;
-  color: #000;
-  width: 100%;
-  max-width: 398px;
-  min-width: 250px;
-  height: 67.53px;
-  background-color: #9bffbe;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
-  border: none;
-  cursor: pointer;
-}
-.btn-primary:hover {
-  background-color: rgba(137, 255, 189, 0.8);
-  color: rgba(0, 0, 0, 0.71);
-}
-.btn-primary:active {
-  background-color: rgba(155, 255, 190, 0.6);
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.block-wap {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
-.empoweringPay {
-  width: 100%;
-  max-width: 1364px;
-  padding: 0 15px;
-  margin: 0 auto;
 }
 
 /*...welcome block...*/
 .welcome-wrap {
-  -webkit-background-size: cover;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url('../images/landingpage_bg.png');
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
   background-size: cover;
   padding: 90px 0;
 }
@@ -302,41 +59,133 @@ a:hover {
   height: auto;
   margin-bottom: 10px;
 }
-.welcome .welcome-subtitle {
-  letter-spacing: 2px;
-}
 
+.welcome-title {
+  font-size: 65px;
+  font-weight: 800;
+  color: #fff;
+}
 /*...end welcome block...*/
-/*...partnered...*/
-.partnered-wrap {
-  padding: 130px 0 65px;
-}
-.partnered {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1088px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-.partnered-wrap .partnered__paragraph {
-  text-align: left;
-  width: 69%;
-  margin: 0 0 43px;
-}
-.partnered-wrap .partnered_link {
-  max-width: 260px;
-  display: inline-block;
-  margin-bottom: 43px;
-  padding: 20px 0;
+
+/*...signup...*/
+.signup {
+  background: linear-gradient(
+    to right,
+    #fff 0%,
+    #fff 50%,
+    #3c465a 50%,
+    #3c465a 100%
+  );
+  position: relative;
+  overflow: hidden;
+  padding: 160px 0 155px;
 }
 
-/*...end partnered...*/
+.signup::after {
+  content: '';
+  background: url(../images/big-o.svg) no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 498px;
+  z-index: 1;
+  position: absolute;
+  bottom: -215px;
+  right: -50px;
+}
+
+.signup__wrapper {
+  max-width: 1585px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.signup__title {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 60px;
+  padding-top: 50px;
+}
+
+.signup__item {
+  max-width: 585px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.signup__item--form {
+  max-width: 620px;
+  background-color: #3c465a;
+}
+
+.signup__form-title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 50px;
+  color: #fff;
+  padding-bottom: 40px;
+}
+
+.signup__form {
+  position: relative;
+  z-index: 2;
+}
+
+.signup__input {
+  font-size: 20px;
+  margin-bottom: 40px;
+  background-color: #efefef;
+  border: none;
+  border-radius: 33px;
+  height: 66px;
+  text-align: left;
+  padding-left: 40px;
+  width: 80%;
+  min-width: 260px;
+}
+
+.signup__input::placeholder {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.signup__submit {
+  display: block;
+  border: none;
+  border-radius: 34px;
+  background-color: #9bffbe;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  height: 67px;
+  width: 260px;
+}
+
+.signup__submit:hover {
+  background-color: rgba(137, 255, 189, 0.8);
+  color: rgba(0, 0, 0, 0.71);
+}
+
+.signup__submit:active {
+  background-color: rgba(155, 255, 190, 0.6);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.thankyou {
+  display: none;
+  font-weight: 600;
+  font-size: 25px;
+  color: #fff;
+}
+
+/*...end signup...*/
+
 /*...works...*/
 .works-wrap {
   padding: 90px 0 95px;
   background-color: #ededed;
 }
+
 .works {
   max-width: 1088px;
   padding: 0 15px;
@@ -344,7 +193,10 @@ a:hover {
 }
 
 .works-title {
+  font-weight: 700;
+  font-size: 35px;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .work-list {
@@ -355,27 +207,13 @@ a:hover {
 
 .work-item {
   width: 300px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
   padding: 15px;
 }
-/*.work-item .work-item__icon {*/
-/*    margin-bottom: 17px; }*/
+
 .work-item .work-item__icon_1 {
   width: 64px;
   height: 76px;
@@ -394,9 +232,15 @@ a:hover {
   margin-bottom: 16.77px;
 }
 .work-item .work-item__title {
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
   margin-bottom: 17px;
 }
 .work-item__desc {
+  font-weight: 300;
+  font-size: 25px;
+  text-align: center;
   min-height: 140px;
   width: 92%;
 }
@@ -408,31 +252,42 @@ a:hover {
   overflow: hidden;
   position: relative;
 }
-.empoweringPay-wrap .empoweringPay-bg-icon {
-  width: 554px;
-  height: 681px;
-  position: absolute;
-  left: -140px;
-  bottom: -80px;
-  z-index: -3;
+
+.empoweringPay {
+  width: 100%;
+  max-width: 1364px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .empoweringPay-section {
   width: 100%;
   margin: 0 auto;
+  text-align: center;
 }
 .empoweringPay-title {
+  font-weight: 800;
+  font-size: 40px;
   margin-bottom: 40px;
 }
 
-.empoweringPay-section .empoweringPay__article {
+.empoweringPay__article {
   margin-bottom: 40px;
 }
-.empoweringPay-section .empoweringPay__article:last-child {
+
+.empoweringPay__article:last-child {
   margin-bottom: 0;
 }
-.empoweringPay-section .empoweringPay__article .empoweringPay__article-title {
+
+.empoweringPay__article-title {
+  font-weight: 600;
+  font-size: 20px;
   margin-bottom: 10px;
+}
+
+.empoweringPay__text {
+  font-weight: 300;
+  font-size: 20px;
 }
 
 .empoweringPay_btn {
@@ -442,84 +297,50 @@ a:hover {
 
 /*...end empoweringPay...*/
 
-@media screen and (max-width: 890px) {
-  .partnered {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  .partnered .partnered__paragraph {
-    width: 70%;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 1366px) {
-  /* .title-h2 {
-        font-size: 50px; } */
-  .title-h3 {
-    font-size: 28px;
-  }
-  /* .title-h4 {
-        font-size: 26px; } */
-  .paragraph-1 {
-    font-size: 40px;
-    line-height: 45px;
-  }
-  .paragraph-2 {
-    font-size: 26px;
-    line-height: 50px;
-  }
-  /* .paragraph-4 {
-        font-size: 25px; } */
-}
-
-@media screen and (max-width: 1000px) {
-  /* .title-h2 {
-        font-size: 40px; } */
-  .title-h3 {
-    font-size: 20px;
-  }
-  /* .title-h4 {
-        font-size: 25px; } */
-  .paragraph-1 {
-    font-size: 35px;
-    line-height: 45px;
-  }
-  .paragraph-2 {
-    font-size: 23px;
-    line-height: 50px;
-  }
-  .paragraph-3 {
-    font-size: 20px;
-    line-height: 35px;
-  }
-  /* .paragraph-4 {
-        font-size: 20px; } */
-  /* .link-to {
-        font-size: 24px; } */
-  .btn-primary {
-    height: 50px;
-  }
-
-  .partnered-wrap .partnered_link {
-    padding: 12px 0;
-  }
-}
-
 @media screen and (max-width: 920px) {
-  .work-list {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media screen and (max-width: 765px) {
   .welcome-wrap {
     padding: 140px 0;
   }
-}
 
-@media screen and (max-width: 425px) {
-  .partnered-wrap .partnered__paragraph {
-    width: 100%;
+  .welcome-title {
+    font-size: 50px;
+  }
+
+  .signup {
+    background: #fff;
+    padding: 90px 0 0;
+  }
+
+  .signup__wrapper {
+    grid-template-columns: 1fr;
+    grid-row-gap: 50px;
+  }
+
+  .signup__title {
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .signup__item,
+  .signup__item--form {
+    max-width: initial;
+  }
+
+  .signup__item--form {
+    padding: 50px 15px 95px;
+    text-align: center;
+  }
+
+  .signup__input {
+    text-align: center;
+    padding-left: 0px;
+  }
+
+  .signup__submit {
+    margin: 0 auto;
+  }
+
+  .work-list {
+    grid-template-columns: 1fr;
   }
 }
