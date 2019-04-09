@@ -68,10 +68,6 @@
         g.clearUserCookie = function() {};
       })(window, document, window['_fs_namespace'], 'script', 'user');
     </script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:300,600,800"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/landingpage.css" />
     <link rel="stylesheet" href="css/nav.css" />
   </head>
@@ -79,25 +75,53 @@
     <div class="welcome-wrap block-wap">
       <div class="welcome block-child-wrap">
         <img src="./images/landing_logo.svg" alt="Openpay" class="logo" />
-        <p class="welcome-subtitle paragraph-1">
+        <h1 class="welcome-title">
           Welcome to a smarter way to pay
-        </p>
+        </h1>
       </div>
     </div>
-    <div class="partnered-wrap block-wap">
-      <div class="partnered">
-        <p class="paragraph-2 partnered__paragraph">
-          We’ve partnered with Openpay to bring you more ways to pay, on your
-          terms.
-        </p>
-        <a href="#" class="btn-primary partnered_link">
-          Sign up now
-        </a>
+
+    <section class="signup">
+      <div class="signup__wrapper">
+        <div class="signup__item">
+          <h2 class="signup__title">
+            We’ve partnered with Openpay to bring you more ways to pay, on your
+            terms.
+          </h2>
+        </div>
+        <div class="signup__item signup__item--form">
+          <h3 class="signup__form-title">
+            Add your email address to receive the latest news and info from
+            Openpay
+          </h3>
+          <form
+            class="gform signup__form"
+            method="POST"
+            action="https://script.google.com/macros/s/AKfycbyrox_EtmkWyFRhrKAeRz1rzyl_p6-t63XE1rOe/exec"
+          >
+            <div class="form-elements">
+              <input
+                class="signup__input"
+                type="email"
+                name="email"
+                placeholder="Your email address"
+                required
+              />
+              <button class="signup__submit" type="submit">
+                Sign up
+              </button>
+            </div>
+            <div class="thankyou">
+              <em>Thank you,</em> we'll be in touch.
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
+    </section>
+
     <div class="works-wrap block-wap">
       <div class="works">
-        <h2 class="title-h2 works-title">
+        <h2 class="works-title">
           How Openpay works
         </h2>
         <div class="work-list">
@@ -107,10 +131,10 @@
               alt="sign in"
               class="work-item__icon work-item__icon_1"
             />
-            <h3 class="work-item__title title-h3">
+            <h3 class="work-item__title">
               Sign Up
             </h3>
-            <p class="work-item__desc paragraph-3">
+            <p class="work-item__desc">
               Sign up in less than 90 seconds with a few simple details.
             </p>
           </div>
@@ -120,10 +144,10 @@
               alt="shop"
               class="work-item__icon work-item__icon_2"
             />
-            <h3 class="work-item__title title-h3">
+            <h3 class="work-item__title">
               Shop Now
             </h3>
-            <p class="work-item__desc paragraph-3">
+            <p class="work-item__desc">
               Add items to the basket, and select Openpay at checkout
             </p>
           </div>
@@ -133,37 +157,37 @@
               alt="simple"
               class="work-item__icon work-item__icon_3"
             />
-            <h3 class="work-item__title title-h3">
+            <h3 class="work-item__title">
               Pay Smarter
             </h3>
-            <p class="work-item__desc paragraph-3">
+            <p class="work-item__desc">
               Pay your plan off in equal, monthly instalments, starting today.
             </p>
           </div>
         </div>
       </div>
     </div>
+
     <div class="empoweringPay-wrap block-wap">
-      <!-- <img src="./images/stor.svg" alt="store" class="empoweringPay-bg-icon"> -->
       <div class="empoweringPay">
         <section class="empoweringPay-section">
           <h2 class="title-h2 empoweringPay-title">
             Empowering you to pay.
           </h2>
           <article class="empoweringPay__article">
-            <h4 class="title-h4 empoweringPay__article-title">
+            <h4 class="empoweringPay__article-title">
               How do I make payments?
             </h4>
-            <p class="paragraph-4">
+            <p class="empoweringPay__text">
               You don’t need to worry about manually making payments, we will
               directly debit your account on the scheduled date.
             </p>
           </article>
           <article class="empoweringPay__article">
-            <h4 class="title-h4 empoweringPay__article-title">
+            <h4 class="empoweringPay__article-title">
               When will my next payment be due?
             </h4>
-            <p class="paragraph-4">
+            <p class="empoweringPay__text">
               Our plans are made up of equal instalments, one month apart. Your
               initial instalment is paid on the day of purchase, but you can
               customise your second instalment date. Any instalments after this
@@ -171,46 +195,54 @@
             </p>
           </article>
           <article class="empoweringPay__article">
-            <h4 class="title-h4 empoweringPay__article-title">
+            <h4 class="empoweringPay__article-title">
               Are there fees?
             </h4>
-            <p class="paragraph-4">
+            <p class="empoweringPay__text">
               As long as you pay on time, you’ll pay no fees on top of your
               purchase. If you miss a payment, a late fee of £7.50 will apply.
               To avoid this, contact Openpay to reschedule your payment date.
             </p>
           </article>
           <article class="empoweringPay__article">
-            <h4 class="title-h4 empoweringPay__article-title">
+            <h4 class="empoweringPay__article-title">
               Is Openpay safe & secure?
             </h4>
-            <p class="paragraph-4">
+            <p class="empoweringPay__text">
               Yes, protecting your information is very important to us. Openpay
               is a Level 1 PCI DSS Compliant Provider. This means that all
               sensitive information is encrypted and we maintain stringent
               physical, electronic and procedural safeguards to protect your
               information. View the Openpay privacy policy
-              <a href="#" class="link-to"><u>here</u></a
+              <a
+                href="./docs/privacy-policy.pdf"
+                target="_blank"
+                class="link-to"
+                ><u>here</u></a
               >.
             </p>
           </article>
           <article class="empoweringPay__article">
-            <h4 class="title-h4 empoweringPay__article-title">
+            <h4 class="empoweringPay__article-title">
               Will I be charged interest?
             </h4>
-            <p class="paragraph-4">
+            <p class="empoweringPay__text">
               Openpay does not charge any interest. <b>Ever</b>.
             </p>
           </article>
           <article class="empoweringPay__article">
-            <h4 class="title-h4 empoweringPay__article-title">
+            <h4 class="empoweringPay__article-title">
               What if I want to return my order?
             </h4>
-            <p class="paragraph-4">
+            <p class="empoweringPay__text">
               All refunds will be processed through us as normal. Openpay will
               refund you all payments made to date, and cancel your plan. Read
               the full terms and conditions
-              <a href="#" class="link-to"><u>here</u></a
+              <a
+                href="./docs/terms-conditions.pdf"
+                target="_blank"
+                class="link-to"
+                ><u>here</u></a
               >.
             </p>
           </article>
@@ -230,5 +262,11 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script
+      data-cfasync="false"
+      type="text/javascript"
+      src="./scripts/form-submission-handler.js"
+    ></script>
   </body>
 </html>

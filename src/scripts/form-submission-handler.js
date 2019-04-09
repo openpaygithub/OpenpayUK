@@ -91,7 +91,7 @@
           if (formElements) {
             formElements.style.display = "none"; // hide form
           }
-          var thankYouMessage = form.querySelector(".feedback_thankyou");
+          var thankYouMessage = form.querySelector(".thankyou");
           if (thankYouMessage) {
             thankYouMessage.style.display = "block";
           }
