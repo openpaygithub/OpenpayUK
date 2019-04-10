@@ -1,40 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,700,700i,800,900');
 
-* {
-  font-family: 'Poppins', sans-serif;
-  box-sizing: border-box;
-}
-html {
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-}
-
-.logo {
-  width: 100px;
-  font-weight: 700;
-  font-size: 18px;
-}
-
-main {
-  padding: 0 8px;
-}
-
-button {
-  -webkit-appearance: none;
-  outline: none;
-  border: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 .btn-primary {
   font-size: 20px;
   line-height: normal;
@@ -150,91 +115,65 @@ a {
 
 /*...whatCanWeDo...*/
 .whatCanWeDo-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  min-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
 }
 
 .whatCanWeDo-section {
-  position: relative;
-  width: 50%;
-  height: 1618px;
-  min-width: 475px;
-  padding: 140px 0 80px;
-  overflow: hidden;
-  flex: 1;
   color: #fff;
   text-align: center;
+  padding: 140px 15px 100px;
+  width: 100%;
 }
+
 .whatCanWeDo-section_1 {
-  background-color: #3c465a;
+  background-color: #3C465A;
 }
-.whatCanWeDo-section_1 .whatCanWeDo-title {
-  width: 59%;
-  min-width: 300px;
-}
+
 .whatCanWeDo-section_2 {
-  background-color: #179ecf;
-}
-.whatCanWeDo-section_2 .whatCanWeDo-title {
-  width: 85%;
-  min-width: 590px;
+  background-color: #179ECF;
 }
 
 .whatCanWeDo-title {
-  margin: 0 auto 125px;
-  font-size: 35px;
   font-weight: 600;
+  font-size: 35px;
   line-height: 40px;
+  padding-bottom: 125px;
 }
 
+.whatCanWeDo-title--row {
+  padding-bottom: 85px;
+} 
+
 .whatCanWeDo-item {
-  position: absolute;
   max-width: 674px;
-  margin-left: -337px;
-  margin-bottom: 102px;
-}
-.whatCanWeDo-item_1 {
-  top: 19%;
-  left: 50%;
-}
-.whatCanWeDo-item_2 {
-  top: 43%;
-  left: 50%;
-}
-.whatCanWeDo-item_3 {
-  top: 69%;
-  left: 50%;
-}
-.whatCanWeDo-item_4 {
-  top: 19%;
-  left: 50%;
-}
-.whatCanWeDo-item_5 {
-  top: 43%;
-  left: 50%;
-}
-.whatCanWeDo-item_6 {
-  top: 72%;
-  left: 50%;
-}
-.whatCanWeDo-item .whatCanWeDo-item__icon {
-  max-width: 96px;
-  display: block;
-  margin: 0 auto 13px;
-}
-.whatCanWeDo-item .whatCanWeDo-item-title {
-  font-size: 25px;
-  width: 95%;
-  margin: 0 auto 7px;
-}
-.whatCanWeDo-item .whatCanWeDo-item-paragraph {
-  font-size: 20px;
-  font-weight: 300;
-  width: 91%;
   margin: 0 auto;
+  padding-bottom: 80px;
 }
+
+.whatCanWeDo-item:last-child {
+  padding-bottom: 0;
+}
+
+.whatCanWeDo-item_6 {
+  padding-top: 50px;
+}
+
+.whatCanWeDo-item-title {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 41px;
+  padding: 12px 0 20px;
+}
+
+.whatCanWeDo-item-paragraph {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  min-height: 180px;
+}
+
 /*...end whatCanWeDo...*/
 
 /*...readyToChat...*/
@@ -262,51 +201,25 @@ a {
 }
 /*...end readyToChat...*/
 
-@media screen and (max-width: 1260px) {
-  .whatCanWeDo-item {
-    max-width: 500px;
-    margin-left: -225px;
-  }
-  .whatCanWeDo-section_2 .whatCanWeDo-title {
-    width: 96%;
-    min-width: 0;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .whatCanWeDo-item {
-    max-width: 350px;
-    margin-left: -175px;
-  }
-}
-@media screen and (max-width: 1025px) {
-  .whatCanWeDo-section {
-    height: 1673px;
-  }
-  .whatCanWeDo-item_3 {
-    top: 71%;
-  }
-  .whatCanWeDo-item_6 {
-    top: 73%;
-  }
-}
-
 @media screen and (max-width: 960px) {
   .whatCanWeDo-wrap {
-    flex-wrap: wrap;
+    grid-template-columns: 1fr;
   }
+
   .whatCanWeDo-section {
-    width: 100%;
+    padding: 100px 15px 100px;
   }
-  .whatCanWeDo-section {
-    height: auto;
+
+  .whatCanWeDo-title {
+    padding-bottom: 70px;
   }
+
   .whatCanWeDo-item {
-    position: static;
-    max-width: 85%;
-    margin: 0 auto 71px;
+    padding-bottom: 50px;
   }
-  .whatCanWeDo-section_2 .whatCanWeDo-title {
-    width: 85%;
+
+  .whatCanWeDo-item-paragraph {
+    min-height: initial;
   }
 }
 
@@ -319,6 +232,10 @@ a {
     line-height: 55px;
   }
 
+  .whatCanWeDo-wrap {
+    grid-template-columns: 1fr;
+  }
+
   .readyToChat {
     flex-direction: column;
     align-items: center;
@@ -326,29 +243,5 @@ a {
 
   .readyToChat-title {
     margin-right: 0;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .whatCanWeDo-section {
-    min-width: 310px;
-  }
-  .whatCanWeDo-section_1 .whatCanWeDo-title,
-  .whatCanWeDo-section_2 .whatCanWeDo-title {
-    width: 90%;
-    min-width: 100%;
-  }
-  .whatCanWeDo-item .whatCanWeDo-item-title {
-    width: 85%;
-  }
-  .whatCanWeDo-item .whatCanWeDo-item-paragraph {
-    font-weight: 300;
-    width: 85%;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .whatCanWeDo-item {
-    max-width: 95%;
   }
 }

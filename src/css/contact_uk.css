@@ -1,30 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900');
 
-* {
-  font-family: 'Poppins', sans-serif;
-  box-sizing: border-box;
-}
-html {
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-}
-
-button {
-  -webkit-appearance: none;
-  outline: none;
-  border: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 .hero {
   background: url(../images/contact/contact-bg.jpg) center no-repeat;
   background-size: cover;
