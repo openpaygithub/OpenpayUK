@@ -10,7 +10,7 @@
 /*...welcome block...*/
 .welcome-wrap {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url('../images/landingpage_bg.png');
+    url('../images/landingpage_bg.jpg');
   background-size: cover;
   padding: 90px 0;
 }
@@ -301,5 +301,6 @@
 
   .work-list {
     grid-template-columns: 1fr;
+    grid-row-gap: 50px;
   }
 }
