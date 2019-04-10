@@ -83,21 +83,19 @@ a {
 
 .signup::after {
   content: '';
-  background: url(../images/big-o.svg) no-repeat;
-  background-size: cover;
-  width: 400px;
+  background: url(../images/contact/signup-bg-logo.svg) no-repeat;
+  width: 476px;
   height: 498px;
   z-index: 1;
   position: absolute;
-  bottom: -215px;
-  right: -50px;
+  bottom: -200px;
+  right: -75px;
 }
 
 .signup__wrapper {
-  max-width: 1585px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: center;
 }
 
 .signup__title {
@@ -109,7 +107,6 @@ a {
 
 .signup__item {
   max-width: 585px;
-  margin: 0 auto;
   padding: 0 15px;
 }
 
@@ -195,7 +192,7 @@ a {
 .works-title {
   font-weight: 700;
   font-size: 35px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -211,27 +208,21 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
 }
 
-.work-item .work-item__icon_1 {
-  width: 64px;
-  height: 76px;
-  margin-top: 15px;
-  margin-bottom: 19.92px;
+.work-item__icon_1 {
+  margin-bottom: 14px;
 }
-.work-item .work-item__icon_2 {
-  width: 106px;
-  height: 68px;
-  margin-top: 15px;
-  margin-bottom: 20.45px;
+
+.work-item__icon_2 {
+  margin-bottom: 23px;
 }
-.work-item .work-item__icon_3 {
-  width: 70px;
-  height: 83px;
-  margin-bottom: 16.77px;
+
+.work-item__icon_3 {
+  margin-bottom: 7px;
 }
-.work-item .work-item__title {
+
+.work-item__title {
   font-weight: 600;
   font-size: 30px;
   text-align: center;
@@ -240,9 +231,12 @@ a {
 .work-item__desc {
   font-weight: 300;
   font-size: 25px;
+  line-height: 35px;
   text-align: center;
   min-height: 140px;
   width: 92%;
+  max-width: 260px;
+  margin: 0 auto;
 }
 
 /*...end works...*/
