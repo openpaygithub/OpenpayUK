@@ -1,54 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,700,700i,800,900');
 
-* {
-  font-family: 'Poppins', sans-serif;
-  box-sizing: border-box;
-}
-html {
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-}
-
-.logo {
-  width: 100px;
-  font-weight: 700;
-  font-size: 18px;
-}
-
-main {
-  padding: 0 8px;
-}
-
-button {
-  -webkit-appearance: none;
-  outline: none;
-  border: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 .banner-wrap {
   min-height: 250px;
-  background: url(../images/home_bg.png) no-repeat;
+  background: url(../images/home_bg.jpg) no-repeat;
   background-size: cover;
 }
+
 .banner {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
+
 .banner-content {
   width: 49%;
   max-width: 812px;
 }
+
 .banner h1 {
   display: block;
   width: 100%;
@@ -59,6 +27,7 @@ a {
   color: #fff;
   margin-bottom: 55px;
 }
+
 .banner img {
   width: 152px;
 }
@@ -67,8 +36,8 @@ h1 {
   text-align: center;
   font-weight: 800;
   font-size: 20px;
-  color: #ffffff;
-}
+  color: #fff;
+} 
 
 /*...forWhomItWorks...*/
 .forWhomItWorks-wrap {
@@ -89,7 +58,6 @@ h1 {
 }
 
 .forWhomItWorks {
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   max-width: 1380px;
@@ -103,6 +71,7 @@ h1 {
   font-size: 35px;
   letter-spacing: 3px;
   margin-bottom: 30px;
+  font-weight: 600;
 }
 
 .forWhomItWorks_subtitle {
@@ -119,7 +88,7 @@ h1 {
 
 .forWhomItWorks_text {
   color: #fff;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 35px;
   margin-bottom: 30px;
   letter-spacing: 3px;
@@ -211,7 +180,6 @@ h1 {
   min-width: 240px;
   max-width: 300px;
   margin: 0 auto;
-  font-family: 'Poppins', sans-serif;
   margin-top: 15px;
   font-size: 19px;
   line-height: 25px;
@@ -341,10 +309,6 @@ footer a {
 
   .banner {
     min-height: 400px;
-  }
-
-  .banner h1 {
-    /* margin-bottom: 25px; */
   }
 
   .forWhomItWorks {
@@ -536,9 +500,6 @@ footer a {
   }
 
   .forWhomItWorks h2 {
-    width: 75%;
-    line-height: 48px;
-    font-size: 30px;
     margin: 0 auto 30px;
   }
 
@@ -574,7 +535,7 @@ footer a {
     padding: 30px 0;
   }
   .banner h1 {
-    font-size: 45px;
+    font-size: 40px;
     line-height: 55px;
     text-align: center;
   }
@@ -590,15 +551,13 @@ footer a {
   }
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 719px) {
   .forWhomItWorks h2 {
     width: 90%;
     line-height: 38px;
-    font-size: 25px;
   }
   .forWhomItWorks div:nth-of-type(2) p {
     margin: 0 0 30px 0;
-    line-height: 30px;
-    font-size: 20px;
+    line-height: 45px;
   }
 }
