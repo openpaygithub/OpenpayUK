@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,700,700i,800,900');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,500,600,700,800');
+@import './nav.css';
 
 .banner-wrap {
   min-height: 250px;
@@ -10,6 +11,8 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding: 115px 0;
+  min-height: 520px;
 }
 
 .banner-content {
@@ -25,41 +28,42 @@
   font-size: 58px;
   line-height: 85px;
   color: #fff;
-  margin-bottom: 55px;
+  margin-bottom: 65px;
+  letter-spacing: 3px;
 }
 
 .banner img {
   width: 152px;
 }
 
-h1 {
-  text-align: center;
-  font-weight: 800;
-  font-size: 20px;
-  color: #fff;
-} 
-
 /*...forWhomItWorks...*/
 .forWhomItWorks-wrap {
-  background: linear-gradient( to right, #fff 0%, #fff 50%, #3c465a 50%, #3c465a 100% );
+  background: linear-gradient(
+    to right,
+    #fff 0%,
+    #fff 50%,
+    #3c465a 50%,
+    #3c465a 100%
+  );
   position: relative;
+  overflow: hidden;
 }
 
 .forWhomItWorks-wrap::after {
   content: '';
-  background: url(../images/big-o.svg) no-repeat;
-  background-size: cover;
-  width: 400px;
+  background: url(../images/signup-bg-logo.svg) no-repeat;
+  width: 476px;
   height: 498px;
   z-index: 1;
   position: absolute;
-  bottom: -185px;
-  right: -50px;
+  bottom: -170px;
+  right: -85px;
 }
 
 .forWhomItWorks {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* justify-items: center; */
   max-width: 1380px;
   margin: 0 auto;
 }
@@ -67,7 +71,7 @@ h1 {
 .forWhomItWorks h2 {
   max-width: 658px;
   color: #000;
-  line-height: 65px;
+  line-height: 45px;
   font-size: 35px;
   letter-spacing: 3px;
   margin-bottom: 30px;
@@ -75,7 +79,8 @@ h1 {
 }
 
 .forWhomItWorks_subtitle {
-  margin: 0;
+  max-width: 768px;
+  margin: 0 auto;
   color: #000;
   line-height: 40px;
   font-size: 25px;
@@ -90,7 +95,7 @@ h1 {
   color: #fff;
   font-weight: 600;
   font-size: 35px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   letter-spacing: 3px;
 }
 
@@ -102,13 +107,13 @@ h1 {
   background: url(../images/dress.svg) bottom 60px right 100px no-repeat;
   background-size: 150px;
   position: relative;
-  padding: 145px 15px 168px;
+  padding: 215px 15px 168px;
 }
 
 .forWhomItWorks div:nth-of-type(2) {
   position: relative;
   background-color: #3c465a;
-  padding: 149px 15px 146px 75px;
+  padding: 215px 15px 225px 75px;
   z-index: 0;
   overflow: hidden;
 }
@@ -121,10 +126,11 @@ h1 {
   height: 498px;
   z-index: 1;
 }
+
 .forWhomItWorks_img_bg {
   height: 100%;
-  color: #ffffff;
-  line-height: 80px;
+  color: #fff;
+  line-height: 50px;
   font-size: 25px;
   letter-spacing: 2px;
   margin: 0 auto;
@@ -135,7 +141,7 @@ h1 {
 
 /*...how works...*/
 .howItWorks {
-  padding: 82px 0 68px;
+  padding: 140px 0 110px;
   background: #e3e3e3;
   text-align: center;
 }
@@ -144,16 +150,15 @@ h1 {
   margin: 0 auto;
 }
 
-.howItWorks h2 {
-  letter-spacing: 5px;
-  margin: 0;
+.howItWorks-title {
+  letter-spacing: 3px;
+  padding-bottom: 40px;
   font-weight: 700;
-  font-size: 37px;
+  font-size: 35px;
   color: #000;
 }
 
 .block_howItWorks_flex {
-  margin: 55px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -178,7 +183,7 @@ h1 {
 
 .block_howItWorks_text {
   min-width: 240px;
-  max-width: 300px;
+  max-width: 260px;
   margin: 0 auto;
   margin-top: 15px;
   font-size: 19px;
@@ -199,14 +204,16 @@ h1 {
 }
 
 .feedback_title {
-  margin: 0;
+  padding-bottom: 35px;
   font-size: 35px;
+  font-weight: 600;
 }
 
 .feedback_text {
   font-size: 25px;
   line-height: 40px;
   padding-bottom: 25px;
+  max-width: 768px;
 }
 
 .feedback_text--height {
@@ -239,6 +246,8 @@ h1 {
   font-size: 20px;
   color: #000;
   width: 260px;
+  height: 68px;
+  margin: 0 auto;
   font-weight: 600;
   background: #9bffbe;
   padding: 19px 0;
@@ -256,243 +265,19 @@ h1 {
   display: none;
 }
 
-footer {
-  padding: 20px 0 10px;
-  background: #3c465a;
-}
-
-.footer_info {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  max-width: 935px;
-  justify-content: space-between;
-}
-
-.footer p {
-  margin: 18px 0 0;
-  font-size: 14px;
-  color: #ffffff;
-  text-align: center;
-}
-
-footer a {
-  display: block;
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 18px;
-}
-
-.f_logo {
-  color: #ffffff;
-  margin-top: 50px;
-  text-align: center;
-}
-
-.f_logo span {
-  font-weight: 500;
-  line-height: normal;
-  font-size: 18px;
-  color: #fdbd00;
-  margin-right: 20px;
-}
-
-.f_logo img {
-  vertical-align: middle;
-}
-
-@media screen and (min-width: 720px) {
-  .feedback h2 {
-    margin: 0 0 34px 0;
-  }
-
-  .banner {
-    min-height: 400px;
-  }
-
-  .forWhomItWorks {
-    flex-direction: row;
-  }
-
-  .forWhomItWorks > div {
-    width: 50%;
-  }
-
-  .forWhomItWorks_img_bg {
-    color: #ffffff;
-    line-height: 50px;
-    font-size: 18px;
-    letter-spacing: 2px;
-  }
-
-  .forWhomItWorks h2 {
-    line-height: 35px;
-    margin-bottom: 20px;
-  }
-
-  .forWhomItWorks_text {
-    margin-bottom: 20px;
-  }
-
-  .howItWorks {
-    padding: 82px 0 68px;
-  }
-
-  .block_howItWorks {
-    width: 260px;
-  }
-
-
-  .footer_info {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .footer_info {
-    padding: inherit;
-  }
-
-  footer {
-    padding: 50px 0 10px;
-  }
-}
-
-@media screen and (min-width: 1220px) {
-  .banner {
-    min-height: 520px;
-  }
-
-  .forWhomItWorks {
-    flex-direction: row;
-  }
-
-  .forWhomItWorks > div {
-    width: 50%;
-  }
-
-  .forWhomItWorks_img_bg {
-    /* width: 77%; */
-    color: #ffffff;
-    font-size: 25px;
-    letter-spacing: 3.5px;
-  }
-
-  .forWhomItWorks h2 {
-    line-height: 45px;
-  }
-
-  .footer_info {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .footer_info {
-    padding: inherit;
-  }
-
-  footer {
-    padding: 50px 0 10px;
-  }
-}
-
-@media screen and (min-width: 1660px) {
-  h1 {
-    font-size: 65px;
-  }
-
-  .banner {
-    min-height: 520px;
-  }
-
-  .howItWorks {
-    padding: 82px 0 68px;
-  }
-
-  .howItWorks h2 {
-    font-size: 50px;
-    line-height: 110px;
-  }
-
-  .feedback_text--height {
-    min-height: 150px;
-  }
-
-  .forWhomItWorks_img_bg {
-    font-size: 40px;
-    letter-spacing: 3.5px;
-  }
-
-  .feedback span {
-    font-size: 35px;
-  }
-
-  .feedback_btn_block {
-    padding-top: 45px;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .feedback input {
-    padding: 12px 45px;
-  }
-
-  footer a {
-    font-size: 25px;
-  }
-
-  footer {
-    padding: 60px 0 50px;
-    background: #3c465a;
-  }
-
-  .footer p {
-    margin: 18px 0 0;
-    font-size: 18px;
-    color: #ffffff;
-    text-align: center;
-  }
-
-  .f_logo {
-    margin-top: 100px;
-  }
-}
-
 @media screen and (max-width: 1280px) {
-  .feedback-wrap {
-    padding: 70px 15px 80px;
-  }
-  
-  .feedback {
-    grid-template-columns: 1fr;
-    grid-row-gap: 50px;
-    justify-items: center;
-    text-align: center;
+  .banner-content {
+    width: initial;
+    max-width: initial;
   }
 
-  .feedback__Interested,
-  .feedback_text--height {
-    min-height: initial;
-  }
-
-  .feedback input {
-    margin: 0 auto 30px;
-    min-width: 200px;
-    max-width: 398px;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 1280px) {
   .forWhomItWorks-wrap {
     background: #fff;
     overflow: hidden;
   }
 
   .forWhomItWorks {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
   }
   .forWhomItWorks div {
     width: 100%;
@@ -515,13 +300,46 @@ footer a {
   .forWhomItWorks div:nth-of-type(2) {
     padding: 75px 0 45px;
   }
-}
-@media screen and (max-width: 1280px) {
-  .banner-content {
-    width: initial;
-    max-width: initial;
+
+  .feedback-wrap {
+    padding: 70px 15px 80px;
+  }
+
+  .feedback {
+    grid-template-columns: 1fr;
+    grid-row-gap: 50px;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .feedback__Interested,
+  .feedback_text--height {
+    min-height: initial;
+  }
+
+  .feedback_title {
+    padding-bottom: 15px;
+  }
+
+  .feedback input {
+    margin: 0 auto 30px;
+    min-width: 200px;
+    max-width: 398px;
+    width: 100%;
   }
 }
+
+@media screen and (max-width: 719px) {
+  .forWhomItWorks h2 {
+    width: 90%;
+    line-height: 38px;
+  }
+  .forWhomItWorks div:nth-of-type(2) p {
+    margin: 0 0 30px 0;
+    line-height: 45px;
+  }
+}
+
 @media screen and (max-width: 525px) {
   .banner-content {
     width: 70%;
@@ -548,16 +366,5 @@ footer a {
   }
   .feedback input::placeholder {
     font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 719px) {
-  .forWhomItWorks h2 {
-    width: 90%;
-    line-height: 38px;
-  }
-  .forWhomItWorks div:nth-of-type(2) p {
-    margin: 0 0 30px 0;
-    line-height: 45px;
   }
 }

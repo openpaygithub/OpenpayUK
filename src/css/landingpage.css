@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,700,700i,800,900');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,500,600,700,800');
+@import './nav.css';
 
 .link-to {
   line-height: normal;
@@ -10,7 +11,7 @@
 /*...welcome block...*/
 .welcome-wrap {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url('../images/landingpage_bg.png');
+    url('../images/landingpage_bg.jpg');
   background-size: cover;
   padding: 90px 0;
 }
@@ -48,7 +49,7 @@
 
 .signup::after {
   content: '';
-  background: url(../images/contact/signup-bg-logo.svg) no-repeat;
+  background: url(../images/signup-bg-logo.svg) no-repeat;
   width: 476px;
   height: 498px;
   z-index: 1;
@@ -301,5 +302,6 @@
 
   .work-list {
     grid-template-columns: 1fr;
+    grid-row-gap: 50px;
   }
 }
