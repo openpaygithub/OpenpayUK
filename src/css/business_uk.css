@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,700,700i,800,900');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,500,600,800');
+@import './nav.css';
 
 .btn-primary {
   font-size: 20px;
@@ -66,12 +67,12 @@
 
 .whyOpenPay-wrap::after {
   content: '';
-  background: url(../images/big-o.svg) no-repeat;
+  background: url(../images/signup-bg-logo.svg) no-repeat;
   background-size: cover;
   width: 583px;
-  height: 608px;
+  height: 610px;
   position: absolute;
-  bottom: -245px;
+  bottom: -275px;
   right: -45px;
 }
 

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,700,700i,800,900');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,500,600,700,800');
+@import './nav.css';
 
 .link-to {
   line-height: normal;
@@ -48,7 +49,7 @@
 
 .signup::after {
   content: '';
-  background: url(../images/contact/signup-bg-logo.svg) no-repeat;
+  background: url(../images/signup-bg-logo.svg) no-repeat;
   width: 476px;
   height: 498px;
   z-index: 1;
