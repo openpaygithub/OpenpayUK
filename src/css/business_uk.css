@@ -19,11 +19,8 @@
 }
 
 .btn-primary:hover {
-  opacity: 0.9;
-}
-
-.btn-primary:active {
-  opacity: 0.7;
+  background: rgba(155, 255, 190, 0.8);
+  color: rgba(0, 0, 0, .7);
 }
 
 /*...introduction...*/

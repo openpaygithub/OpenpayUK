@@ -100,6 +100,7 @@ div {
 .topNav a:hover {
   color: #2864ff;
 }
+
 .topNav a.active {
   color: #2864ff;
   border-bottom: 2px solid #2864ff;
@@ -123,6 +124,7 @@ div {
 .topNav .mainLogo:hover {
   border-bottom: 0 none;
 }
+
 #hamburgerMenu {
   display: none;
 }
@@ -145,10 +147,12 @@ div {
   line-height: 20px;
   padding: 0 20px;
 }
+
 .footer .footerMoreLinksMenu {
   text-align: center;
   margin: 20px 0;
 }
+
 .footerMoreLinksMenu .footerNav {
   color: #fff;
   font-size: 14px;
@@ -373,20 +377,22 @@ header {
 /*...common styles...*/
 .paragraphSpec-3 {
   font-size: 18px;
-  font-family: 'PoppinsSemiBold', sans-serif;
   line-height: 29px;
   font-weight: 600;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
 
 .paragraphSpec-4 {
   font-size: 14px;
-  font-family: 'PoppinsSemiBold', sans-serif;
   line-height: 23px;
   font-weight: 600;
   text-align: left;
   color: #3b455a;
+}
+
+.paragraphSpec-4:hover {
+  color: rgba(59, 69, 90, .8);
 }
 
 /*...end common styles...*/
@@ -482,13 +488,13 @@ header {
 .footer-logo {
   width: 212px;
   height: 40px;
-  display: block;
-  margin: 0 auto 20px;
+  display: inline-block;
 }
 
 footer .copyright {
   font-size: 18px;
   font-weight: 500;
+  padding-top: 20px;
 }
 
 /*...end footer...*/

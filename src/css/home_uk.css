@@ -220,20 +220,20 @@
   min-height: 230px;
 }
 
-.feedback input {
+.feedback_input {
   outline: none;
   font-size: 20px;
-  border: none;
   margin: 30px 0 70px;
   padding: 4px 45px;
   min-width: 500px;
+  border: none;
   display: block;
   height: 67px;
   background: #efefef;
   border-radius: 33px;
 }
 
-.feedback input::placeholder {
+.feedback_input::placeholder {
   font-weight: 500;
   font-size: 20px;
   font-style: italic;
@@ -254,6 +254,11 @@
   border-radius: 34px;
   display: inline-block;
   text-align: center;
+}
+
+.feedback_btn_block_link:hover {
+  background: rgba(155, 255, 190, 0.8);
+  color: rgba(0, 0, 0, .7);
 }
 
 .feedback_btn_block {
@@ -321,7 +326,7 @@
     padding-bottom: 15px;
   }
 
-  .feedback input {
+  .feedback_input {
     margin: 0 auto 30px;
     min-width: 200px;
     max-width: 398px;
@@ -353,9 +358,10 @@
     padding: 30px 0;
   }
   .banner h1 {
-    font-size: 40px;
+    font-size: 36px;
     line-height: 55px;
     text-align: center;
+    padding: 0 15px;
   }
   .banner-content img {
     display: block;
@@ -364,7 +370,7 @@
   .howItWorks h2 {
     font-size: 35px;
   }
-  .feedback input::placeholder {
+  .feedback_input::placeholder {
     font-size: 16px;
   }
 }

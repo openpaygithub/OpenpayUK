@@ -125,14 +125,8 @@
 }
 
 .signup__submit:hover {
-  background-color: rgba(137, 255, 189, 0.8);
-  color: rgba(0, 0, 0, 0.71);
-}
-
-.signup__submit:active {
-  background-color: rgba(155, 255, 190, 0.6);
-  color: rgba(0, 0, 0, 0.6);
-}
+  background: rgba(155, 255, 190, 0.8);
+  color: rgba(0, 0, 0, .7);}
 
 .thankyou {
   display: none;
