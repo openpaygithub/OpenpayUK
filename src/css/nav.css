@@ -392,7 +392,7 @@ header {
 }
 
 .paragraphSpec-4:hover {
-  color: rgba(59, 69, 90, .8);
+  color: rgba(59, 69, 90, 0.8);
 }
 
 /*...end common styles...*/
@@ -561,4 +561,47 @@ footer .copyright {
   max-width: 1380px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.cookie-popup {
+  position: fixed;
+  bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 20px 15px 20px 70px;
+  margin: 0 10px;
+  max-width: 360px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #3c465a;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cookie-popup::before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background: url(../images/cookie-icon.svg) no-repeat;
+  background-size: cover;
+  height: 22px;
+  width: 20px;
+}
+
+.cookie-popup__link {
+  color: #2864ff;
+}
+
+.cookie-popup__button {
+  display: block;
+  cursor: pointer;
+  margin: 20px 0 0;
+  height: 40px;
+  width: 120px;
+  border: 2px solid #40354e;
+  border-radius: 4px;
+  color: #40354E;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #fff;
 }
