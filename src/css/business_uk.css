@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,500,600,800');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,800');
 @import './nav.css';
 
 .btn-primary {
@@ -16,11 +16,17 @@
   border-radius: 50px;
   border: none;
   cursor: pointer;
+  transition: all 0.1s;
 }
 
 .btn-primary:hover {
   background: rgba(155, 255, 190, 0.8);
   color: rgba(0, 0, 0, .7);
+}
+
+.btn-primary:active {
+  bottom: -1px;
+  position: relative;
 }
 
 /*...introduction...*/

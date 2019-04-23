@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800');
 @import './nav.css';
 
 .link-to {
@@ -6,6 +6,11 @@
   font-weight: 600;
   text-align: center;
   color: #000;
+  transition: all 0.1s;
+}
+
+.link-to:hover {
+  color: rgba(0, 0, 0, .7);
 }
 
 /*...welcome block...*/
@@ -122,11 +127,18 @@
   font-weight: 500;
   height: 67px;
   width: 260px;
+  transition: all 0.3s;
 }
 
 .signup__submit:hover {
   background: rgba(155, 255, 190, 0.8);
-  color: rgba(0, 0, 0, .7);}
+  color: rgba(0, 0, 0, .7);
+}
+
+.signup__submit:active {
+  bottom: -1px;
+  position: relative;
+}
 
 .thankyou {
   display: none;
