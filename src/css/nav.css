@@ -564,6 +564,7 @@ footer .copyright {
 }
 
 .cookie-popup {
+  display: none;
   position: fixed;
   z-index: 2;
   bottom: 10px;

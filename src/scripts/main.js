@@ -17,7 +17,6 @@ function triggeerMenu () {
 }
 
 function showCookie () {
-    $('.cookie-popup').hide();
     if(Cookies.get('showCookieDialog') == null) {
         Cookies.set('showCookieDialog', 'yes', { expires: 7});
         $('.cookie-popup').show();
