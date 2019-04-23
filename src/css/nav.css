@@ -389,6 +389,7 @@ header {
   font-weight: 600;
   text-align: left;
   color: #3b455a;
+  transition: all 0.1s;
 }
 
 .paragraphSpec-4:hover {
@@ -594,6 +595,10 @@ footer .copyright {
   color: #2864ff;
 }
 
+.cookie-popup__link:hover {
+  text-decoration: underline;
+}
+
 .cookie-popup__button {
   display: block;
   cursor: pointer;
@@ -606,4 +611,14 @@ footer .copyright {
   font-weight: 600;
   font-size: 14px;
   background-color: #fff;
+  transition: all 0.1s;
+}
+
+.cookie-popup__button:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.cookie-popup__button:active {
+  bottom: -1px;
+  position: relative;
 }

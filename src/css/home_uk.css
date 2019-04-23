@@ -254,11 +254,17 @@
   border-radius: 34px;
   display: inline-block;
   text-align: center;
+  transition: all 0.1s;
 }
 
 .feedback_btn_block_link:hover {
   background: rgba(155, 255, 190, 0.8);
   color: rgba(0, 0, 0, .7);
+}
+
+.feedback_btn_block_link:active {
+  bottom: -1px;
+  position: relative;
 }
 
 .feedback_btn_block {
