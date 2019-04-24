@@ -291,6 +291,7 @@
 
   .welcome-title {
     padding: 15px;
+    font-size: 45px;
     text-align: center;
   }
 
@@ -332,5 +333,11 @@
   .work-list {
     grid-template-columns: 1fr;
     grid-row-gap: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .welcome-title {
+    font-size: 36px;
   }
 }

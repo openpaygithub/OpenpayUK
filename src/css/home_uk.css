@@ -290,6 +290,10 @@
     max-width: initial;
   }
 
+  .banner h1 {
+    font-size: 45px;
+  }
+
   .forWhomItWorks-wrap {
     background: #fff;
     overflow: hidden;
@@ -363,27 +367,32 @@
   .banner-content {
     width: 70%;
   }
+
   .banner {
     justify-content: center;
-    padding-bottom: 10px;
+    min-height: initial;
   }
+
   .banner-content {
     width: 100%;
     padding: 30px 0;
   }
+
   .banner h1 {
     font-size: 36px;
     line-height: 55px;
     text-align: center;
-    padding: 0 15px;
   }
+
   .banner-content img {
     display: block;
     margin: 0 auto;
   }
+
   .howItWorks h2 {
     font-size: 35px;
   }
+
   .feedback_input::placeholder {
     font-size: 16px;
   }
