@@ -281,9 +281,9 @@
 /*...end empoweringPay...*/
 
 @media screen and (max-width: 920px) {
- .block-child-wrap {
-   padding: 0;
- }
+  .block-child-wrap {
+    padding: 0;
+  }
 
   .welcome {
     flex-direction: column-reverse;
