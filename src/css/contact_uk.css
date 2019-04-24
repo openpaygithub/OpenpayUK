@@ -84,8 +84,8 @@
 }
 
 .contact__link:hover {
-  border-color: rgba(25, 184, 233, .8);
-  color: rgba(0, 0, 0, .7);
+  border-color: rgba(25, 184, 233, 0.8);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .contact__link:active {
