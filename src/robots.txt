@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /404
+Disallow: /403
+Disallow: /500
+
+Host: https://www.myopenpay.co.uk/
+Sitemap: https://www.myopenpay.co.uk/sitemap.xml
