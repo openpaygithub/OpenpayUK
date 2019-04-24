@@ -32,9 +32,19 @@
 /*...introduction...*/
 .introduction-wrap {
   position: relative;
-  background: url('../images/business_bg.jpg') center center no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
-  padding: 153px 0;
+  background-position: center;
+  background-image: url(../images/business_bg.jpg);
+  background-image: -webkit-image-set(
+    url(../images/business_bg.jpg) 1x,
+    url(../images/business_bg@2x.jpg) 2x
+  );
+  background-image: image-set(
+    url(../images/business_bg.jpg) 1x,
+    url(../images/business_bg@2x.jpg) 2x
+  );
+  padding: 190px 0;
 }
 
 .introduction-wrap::after {
@@ -48,13 +58,10 @@
 }
 
 .introduction-desc {
-  width: 50%;
-  max-width: 812px;
-  min-width: 800px;
   font-weight: 800;
-  font-size: 70px;
-  text-align: left;
-  line-height: 85px;
+  font-size: 50px;
+  text-align: center;
+  line-height: 70px;
   color: #fff;
   letter-spacing: 3px;
 }

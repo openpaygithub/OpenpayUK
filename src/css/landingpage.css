@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,500i,600,700,800');
 @import './nav.css';
 
 .link-to {
@@ -10,31 +10,42 @@
 }
 
 .link-to:hover {
-  color: rgba(0, 0, 0, .7);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 /*...welcome block...*/
 .welcome-wrap {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url('../images/landingpage_bg.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
-  padding: 90px 0;
+  background-image: url(../images/landingpage_bg.jpg);
+  background-image: -webkit-image-set(
+    url(../images/landingpage_bg.jpg) 1x,
+    url(../images/landingpage_bg@2x.jpg) 2x
+  );
+  background-image: image-set(
+    url(../images/landingpage_bg.jpg) 1x,
+    url(../images/landingpage_bg@2x.jpg) 2x
+  );
+  padding: 95px 0;
 }
 
 .welcome {
-  text-align: center;
-}
-.welcome .logo {
-  width: 100%;
-  max-width: 260px;
-  height: auto;
-  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .welcome-title {
-  font-size: 65px;
+  font-size: 55px;
+  line-height: 65px;
   font-weight: 800;
   color: #fff;
+  letter-spacing: 3px;
+}
+
+.welcome-logo {
+  max-width: 250px;
+  max-height: 50px;
 }
 /*...end welcome block...*/
 
@@ -66,24 +77,30 @@
 .signup__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-items: center;
 }
 
 .signup__title {
-  font-weight: 600;
+  font-weight: 500;
+  font-style: italic;
   font-size: 35px;
   line-height: 60px;
-  padding-top: 50px;
+  padding: 50px 15px 0 0;
+}
+
+.signup__subtitle {
+  font-weight: 800;
+  font-style: normal;
 }
 
 .signup__item {
   max-width: 585px;
-  padding: 0 15px;
 }
 
 .signup__item--form {
   max-width: 620px;
   background-color: #3c465a;
+  justify-self: end;
+  padding-left: 15px;
 }
 
 .signup__form-title {
@@ -132,7 +149,7 @@
 
 .signup__submit:hover {
   background: rgba(155, 255, 190, 0.8);
-  color: rgba(0, 0, 0, .7);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .signup__submit:active {
@@ -264,12 +281,17 @@
 /*...end empoweringPay...*/
 
 @media screen and (max-width: 920px) {
-  .welcome-wrap {
-    padding: 140px 0;
+ .block-child-wrap {
+   padding: 0;
+ }
+
+  .welcome {
+    flex-direction: column-reverse;
   }
 
   .welcome-title {
-    font-size: 50px;
+    padding: 15px;
+    text-align: center;
   }
 
   .signup {
@@ -290,6 +312,7 @@
   .signup__item,
   .signup__item--form {
     max-width: initial;
+    padding: 0 15px;
   }
 
   .signup__item--form {
