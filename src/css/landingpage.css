@@ -104,6 +104,8 @@
 }
 
 .signup__form-title {
+  display: block;
+  cursor: pointer;
   font-weight: 500;
   font-size: 30px;
   line-height: 50px;
