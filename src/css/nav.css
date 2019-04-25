@@ -1,36 +1,6 @@
 /*general*/
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-html {
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-button {
-  -webkit-appearance: none;
-  border: none;
-}
-
-ol,
-ul {
-  list-style: none;
-  font-weight: 300;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
 
 h1,
@@ -48,28 +18,18 @@ button {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-}
-
-body,
-p,
-ol,
-ul {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
 }
 
-button:focus,
-input:focus {
-  outline: none;
+button {
+  -webkit-appearance: none;
+  border: none;
 }
 
-h1 {
-  font-weight: 600;
-}
-
-p,
-div {
-  font-weight: 300;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .greyPane {
@@ -438,6 +398,7 @@ header {
   min-width: 503px;
 }
 .header-nav .nav-list {
+  list-style: none;
   width: 812px;
   justify-content: flex-end;
 }
@@ -475,6 +436,7 @@ header {
   margin: 0 auto 100px;
 }
 .nav-footer .footer-nav-list {
+  list-style: none;
   flex-wrap: wrap;
 }
 .nav-footer .footer-nav-list li {
@@ -546,13 +508,6 @@ footer .copyright {
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  outline: none;
-  box-sizing: border-box;
-}
-
 .block-wap {
   width: 100%;
   margin: 0 auto;
@@ -608,7 +563,7 @@ footer .copyright {
   width: 120px;
   border: 2px solid #40354e;
   border-radius: 4px;
-  color: #40354E;
+  color: #40354e;
   font-weight: 600;
   font-size: 14px;
   background-color: #fff;
