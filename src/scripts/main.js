@@ -19,7 +19,8 @@ function showCookie() {
   const cookiesList = document.cookie.split('; ');
   if (!cookiesList.includes('showCookieDialog=yes')) {
     document.cookie = 'showCookieDialog=yes; max-age=604800';
-    $('.cookie-popup').show();
+    const cookiePopup = document.querySelector('.cookie-popup');
+    cookiePopup.style.display = 'block';
   }
 }
 
@@ -28,8 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
   showCookie();
 });
 
-$(document).ready(function() {
-  $('.cookie-popup__button').click(function() {
-    $('.cookie-popup').hide();
+document
+  .querySelector('.cookie-popup__button')
+  .addEventListener('click', () => {
+    document.querySelector('.cookie-popup').style.display = 'none';
   });
-});
