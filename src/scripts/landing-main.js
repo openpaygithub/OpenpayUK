@@ -1,6 +1,7 @@
 function showCookie () {
-    if(Cookies.get('showCookieDialog') == null) {
-        Cookies.set('showCookieDialog', 'yes', { expires: 7});
+    const cookiesList = document.cookie.split('; ');
+    if(!cookiesList.includes('showCookieDialog=yes')) {
+        document.cookie = 'showCookieDialog=yes; max-age=604800';
         $('.cookie-popup').show();
     }
 }
