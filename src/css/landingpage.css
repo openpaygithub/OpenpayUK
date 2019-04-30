@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,500i,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,800i');
 @import './nav.css';
 
 .link-to {
@@ -26,26 +26,26 @@
     url(../images/landingpage_bg.jpg) 1x,
     url(../images/landingpage_bg@2x.jpg) 2x
   );
-  padding: 95px 0;
+  padding: 65px 0 60px;
 }
 
 .welcome {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .welcome-title {
   font-size: 55px;
-  line-height: 65px;
+  line-height: 75px;
   font-weight: 800;
   color: #fff;
   letter-spacing: 3px;
+  padding-top: 20px;
 }
 
 .welcome-logo {
-  max-width: 250px;
-  max-height: 50px;
+  max-width: 155px;
+  max-height: 30px;
 }
 /*...end welcome block...*/
 
@@ -81,7 +81,6 @@
 
 .signup__title {
   font-weight: 500;
-  font-style: italic;
   font-size: 35px;
   line-height: 60px;
   padding: 50px 15px 0 0;
@@ -89,7 +88,7 @@
 
 .signup__subtitle {
   font-weight: 800;
-  font-style: normal;
+  font-style: italic;
 }
 
 .signup__item {
@@ -288,7 +287,7 @@
   }
 
   .welcome {
-    flex-direction: column-reverse;
+    align-items: center;
   }
 
   .welcome-title {
