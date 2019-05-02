@@ -505,6 +505,10 @@ footer .copyright {
   }
   .nav-footer .footer-nav-list li {
     margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .nav-footer .footer-nav-list li:last-child {
+    margin-bottom: 0;
   }
 }
 
