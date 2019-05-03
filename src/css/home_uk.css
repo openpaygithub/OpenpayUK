@@ -24,6 +24,12 @@
   min-height: 520px;
 }
 
+@media (min-width: 768px) and (max-width: 1280px) {
+  .banner {
+    padding: 115px 35px;
+  }
+}
+
 .banner-content {
   max-width: 812px;
 }
@@ -70,9 +76,14 @@
 .forWhomItWorks {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* justify-items: center; */
-  max-width: 1380px;
+  max-width: 1280px;
   margin: 0 auto;
+}
+
+@media (min-width: 1650px) {
+  .forWhomItWorks {
+    max-width: 1650px;
+  }
 }
 
 .forWhomItWorks h2 {
@@ -101,7 +112,7 @@
 .forWhomItWorks_text {
   color: #fff;
   font-weight: 600;
-  font-size: 35px;
+  font-size: 34px;
   margin-bottom: 25px;
   letter-spacing: 3px;
 }
