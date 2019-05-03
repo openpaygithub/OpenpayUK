@@ -98,7 +98,7 @@
 .signup__item--form {
   max-width: 620px;
   background-color: #3c465a;
-  justify-self: end;
+  justify-self: center;
   padding-left: 15px;
 }
 
@@ -249,6 +249,7 @@
   margin: 0 auto;
   text-align: center;
 }
+
 .empoweringPay-title {
   font-weight: 800;
   font-size: 40px;
@@ -280,10 +281,19 @@
 }
 
 /*...end empoweringPay...*/
+@media screen and (max-width: 1650px) {
+  .signup__item--form {
+    padding-left: 45px;
+  }
+}
 
 @media screen and (max-width: 920px) {
-  .block-child-wrap {
+  .signup .block-child-wrap {
     padding: 0;
+  }
+
+  .empoweringPay {
+    padding: 0 15px;
   }
 
   .welcome {
@@ -338,6 +348,10 @@
 }
 
 @media screen and (max-width: 400px) {
+  .welcome.block-child-wrap {
+    padding: 0;
+  }
+
   .welcome-title {
     font-size: 36px;
   }

@@ -86,9 +86,8 @@
 }
 
 .whyOpenPay {
-  max-width: 1088px;
-  padding: 0 15px 30px;
-  margin: 0 auto;
+  /* max-width: 1088px; */
+  margin: 0 auto 30px;
   position: relative;
   z-index: 1;
   color: #3b455a;
@@ -108,6 +107,7 @@
   line-height: 35px;
   margin: 0 auto 25px;
 }
+
 .whyOpenPay__text:last-child {
   max-width: initial;
   margin-bottom: 0;
@@ -182,6 +182,20 @@
   font-size: 20px;
   line-height: 30px;
   min-height: 180px;
+}
+
+@media (min-width: 1280px) and (max-width: 1650px) {
+  .whatCanWeDo-item-paragraph {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1280px) {
+  .whatCanWeDo-item-paragraph {
+    max-width: 430px;
+    margin: 0 auto;
+  }
 }
 
 /*...end whatCanWeDo...*/
