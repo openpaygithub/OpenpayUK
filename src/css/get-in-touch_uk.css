@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,500i,600,800');
+@import './nav.css';
+
+.hero {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/get-in-touch/get-in-touch-bg.jpg);
+  background-image: -webkit-image-set(
+    url(../images/get-in-touch/get-in-touch-bg.jpg) 1x,
+    url(../images/get-in-touch/get-in-touch-bg@2x.jpg) 2x
+  );
+  background-image: image-set(
+    url(../images/get-in-touch/get-in-touch-bg.jpg) 1x,
+    url(../images/get-in-touch/get-in-touch-bg@2x.jpg) 2x
+  );
+  width: 100%;
+  color: #fff;
+  padding: 190px 0;
+}
+
+.hero__title {
+  font-weight: 800;
+  font-size: 55px;
+  padding-bottom: 10px;
+}
+
+.hero__subtitle {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.get-in-touch {
+  padding: 110px 0;
+}
+
+.get-in-touch__form {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.form__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+}
+
+.form__label {
+  position: relative;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.form__label--select::after {
+  content: '\25B8'; 
+  display: inline-block;
+  color: #000;
+  position: absolute;
+  bottom: -7px;
+  right: 15px;
+  font-size: 54px;
+  cursor: pointer;
+  transform: rotate(90deg);
+  pointer-events: none;
+}
+
+.form__input {
+  display: block;
+  background-color: #efefef;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+  cursor: pointer;
+  border-radius: 33px;
+  border: none;
+  padding: 20px 35px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.form__input--select {
+  -webkit-appearance: none;
+}
+
+.form__input--select option {
+  font-style: normal;
+}
+
+.form__input--select option:first-child {
+  font-style: italic;
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+  .form__input--2lines {
+    margin-top: 45px;
+  }
+}
+
+.form__input--select:disabled {
+  font-style: italic;
+}
+
+.form__submit {
+  display: block;
+  background-color: #9bffbe;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 19px 0;
+  margin-top: 40px;
+  min-width: 260px;
+  border-radius: 34px;
+  transition: all 0.1s;
+}
+
+.form__submit:hover {
+  background: rgba(155, 255, 190, 0.8);
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.form__submit:active {
+  bottom: -1px;
+  position: relative;
+}
+
+.thankyou {
+  display: none;
+  font-size: 30px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    background-position: initial;
+    text-align: center;
+    padding: 115px 0;
+  }
+
+  .hero__title {
+    font-size: 44px;
+  }
+  
+  .hero__subtitle {
+    font-size: 25px;
+  }
+
+  .form__container {
+    grid-template-columns: 1fr;
+  }
+
+  .form__submit {
+    margin: 40px auto 0;
+  }
+}
