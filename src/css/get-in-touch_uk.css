@@ -52,15 +52,14 @@
 }
 
 .form__label--select::after {
-  content: '\25B8'; 
-  display: inline-block;
-  color: #000;
+  content: '';
+  background-image: url(../images/get-in-touch/form-select-arrow.svg);
+  width: 18px;
+  height: 16px;
   position: absolute;
-  bottom: -7px;
-  right: 15px;
-  font-size: 54px;
+  bottom: 25px;
+  right: 35px;
   cursor: pointer;
-  transform: rotate(90deg);
   pointer-events: none;
 }
 
