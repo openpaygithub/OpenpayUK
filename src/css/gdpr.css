@@ -7,148 +7,69 @@
     background-repeat: no-repeat;
     background-image: url(../images/legal.jpg);
     background-image: -webkit-image-set(url(../images/legal.jpg) 1x,
-            url(../images/legal.jpg) 2x);
+            url(../images/legal@2x.jpg) 2x);
     background-image: image-set(url(../images/legal.jpg) 1x,
-            url(../images/legal.jpg) 2x);
+            url(../images/legal@2x.jpg) 2x);
     width: 100%; 
 }
-p, li, a {
-    font-size: 19px;
-}
-.title {
-    font-size: 35px;
-    font-weight: 600;
-    margin-bottom: 30px;
-}
+
 
 .hero__title {
     color: #fff;
     font-weight: 800;
-    font-size: 70px;
-    padding: 20vh 0;
-}
-
-.text-center {
-    text-align: center;
-} 
-.legal-list li a {
-    color: #1cb0e6;
-    text-decoration: underline;
-    padding: 5px 0;
-}
-
-.contact__wrapper {
-    max-width: 1089px;
-    padding: 90px 15px 100px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.contact__title {
-    font-weight: 700;
-    font-size: 35px;
-    padding-bottom: 50px;
-}
-
-.contact__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 115px;
-}
-
-.contact__mail {
-    justify-self: end;
-}
-
-.contact__phone {
-    justify-self: start;
-}
-
-.contact__img--mail {
-    padding-top: 10px;
-}
-
-.contact__subtitle {
-    font-weight: 600;
-    font-size: 30px;
-}
-
-.contact__subtitle--mail {
-    padding-top: 8px;
-}
-
-.contact__text {
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 25px;
-    max-width: 260px;
-    margin: 0 auto;
-    padding-bottom: 30px;
-}
-
-.contact__link {
-    font-size: 17px;
-    border: 3px solid #19b8e9;
-    border-radius: 10px;
-    width: 260px;
-    padding: 10px 0;
-    display: block;
-    transition: all 0.1s;
+    font-size: 55px;
+    padding: 220px 0;
 }
 
 .content {
     padding: 10vh 0;
     min-height: 60vh;
-}
-.contact__link:hover {
-    border-color: rgba(25, 184, 233, 0.8);
-    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-size: 19px;
 }
 
-.contact__link:active {
-    bottom: -1px;
-    position: relative;
+.content__text {
+    padding-bottom: 25px;
 }
 
-.gdpr {
-    display: block;
-    margin: 5vh 0;
-}
-
-.gdpr tbody tr th {
-    text-align: left;
-    height: 2rem;
-    padding: 20px !important;
-    text-transform: uppercase;
-}
-
-
-.gdpr tbody tr td a {
+.content__contact-link {
+    font-weight: 700;
     text-decoration: underline;
 }
 
-.gdpr tbody tr td {
-    padding: 20px !important;
+.content__title {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.content__legal-item {
+    padding-bottom: 30px;
+}
+
+.content__legal-item:last-child {
+    padding-bottom: 0;
+}
+
+.legal__title {
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.legal__link {
+    display: block;
+    color: #1cb0e6;
+    text-decoration: underline;
+}
+
+.legal__link:hover {
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
-    .gdpr tbody tr td {
-        text-align: center;
-    }
-
     .hero__title {
         text-align: center;
         font-size: 50px;
-        padding: 20vh 0;
-    }
-
-    .contact__container {
-        grid-template-columns: 1fr;
-        grid-row-gap: 50px;
-    }
-
-    .contact__mail,
-    .contact__phone {
-        justify-self: center;
+        padding: 110px 0;
     }
 }
