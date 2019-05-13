@@ -2,74 +2,79 @@
 @import './nav.css';
 
 .hero {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../images/legal.jpg);
-    background-image: -webkit-image-set(url(../images/legal.jpg) 1x,
-            url(../images/legal@2x.jpg) 2x);
-    background-image: image-set(url(../images/legal.jpg) 1x,
-            url(../images/legal@2x.jpg) 2x);
-    width: 100%; 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/legal.jpg);
+  background-image: -webkit-image-set(
+    url(../images/legal.jpg) 1x,
+    url(../images/legal@2x.jpg) 2x
+  );
+  background-image: image-set(
+    url(../images/legal.jpg) 1x,
+    url(../images/legal@2x.jpg) 2x
+  );
+  width: 100%;
 }
 
-
 .hero__title {
-    color: #fff;
-    font-weight: 800;
-    font-size: 55px;
-    padding: 220px 0;
+  color: #fff;
+  font-weight: 800;
+  font-size: 55px;
+  padding: 220px 0;
 }
 
 .content {
-    padding: 10vh 0;
-    min-height: 60vh;
-    text-align: center;
-    font-size: 19px;
+  padding: 10vh 0;
+  min-height: 60vh;
+  text-align: center;
+  font-size: 19px;
 }
 
 .content__text {
-    padding-bottom: 25px;
+  padding-bottom: 25px;
 }
 
 .content__contact-link {
-    font-weight: 700;
-    text-decoration: underline;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .content__title {
-    font-size: 35px;
-    font-weight: 600;
-    margin-bottom: 30px;
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
 .content__legal-item {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .content__legal-item:last-child {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .legal__title {
-    font-weight: 700;
-    font-size: 19px;
+  font-weight: 700;
+  font-size: 19px;
+  padding-bottom: 5px;
 }
 
 .legal__link {
-    display: block;
-    color: #1cb0e6;
-    text-decoration: underline;
+  display: block;
+  color: #1cb0e6;
+  text-decoration: underline;
+  margin-bottom: 10px;
 }
 
 .legal__link:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
-    .hero__title {
-        text-align: center;
-        font-size: 50px;
-        padding: 110px 0;
-    }
+  .hero__title {
+    text-align: center;
+    font-size: 50px;
+    padding: 110px 0;
+  }
 }
