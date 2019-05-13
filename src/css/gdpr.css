@@ -60,11 +60,13 @@
   padding-bottom: 5px;
 }
 
+.legal__link-wrapper {
+    padding-bottom: 10px;
+}
+
 .legal__link {
-  display: block;
   color: #1cb0e6;
   text-decoration: underline;
-  margin-bottom: 10px;
 }
 
 .legal__link:hover {
