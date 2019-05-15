@@ -1,186 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16x16.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Openpay Legal Stuff</title>
-    <meta name="description" content="Openpay Welcome to a smarter way to pay">
+    <meta
+      name="description"
+      content="Openpay Welcome to a smarter way to pay"
+    />
     <!-- Google Tag Manager -->
     <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-TF3JKHF');
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-TF3JKHF');
     </script>
 
     <!-- 	FullStory Snippet -->
     <script>
-        window['_fs_debug'] = false;
-        window['_fs_host'] = 'fullstory.com';
-        window['_fs_org'] = 'D6N17';
-        window['_fs_namespace'] = 'FS';
-        (function (m, n, e, t, l, o, g, y) {
-            if (e in m) {
-                if (m.console && m.console.log) {
-                    m.console.log(
-                        'FullStory namespace conflict. Please set window["_fs_namespace"].'
-                    );
-                }
-                return;
-            }
-            g = m[e] = function (a, b) {
-                g.q ? g.q.push([a, b]) : g._api(a, b);
-            };
-            g.q = [];
-            o = n.createElement(t);
-            o.async = 1;
-            o.src = 'https://' + _fs_host + '/s/fs.js';
-            y = n.getElementsByTagName(t)[0];
-            y.parentNode.insertBefore(o, y);
-            g.identify = function (i, v) {
-                g(l, {
-                    uid: i
-                });
-                if (v) g(l, v);
-            };
-            g.setUserVars = function (v) {
-                g(l, v);
-            };
-            g.shutdown = function () {
-                g('rec', !1);
-            };
-            g.restart = function () {
-                g('rec', !0);
-            };
-            g.consent = function (a) {
-                g('consent', !arguments.length || a);
-            };
-            g.identifyAccount = function (i, v) {
-                o = 'account';
-                v = v || {};
-                v.acctId = i;
-                g(o, v);
-            };
-            g.clearUserCookie = function () {};
-        })(window, document, window['_fs_namespace'], 'script', 'user');
+      window['_fs_debug'] = false;
+      window['_fs_host'] = 'fullstory.com';
+      window['_fs_org'] = 'D6N17';
+      window['_fs_namespace'] = 'FS';
+      (function(m, n, e, t, l, o, g, y) {
+        if (e in m) {
+          if (m.console && m.console.log) {
+            m.console.log(
+              'FullStory namespace conflict. Please set window["_fs_namespace"].'
+            );
+          }
+          return;
+        }
+        g = m[e] = function(a, b) {
+          g.q ? g.q.push([a, b]) : g._api(a, b);
+        };
+        g.q = [];
+        o = n.createElement(t);
+        o.async = 1;
+        o.src = 'https://' + _fs_host + '/s/fs.js';
+        y = n.getElementsByTagName(t)[0];
+        y.parentNode.insertBefore(o, y);
+        g.identify = function(i, v) {
+          g(l, {
+            uid: i
+          });
+          if (v) g(l, v);
+        };
+        g.setUserVars = function(v) {
+          g(l, v);
+        };
+        g.shutdown = function() {
+          g('rec', !1);
+        };
+        g.restart = function() {
+          g('rec', !0);
+        };
+        g.consent = function(a) {
+          g('consent', !arguments.length || a);
+        };
+        g.identifyAccount = function(i, v) {
+          o = 'account';
+          v = v || {};
+          v.acctId = i;
+          g(o, v);
+        };
+        g.clearUserCookie = function() {};
+      })(window, document, window['_fs_namespace'], 'script', 'user');
     </script>
     <link rel="stylesheet" href="./css/gdpr.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="header-wrap block-wap">
-        <header class="header block-child-wrap">
-            <div class="header-logo-and-trigger">
-                <a href="/" class="logo-link">
-                    <img src="./images/logo-black.svg" alt="Openpay Logo" class="logo" />
-                </a>
-                <div class="trigger-menu">
-                    <div class="trigger-menu__line"></div>
-                </div>
-            </div>
-            <nav class="header-nav header-nav_disable">
-                <ul class="nav-list">
-                    <li>
-                        <a href="/business" class="paragraphSpec-4">I'm a business</a>
-                    </li>
-                    <li>
-                        <a href="/contact" class="paragraphSpec-4">Contact us</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+      <header class="header block-child-wrap">
+        <div class="header-logo-and-trigger">
+          <a href="/" class="logo-link">
+            <img
+              src="./images/logo-black.svg"
+              alt="Openpay Logo"
+              class="logo"
+            />
+          </a>
+          <div class="trigger-menu">
+            <div class="trigger-menu__line"></div>
+          </div>
+        </div>
+        <nav class="header-nav header-nav_disable">
+          <ul class="nav-list">
+            <li>
+              <a href="/business" class="paragraphSpec-4">I'm a business</a>
+            </li>
+            <li>
+              <a href="/contact" class="paragraphSpec-4">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
     </div>
 
     <section class="hero">
-        <div class="block-child-wrap">
-            <h1 class="hero__title">Legal Stuff</h1>
-        </div>
+      <div class="block-child-wrap">
+        <h1 class="hero__title">Legal Stuff</h1>
+      </div>
     </section>
 
-    <section>
-        <div class="content text-center">
-            <h3 class="title"> The Legal Stuff </h3>
-            <p>
-                Find all the important compliance information that governs our industry and more.
-                <br> Get familiar with it.
-                <a href="./contact"><b><u>Contact us</u></b></a> now if you have any questions.
-            </p>
-            <br>
-            <ul class="legal-list">
-                <li>
-                    <b>Privacy Policy</b>
-                    <br>
-                    <a href="./docs/Privacy Policy - 1 May 2019.pdf" target="_blank">
-                        Privacy Policy (PDF)
-                    </a>
-                    <br>
-                    <br>
-                </li>
-                <li>
-                    <b>Terms & Conditions</b>
-                    <br>
-                    <a href="./docs/Terms and Conditions - 1 May 2019" target="_blank">
-                        Terms & Conditions (PDF)
-                    </a>
-                    <br>
-                    <a href="./docs/Data Processors & Controllers - 1 May 2019" target="_blank">Data Processors &
-                        Controllers (PDF)</a>
-                    <br>
-                    <br>
-                </li>
-                <li>
-                    <b>Promotions</b>
-                </li>
-            </ul>
-        </div>
-    </section>
+    <section class="content">
+      <div class="block-child-wrap">
+        <h2 class="content__title">The Legal Stuff</h2>
+        <p class="content__text">
+          Find all the important compliance information that governs our
+          industry and more.
+          <br />
+          Get familiar with it.
+          <a class="content__contact-link" href="/contact">Contact us</a> now if
+          you have any questions.
+        </p>
+        <div class="content__legal-list">
+          <div class="content__legal-item">
+            <h3 class="legal__title">Privacy Policy</h3>
+            <div class="legal__link-wrapper">
+              <a
+                href="./docs/privacy-policy.pdf"
+                target="_blank"
+                class="legal__link"
+                >Privacy Policy (PDF)</a
+              >
+            </div>
+          </div>
 
+          <div class="content__legal-item">
+            <h3 class="legal__title">Terms & Conditions</h3>
+            <div class="legal__link-wrapper">
+              <a
+                href="./docs/terms-conditions.pdf"
+                target="_blank"
+                class="legal__link"
+                >Terms & Conditions (PDF)</a
+              >
+            </div>
+            <div class="legal__link-wrapper">
+              <a
+                href="./docs/data-processors.pdf"
+                target="_blank"
+                class="legal__link"
+                >Data Processors & Controllers (PDF)</a
+              >
+            </div>
+          </div>
+
+          <div class="content__legal-item">
+            <h3 class="legal__title">Promotions</h3>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <div class="footer-wrap block-wap">
-        <footer class="footer block-child-wrap">
-            <nav class="nav-footer">
-                <ul class="footer-nav-list">
-                    <li>
-                        <a href="/business" class="paragraphSpec-3">I’m a business</a>
-                    </li>
-                    <li>
-                        <a href="/contact" class="paragraphSpec-3">Contact us</a>
-                    </li>
-                    <li>
-                        <a href="./legal" target="_blank" class="paragraphSpec-3">Legal</a>
-                    </li>
-                </ul>
-            </nav>
-            <a href="/">
-                <img src="./images/logo-footer.svg" alt="Openpay Logo" class="footer-logo" />
-            </a>
-            <p class="copyright">
-                © Openpay | Made in Melbourne
-            </p>
-        </footer>
+      <footer class="footer block-child-wrap">
+        <nav class="nav-footer">
+          <ul class="footer-nav-list">
+            <li>
+              <a href="/business" class="paragraphSpec-3">I’m a business</a>
+            </li>
+            <li>
+              <a href="/contact" class="paragraphSpec-3">Contact us</a>
+            </li>
+            <li>
+              <a href="./legal" target="_blank" class="paragraphSpec-3"
+                >Legal</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <a href="/">
+          <img
+            src="./images/logo-footer.svg"
+            alt="Openpay Logo"
+            class="footer-logo"
+          />
+        </a>
+        <p class="copyright">
+          © Openpay | Made in Melbourne
+        </p>
+      </footer>
     </div>
 
     <div class="cookie-popup">
-        We uses cookies to give you the best browsing experience. <a href="./docs/privacy-policy.pdf"
-            class="cookie-popup__link" target="_blank">Find out more</a> or adjust your settings.
-        <button class="cookie-popup__button">Accept</button>
+      We uses cookies to give you the best browsing experience.
+      <a
+        href="./docs/privacy-policy.pdf"
+        class="cookie-popup__link"
+        target="_blank"
+        >Find out more</a
+      >
+      or adjust your settings.
+      <button class="cookie-popup__button">Accept</button>
     </div>
 
     <script defer src="./scripts/main.min.js"></script>
-
-</body>
-
+  </body>
 </html>

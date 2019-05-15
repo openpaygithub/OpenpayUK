@@ -31,6 +31,7 @@ a {
 .hero__title {
   color: #fff;
   font-weight: 800;
+<<<<<<< HEAD
   font-size: 70px;
   padding: 25vh 0;
 }
@@ -156,5 +157,65 @@ a {
   .contact__mail,
   .contact__phone {
     justify-self: center;
+=======
+  font-size: 55px;
+  padding: 220px 0;
+}
+
+.content {
+  padding: 10vh 0;
+  min-height: 60vh;
+  text-align: center;
+  font-size: 19px;
+}
+
+.content__text {
+  padding-bottom: 25px;
+}
+
+.content__contact-link {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.content__title {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.content__legal-item {
+  padding-bottom: 30px;
+}
+
+.content__legal-item:last-child {
+  padding-bottom: 0;
+}
+
+.legal__title {
+  font-weight: 700;
+  font-size: 19px;
+  padding-bottom: 5px;
+}
+
+.legal__link-wrapper {
+    padding-bottom: 10px;
+}
+
+.legal__link {
+  color: #1697c5;
+  text-decoration: underline;
+}
+
+.legal__link:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hero__title {
+    text-align: center;
+    font-size: 50px;
+    padding: 110px 0;
+>>>>>>> 8e382af489a315fffeafc68992e78550d9903ad1
   }
 }
