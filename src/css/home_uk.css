@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,500,600,700,800');
-@import './nav.css';
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,300i,400,500,600,700,800");
+@import "./nav.css";
 
 .banner-wrap {
   min-height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/home_bg.jpg);
+  background-image: url(../images/new/front.jpeg);
   background-image: -webkit-image-set(
-    url(../images/home_bg.jpg) 1x,
-    url(../images/home_bg@2x.jpg) 2x
+    url(../images/new/front.jpeg) 1x,
+    url(../images/new/front.jpeg) 2x
   );
   background-image: image-set(
-    url(../images/home_bg.jpg) 1x,
-    url(../images/home_bg@2x.jpg) 2x
+    url(../images/new/front.jpeg) 1x,
+    url(../images/new/front.jpeg) 2x
   );
 }
 
@@ -20,7 +20,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 115px 15px;
+  padding: 25vh 15px;
   min-height: 520px;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .forWhomItWorks-wrap::after {
-  content: '';
+  content: "";
   background: url(../images/signup-bg-logo.svg) no-repeat;
   width: 476px;
   height: 498px;
@@ -384,6 +384,9 @@
 }
 
 @media screen and (max-width: 525px) {
+  .banner-wrap {
+    background-position: center;
+  }
   .banner-content {
     width: 70%;
   }

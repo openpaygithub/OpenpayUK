@@ -1,27 +1,38 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800');
-@import './nav.css';
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800");
+@import "./nav.css";
 
 .hero {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../images/legal.jpg);
+  background-image: url(../images/new/legal.jpg);
   background-image: -webkit-image-set(
-    url(../images/legal.jpg) 1x,
-    url(../images/legal@2x.jpg) 2x
+    url(../images/new/legal.jpg) 1x,
+    url(../images/new/legal.jpg) 2x
   );
   background-image: image-set(
-    url(../images/legal.jpg) 1x,
-    url(../images/legal@2x.jpg) 2x
+    url(../images/new/legal.jpg) 1x,
+    url(../images/new/legal.jpg) 2x
   );
+  background-position-y: bottom;
   width: 100%;
+}
+p,
+li,
+a {
+  font-size: 19px;
+}
+.title {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
 .hero__title {
   color: #fff;
   font-weight: 800;
   font-size: 55px;
-  padding: 220px 0;
+  padding: 25vh 0;
 }
 
 .content {
