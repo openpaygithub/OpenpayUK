@@ -131,10 +131,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  .hero-text{
+    padding: 10vh 0;
+  }
   .hero {
-    background-position: initial;
-    text-align: center;
-    padding: 115px 0;
+    background-position: center;
+    text-align: center; 
   }
 
   .hero__title {
