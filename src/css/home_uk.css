@@ -5,14 +5,14 @@
   min-height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/new/front.jpeg);
+  background-image: url(../images/front.jpeg);
   background-image: -webkit-image-set(
-    url(../images/new/front.jpeg) 1x,
-    url(../images/new/front.jpeg) 2x
+    url(../images/front.jpeg) 1x,
+    url(../images/front.jpeg) 2x
   );
   background-image: image-set(
-    url(../images/new/front.jpeg) 1x,
-    url(../images/new/front.jpeg) 2x
+    url(../images/front.jpeg) 1x,
+    url(../images/front.jpeg) 2x
   );
 }
 
@@ -20,13 +20,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 25vh 35px;
+  padding: 200px 140px;
   min-height: 520px;
-}
-@media screen and (min-width: 1981px) {
-  .banner {
-    padding: 20vh 35px;
-  }
 }
 .banner-content {
   max-width: 812px;
@@ -370,7 +365,11 @@
     width: 100%;
   }
 }
-
+@media screen and (max-width: 768px) {
+  .banner {
+    padding: 15vh 30px;
+  }
+}
 @media screen and (max-width: 719px) {
   .forWhomItWorks h2 {
     width: 90%;

@@ -7,7 +7,7 @@ body {
 .heroBusinessContainer {
   margin: 0;
   position: relative;
-  background: url(../images/new/business.jpg);
+  background: url(../images/business.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
