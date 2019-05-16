@@ -44,7 +44,6 @@
     url(../images/new/business.jpg) 1x,
     url(../images/new/business.jpg) 2x
   );
-  min-height: 50vh;
 }
 
 .introduction-wrap::after {
@@ -63,7 +62,13 @@
   line-height: 70px;
   color: #fff;
   letter-spacing: 3px;
-  padding: 25vh 0;
+  padding: 25vh 35px;
+}
+
+@media screen and (min-width: 1981px) {
+  .introduction-desc {
+    padding: 20vh 35px;
+  }
 }
 /*...end introduction...*/
 
@@ -250,7 +255,7 @@
     text-align: center;
     font-size: 45px;
     line-height: 55px;
-    padding: 15vh 0;
+    padding: 20vh 35px;
   }
 
   .whatCanWeDo-wrap {

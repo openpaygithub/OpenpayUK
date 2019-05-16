@@ -16,7 +16,6 @@
   );
   width: 100%;
   color: #fff;
-   min-height: 50vh;
 }
 
 .hero__title {
@@ -24,8 +23,13 @@
   font-size: 55px;
   padding-bottom: 10px;
 }
-.hero-text{
-  padding: 25vh 0;
+.hero-text {
+  padding: 25vh 35px;
+}
+@media screen and (min-width: 1981px) {
+  .hero-text {
+    padding: 20vh 35px;
+  }
 }
 .hero__subtitle {
   font-weight: 500;
@@ -131,12 +135,12 @@
 }
 
 @media screen and (max-width: 768px) {
-  .hero-text{
+  .hero-text {
     padding: 10vh 0;
   }
   .hero {
     background-position: center;
-    text-align: center; 
+    text-align: center;
   }
 
   .hero__title {
