@@ -5,16 +5,16 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../images/new/legal.jpg);
+  background-image: url(../images/new/legal_crop.jpg);
   background-image: -webkit-image-set(
-    url(../images/new/legal.jpg) 1x,
-    url(../images/new/legal.jpg) 2x
+    url(../images/new/legal_crop.jpg) 1x,
+    url(../images/new/legal_crop.jpg) 2x
   );
   background-image: image-set(
-    url(../images/new/legal.jpg) 1x,
-    url(../images/new/legal.jpg) 2x
+    url(../images/new/legal_crop.jpg) 1x,
+    url(../images/new/legal_crop.jpg) 2x
   );
-  background-position-y: -47.5vh;
+  background-position-y: bottom;
   width: 100%;
 }
 p,
@@ -72,7 +72,7 @@ a {
 }
 
 .legal__link-wrapper {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .legal__link {
@@ -82,18 +82,11 @@ a {
 
 .legal__link:hover {
   text-decoration: none;
-}
-
-@media screen and (max-width: 768px) {
+} 
+@media screen and (max-width: 768px) { 
   .hero__title {
     text-align: center;
     font-size: 50px;
     padding: 15vh 0;
   }
-}
-
-@media screen and (max-width: 578px) {
-  .hero {
-    background-position-y: bottom;
-  }
-}
+} 

@@ -14,8 +14,7 @@
     url(../images/new/contact.jpg) 1x,
     url(../images/new/contact.jpg) 2x
   );
-  width: 100%;
-  min-height: 50vh;
+  width: 100%; 
 }
 
 .hero__title {
@@ -94,6 +93,12 @@
   position: relative;
 }
 
+@media screen and (max-width: 1640px) {
+  .hero {
+    background-size: cover;
+    background-position-y: bottom;
+  }
+}
 @media screen and (max-width: 768px) {
   .hero__title {
     text-align: center;
