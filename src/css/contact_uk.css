@@ -2,28 +2,33 @@
 @import "./nav.css";
 
 .hero {
-  background-position: center -20vh;
-  background-size: 100% auto;
+  background-position: center bottom;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../images/new/contact.jpg);
+  background-image: url(../images/new/contact_crop.jpg);
   background-image: -webkit-image-set(
-    url(../images/new/contact.jpg) 1x,
-    url(../images/new/contact.jpg) 2x
+    url(../images/new/contact_crop.jpg) 1x,
+    url(../images/new/contact_crop.jpg) 2x
   );
   background-image: image-set(
-    url(../images/new/contact.jpg) 1x,
-    url(../images/new/contact.jpg) 2x
+    url(../images/new/contact_crop.jpg) 1x,
+    url(../images/new/contact_crop.jpg) 2x
   );
-  width: 100%; 
+  width: 100%;
 }
 
 .hero__title {
   color: #fff;
   font-weight: 800;
   font-size: 70px;
-  padding: 25vh 0;
+  padding: 25vh 35px;
 }
 
+@media screen and (min-width: 1981px) { 
+  .hero__title {
+    padding: 20vh 35px;
+  }
+}
 .contact__wrapper {
   max-width: 1089px;
   padding: 90px 15px 100px;
@@ -93,12 +98,6 @@
   position: relative;
 }
 
-@media screen and (max-width: 1640px) {
-  .hero {
-    background-size: cover;
-    background-position-y: bottom;
-  }
-}
 @media screen and (max-width: 768px) {
   .hero__title {
     text-align: center;

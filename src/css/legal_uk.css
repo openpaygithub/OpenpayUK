@@ -32,9 +32,14 @@ a {
   color: #fff;
   font-weight: 800;
   font-size: 55px;
-  padding: 25vh 0;
+  padding: 25vh 35px;
 }
 
+@media screen and (min-width: 1981px) {
+  .hero__title {
+    padding: 20vh 35px;
+  }
+}
 .content {
   padding: 10vh 0;
   min-height: 60vh;
@@ -82,11 +87,11 @@ a {
 
 .legal__link:hover {
   text-decoration: none;
-} 
-@media screen and (max-width: 768px) { 
+}
+@media screen and (max-width: 768px) {
   .hero__title {
     text-align: center;
     font-size: 50px;
     padding: 15vh 0;
   }
-} 
+}

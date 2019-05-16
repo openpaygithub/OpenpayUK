@@ -36,6 +36,10 @@ a {
   background-color: #f4f7ff;
 }
 
+header {
+  padding: 0 35px;
+}
+
 /*top menu*/
 .topNav {
   overflow: hidden;
@@ -323,9 +327,6 @@ a {
     display: block;
   }
 }
-header {
-  padding: 0 15px;
-}
 .header,
 .header-nav,
 .header-nav .nav-list,
@@ -396,19 +397,20 @@ header {
 .header-nav {
   position: absolute;
   right: 0;
-  width: 49.085365853658536585365853658537%;
+  width: 50%;
   min-width: 503px;
 }
 .header-nav .nav-list {
   list-style: none;
-  width: 812px;
+  position: absolute;
+  right:35px;
   justify-content: flex-end;
 }
 .header-nav .nav-list li {
-  margin-right: 9.3167701863354037267080745341615%;
+  margin-right: 35px;
 }
 .header-nav .nav-list li:last-child {
-  margin-right: 15px !important;
+  margin-right: 0px !important;
 }
 
 .header-nav .nav-list li a {
@@ -580,42 +582,16 @@ footer .copyright {
 .cookie-popup__button:active {
   bottom: -1px;
   position: relative;
-}
-
-/* Layout */
-@media (min-width: 1650px) {
-  .block-child-wrap {
-    width: 100%;
-    max-width: 1650px;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 1280px) and (max-width: 1650px) {
-  .block-child-wrap {
-    width: 100%;
-    max-width: 1280px;
-    padding: 0 15px; 
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1280px) {
-  .block-child-wrap {
-    width: 100%;
-    max-width: 1024px;
-    padding: 0 15px; 
-  }
-}
+} 
 
 @media (max-width: 768px) {
   .header-nav {
     position:relative;
     right: 0;
-  }
-  .block-child-wrap {
-    width: 100%;
-    padding: 0 15px;
-  }
+  } 
+  .header-nav .nav-list {
+    right: auto;
+    position: absolute; 
+}
 }
 

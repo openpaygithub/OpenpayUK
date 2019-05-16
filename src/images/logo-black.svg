@@ -7,13 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="410"
-   height="80.026001"
-   viewBox="0 0 410 80.026001"
+   width="396.008"
+   height="76.741997"
+   viewBox="0 0 396.008 76.741997"
    version="1.1"
    id="svg32"
-   sodipodi:docname="logo.svg"
-   inkscape:version="0.92.1 r15371">
+   sodipodi:docname="logo-black.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <metadata
      id="metadata36">
     <rdf:RDF>
@@ -35,14 +35,14 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="705"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
      id="namedview34"
      showgrid="false"
-     inkscape:zoom="0.42051282"
-     inkscape:cx="-53.386347"
-     inkscape:cy="44.362898"
-     inkscape:window-x="-8"
+     inkscape:zoom="1.6820513"
+     inkscape:cx="348.47634"
+     inkscape:cy="56.710505"
+     inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg32" />
@@ -52,7 +52,7 @@
        id="style2">.a,.b{fill:#fff;}.a{font-size:65px;font-family:Poppins-Medium, Poppins;font-weight:500;letter-spacing:0.05em;}</style>
   </defs>
   <g
-     transform="translate(-722.20126,-288.88777)"
+     transform="translate(-731.08751,-292.4234)"
      id="g30"
      style="fill:#221f1f;fill-opacity:1">
     <g

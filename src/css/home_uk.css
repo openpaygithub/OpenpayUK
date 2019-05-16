@@ -20,17 +20,14 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 25vh 15px;
+  padding: 25vh 35px;
   min-height: 520px;
 }
-
-@media (min-width: 768px) and (max-width: 1280px) {
+@media screen and (min-width: 1981px) {
   .banner {
-    padding: 25vh 35px !important;
-    margin: 0 auto;
+    padding: 20vh 35px;
   }
 }
-
 .banner-content {
   max-width: 812px;
 }
@@ -79,12 +76,6 @@
   grid-template-columns: 1fr 1fr;
   max-width: 1280px;
   margin: 0 auto;
-}
-
-@media (min-width: 1650px) {
-  .forWhomItWorks {
-    max-width: 1650px;
-  }
 }
 
 .forWhomItWorks h2 {
@@ -160,7 +151,7 @@
 
 /*...how works...*/
 .howItWorks {
-  padding: 140px 0 110px;
+  padding: 15vh 0;
   background: #e3e3e3;
   text-align: center;
 }
@@ -212,7 +203,8 @@
 
 /*...feedback...*/
 .feedback-wrap {
-  padding: 63px 15px 120px;
+  max-width: 1280px;
+  padding: 20vh 35px;
 }
 
 .feedback {
@@ -300,14 +292,14 @@
   display: none;
 }
 
-@media screen and (max-width: 1280px) { 
-  .banner-wrap{
+@media screen and (max-width: 1280px) {
+  .banner-wrap {
     background-position: center center;
   }
-  .banner { 
+  .banner {
     justify-content: center;
   }
-  .banner h1{
+  .banner h1 {
     text-align: center;
   }
 
@@ -348,10 +340,6 @@
   }
   .forWhomItWorks div:nth-of-type(2) {
     padding: 75px 0 45px;
-  }
-
-  .feedback-wrap {
-    padding: 70px 15px 80px;
   }
 
   .feedback {
