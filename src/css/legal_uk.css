@@ -5,14 +5,14 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../images/new/legal_crop.jpg);
+  background-image: url(../images/legal_crop.jpg);
   background-image: -webkit-image-set(
-    url(../images/new/legal_crop.jpg) 1x,
-    url(../images/new/legal_crop.jpg) 2x
+    url(../images/legal_crop.jpg) 1x,
+    url(../images/legal_crop.jpg) 2x
   );
   background-image: image-set(
-    url(../images/new/legal_crop.jpg) 1x,
-    url(../images/new/legal_crop.jpg) 2x
+    url(../images/legal_crop.jpg) 1x,
+    url(../images/legal_crop.jpg) 2x
   );
   background-position-y: bottom;
   width: 100%;
@@ -32,16 +32,11 @@ a {
   color: #fff;
   font-weight: 800;
   font-size: 55px;
-  padding: 25vh 35px;
+  padding: 200px 140px;
 }
 
-@media screen and (min-width: 1981px) {
-  .hero__title {
-    padding: 20vh 35px;
-  }
-}
 .content {
-  padding: 10vh 0;
+  padding: 15vh 30px;
   min-height: 60vh;
   text-align: center;
   font-size: 19px;
@@ -92,6 +87,6 @@ a {
   .hero__title {
     text-align: center;
     font-size: 50px;
-    padding: 15vh 0;
+    padding: 15vh 30px;
   }
 }

@@ -35,14 +35,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(../images/new/business.jpg);
+  background-image: url(../images/business.jpg);
   background-image: -webkit-image-set(
-    url(../images/new/business.jpg) 1x,
-    url(../images/new/business.jpg) 2x
+    url(../images/business.jpg) 1x,
+    url(../images/business.jpg) 2x
   );
   background-image: image-set(
-    url(../images/new/business.jpg) 1x,
-    url(../images/new/business.jpg) 2x
+    url(../images/business.jpg) 1x,
+    url(../images/business.jpg) 2x
   );
 }
 
@@ -62,14 +62,9 @@
   line-height: 70px;
   color: #fff;
   letter-spacing: 3px;
-  padding: 25vh 35px;
+  padding: 200px 140px
 }
-
-@media screen and (min-width: 1981px) {
-  .introduction-desc {
-    padding: 20vh 35px;
-  }
-}
+ 
 /*...end introduction...*/
 
 /*...whyOpenPay...*/
@@ -246,16 +241,18 @@
   .whatCanWeDo-item-paragraph {
     min-height: initial;
   }
+  .introduction-desc {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .introduction-desc {
     width: 100%;
     min-width: 200px;
-    text-align: center;
     font-size: 45px;
     line-height: 55px;
-    padding: 20vh 35px;
+    padding: 15vh 30px;
   }
 
   .whatCanWeDo-wrap {

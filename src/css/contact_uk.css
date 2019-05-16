@@ -2,17 +2,17 @@
 @import "./nav.css?20190516";
 
 .hero {
-  background-position: center bottom;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../images/new/contact_crop.jpg);
+  background-image: url(../images/contact_crop.jpg);
   background-image: -webkit-image-set(
-    url(../images/new/contact_crop.jpg) 1x,
-    url(../images/new/contact_crop.jpg) 2x
+    url(../images/contact_crop.jpg) 1x,
+    url(../images/contact_crop.jpg) 2x
   );
   background-image: image-set(
-    url(../images/new/contact_crop.jpg) 1x,
-    url(../images/new/contact_crop.jpg) 2x
+    url(../images/contact_crop.jpg) 1x,
+    url(../images/contact_crop.jpg) 2x
   );
   width: 100%;
 }
@@ -21,13 +21,7 @@
   color: #fff;
   font-weight: 800;
   font-size: 70px;
-  padding: 25vh 35px;
-}
-
-@media screen and (min-width: 1981px) { 
-  .hero__title {
-    padding: 20vh 35px;
-  }
+  padding: 200px 140px;
 }
 .contact__wrapper {
   max-width: 1089px;
@@ -97,12 +91,18 @@
   bottom: -1px;
   position: relative;
 }
+@media screen and (max-width: 1600px) {
+  .hero {
+    background-position: center center;
+    background-size: cover;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .hero__title {
     text-align: center;
     font-size: 50px;
-    padding: 150px 0 205px;
+    padding: 15vh 30px;
   }
 
   .contact__container {
@@ -113,9 +113,5 @@
   .contact__mail,
   .contact__phone {
     justify-self: center;
-  }
-  .hero {
-    background-position: center center;
-    background-size: cover;
   }
 }

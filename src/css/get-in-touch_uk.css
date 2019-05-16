@@ -2,17 +2,17 @@
 @import "./nav.css?20190516";
 
 .hero {
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../images/new/get-in-touch.jpg);
+  background-image: url(../images/get-in-touch.jpg);
   background-image: -webkit-image-set(
-    url(../images/new/get-in-touch.jpg) 1x,
-    url(../images/new/get-in-touch.jpg) 2x
+    url(../images/get-in-touch.jpg) 1x,
+    url(../images/get-in-touch.jpg) 2x
   );
   background-image: image-set(
-    url(../images/new/get-in-touch.jpg) 1x,
-    url(../images/new/get-in-touch.jpg) 2x
+    url(../images/get-in-touch.jpg) 1x,
+    url(../images/get-in-touch.jpg) 2x
   );
   width: 100%;
   color: #fff;
@@ -24,13 +24,8 @@
   padding-bottom: 10px;
 }
 .hero-text {
-  padding: 25vh 35px;
-}
-@media screen and (min-width: 1981px) {
-  .hero-text {
-    padding: 20vh 35px;
-  }
-}
+  padding: 200px 140px;
+} 
 .hero__subtitle {
   font-weight: 500;
   font-size: 30px;
@@ -136,7 +131,7 @@
 
 @media screen and (max-width: 768px) {
   .hero-text {
-    padding: 10vh 0;
+    padding: 15vh 30px;
   }
   .hero {
     background-position: center;
