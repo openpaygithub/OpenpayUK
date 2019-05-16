@@ -26,7 +26,8 @@
 
 @media (min-width: 768px) and (max-width: 1280px) {
   .banner {
-    padding: 115px 35px;
+    padding: 25vh 35px !important;
+    margin: 0 auto;
   }
 }
 
@@ -299,7 +300,17 @@
   display: none;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1280px) { 
+  .banner-wrap{
+    background-position: center center;
+  }
+  .banner { 
+    justify-content: center;
+  }
+  .banner h1{
+    text-align: center;
+  }
+
   .banner-content {
     width: initial;
     max-width: initial;

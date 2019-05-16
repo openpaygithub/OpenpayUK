@@ -394,6 +394,8 @@ header {
 }
 
 .header-nav {
+  position: absolute;
+  right: 0;
   width: 49.085365853658536585365853658537%;
   min-width: 503px;
 }
@@ -405,6 +407,10 @@ header {
 .header-nav .nav-list li {
   margin-right: 9.3167701863354037267080745341615%;
 }
+.header-nav .nav-list li:last-child {
+  margin-right: 15px !important;
+}
+
 .header-nav .nav-list li a {
   white-space: nowrap;
 }
@@ -590,8 +596,7 @@ footer .copyright {
   .block-child-wrap {
     width: 100%;
     max-width: 1280px;
-    padding: 0 15px;
-    margin: 0 auto;
+    padding: 0 15px; 
   }
 }
 
@@ -599,12 +604,15 @@ footer .copyright {
   .block-child-wrap {
     width: 100%;
     max-width: 1024px;
-    padding: 0 35px;
-    margin: 0 auto;
+    padding: 0 15px; 
   }
 }
 
 @media (max-width: 768px) {
+  .header-nav {
+    position:relative;
+    right: 0;
+  }
   .block-child-wrap {
     width: 100%;
     padding: 0 15px;
