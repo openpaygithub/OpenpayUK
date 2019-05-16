@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,800');
-@import './nav.css';
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,800");
+@import "./nav.css";
 
 .btn-primary {
   font-size: 20px;
@@ -44,11 +44,11 @@
     url(../images/new/business.jpg) 1x,
     url(../images/new/business.jpg) 2x
   );
-   min-height: 50vh;
+  min-height: 50vh;
 }
 
 .introduction-wrap::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -76,7 +76,7 @@
 }
 
 .whyOpenPay-wrap::after {
-  content: '';
+  content: "";
   background: url(../images/signup-bg-logo.svg) no-repeat;
   background-size: cover;
   width: 583px;
@@ -102,16 +102,11 @@
 }
 
 .whyOpenPay__text {
-  max-width: 650px;
+  max-width: 50vw;
   font-size: 20px;
   font-weight: 300;
   line-height: 35px;
   margin: 0 auto 25px;
-}
-
-.whyOpenPay__text:last-child {
-  max-width: initial;
-  margin-bottom: 0;
 }
 
 .whyOpenPay-btn {
@@ -269,5 +264,11 @@
 
   .readyToChat-title {
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .whyOpenPay__text {
+    max-width: initial;
   }
 }
