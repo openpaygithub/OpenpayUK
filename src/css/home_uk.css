@@ -5,14 +5,15 @@
   min-height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/front.jpeg);
+  background-position: center -160px;
+  background-image: url(../images/front.jpg);
   background-image: -webkit-image-set(
-    url(../images/front.jpeg) 1x,
-    url(../images/front.jpeg) 2x
+    url(../images/front.jpg) 1x,
+    url(../images/front.jpg) 2x
   );
   background-image: image-set(
-    url(../images/front.jpeg) 1x,
-    url(../images/front.jpeg) 2x
+    url(../images/front.jpg) 1x,
+    url(../images/front.jpg) 2x
   );
 }
 
@@ -69,7 +70,6 @@
 .forWhomItWorks {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -89,11 +89,24 @@
   color: #000;
   line-height: 40px;
   font-size: 25px;
+  z-index: 0;
+}
+.dress-container {
+  width: 580px;
+  position: relative;
+}
+
+.dress-img {
+  max-height: 125px;
+  padding-top: 25px;
+  position: absolute;
+  right: 0px;
 }
 
 .forWhomItWorks_desc,
 .forWhomItWorks_img_bg {
   max-width: 580px;
+  margin: 0 auto;
 }
 
 .forWhomItWorks_text {
@@ -109,16 +122,17 @@
 }
 
 .forWhomItWorks > div:nth-of-type(1) {
-  background: url(../images/dress.svg) bottom 60px right 100px no-repeat;
+  /* background: url(../images/dress.svg) bottom 60px right 100px no-repeat; */
   background-size: 150px;
   position: relative;
-  padding: 215px 15px 168px;
+  padding: 200px 0;
 }
 
 .forWhomItWorks div:nth-of-type(2) {
   position: relative;
   background-color: #3c465a;
-  padding: 215px 15px 225px 75px;
+  margin: 0 auto;
+  padding: 200px 0;
   z-index: 0;
   overflow: hidden;
 }
@@ -146,7 +160,7 @@
 
 /*...how works...*/
 .howItWorks {
-  padding: 15vh 0;
+  padding: 200px 0;
   background: #e3e3e3;
   text-align: center;
 }
@@ -164,11 +178,12 @@
 }
 
 .block_howItWorks_flex {
+  grid-gap: 150px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .block_howItWorks_flex {
     grid-template-columns: 1fr;
   }
@@ -198,17 +213,15 @@
 
 /*...feedback...*/
 .feedback-wrap {
-  max-width: 1280px;
-  padding: 20vh 35px;
+  padding: 200px 140px;
 }
 
 .feedback {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 150px;
   text-align: left;
+  grid-gap: 100px;
 }
-
 .feedback_title {
   padding-bottom: 35px;
   font-size: 35px;
@@ -219,7 +232,7 @@
   display: block;
   font-size: 25px;
   line-height: 40px;
-  max-width: 768px;
+  max-width: 800px;
 }
 
 .feedback_text--height {
@@ -288,14 +301,23 @@
 }
 
 @media screen and (max-width: 1280px) {
+  .dress-img {
+    position: inherit;
+    margin-top: 15px;
+  }
   .banner-wrap {
-    background-position: center center;
+    background-size: cover;
+    background-position: center bottom;
   }
   .banner {
     justify-content: center;
   }
   .banner h1 {
     text-align: center;
+  }
+
+  .feedback-wrap {
+    padding: 100px 35px;
   }
 
   .banner-content {
@@ -313,6 +335,7 @@
   }
 
   .forWhomItWorks {
+    padding: 0;
     grid-template-columns: 1fr;
   }
   .forWhomItWorks div {
@@ -330,13 +353,10 @@
     text-align: center;
   }
 
-  .forWhomItWorks > div:nth-of-type(1) {
-    padding: 75px 0 168px;
-  }
+  .forWhomItWorks > div:nth-of-type(1),
   .forWhomItWorks div:nth-of-type(2) {
-    padding: 75px 0 45px;
+    padding: 150px 0;
   }
-
   .feedback {
     grid-template-columns: 1fr;
     grid-row-gap: 50px;
@@ -383,7 +403,8 @@
 
 @media screen and (max-width: 525px) {
   .banner-wrap {
-    background-position: center;
+    background-position: center center;
+    background-size: cover;
   }
   .banner-content {
     width: 70%;
