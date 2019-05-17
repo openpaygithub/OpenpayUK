@@ -6,14 +6,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(../images/contact_crop.jpg);
-  background-image: -webkit-image-set(
-    url(../images/contact_crop.jpg) 1x,
-    url(../images/contact_crop.jpg) 2x
-  );
-  background-image: image-set(
-    url(../images/contact_crop.jpg) 1x,
-    url(../images/contact_crop.jpg) 2x
-  );
+  background-image: -webkit-image-set(url(../images/contact_crop.jpg) 1x,
+      url(../images/contact_crop.jpg) 2x);
+  background-image: image-set(url(../images/contact_crop.jpg) 1x,
+      url(../images/contact_crop.jpg) 2x);
   width: 100%;
 }
 
@@ -23,6 +19,7 @@
   font-size: 70px;
   padding: 200px 140px;
 }
+
 .contact__wrapper {
   max-width: 1089px;
   padding: 90px 15px 100px;
@@ -75,9 +72,13 @@
 .contact__text-media {
   font-weight: 300;
   font-size: 20px;
-  line-height: 25px; 
+  line-height: 25px;
   margin: 0 auto;
   padding: 50px 0 0 0;
+}
+
+.contact__text-media h4 {
+  margin-top: 30px;
 }
 
 .contact__link {
@@ -99,6 +100,7 @@
   bottom: -1px;
   position: relative;
 }
+
 @media screen and (max-width: 1600px) {
   .hero {
     background-position: center center;
@@ -107,6 +109,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .contact__text-media {
+    max-width: 300px;
+  }
+
   .hero__title {
     text-align: center;
     font-size: 50px;
