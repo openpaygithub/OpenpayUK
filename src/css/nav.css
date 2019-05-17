@@ -36,7 +36,7 @@ a {
   background-color: #f4f7ff;
 }
 
-header { 
+header {
   padding: 0 140px;
 }
 
@@ -82,7 +82,7 @@ header {
   background-repeat: no-repeat;
   height: 24px;
   width: 129px;
-  padding: 0; 
+  padding: 0;
   margin: 28px 30px 0 0;
 }
 
@@ -427,7 +427,8 @@ header {
   align-items: center;
 }
 
-.logo-link .logo { 
+.logo-link .logo {
+  transition: 0.25s;
   width: 216px;
   height: 42px;
 }
@@ -591,7 +592,20 @@ footer .copyright {
   position: relative;
 }
 
+.show-mobile {
+  display: none;
+}
+.hide-mobile {
+  display: block;
+}
+
 @media (max-width: 768px) {
+  .show-mobile {
+    display: block;
+  }
+  .hide-mobile {
+    display: none;
+  }
   .header-nav {
     position: relative;
     right: 0;

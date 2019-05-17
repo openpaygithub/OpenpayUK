@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800");
-@import "./nav.css?20190516";
+@import "./nav.css?20190517";
 
 .hero {
   background-position: center center;
@@ -70,6 +70,14 @@
   max-width: 260px;
   margin: 0 auto;
   padding-bottom: 30px;
+}
+
+.contact__text-media {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px; 
+  margin: 0 auto;
+  padding: 50px 0 0 0;
 }
 
 .contact__link {
