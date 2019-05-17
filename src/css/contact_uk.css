@@ -72,6 +72,14 @@
   padding-bottom: 30px;
 }
 
+.contact__text-media {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px; 
+  margin: 0 auto;
+  padding: 50px 0 0 0;
+}
+
 .contact__link {
   font-size: 17px;
   border: 3px solid #19b8e9;
