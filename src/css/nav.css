@@ -592,20 +592,7 @@ footer .copyright {
   position: relative;
 }
 
-.show-mobile {
-  display: none;
-}
-.hide-mobile {
-  display: block;
-}
-
 @media (max-width: 768px) {
-  .show-mobile {
-    display: block;
-  }
-  .hide-mobile {
-    display: none;
-  }
   .header-nav {
     position: relative;
     right: 0;

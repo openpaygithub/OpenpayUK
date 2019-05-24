@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,800i&display=swap');
 @import './nav.css?20190517';
 
 .link-to {
@@ -11,6 +11,12 @@
 
 .link-to:hover {
   color: rgba(0, 0, 0, 0.7);
+}
+
+.block-child-wrap {
+  max-width: 1650px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /*...welcome block...*/
