@@ -24,7 +24,7 @@
 }
 
 .get-in-touch {
-  padding: 110px 0;
+  padding: 110px 20px;
 }
 
 .get-in-touch__form {
@@ -82,7 +82,7 @@
   font-style: italic;
 }
 
-@media (min-width: 769px) and (max-width: 1280px) {
+@media (min-width: 769px) and (max-width: 1067px) {
   .form__input--2lines {
     margin-top: 45px;
   }

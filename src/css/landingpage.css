@@ -13,6 +13,12 @@
   color: rgba(0, 0, 0, 0.7);
 }
 
+.block-child-wrap {
+  max-width: 1650px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 /*...welcome block...*/
 .welcome-wrap {
   background-repeat: no-repeat;
