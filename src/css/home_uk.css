@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,300i,400,500,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,300i,400,500,600,700,800&display=swap");
 @import "./nav.css?20190517";
 
 .banner-wrap {
@@ -7,14 +7,6 @@
   background-size: cover;
   background-position: center -160px;
   background-image: url(../images/front.jpg);
-  background-image: -webkit-image-set(
-    url(../images/front.jpg) 1x,
-    url(../images/front.jpg) 2x
-  );
-  background-image: image-set(
-    url(../images/front.jpg) 1x,
-    url(../images/front.jpg) 2x
-  );
 }
 
 .banner {
