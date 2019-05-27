@@ -5,7 +5,15 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../images/legal_crop.jpg);
+  background-image: url(../images/legal/legal.jpg);
+  background-image: -webkit-image-set(
+    url(../images/legal/legal.jpg) 1x,
+    url(../images/legal/legal@2x.jpg) 2x
+  );
+  background-image: image-set(
+    url(../images/legal/legal.jpg) 1x,
+    url(../images/legal/legal@2x.jpg) 2x
+  );
   background-position-y: bottom;
   width: 100%;
 }
@@ -17,7 +25,7 @@
 }
 
 .hero__title {
-  color: #fff;
+  color: #000;
   font-weight: 800;
   font-size: 55px;
   padding: 200px 140px;
