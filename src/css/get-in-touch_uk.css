@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,500i,600,800");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,500i,600,800&display=swap");
 @import "./nav.css?20190517";
 
 .hero {
@@ -6,14 +6,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(../images/get-in-touch.jpg);
-  background-image: -webkit-image-set(
-    url(../images/get-in-touch.jpg) 1x,
-    url(../images/get-in-touch.jpg) 2x
-  );
-  background-image: image-set(
-    url(../images/get-in-touch.jpg) 1x,
-    url(../images/get-in-touch.jpg) 2x
-  );
   width: 100%;
   color: #fff;
 }
@@ -32,7 +24,7 @@
 }
 
 .get-in-touch {
-  padding: 110px 0;
+  padding: 110px 20px;
 }
 
 .get-in-touch__form {
@@ -90,7 +82,7 @@
   font-style: italic;
 }
 
-@media (min-width: 769px) and (max-width: 1280px) {
+@media (min-width: 769px) and (max-width: 1067px) {
   .form__input--2lines {
     margin-top: 45px;
   }

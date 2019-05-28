@@ -1,20 +1,24 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap");
 @import "./nav.css?20190517";
 
 .hero {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../images/contact_crop.jpg);
-  background-image: -webkit-image-set(url(../images/contact_crop.jpg) 1x,
-      url(../images/contact_crop.jpg) 2x);
-  background-image: image-set(url(../images/contact_crop.jpg) 1x,
-      url(../images/contact_crop.jpg) 2x);
+  background-image: url(../images/contact/contact.jpg);
+  background-image: -webkit-image-set(
+    url(../images/contact/contact.jpg) 1x,
+    url(../images/contact/contact@2x.jpg) 2x
+  );
+  background-image: image-set(
+    url(../images/contact/contact.jpg) 1x,
+    url(../images/contact/contact@2x.jpg) 2x
+  );
   width: 100%;
 }
 
 .hero__title {
-  color: #fff;
+  color: #000;
   font-weight: 800;
   font-size: 70px;
   padding: 200px 140px;
