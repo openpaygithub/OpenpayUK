@@ -5,20 +5,21 @@
   font-size: 35px;
   font-weight: 600;
   line-height: 40px;
+  color: #3c465a;
 }
 
 .hero {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../images/contact/contact.jpg);
+  background-image: url(../images/works/works.jpg);
   background-image: -webkit-image-set(
-    url(../images/contact/contact.jpg) 1x,
-    url(../images/contact/contact@2x.jpg) 2x
+    url(../images/works/works.jpg) 1x,
+    url(../images/works/works@2x.jpg) 2x
   );
   background-image: image-set(
-    url(../images/contact/contact.jpg) 1x,
-    url(../images/contact/contact@2x.jpg) 2x
+    url(../images/works/works.jpg) 1x,
+    url(../images/works/works@2x.jpg) 2x
   );
   width: 100%;
 }
@@ -57,6 +58,7 @@
 
 .works__title {
   padding-bottom: 100px;
+  color: #fff;
 }
 
 .works__item {
@@ -80,7 +82,57 @@
   line-height: 30px;
 }
 
+.help__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
 
+.help__section {
+  padding: 140px 35px;
+}
+
+.help__title {
+  padding-bottom: 50px;
+}
+
+.help__title--faq {
+  color: #fff;
+}
+
+.help__faq {
+  background-color: #179ecf;
+  color: #fff;
+}
+
+.faq__descr {
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 30px;
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.faq__descr:last-child {
+  padding-bottom: 0;
+}
+
+.contacts__text {
+  max-width: 250px;
+  margin: 0 auto;
+  padding-top: 30px;
+  color: #3c465a;
+  font-size: 20px;
+}
+
+.help__link {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.help__link:hover {
+  text-decoration: none;
+}
 
 .readyToChat-wrap {
   padding: 175px 0 145px;
@@ -133,6 +185,12 @@
   }
 }
 
+@media screen and (max-width: 1210px) {
+  .help__container {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .block-child-wrap {
     padding: 0 35px;
@@ -176,6 +234,19 @@
 
   .works__item-descr {
     font-size: 19px;
+    line-height: 25px;
+  }
+
+  .help__section {
+    padding: 60px 35px 70px;
+  }
+
+  .faq__descr {
+    padding-bottom: 25px;
+  }
+
+  .faq__descr,
+  .contacts__text {
     line-height: 25px;
   }
 
