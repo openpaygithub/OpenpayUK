@@ -1,278 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Openpay: Welcome</title>
-    <meta name="description" content="Openpay Welcome to a smarter way to pay">
-    <meta property="og:image" content="https://www.myopenpay.co.uk/images/opengraph/opengraph-landingpage.jpg">
-    <!-- Google Tag Manager -->
-    <script>
-      (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-TF3JKHF');
-    </script>
 
-    <!-- 	FullStory Snippet -->
-    <script>
-      window['_fs_debug'] = false;
-      window['_fs_host'] = 'fullstory.com';
-      window['_fs_org'] = 'D6N17';
-      window['_fs_namespace'] = 'FS';
-      (function(m, n, e, t, l, o, g, y) {
-        if (e in m) {
-          if (m.console && m.console.log) {
-            m.console.log(
-              'FullStory namespace conflict. Please set window["_fs_namespace"].'
-            );
-          }
-          return;
+<head>
+  <meta charset="UTF-8" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Openpay: Welcome</title>
+  <meta name="description" content="Openpay Welcome to a smarter way to pay">
+  <meta property="og:image" content="https://www.myopenpay.co.uk/images/opengraph/opengraph-landingpage.jpg">
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TF3JKHF');
+  </script>
+
+  <!-- 	FullStory Snippet -->
+  <script>
+    window['_fs_debug'] = false;
+    window['_fs_host'] = 'fullstory.com';
+    window['_fs_org'] = 'D6N17';
+    window['_fs_namespace'] = 'FS';
+    (function (m, n, e, t, l, o, g, y) {
+      if (e in m) {
+        if (m.console && m.console.log) {
+          m.console.log(
+            'FullStory namespace conflict. Please set window["_fs_namespace"].'
+          );
         }
-        g = m[e] = function(a, b) {
-          g.q ? g.q.push([a, b]) : g._api(a, b);
-        };
-        g.q = [];
-        o = n.createElement(t);
-        o.async = 1;
-        o.src = 'https://' + _fs_host + '/s/fs.js';
-        y = n.getElementsByTagName(t)[0];
-        y.parentNode.insertBefore(o, y);
-        g.identify = function(i, v) {
-          g(l, { uid: i });
-          if (v) g(l, v);
-        };
-        g.setUserVars = function(v) {
-          g(l, v);
-        };
-        g.shutdown = function() {
-          g('rec', !1);
-        };
-        g.restart = function() {
-          g('rec', !0);
-        };
-        g.consent = function(a) {
-          g('consent', !arguments.length || a);
-        };
-        g.identifyAccount = function(i, v) {
-          o = 'account';
-          v = v || {};
-          v.acctId = i;
-          g(o, v);
-        };
-        g.clearUserCookie = function() {};
-      })(window, document, window['_fs_namespace'], 'script', 'user');
-    </script>
-    <link rel="stylesheet" href="css/landingpage.css" />
-  </head>
-  <body>
-    <div class="welcome-wrap block-wap">
-      <div class="welcome block-child-wrap">
-        <img src="./images/logo-black.svg" alt="Openpay Logo" class="welcome-logo" />
-        <h1 class="welcome-title">
-          Welcome to a<br>smarter way to pay.
-        </h1>
-      </div>
+        return;
+      }
+      g = m[e] = function (a, b) {
+        g.q ? g.q.push([a, b]) : g._api(a, b);
+      };
+      g.q = [];
+      o = n.createElement(t);
+      o.async = 1;
+      o.src = 'https://' + _fs_host + '/s/fs.js';
+      y = n.getElementsByTagName(t)[0];
+      y.parentNode.insertBefore(o, y);
+      g.identify = function (i, v) {
+        g(l, {
+          uid: i
+        });
+        if (v) g(l, v);
+      };
+      g.setUserVars = function (v) {
+        g(l, v);
+      };
+      g.shutdown = function () {
+        g('rec', !1);
+      };
+      g.restart = function () {
+        g('rec', !0);
+      };
+      g.consent = function (a) {
+        g('consent', !arguments.length || a);
+      };
+      g.identifyAccount = function (i, v) {
+        o = 'account';
+        v = v || {};
+        v.acctId = i;
+        g(o, v);
+      };
+      g.clearUserCookie = function () {};
+    })(window, document, window['_fs_namespace'], 'script', 'user');
+  </script>
+  <link rel="stylesheet" href="css/landingpage.css" />
+</head>
+
+<body>
+  <div class="welcome-wrap block-wap">
+    <div class="welcome block-child-wrap">
+      <img src="./images/logo-black.svg" alt="Openpay Logo" class="welcome-logo" />
+      <h1 class="welcome-title">
+        Welcome to a<br>smarter way to pay.
+      </h1>
     </div>
+  </div>
 
-    <section class="signup">
-      <div class="signup__wrapper block-child-wrap">
-        <div class="signup__item">
-          <h2 class="signup__title">
-            We’ve partnered with Openpay to bring you more ways to pay, <div class="signup__subtitle">on your terms.</div>
-          </h2>
-        </div>
-        <div class="signup__item signup__item--form">
-          <label class="signup__form-title" for="signup">
-            Add your email address to receive the latest news and info from Openpay.
-          </label>
-          <form
-            class="gform signup__form"
-            method="POST"
-            action="https://script.google.com/macros/s/AKfycbyrox_EtmkWyFRhrKAeRz1rzyl_p6-t63XE1rOe/exec"
-          >
-            <div class="form-elements">
-              <input
-                id="signup"
-                class="signup__input"
-                type="email"
-                name="email"
-                placeholder="Your email address"
-                maxlength="254"
-                required
-              />
-              <button class="signup__submit" type="submit">
-                Sign up
-              </button>
-            </div>
-            <div class="thankyou">
-              <em>Thank you,</em> we'll be in touch.
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <div class="works-wrap block-wap">
-      <div class="works">
-        <h2 class="works-title">
-          How Openpay works
+  <section class="signup">
+    <div class="signup__wrapper block-child-wrap">
+      <div class="signup__item">
+        <h2 class="signup__title">
+          We’ve partnered with Openpay to bring you more ways to pay, <div class="signup__subtitle">on your terms.</div>
         </h2>
-        <div class="work-list">
-          <div class="work-item">
-            <img
-              src="./images/Path%204496.svg"
-              alt="sign in"
-              class="work-item__icon work-item__icon_1"
-            />
-            <h3 class="work-item__title">
-              Sign up.
-            </h3>
-            <p class="work-item__desc">
-              Sign up in less than 90 seconds with a few simple details.
-            </p>
+      </div>
+      <div class="signup__item signup__item--form">
+        <label class="signup__form-title" for="signup">
+          Add your email address to receive the latest news and info from Openpay.
+        </label>
+        <form class="gform signup__form" method="POST"
+          action="https://script.google.com/macros/s/AKfycbyrox_EtmkWyFRhrKAeRz1rzyl_p6-t63XE1rOe/exec">
+          <div class="form-elements">
+            <input id="signup" class="signup__input" type="email" name="email" placeholder="Your email address"
+              maxlength="254" required />
+            <button class="signup__submit" type="submit">
+              Sign up
+            </button>
           </div>
-          <div class="work-item">
-            <img
-              src="./images/Path%204497.svg"
-              alt="shop"
-              class="work-item__icon work-item__icon_2"
-            />
-            <h3 class="work-item__title">
-              Shop now.
-            </h3>
-            <p class="work-item__desc">
-              Add items to the basket, and select Openpay at checkout
-            </p>
+          <div class="thankyou">
+            <em>Thank you,</em> we'll be in touch.
           </div>
-          <div class="work-item">
-            <img
-              src="./images/Group%201428.svg"
-              alt="simple"
-              class="work-item__icon work-item__icon_3"
-            />
-            <h3 class="work-item__title">
-              Pay smarter.
-            </h3>
-            <p class="work-item__desc">
-              Pay your plan off in equal, monthly instalments, starting today.
-            </p>
-          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="works-wrap block-wap">
+    <div class="works">
+      <h2 class="works-title">
+        How Openpay works
+      </h2>
+      <div class="work-list">
+        <div class="work-item">
+          <img src="./images/Path%204496.svg" alt="sign in" class="work-item__icon work-item__icon_1" />
+          <h3 class="work-item__title">
+            Sign up.
+          </h3>
+          <p class="work-item__desc">
+            Sign up in less than 90 seconds with a few simple details.
+          </p>
+        </div>
+        <div class="work-item">
+          <img src="./images/Path%204497.svg" alt="shop" class="work-item__icon work-item__icon_2" />
+          <h3 class="work-item__title">
+            Shop now.
+          </h3>
+          <p class="work-item__desc">
+            Add items to the basket, and select Openpay at checkout
+          </p>
+        </div>
+        <div class="work-item">
+          <img src="./images/Group%201428.svg" alt="simple" class="work-item__icon work-item__icon_3" />
+          <h3 class="work-item__title">
+            Pay smarter.
+          </h3>
+          <p class="work-item__desc">
+            Pay your plan off in equal, monthly instalments, starting today.
+          </p>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="empoweringPay-wrap block-wap">
-      <div class="empoweringPay">
-        <section class="empoweringPay-section">
-          <h2 class="title-h2 empoweringPay-title">
-            Empowering you to pay.
-          </h2>
-          <article class="empoweringPay__article">
-            <h4 class="empoweringPay__article-title">
-              How do I make payments?
-            </h4>
-            <p class="empoweringPay__text">
-              You don’t need to worry about manually making payments, we will
-              directly debit your account on the scheduled date.
-            </p>
-          </article>
-          <article class="empoweringPay__article">
-            <h4 class="empoweringPay__article-title">
-              When will my next payment be due?
-            </h4>
-            <p class="empoweringPay__text">
-              Our plans are made up of equal instalments, one month apart. Your
-              initial instalment is paid on the day of purchase, but you can
-              customise your second instalment date. Any instalments after this
-              will be taken a month apart.
-            </p>
-          </article>
-          <article class="empoweringPay__article">
-            <h4 class="empoweringPay__article-title">
-              Are there fees?
-            </h4>
-            <p class="empoweringPay__text">
-              As long as you pay on time, you’ll pay no fees on top of your
-              purchase. If you miss a payment, a late fee of £7.50 will apply.
-              To avoid this, contact Openpay to reschedule your payment date.
-            </p>
-          </article>
-          <article class="empoweringPay__article">
-            <h4 class="empoweringPay__article-title">
-              Is Openpay safe & secure?
-            </h4>
-            <p class="empoweringPay__text">
-              Yes, protecting your information is very important to us. Openpay
-              is a Level 1 PCI DSS Compliant Provider. This means that all
-              sensitive information is encrypted and we maintain stringent
-              physical, electronic and procedural safeguards to protect your
-              information. View the Openpay privacy policy
-              <a
-                href="./docs/privacy-policy.pdf"
-                target="_blank"
-                class="link-to"
-                ><u>here</u></a
-              >.
-            </p>
-          </article>
-          <article class="empoweringPay__article">
-            <h4 class="empoweringPay__article-title">
-              Will I be charged interest?
-            </h4>
-            <p class="empoweringPay__text">
-              Openpay does not charge any interest. <b>Ever</b>.
-            </p>
-          </article>
-          <article class="empoweringPay__article">
-            <h4 class="empoweringPay__article-title">
-              What if I want to return my order?
-            </h4>
-            <p class="empoweringPay__text">
-              All refunds will be processed through us as normal. Openpay will
-              refund you all payments made to date, and cancel your plan. Read
-              the full terms and conditions
-              <a
-                href="./docs/terms-conditions.pdf"
-                target="_blank"
-                class="link-to"
-                ><u>here</u></a
-              >.
-            </p>
-          </article>
-        </section>
-      </div>
+  <div class="empoweringPay-wrap block-wap">
+    <div class="empoweringPay">
+      <section class="empoweringPay-section">
+        <h2 class="title-h2 empoweringPay-title">
+          Empowering you to pay.
+        </h2>
+        <article class="empoweringPay__article">
+          <h4 class="empoweringPay__article-title">
+            How do I make payments?
+          </h4>
+          <p class="empoweringPay__text">
+            You don’t need to worry about manually making payments, we will
+            directly debit your account on the scheduled date.
+          </p>
+        </article>
+        <article class="empoweringPay__article">
+          <h4 class="empoweringPay__article-title">
+            When will my next payment be due?
+          </h4>
+          <p class="empoweringPay__text">
+            Our plans are made up of equal instalments, one month apart. Your
+            initial instalment is paid on the day of purchase, but you can
+            customise your second instalment date. Any instalments after this
+            will be taken a month apart.
+          </p>
+        </article>
+        <article class="empoweringPay__article">
+          <h4 class="empoweringPay__article-title">
+            Are there fees?
+          </h4>
+          <p class="empoweringPay__text">
+            As long as you pay on time, you’ll pay no fees on top of your
+            purchase. If you miss a payment, a late fee of £7.50 will apply.
+            To avoid this, contact Openpay to reschedule your payment date.
+          </p>
+        </article>
+        <article class="empoweringPay__article">
+          <h4 class="empoweringPay__article-title">
+            Is Openpay safe & secure?
+          </h4>
+          <p class="empoweringPay__text">
+            Yes, protecting your information is very important to us. Openpay
+            is a Level 1 PCI DSS Compliant Provider. This means that all
+            sensitive information is encrypted and we maintain stringent
+            physical, electronic and procedural safeguards to protect your
+            information. View the Openpay privacy policy
+            <a href="./docs/privacy-policy.pdf" target="_blank" class="link-to"><u>here</u></a>.
+          </p>
+        </article>
+        <article class="empoweringPay__article">
+          <h4 class="empoweringPay__article-title">
+            Will I be charged interest?
+          </h4>
+          <p class="empoweringPay__text">
+            Openpay does not charge any interest. <b>Ever</b>.
+          </p>
+        </article>
+        <article class="empoweringPay__article">
+          <h4 class="empoweringPay__article-title">
+            What if I want to return my order?
+          </h4>
+          <p class="empoweringPay__text">
+            All refunds will be processed through us as normal. Openpay will
+            refund you all payments made to date, and cancel your plan. Read
+            the full terms and conditions
+            <a href="./docs/terms-conditions.pdf" target="_blank" class="link-to"><u>here</u></a>.
+          </p>
+        </article>
+      </section>
     </div>
+  </div>
 
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-TF3JKHF"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div class="cookie-popup">
-      We uses cookies to give you the best browsing experience.  <a href="./docs/privacy-policy.pdf" class="cookie-popup__link" target="_blank">Find out more</a> or adjust your settings.
-      <button class="cookie-popup__button">Accept</button>
-    </div>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TF3JKHF" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="cookie-popup">
+    We uses cookies to give you the best browsing experience. <a href="./docs/privacy-policy.pdf"
+      class="cookie-popup__link" target="_blank">Find out more</a> or adjust your settings.
+    <button class="cookie-popup__button">Accept</button>
+  </div>
 
-    <script defer src="./scripts/landing-main.min.js"></script>
+  <script defer src="./scripts/landing-main.min.js"></script>
 
-    <script
-      data-cfasync="false"
-      src="./scripts/form-submission-handler.min.js"
-    ></script>
-  </body>
+  <script data-cfasync="false" src="./scripts/form-submission-handler.min.js"></script>
+</body>
+
 </html>

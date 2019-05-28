@@ -1,291 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./images/favicon/favicon-16x16.png"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Openpay Welcome</title>
-    <meta
-      name="description"
-      content="Openpay Welcome to a smarter way to pay"
-    />
-    <meta
-      property="og:image"
-      content="https://www.myopenpay.co.uk/images/opengraph/opengraph-home.jpg"
-    />
-    <!-- Google Tag Manager -->
-    <script>
-      (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-          "gtm.start": new Date().getTime(),
-          event: "gtm.js"
-        });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-TF3JKHF");
-    </script>
-    <!-- 	FullStory Snippet -->
-    <script>
-      window["_fs_debug"] = false;
-      window["_fs_host"] = "fullstory.com";
-      window["_fs_org"] = "D6N17";
-      window["_fs_namespace"] = "FS";
-      (function(m, n, e, t, l, o, g, y) {
-        if (e in m) {
-          if (m.console && m.console.log) {
-            m.console.log(
-              'FullStory namespace conflict. Please set window["_fs_namespace"].'
-            );
-          }
-          return;
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Openpay Welcome</title>
+  <meta name="description" content="Openpay Welcome to a smarter way to pay" />
+  <meta property="og:image" content="https://www.myopenpay.co.uk/images/opengraph/opengraph-home.jpg" />
+  <!-- Google Tag Manager -->
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NH9RBKG');
+  </script>
+  <!-- 	FullStory Snippet -->
+  <script>
+    window["_fs_debug"] = false;
+    window["_fs_host"] = "fullstory.com";
+    window["_fs_org"] = "D6N17";
+    window["_fs_namespace"] = "FS";
+    (function (m, n, e, t, l, o, g, y) {
+      if (e in m) {
+        if (m.console && m.console.log) {
+          m.console.log(
+            'FullStory namespace conflict. Please set window["_fs_namespace"].'
+          );
         }
-        g = m[e] = function(a, b) {
-          g.q ? g.q.push([a, b]) : g._api(a, b);
-        };
-        g.q = [];
-        o = n.createElement(t);
-        o.async = 1;
-        o.src = "https://" + _fs_host + "/s/fs.js";
-        y = n.getElementsByTagName(t)[0];
-        y.parentNode.insertBefore(o, y);
-        g.identify = function(i, v) {
-          g(l, {
-            uid: i
-          });
-          if (v) g(l, v);
-        };
-        g.setUserVars = function(v) {
-          g(l, v);
-        };
-        g.shutdown = function() {
-          g("rec", !1);
-        };
-        g.restart = function() {
-          g("rec", !0);
-        };
-        g.consent = function(a) {
-          g("consent", !arguments.length || a);
-        };
-        g.identifyAccount = function(i, v) {
-          o = "account";
-          v = v || {};
-          v.acctId = i;
-          g(o, v);
-        };
-        g.clearUserCookie = function() {};
-      })(window, document, window["_fs_namespace"], "script", "user");
-    </script>
-    <link rel="stylesheet" href="./css/home_uk.css?20190517" />
-  </head>
+        return;
+      }
+      g = m[e] = function (a, b) {
+        g.q ? g.q.push([a, b]) : g._api(a, b);
+      };
+      g.q = [];
+      o = n.createElement(t);
+      o.async = 1;
+      o.src = "https://" + _fs_host + "/s/fs.js";
+      y = n.getElementsByTagName(t)[0];
+      y.parentNode.insertBefore(o, y);
+      g.identify = function (i, v) {
+        g(l, {
+          uid: i
+        });
+        if (v) g(l, v);
+      };
+      g.setUserVars = function (v) {
+        g(l, v);
+      };
+      g.shutdown = function () {
+        g("rec", !1);
+      };
+      g.restart = function () {
+        g("rec", !0);
+      };
+      g.consent = function (a) {
+        g("consent", !arguments.length || a);
+      };
+      g.identifyAccount = function (i, v) {
+        o = "account";
+        v = v || {};
+        v.acctId = i;
+        g(o, v);
+      };
+      g.clearUserCookie = function () {};
+    })(window, document, window["_fs_namespace"], "script", "user");
+  </script>
+  <link rel="stylesheet" href="./css/home_uk.css?20190517" />
+</head>
 
-  <body>
-    <div class="header-wrap block-wap">
-      <header class="header block-child-wrap">
-        <div class="header-logo-and-trigger">
-          <a href="/" class="logo-link">
-            <img
-              src="./images/logo-black.svg"
-              alt="Openpay Logo"
-              class="logo"
-            />
-          </a>
-          <div class="trigger-menu">
-            <div class="trigger-menu__line"></div>
-          </div>
-        </div>
-        <nav class="header-nav header-nav_disable">
-          <ul class="nav-list">
-            <li>
-              <a href="/business" class="paragraphSpec-4">I'm a business</a>
-            </li>
-            <li>
-              <a href="/contact" class="paragraphSpec-4">Contact us</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
-
-    <div class="banner-wrap block-wap">
-      <div class="banner block-child-wrap">
-        <div class="banner-content">
-          <h1>Welcome to a<br />smarter way to pay.</h1>
-        </div>
-      </div>
-    </div>
-
-    <div class="forWhomItWorks-wrap">
-      <section class="forWhomItWorks">
-        <div class="forWhomItWorks_wrapper">
-          <div class="forWhomItWorks_desc">
-            <h2>Get what you want,<br />pay on your own terms.</h2>
-            <p class="forWhomItWorks_subtitle">
-              Working with Australian consumers and retailers since 2012, Openpay
-              has now landed in the UK.
-            </p>
-            <div class="dress-container">
-              <img class="dress-img" src="./images/dress.svg" />
-            </div>
-          </div>
-        </div>
-        <div class="forWhomItWorks_wrapper">
-          <div class="forWhomItWorks_img_bg">
-            <p class="forWhomItWorks_text">Equal monthly instalments.</p>
-            <p class="forWhomItWorks_text">No hidden fees.</p>
-            <p class="forWhomItWorks_text">No interest, ever.</p>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div class="howItWorks block-wap">
-      <div class="block-child-wrap">
-        <section class="howItWorks-content">
-          <h2 class="howItWorks-title">How Openpay works</h2>
-          <br>
-          <div class="block_howItWorks_flex">
-            <div class="block_howItWorks">
-              <img src="images/cup.svg" alt="Cup Icon" />
-              <h3 class="block_howItWorks_title">Sign up.</h3>
-              <p class="block_howItWorks_text">
-                Sign up in less than 90 seconds with a few<br>simple details.
-              </p>
-            </div>
-            <div class="block_howItWorks">
-              <img src="images/sneakers.svg" alt="Sneakers Icon" />
-              <h3 class="block_howItWorks_title">Shop now.</h3>
-              <p class="block_howItWorks_text">
-                With any of our trusted retailer partners online<br>and in-store.
-              </p>
-            </div>
-            <div class="block_howItWorks">
-              <img src="images/airplane.svg" alt="Airplane Icon" />
-              <h3 class="block_howItWorks_title">Pay smarter.</h3>
-              <p class="block_howItWorks_text">
-                Pay your plan off in equal, monthly instalments, starting today.
-              </p>
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
-
-    <div class="feedback-wrap block-wap">
-      <section class="feedback block-child-wrap">
-        <div class="feedback_item">
-          <h2 class="feedback_title">You’re a business? Let’s chat.</h2>
-          <p class="feedback_text feedback_text--height">
-            We’re in the business of offering your customers a smarter way to
-            pay. Do you need a risk-free and seamless payment solution that
-            increases sales and conversions?
-          </p>
-          <div class="feedback_btn_block">
-            <a href="/business" class="feedback_btn_block_link">Learn more</a>
-          </div>
-        </div>
-
-        <div class="feedback_item">
-          <h2 class="feedback_title">Shop smarter.</h2>
-          <div class="feedback__Interested">
-            <label class="feedback_text feedback_text--signup" for="signup">
-              Interested? Sign up below to learn more.
-            </label>
-          </div>
-          <form
-            class="gform feedback_form"
-            method="POST"
-            action="https://script.google.com/macros/s/AKfycbynpzfHhC7WiHKCTa9a4leLQKnJUgkkpWe-QMT1/exec"
-          >
-            <div class="form-elements">
-              <input
-                id="signup"
-                class="feedback_input"
-                type="email"
-                name="email"
-                placeholder="Your email address"
-                maxlength="254"
-                required
-              />
-              <button class="feedback_btn_block_link" type="submit">
-                Sign up
-              </button>
-            </div>
-            <div class="thankyou">
-              <h2><em>Thank you,</em> we'll be in touch.</h2>
-            </div>
-          </form>
-        </div>
-      </section>
-    </div>
-
-    <div class="footer-wrap block-wap">
-      <footer class="footer block-child-wrap">
-        <nav class="nav-footer">
-          <ul class="footer-nav-list">
-            <li>
-              <a href="/business" class="paragraphSpec-3">I’m a business</a>
-            </li>
-            <li>
-              <a href="/contact" class="paragraphSpec-3">Contact us</a>
-            </li>
-            <li>
-              <a href="./legal" target="_blank" class="paragraphSpec-3"
-                >Legal</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <a href="/">
-          <img
-            src="./images/logo-footer.svg"
-            alt="Openpay Logo"
-            class="footer-logo"
-          />
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NH9RBKG" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="header-wrap block-wap">
+    <header class="header block-child-wrap">
+      <div class="header-logo-and-trigger">
+        <a href="/" class="logo-link">
+          <img src="./images/logo-black.svg" alt="Openpay Logo" class="logo" />
         </a>
-        <p class="copyright">
-          © Openpay | Made in Melbourne
+        <div class="trigger-menu">
+          <div class="trigger-menu__line"></div>
+        </div>
+      </div>
+      <nav class="header-nav header-nav_disable">
+        <ul class="nav-list">
+          <li>
+            <a href="/business" class="paragraphSpec-4">I'm a business</a>
+          </li>
+          <li>
+            <a href="/contact" class="paragraphSpec-4">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <div class="banner-wrap block-wap">
+    <div class="banner block-child-wrap">
+      <div class="banner-content">
+        <h1>Welcome to a<br />smarter way to pay.</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="forWhomItWorks-wrap">
+    <section class="forWhomItWorks">
+      <div class="forWhomItWorks_wrapper">
+        <div class="forWhomItWorks_desc">
+          <h2>Get what you want,<br />pay on your own terms.</h2>
+          <p class="forWhomItWorks_subtitle">
+            Working with Australian consumers and retailers since 2012, Openpay
+            has now landed in the UK.
+          </p>
+          <div class="dress-container">
+            <img class="dress-img" src="./images/dress.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="forWhomItWorks_wrapper">
+        <div class="forWhomItWorks_img_bg">
+          <p class="forWhomItWorks_text">Equal monthly instalments.</p>
+          <p class="forWhomItWorks_text">No hidden fees.</p>
+          <p class="forWhomItWorks_text">No interest, ever.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="howItWorks block-wap">
+    <div class="block-child-wrap">
+      <section class="howItWorks-content">
+        <h2 class="howItWorks-title">How Openpay works</h2>
+        <br>
+        <div class="block_howItWorks_flex">
+          <div class="block_howItWorks">
+            <img src="images/cup.svg" alt="Cup Icon" />
+            <h3 class="block_howItWorks_title">Sign up.</h3>
+            <p class="block_howItWorks_text">
+              Sign up in less than 90 seconds with a few<br>simple details.
+            </p>
+          </div>
+          <div class="block_howItWorks">
+            <img src="images/sneakers.svg" alt="Sneakers Icon" />
+            <h3 class="block_howItWorks_title">Shop now.</h3>
+            <p class="block_howItWorks_text">
+              With any of our trusted retailer partners online<br>and in-store.
+            </p>
+          </div>
+          <div class="block_howItWorks">
+            <img src="images/airplane.svg" alt="Airplane Icon" />
+            <h3 class="block_howItWorks_title">Pay smarter.</h3>
+            <p class="block_howItWorks_text">
+              Pay your plan off in equal, monthly instalments, starting today.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="feedback-wrap block-wap">
+    <section class="feedback block-child-wrap">
+      <div class="feedback_item">
+        <h2 class="feedback_title">You’re a business? Let’s chat.</h2>
+        <p class="feedback_text feedback_text--height">
+          We’re in the business of offering your customers a smarter way to
+          pay. Do you need a risk-free and seamless payment solution that
+          increases sales and conversions?
         </p>
-      </footer>
-    </div>
+        <div class="feedback_btn_block">
+          <a href="/business" class="feedback_btn_block_link">Learn more</a>
+        </div>
+      </div>
 
-    <div class="cookie-popup">
-      We uses cookies to give you the best browsing experience.
-      <a
-        href="./docs/privacy-policy.pdf"
-        class="cookie-popup__link"
-        target="_blank"
-        >Find out more</a
-      >
-      or adjust your settings.
-      <button class="cookie-popup__button">Accept</button>
-    </div>
+      <div class="feedback_item">
+        <h2 class="feedback_title">Shop smarter.</h2>
+        <div class="feedback__Interested">
+          <label class="feedback_text feedback_text--signup" for="signup">
+            Interested? Sign up below to learn more.
+          </label>
+        </div>
+        <form class="gform feedback_form" method="POST"
+          action="https://script.google.com/macros/s/AKfycbynpzfHhC7WiHKCTa9a4leLQKnJUgkkpWe-QMT1/exec">
+          <div class="form-elements">
+            <input id="signup" class="feedback_input" type="email" name="email" placeholder="Your email address"
+              maxlength="254" required />
+            <button class="feedback_btn_block_link" type="submit">
+              Sign up
+            </button>
+          </div>
+          <div class="thankyou">
+            <h2><em>Thank you,</em> we'll be in touch.</h2>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
 
-    <script defer src="./scripts/main.min.js"></script>
+  <div class="footer-wrap block-wap">
+    <footer class="footer block-child-wrap">
+      <nav class="nav-footer">
+        <ul class="footer-nav-list">
+          <li>
+            <a href="/business" class="paragraphSpec-3">I’m a business</a>
+          </li>
+          <li>
+            <a href="/contact" class="paragraphSpec-3">Contact us</a>
+          </li>
+          <li>
+            <a href="./legal" target="_blank" class="paragraphSpec-3">Legal</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="/">
+        <img src="./images/logo-footer.svg" alt="Openpay Logo" class="footer-logo" />
+      </a>
+      <p class="copyright">
+        © Openpay | Made in Melbourne
+      </p>
+    </footer>
+  </div>
 
-    <script
-      data-cfasync="false"
-      src="./scripts/form-submission-handler.min.js"
-    ></script>
-  </body>
+  <div class="cookie-popup">
+    We uses cookies to give you the best browsing experience.
+    <a href="./docs/privacy-policy.pdf" class="cookie-popup__link" target="_blank">Find out more</a>
+    or adjust your settings.
+    <button class="cookie-popup__button">Accept</button>
+  </div>
+
+  <script defer src="./scripts/main.min.js"></script>
+
+  <script data-cfasync="false" src="./scripts/form-submission-handler.min.js"></script>
+</body>
+
 </html>

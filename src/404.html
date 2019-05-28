@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-			var url = $(location).attr('href');
-			url = url.toLowerCase();
-			var pageName = url.substr(url.lastIndexOf('/') + 1);
-			alert(pageName);
-			$.ajax({
-				url: url,
-				method: "HEAD"
-			})
-			.done (function() {
-				window.location = url;
-			})
-	</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        var url = $(location).attr('href');
+        url = url.toLowerCase();
+        var pageName = url.substr(url.lastIndexOf('/') + 1);
+        alert(pageName);
+        $.ajax({
+                url: url,
+                method: "HEAD"
+            })
+            .done(function () {
+                window.location = url;
+            })
+    </script>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Openpay: The Legal Stuff</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84225706-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-84225706-1');
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NH9RBKG');
     </script>
 
     <!-- 	FullStory Snippet -->
@@ -34,119 +44,165 @@
         window['_fs_host'] = 'fullstory.com';
         window['_fs_org'] = 'D6N17';
         window['_fs_namespace'] = 'FS';
-        (function(m,n,e,t,l,o,g,y){
-            if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
-            g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
-            o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
-            y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
-            g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
-            g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
-            g.consent=function(a){g("consent",!arguments.length||a)};
-            g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
-            g.clearUserCookie=function(){};
-        })(window,document,window['_fs_namespace'],'script','user');
+        (function (m, n, e, t, l, o, g, y) {
+            if (e in m) {
+                if (m.console && m.console.log) {
+                    m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');
+                }
+                return;
+            }
+            g = m[e] = function (a, b) {
+                g.q ? g.q.push([a, b]) : g._api(a, b);
+            };
+            g.q = [];
+            o = n.createElement(t);
+            o.async = 1;
+            o.src = 'https://' + _fs_host + '/s/fs.js';
+            y = n.getElementsByTagName(t)[0];
+            y.parentNode.insertBefore(o, y);
+            g.identify = function (i, v) {
+                g(l, {
+                    uid: i
+                });
+                if (v) g(l, v)
+            };
+            g.setUserVars = function (v) {
+                g(l, v)
+            };
+            g.shutdown = function () {
+                g("rec", !1)
+            };
+            g.restart = function () {
+                g("rec", !0)
+            };
+            g.consent = function (a) {
+                g("consent", !arguments.length || a)
+            };
+            g.identifyAccount = function (i, v) {
+                o = 'account';
+                v = v || {};
+                v.acctId = i;
+                g(o, v)
+            };
+            g.clearUserCookie = function () {};
+        })(window, document, window['_fs_namespace'], 'script', 'user');
     </script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,600" rel="stylesheet">
     <link rel="stylesheet" href="./css/error.css" />
     <link rel="stylesheet" href="css/nav.css?20190517">
 </head>
+
 <body>
-<div class="topNav">
-    <a class="mainLogo" href="index"></a>
-    <a href="how">How it works</a>
-    <a href="business">I'm a business</a>
-    <a href="help">Help & contact</a>
-    <div class="topNavRight">
-        <!--<a href="https://retailer.myopenpay.com.au/live/Account/Login/" onclick="ga('send', 'event', 'Outbound', 'Merchant Log in');">Merchant log in</a>-->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NH9RBKG" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="topNav">
+        <a class="mainLogo" href="index"></a>
+        <a href="how">How it works</a>
+        <a href="business">I'm a business</a>
+        <a href="help">Help & contact</a>
+        <div class="topNavRight">
+            <!--<a href="https://retailer.myopenpay.com.au/live/Account/Login/" onclick="ga('send', 'event', 'Outbound', 'Merchant Log in');">Merchant log in</a>-->
+        </div>
     </div>
-</div>
-<!--hamburger menu-->
-<nav role="navigation">
-    <a class="mainLogo" href="index"></a>
-    <div id="hamburgerMenu">
-        <input type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul>
-            <a href="shop"><li>Shop now</li></a>
-            <a href="how"><li>How it works</li></a>
-            <a href="business"><li>I'm a business</li></a>
-            <a href="help"><li>Help & contact</li></a>
-            <br>
-            <!--<a href="https://retailer.myopenpay.com.au/live/Account/Login/"><li>Merchant log in</li></a>-->
+    <!--hamburger menu-->
+    <nav role="navigation">
+        <a class="mainLogo" href="index"></a>
+        <div id="hamburgerMenu">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul>
+                <a href="shop">
+                    <li>Shop now</li>
+                </a>
+                <a href="how">
+                    <li>How it works</li>
+                </a>
+                <a href="business">
+                    <li>I'm a business</li>
+                </a>
+                <a href="help">
+                    <li>Help & contact</li>
+                </a>
+                <br>
+                <!--<a href="https://retailer.myopenpay.com.au/live/Account/Login/"><li>Merchant log in</li></a>-->
 
-        </ul>
-    </div>
-</nav>
-<div class="mainContent">
+            </ul>
+        </div>
+    </nav>
+    <div class="mainContent">
 
-    <div class="helpContent greyPane">
-        <div class="bodyContainer">
-            <h1>Opps, something happened. </h1>
-            <p><strong>It's a 404 error.</strong></p>
-            <p>Look's like this page doesn't exist, has been misplaced or been mistyped. <br>Check the URL and try again or <a href="index">go back home</a> </p>
-            
-        </div>
-        <div class="bodyContainer">
-            
-            
-        </div>
-        
-    </div>
+        <div class="helpContent greyPane">
+            <div class="bodyContainer">
+                <h1>Opps, something happened. </h1>
+                <p><strong>It's a 404 error.</strong></p>
+                <p>Look's like this page doesn't exist, has been misplaced or been mistyped. <br>Check the URL and try
+                    again or <a href="index">go back home</a> </p>
+
+            </div>
+            <div class="bodyContainer">
 
 
-    <div class="footer">
-        <div class="footerMenu">
-            <a href="how" class="footerNav">how it works</a>
-            <a href="business" class="footerNav">I'm a business</a>
-            <a href="help" class="footerNav">Help & contact</a>
-            <a href="legal" class="footerNav">Legal stuff</a>
-            <!-- <a href="https://brand.openpay.com.au" class="footerNav">Merchant resources</a> -->
+            </div>
+
         </div>
-        <div class="socialLinks">
-				<span>
-					<a href="https://facebook.com/openpayau" class="footer-icon fb">
-						<img src="./images/social/Fb.svg">
-						Facebook
-					</a>
-					<a href="https://twitter.com/openpay_" class="footer-icon twit">
-						<img src="./images/social/Twitter.svg">
-						Twitter
-					</a>
-				</span>
-            <span>
-					<a href="https://au.linkedin.com/company/open-pay" class="footer-icon linked">
-						<img src="./images/social/in.svg">
-						LinkedIn
-					</a>
-					<a href="https://www.instagram.com/openpay_" class="footer-icon ig">
-						<img src="./images/social/Insta.svg">
-						Instagram
-					</a>
-				</span>
-        </div>
-        <!--<div class="footerAppWrapper">-->
+
+
+        <div class="footer">
+            <div class="footerMenu">
+                <a href="how" class="footerNav">how it works</a>
+                <a href="business" class="footerNav">I'm a business</a>
+                <a href="help" class="footerNav">Help & contact</a>
+                <a href="legal" class="footerNav">Legal stuff</a>
+                <!-- <a href="https://brand.openpay.com.au" class="footerNav">Merchant resources</a> -->
+            </div>
+            <div class="socialLinks">
+                <span>
+                    <a href="https://facebook.com/openpayau" class="footer-icon fb">
+                        <img src="./images/social/Fb.svg">
+                        Facebook
+                    </a>
+                    <a href="https://twitter.com/openpay_" class="footer-icon twit">
+                        <img src="./images/social/Twitter.svg">
+                        Twitter
+                    </a>
+                </span>
+                <span>
+                    <a href="https://au.linkedin.com/company/open-pay" class="footer-icon linked">
+                        <img src="./images/social/in.svg">
+                        LinkedIn
+                    </a>
+                    <a href="https://www.instagram.com/openpay_" class="footer-icon ig">
+                        <img src="./images/social/Insta.svg">
+                        Instagram
+                    </a>
+                </span>
+            </div>
+            <!--<div class="footerAppWrapper">-->
             <!--<a href="https://itunes.apple.com/au/app/openpay/id1166424403?mt=8" onclick="ga('send', 'event', 'App', 'iOS', 'Footer');">-->
-                <!--<img class="apple" src="./images/apple.svg">-->
+            <!--<img class="apple" src="./images/apple.svg">-->
             <!--</a>-->
             <!--<a href="https://play.google.com/store/apps/details?id=com.ocean.openpay" onclick="ga('send', 'event', 'App', 'Android', 'Footer');">-->
-                <!--<img class="android" src="./images/android.svg">-->
+            <!--<img class="android" src="./images/android.svg">-->
             <!--</a>-->
-        <!--</div>-->
-        <div class="footerMoreLinksMenu">
-            <a href="legal" class="footerNav">Privacy</a>
-            <a href="legal" class="footerNav">Terms & Conditions</a>
-            <a href="legal" class="footerNav">User Licence</a>
-            <a href="legal" class="footerNav">PCI Data Security</a>
-        </div>
-        <p>&#169; Openpay &nbsp; | &nbsp; Made in Melbourne, Australia</p>
-        <a class="whiteLogo" href="index">
-            <img src="./images/openpay_logo_white.svg">
-        </a>
+            <!--</div>-->
+            <div class="footerMoreLinksMenu">
+                <a href="legal" class="footerNav">Privacy</a>
+                <a href="legal" class="footerNav">Terms & Conditions</a>
+                <a href="legal" class="footerNav">User Licence</a>
+                <a href="legal" class="footerNav">PCI Data Security</a>
+            </div>
+            <p>&#169; Openpay &nbsp; | &nbsp; Made in Melbourne, Australia</p>
+            <a class="whiteLogo" href="index">
+                <img src="./images/openpay_logo_white.svg">
+            </a>
 
+        </div>
     </div>
-</div>
 
 </body>
+
 </html>
