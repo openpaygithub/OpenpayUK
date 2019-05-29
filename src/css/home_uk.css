@@ -129,15 +129,6 @@
   overflow: hidden;
 }
 
-.forWhomItWorks_image {
-  position: absolute;
-  bottom: -210px;
-  right: -110px;
-  width: 400px;
-  height: 498px;
-  z-index: 1;
-}
-
 .forWhomItWorks_img_bg {
   height: 100%;
   color: #fff;

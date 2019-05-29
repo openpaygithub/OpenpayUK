@@ -281,11 +281,6 @@
   font-size: 20px;
 }
 
-.empoweringPay_btn {
-  display: block;
-  margin: 0 auto;
-}
-
 /*...end empoweringPay...*/
 @media screen and (max-width: 1650px) {
   .signup__item--form {
