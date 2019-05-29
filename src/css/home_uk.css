@@ -283,6 +283,12 @@
   display: none;
 }
 
+@media (min-width: 1320px) and (max-width: 1417px) {
+  .feedback_title--padding {
+    padding-bottom: 90px;
+  }
+}
+
 @media screen and (max-width: 1320px) {
   .dress-img {
     position: inherit;
