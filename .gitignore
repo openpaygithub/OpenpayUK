@@ -4,3 +4,6 @@
 
 *.zip
 packaged-*.yaml
+
+backstop_data/html_report/
+bitmaps_test/
