@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
-			var url = $(location).attr('href');
-			var fixedUrl = fixUrlIssues(url);
-			redirect(fixedUrl);
-		
-			//////////////////////////////////
-			
-			function fixUrlIssues(url) {
-				return stripTrailingSlash(url).toLowerCase();
-			}
-			
-			function stripTrailingSlash(url) {
-				return url.replace(/\/$/, "");
-			}
-			
-			function redirect(url) {
-				var pageName = url.substr(url.lastIndexOf('/') + 1);
-				if(pageName != 'error') {
-					$.ajax({
+		var url = $(location).attr('href');
+		var fixedUrl = fixUrlIssues(url);
+		redirect(fixedUrl);
+
+		//////////////////////////////////
+
+		function fixUrlIssues(url) {
+			return stripTrailingSlash(url).toLowerCase();
+		}
+
+		function stripTrailingSlash(url) {
+			return url.replace(/\/$/, "");
+		}
+
+		function redirect(url) {
+			var pageName = url.substr(url.lastIndexOf('/') + 1);
+			if (pageName != 'error') {
+				$.ajax({
 						url: url,
 						method: "HEAD"
 					})
-					.done (function() {
+					.done(function () {
 						window.location = url;
 					})
-					.fail (function() {
-						window.location = url.substr(0,url.lastIndexOf('/')) + '/error';
-					});			
-				}
+					.fail(function () {
+						window.location = url.substr(0, url.lastIndexOf('/')) + '/error';
+					});
 			}
-			
+		}
 	</script>
 </head>
+
 </html>
