@@ -1,0 +1,84 @@
+{
+  "id": "openpay_uk",
+  "viewports": [
+    {
+      "label": "desktop",
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "label": "ipnohe-5",
+      "width": 320,
+      "height": 568
+    }
+  ],
+  "onBeforeScript": "chromy/onBefore.js",
+  "onReadyScript": "chromy/onReady.js",
+  "scenarios": [
+    {
+      "label": "Homepage",
+      "url": "file:///C:/openpay/OpenpayUK/src/index.html",
+      "clickSelector": ".cookie-popup__button",
+      "selectors": ["document"],
+      "misMatchThreshold" : 2
+    },
+    {
+      "label": "How it works",
+      "url": "file:///C:/openpay/OpenpayUK/src/works.html",
+      "clickSelector": ".cookie-popup__button",
+      "selectors": ["document"],
+      "misMatchThreshold" : 2
+    },
+    {
+      "label": "Business",
+      "url": "file:///C:/openpay/OpenpayUK/src/business.html",
+      "clickSelector": ".cookie-popup__button",
+      "selectors": ["document"],
+      "misMatchThreshold" : 2
+    },
+    {
+      "label": "Contact us",
+      "url": "file:///C:/openpay/OpenpayUK/src/contact.html",
+      "clickSelector": ".cookie-popup__button",
+      "selectors": ["document"],
+      "misMatchThreshold" : 2
+    },
+    {
+      "label": "Legal",
+      "url": "file:///C:/openpay/OpenpayUK/src/legal.html",
+      "clickSelector": ".cookie-popup__button",
+      "selectors": ["document"],
+      "misMatchThreshold" : 2
+    },
+    {
+      "label": "Get in touch",
+      "url": "file:///C:/openpay/OpenpayUK/src/get-in-touch.html",
+      "clickSelector": ".cookie-popup__button",
+      "selectors": ["document"],
+      "misMatchThreshold" : 2
+    },
+    {
+      "label": "Landingpage",
+      "url": "file:///C:/openpay/OpenpayUK/src/landingpage.html",
+      "clickSelector": ".cookie-popup__button",
+      "selectors": ["document"],
+      "misMatchThreshold" : 2
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "chromy",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}

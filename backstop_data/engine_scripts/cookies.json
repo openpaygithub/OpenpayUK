@@ -1,0 +1,14 @@
+[
+  {
+    "domain": "",
+    "path": "/c:/openpay/OpenpayUK/src/",
+    "name": "showCookieDialog",
+    "value": "yes",
+    "expirationDate": 1798790400,
+    "hostOnly": true,
+    "httpOnly": false,
+    "secure": false,
+    "session": false,
+    "sameSite": "Unset"
+  }
+]
