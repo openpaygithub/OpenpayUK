@@ -7,12 +7,9 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6,
 body,
 a,
 p,
-ol,
 ul,
 button {
   margin: 0;
@@ -190,9 +187,6 @@ header {
   .topNav {
     visibility: hidden;
   }
-  .heroHomeContainer .heroInfo {
-    padding: 0 50px;
-  }
 
   nav .mainLogo {
     background: url(../images/open.svg);
@@ -320,13 +314,6 @@ header {
     text-align: left;
   }
 }
-
-@media (max-width: 650px) {
-  table td,
-  table th {
-    display: block;
-  }
-}
 .header,
 .header-nav,
 .header-nav .nav-list,
@@ -415,11 +402,6 @@ header {
 
 .header-nav .nav-list li a {
   white-space: nowrap;
-}
-.header-nav .header__log-in {
-  display: block;
-  white-space: nowrap;
-  text-align: center;
 }
 
 .logo-link {
