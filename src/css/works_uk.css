@@ -180,7 +180,7 @@
 
 @media screen and (max-width: 1600px) {
   .hero {
-    background-position: center center;
+    background-position: center;
     background-size: cover;
   }
 }
@@ -198,6 +198,10 @@
 
   .section-title {
     font-size: 34px;
+  }
+
+  .hero {
+    background-image: url(../images/works/works_mobile.jpg);
   }
 
   .hero__title {
