@@ -410,7 +410,6 @@ header {
 }
 
 .logo-link .logo {
-  transition: 0.25s;
   width: 216px;
   height: 42px;
 }
