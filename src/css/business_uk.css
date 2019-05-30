@@ -38,11 +38,11 @@
   background-image: url(../images/business_bg.jpg);
   background-image: -webkit-image-set(
     url(../images/business_bg.jpg) 1x,
-    url(../images/business_bg.jpg@2x.jpg) 2x
+    url(../images/business_bg@2x.jpg) 2x
   );
   background-image: image-set(
     url(../images/business_bg.jpg) 1x,
-    url(../images/business_bg.jpg@2x.jpg) 2x
+    url(../images/business_bg@2x.jpg) 2x
   );
 }
 
