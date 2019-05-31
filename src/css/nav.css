@@ -164,12 +164,6 @@ header {
   width: 134.63px;
 }
 
-.footer p {
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 26px;
-}
-
 .footer .whiteLogo img {
   height: 24px;
   width: 129px;
@@ -445,10 +439,17 @@ header {
   display: inline-block;
 }
 
-footer .copyright {
+.copyright {
   font-size: 18px;
   font-weight: 500;
   padding-top: 20px;
+}
+
+.copyright__text {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-top: 10px;
+  font-size: 15px;
 }
 
 /*...end footer...*/
