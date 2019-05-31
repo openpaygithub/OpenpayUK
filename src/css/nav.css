@@ -446,10 +446,10 @@ header {
 }
 
 .copyright__text {
-  max-width: 720px;
+  max-width: 620px;
   margin: 0 auto;
   padding-top: 10px;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 /*...end footer...*/
