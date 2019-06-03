@@ -10,9 +10,9 @@
   padding: 200px 140px;
 }
 
-.faq__wrapper { 
-  max-width: 1440px;
-  margin: 100px 140px;
+.faq__wrapper {
+  max-width: 1280px;
+  margin: 50px 140px;
   text-align: left;
 }
 
@@ -30,10 +30,15 @@ h2 {
   list-style: none;
 }
 
+.link-list > li {
+  margin: 25px 0;
+}
+
 
 .faq-qa {
   margin: 20px 0;
 }
+
 .faq-qa p {
   margin-bottom: 10px;
 }
@@ -67,7 +72,7 @@ li {
   padding-top: 8px;
 }
 
-.faq-link { 
+.faq-link {
   text-decoration: underline
 }
 
