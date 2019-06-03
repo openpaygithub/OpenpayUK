@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap");
 @import "./nav.css?20190517";
 
-
-
 .hero__title {
   color: #000;
   font-weight: 800;
@@ -33,7 +31,6 @@ h2 {
 .link-list > li {
   margin: 25px 0;
 }
-
 
 .faq-qa {
   margin: 20px 0;
@@ -67,13 +64,16 @@ li {
   grid-column-gap: 115px;
 }
 
-
 .faq__subtitle--mail {
   padding-top: 8px;
 }
 
 .faq-link {
-  text-decoration: underline
+  text-decoration: underline;
+}
+
+.faq-link:hover {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1600px) {
@@ -89,5 +89,4 @@ li {
     margin: 60px 40px;
     text-align: left;
   }
-
 }
