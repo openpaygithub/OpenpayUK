@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap");
+@import "./nav.css?20190517";
+
+.hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/404_bg.jpg);
+  background-image: -webkit-image-set(
+    url(../images/404_bg.jpg) 1x,
+    url(../images/404_bg@2x.jpg) 2x
+  );
+  background-image: image-set(
+    url(../images/404_bg.jpg) 1x,
+    url(../images/404_bg@2x.jpg) 2x
+  );
+  width: 100%;
+}
+
+.hero {
+  color: #000;
+  padding: 200px 140px;
+}
+
+.hero__title {
+  font-weight: 800;
+  font-size: 70px;
+}
+
+.hero__text {
+  font-size: 30px;
+  padding: 30px 0 50px;
+  max-width: 780px;
+}
+
+.hero__btn {
+  display: block;
+  font-size: 20px;
+  line-height: normal;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+  width: 100%;
+  max-width: 398px;
+  min-width: 250px;
+  height: 67.53px;
+  background-color: #9bffbe;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s;
+  padding: 20px 0;
+}
+
+.hero__btn:hover {
+  background: rgba(155, 255, 190, 0.8);
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.hero__btn:active {
+  bottom: -1px;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 15vh 30px;
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 50px;
+  }
+
+  .hero__btn {
+    margin: 0 auto;
+  }
+}
