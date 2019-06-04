@@ -25,88 +25,42 @@
       name="description"
       content="Openpay Welcome to a smarter way to pay"
     />
-    <!-- Google Tag Manager -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-      (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-          "gtm.start": new Date().getTime(),
-          event: "gtm.js"
-        });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-NH9RBKG");
+      var url = $(location).attr('href');
+      var fixedUrl = fixUrlIssues(url);
+      redirect(fixedUrl);
+
+      function fixUrlIssues(url) {
+        return stripTrailingSlash(url).toLowerCase();
+      }
+
+      function stripTrailingSlash(url) {
+        return url.replace(/\/$/, "");
+      }
+
+      function redirect(url) {
+        var pageName = url.substr(url.lastIndexOf('/') + 1);
+        if (pageName != 'error') {
+          $.ajax({
+              url: url,
+              method: "HEAD"
+            })
+            .done(function () {
+              window.location = url;
+            })
+            .fail(function () {
+              window.location = url.substr(0, url.lastIndexOf('/')) + '/error';
+            });
+        }
+      }
     </script>
 
-    <!-- 	FullStory Snippet -->
-    <script>
-      window["_fs_debug"] = false;
-      window["_fs_host"] = "fullstory.com";
-      window["_fs_org"] = "D6N17";
-      window["_fs_namespace"] = "FS";
-      (function(m, n, e, t, l, o, g, y) {
-        if (e in m) {
-          if (m.console && m.console.log) {
-            m.console.log(
-              'FullStory namespace conflict. Please set window["_fs_namespace"].'
-            );
-          }
-          return;
-        }
-        g = m[e] = function(a, b) {
-          g.q ? g.q.push([a, b]) : g._api(a, b);
-        };
-        g.q = [];
-        o = n.createElement(t);
-        o.async = 1;
-        o.src = "https://" + _fs_host + "/s/fs.js";
-        y = n.getElementsByTagName(t)[0];
-        y.parentNode.insertBefore(o, y);
-        g.identify = function(i, v) {
-          g(l, {
-            uid: i
-          });
-          if (v) g(l, v);
-        };
-        g.setUserVars = function(v) {
-          g(l, v);
-        };
-        g.shutdown = function() {
-          g("rec", !1);
-        };
-        g.restart = function() {
-          g("rec", !0);
-        };
-        g.consent = function(a) {
-          g("consent", !arguments.length || a);
-        };
-        g.identifyAccount = function(i, v) {
-          o = "account";
-          v = v || {};
-          v.acctId = i;
-          g(o, v);
-        };
-        g.clearUserCookie = function() {};
-      })(window, document, window["_fs_namespace"], "script", "user");
-    </script>
-    <link rel="stylesheet" href="./css/404_uk.css?20190517" />
+    <link rel="stylesheet" href="./css/error_uk.css?20190517" />
   </head>
 
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-NH9RBKG"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <div class="header-wrap block-wap">
       <header class="header block-child-wrap">
         <div class="header-logo-and-trigger">
