@@ -53,6 +53,8 @@
             .fail(function () {
               window.location = url.substr(0, url.lastIndexOf('/')) + '/error';
             });
+        } else {
+          window.history.back();
         }
       }
     </script>
