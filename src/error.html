@@ -53,8 +53,6 @@
             .fail(function () {
               window.location = url.substr(0, url.lastIndexOf('/')) + '/error';
             });
-        } else {
-          window.history.back();
         }
       }
     </script>
@@ -104,7 +102,7 @@
       <p class="error__text">
         The page you're looking for does not exist.<br />
         Please click
-        <a href="javascript:history.go(-1)" class="error__back-link">here</a> to
+        <a href="javascript:history.go(-2)" class="error__back-link">here</a> to
         return to the previous page.
       </p>
       <ul class="error__list">
