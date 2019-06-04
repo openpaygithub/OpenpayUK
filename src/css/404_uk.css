@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap");
+@import "./nav.css?20190517";
+
+.hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/404_bg.jpg);
+  background-image: -webkit-image-set(
+    url(../images/404_bg.jpg) 1x,
+    url(../images/404_bg@2x.jpg) 2x
+  );
+  background-image: image-set(
+    url(../images/404_bg.jpg) 1x,
+    url(../images/404_bg@2x.jpg) 2x
+  );
+  width: 100%;
+}
+
+.hero {
+  color: #fff;
+  padding: 220px 140px;
+}
+
+.hero__title {
+  font-weight: 800;
+  font-size: 55px;
+}
+
+.error {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.error__title {
+  font-size: 35px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.error__text {
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.error__back-link {
+  text-decoration: underline;
+}
+
+.error__back-link:hover {
+  text-decoration: none;
+}
+
+.error__list {
+  list-style: none;
+  padding-top: 50px;
+}
+
+.error__item {
+  padding-bottom: 20px;
+}
+
+.error__link {
+  font-size: 25px;
+  color: #1697c5;
+  text-decoration: underline;
+}
+
+.error__link:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 769px) {
+  .hero {
+    padding: 15vh 30px;
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 50px;
+  }
+
+  .error {
+    padding: 100px 20px;
+  }
+}
