@@ -2,21 +2,41 @@
 @import "./nav.css?20190517";
 
 .hero__title {
-  color: #000;
+  color: #fff;
   font-weight: 800;
   font-size: 70px;
   padding: 200px 140px;
+  background-image: url(../images/faq_bg.jpg);
+  background-image: -webkit-image-set(url(../images/faq_bg.jpg) 1x,
+      url(../images/faq_bg@2x.jpg) 2x);
+  background-image: image-set(url(../images/faq_bg.jpg) 1x,
+      url(../images/faq_bg@2x.jpg) 2x);
+  width: 100%;
 }
 
 .faq__wrapper {
   max-width: 1280px;
-  margin: 50px 140px;
+  margin: 0 auto;
   text-align: left;
 }
 
-.faq-section {
+.faq__wrapper p,
+a,
+span {
+  font-size: 20px
+}
+
+.faq-section,
+.faq-qa {
   margin: 50px 0;
 }
+
+
+.faq-header {
+  text-align: center;
+  padding: 75px 0;
+}
+
 
 h1,
 h2 {
@@ -28,13 +48,10 @@ h2 {
   list-style: none;
 }
 
-.link-list > li {
+.link-list>li {
   margin: 25px 0;
 }
 
-.faq-qa {
-  margin: 20px 0;
-}
 
 .faq-qa p {
   margin-bottom: 10px;
@@ -48,7 +65,7 @@ h3 {
 h2,
 h3,
 h4 {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .faq__wrapper p,
@@ -56,6 +73,10 @@ a,
 i,
 li {
   font-weight: 300;
+}
+
+.faq-content {
+  padding-bottom: 100px;
 }
 
 .faq__container {
@@ -76,17 +97,10 @@ li {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1600px) {
-  .hero {
-    background-position: center center;
-    background-size: cover;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1281px) {
   .faq__wrapper {
-    max-width: 1089px;
-    margin: 60px 40px;
+    max-width: 75%;
+    margin: 0 auto;
     text-align: left;
   }
 }
