@@ -26,37 +26,6 @@
       content="Openpay Welcome to a smarter way to pay"
     />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-      var url = $(location).attr('href');
-      var fixedUrl = fixUrlIssues(url);
-      redirect(fixedUrl);
-
-      function fixUrlIssues(url) {
-        return stripTrailingSlash(url).toLowerCase();
-      }
-
-      function stripTrailingSlash(url) {
-        return url.replace(/\/$/, "");
-      }
-
-      function redirect(url) {
-        var pageName = url.substr(url.lastIndexOf('/') + 1);
-        if (pageName != 'error') {
-          $.ajax({
-              url: url,
-              method: "HEAD"
-            })
-            .done(function () {
-              window.location = url;
-            })
-            .fail(function () {
-              window.location = url.substr(0, url.lastIndexOf('/')) + '/error';
-            });
-        }
-      }
-    </script>
-
     <link rel="stylesheet" href="./css/error_uk.css?20190517" />
   </head>
 
@@ -101,9 +70,7 @@
       <h2 class="error__title">Sorry</h2>
       <p class="error__text">
         The page you're looking for does not exist.<br />
-        Please click
-        <a href="javascript:history.go(-2)" class="error__back-link">here</a> to
-        return to the previous page.
+        Please use one of the links below.
       </p>
       <ul class="error__list">
         <li class="error__item"><a href="/" class="error__link">Home</a></li>

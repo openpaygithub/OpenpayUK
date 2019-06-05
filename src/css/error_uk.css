@@ -42,14 +42,6 @@
   line-height: 40px;
 }
 
-.error__back-link {
-  text-decoration: underline;
-}
-
-.error__back-link:hover {
-  text-decoration: none;
-}
-
 .error__list {
   list-style: none;
   padding-top: 50px;
@@ -69,12 +61,15 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 880px) {
   .hero {
     padding: 15vh 30px;
     text-align: center;
+    background-position: center;
   }
+}
 
+@media screen and (max-width: 769px) {
   .hero__title {
     font-size: 50px;
   }
