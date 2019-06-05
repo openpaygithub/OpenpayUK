@@ -97,17 +97,10 @@ li {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1600px) {
-  .hero {
-    background-position: center center;
-    background-size: cover;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1281px) {
   .faq__wrapper {
-    max-width: 1089px;
-    margin: 60px 40px;
+    max-width: 75%;
+    margin: 0 auto;
     text-align: left;
   }
 }
