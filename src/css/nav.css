@@ -544,6 +544,8 @@ header {
 
 .cookie-popup__link {
   color: #2864ff;
+  font-weight: 400;
+  font-size: inherit;
 }
 
 .cookie-popup__link:hover {
