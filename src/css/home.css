@@ -6,14 +6,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(../images/home_bg.jpg);
+  background-image: url(../images/home/home_bg.jpg);
   background-image: -webkit-image-set(
-    url(../images/home_bg.jpg) 1x,
-    url(../images/home_bg@2x.jpg) 2x
+    url(../images/home/home_bg.jpg) 1x,
+    url(../images/home/home_bg@2x.jpg) 2x
   );
   background-image: image-set(
-    url(../images/home_bg.jpg) 1x,
-    url(../images/home_bg@2x.jpg) 2x
+    url(../images/home/home_bg.jpg) 1x,
+    url(../images/home/home_bg@2x.jpg) 2x
   );
 }
 
@@ -58,7 +58,7 @@
 
 .forWhomItWorks-wrap::after {
   content: "";
-  background: url(../images/signup-bg-logo.svg) no-repeat;
+  background: url(../images/general/signup-bg-logo.svg) no-repeat;
   width: 476px;
   height: 498px;
   z-index: 1;
@@ -122,7 +122,6 @@
 }
 
 .forWhomItWorks > div:nth-of-type(1) {
-  /* background: url(../images/dress.svg) bottom 60px right 100px no-repeat; */
   background-size: 150px;
   position: relative;
   padding: 200px 0;
@@ -373,15 +372,7 @@
   .banner-wrap {
     background-size: cover;
     background-position: center bottom;
-    background-image: url(../images/front.jpg);
-    background-image: -webkit-image-set(
-      url(../images/front.jpg) 1x,
-      url(../images/front.jpg) 2x
-    );
-    background-image: image-set(
-      url(../images/front.jpg) 1x,
-      url(../images/front.jpg) 2x
-    );
+    background-image: url(../images/home/front.jpg);
   }
 
   .banner-content {
