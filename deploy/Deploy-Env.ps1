@@ -19,7 +19,7 @@ $cwd = Get-Location
 Set-Location $dir
 $files = Get-ChildItem -File -Filter "*.html" -Recurse
 
-aws s3 sync --acl public-read $dir $hostingBucket
+aws s3 sync --delete --acl public-read $dir $hostingBucket
 
 ForEach ($f in $files)
 {
