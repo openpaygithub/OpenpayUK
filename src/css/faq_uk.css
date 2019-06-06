@@ -105,3 +105,11 @@ li {
     text-align: left;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .hero__title {
+    text-align: center;
+    font-size: 50px;
+    padding: 15vh 30px;
+  }
+}
