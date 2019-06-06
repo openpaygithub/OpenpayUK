@@ -13,7 +13,7 @@
   );
   background-image: image-set(
     url(../images/home_bg.jpg) 1x,
-    url(../images/works/home_bg@2x.jpg) 2x
+    url(../images/home_bg@2x.jpg) 2x
   );
 }
 
