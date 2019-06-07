@@ -12,4 +12,4 @@
 3. Create merge request to `master` via [GitHub](https://github.com/openpaygithub/OpenpayUK/compare?expand=1) web interface
 4. Assign code reviewers
 5. When merge request will be approved the website will be deployed to the [Dev](http://www.dev.myopenpay.co.uk/) environment
-6. To deploy website to the [Production](https://www.myopenpay.co.uk/) environment ask Indika Udagedara or Jacob Christophersen
+6. To deploy website to the [Production](https://www.myopenpay.co.uk/) environment ask [Indika Udagedara](mailto:indikau@openpay.com.au) or [Jacob Christophersen](mailto:jacobc@openpay.com.au)
