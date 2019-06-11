@@ -3,7 +3,7 @@
 
 .link-to {
   line-height: normal;
-  font-weight: 600;
+  font-weight: var(--semi-bold);
   text-align: center;
   color: var(--primary-dark);
   transition: all 0.1s;
@@ -43,7 +43,7 @@
 .welcome-title {
   font-size: 55px;
   line-height: 75px;
-  font-weight: 800;
+  font-weight: var(--extra-bold);
   color: var(--primary-light);
   letter-spacing: 3px;
   padding-top: 20px;
@@ -86,14 +86,14 @@
 }
 
 .signup__title {
-  font-weight: 500;
+  font-weight: var(--medium);
   font-size: 35px;
   line-height: 60px;
   padding: 50px 15px 0 0;
 }
 
 .signup__subtitle {
-  font-weight: 800;
+  font-weight: var(--extra-bold);
   font-style: italic;
 }
 
@@ -111,7 +111,7 @@
 .signup__form-title {
   display: block;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: var(--medium);
   font-size: 30px;
   line-height: 50px;
   color: var(--primary-light);
@@ -138,7 +138,7 @@
 
 .signup__input::placeholder {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: var(--light);
 }
 
 .signup__submit {
@@ -148,7 +148,7 @@
   background-color: var(--button);
   cursor: pointer;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: var(--medium);
   height: 67px;
   width: 260px;
   transition: all 0.3s;
@@ -165,7 +165,7 @@
 
 .thankyou {
   display: none;
-  font-weight: 600;
+  font-weight: var(--semi-bold);
   font-size: 25px;
   color: var(--primary-light);
 }
@@ -185,7 +185,7 @@
 }
 
 .works-title {
-  font-weight: 700;
+  font-weight: var(--bold);
   font-size: 35px;
   margin-bottom: 50px;
   text-align: center;
@@ -218,13 +218,13 @@
 }
 
 .work-item__title {
-  font-weight: 600;
+  font-weight: var(--semi-bold);
   font-size: 30px;
   text-align: center;
   margin-bottom: 17px;
 }
 .work-item__desc {
-  font-weight: 300;
+  font-weight: var(--light);
   font-size: 25px;
   line-height: 35px;
   text-align: center;
@@ -256,7 +256,7 @@
 }
 
 .empoweringPay-title {
-  font-weight: 800;
+  font-weight: var(--extra-bold);
   font-size: 40px;
   margin-bottom: 40px;
 }
@@ -270,13 +270,13 @@
 }
 
 .empoweringPay__article-title {
-  font-weight: 600;
+  font-weight: var(--semi-bold);
   font-size: 20px;
   margin-bottom: 10px;
 }
 
 .empoweringPay__text {
-  font-weight: 300;
+  font-weight: var(--light);
   font-size: 20px;
 }
 

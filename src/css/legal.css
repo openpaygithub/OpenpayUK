@@ -20,13 +20,13 @@
 
 .title {
   font-size: 35px;
-  font-weight: 600;
+  font-weight: var(--semi-bold);
   margin-bottom: 30px;
 }
 
 .hero__title {
   color: var(--primary-dark);
-  font-weight: 800;
+  font-weight: var(--extra-bold);
   font-size: 55px;
   padding: 200px 140px;
 }
@@ -43,13 +43,13 @@
 }
 
 .content__contact-link {
-  font-weight: 700;
+  font-weight: var(--bold);
   text-decoration: underline;
 }
 
 .content__title {
   font-size: 35px;
-  font-weight: 600;
+  font-weight: var(--semi-bold);
   margin-bottom: 30px;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .legal__title {
-  font-weight: 700;
+  font-weight: var(--bold);
   font-size: 19px;
   padding-bottom: 5px;
 }

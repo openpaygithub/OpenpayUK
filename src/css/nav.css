@@ -99,7 +99,7 @@ header {
 .paragraphSpec-3 {
   font-size: 18px;
   line-height: 29px;
-  font-weight: 600;
+  font-weight: var(--semi-bold);
   text-align: center;
   color: var(--primary-light);
 }
@@ -107,7 +107,7 @@ header {
 .paragraphSpec-4 {
   font-size: 15px;
   line-height: 23px;
-  font-weight: 600;
+  font-weight: var(--semi-bold);
   text-align: left;
   color: #3b455a;
   transition: all 0.1s;
@@ -130,6 +130,7 @@ header {
   height: 26px;
   cursor: pointer;
 }
+
 .trigger-menu .trigger-menu__line,
 .trigger-menu .trigger-menu__line:before,
 .trigger-menu .trigger-menu__line:after {
@@ -138,12 +139,14 @@ header {
   background-color: #3b455a;
   position: relative;
 }
+
 .trigger-menu .trigger-menu__line:before {
   content: "";
   display: block;
   position: absolute;
   top: 10px;
 }
+
 .trigger-menu .trigger-menu__line:after {
   content: "";
   display: block;
@@ -157,15 +160,18 @@ header {
   width: 50%;
   min-width: 503px;
 }
+
 .header-nav .nav-list {
   list-style: none;
   position: absolute;
   right: 140px;
   justify-content: flex-end;
 }
+
 .header-nav .nav-list li {
   margin-right: 35px;
 }
+
 .header-nav .nav-list li:last-child {
   margin-right: 0px !important;
 }
@@ -195,16 +201,20 @@ header {
   max-width: 720px;
   margin: 0 auto 100px;
 }
+
 .nav-footer .footer-nav-list {
   list-style: none;
   flex-wrap: wrap;
 }
+
 .nav-footer .footer-nav-list li {
   margin-right: 15px;
 }
+
 .nav-footer .footer-nav-list li:last-child {
   margin-right: 0;
 }
+
 .nav-footer .footer-nav-list li a {
   white-space: nowrap;
 }
@@ -217,7 +227,7 @@ header {
 
 .copyright {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: var(--medium);
   padding-top: 20px;
 }
 
@@ -297,7 +307,7 @@ header {
   z-index: 2;
   bottom: 10px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: var(--regular);
   padding: 20px 15px 20px 70px;
   margin: 0 10px;
   max-width: 360px;
@@ -320,7 +330,7 @@ header {
 
 .cookie-popup__link {
   color: #2864ff;
-  font-weight: 400;
+  font-weight: var(--regular);
   font-size: inherit;
 }
 
@@ -337,7 +347,7 @@ header {
   border: 2px solid #40354e;
   border-radius: 4px;
   color: #40354e;
-  font-weight: 600;
+  font-weight: var(--semi-bold);
   font-size: 14px;
   background-color: var(--primary-light);
   transition: all 0.1s;

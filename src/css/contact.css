@@ -19,7 +19,7 @@
 
 .hero__title {
   color: var(--primary-dark);
-  font-weight: 800;
+  font-weight: var(--extra-bold);
   font-size: 70px;
   padding: 200px 140px;
 }
@@ -32,7 +32,7 @@
 }
 
 .contact__title {
-  font-weight: 700;
+  font-weight: var(--bold);
   font-size: 35px;
   padding-bottom: 50px;
 }
@@ -56,7 +56,7 @@
 }
 
 .contact__subtitle {
-  font-weight: 600;
+  font-weight: var(--semi-bold);
   font-size: 30px;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .contact__text {
-  font-weight: 300;
+  font-weight: var(--light);
   font-size: 20px;
   line-height: 25px;
   max-width: 260px;
@@ -73,17 +73,24 @@
   padding-bottom: 30px;
 }
 
-.contact__text-media {
-  font-weight: 300;
+.contact__media {
   font-size: 20px;
   line-height: 25px;
   margin: 0 auto;
-  padding: 50px 0 0 0;
+  padding-top: 75px;
 }
 
-.contact__text-media h4 {
-  font-weight: 600;
-  margin-top: 30px;
+.contact__media-title {
+  font-weight: var(--semi-bold);
+  padding-bottom: 20px;
+}
+
+.contact__media-link {
+  text-decoration: underline;
+}
+
+.contact__media-link:hover {
+  text-decoration: none;
 }
 
 .contact__link {
@@ -113,7 +120,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .contact__text-media {
+  .contact__media {
     max-width: 300px;
   }
 

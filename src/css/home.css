@@ -32,7 +32,7 @@
   display: block;
   width: 100%;
   text-align: left;
-  font-weight: 800;
+  font-weight: var(--extra-bold);
   font-size: 60px;
   line-height: 75px;
   color: var(--primary-light);
@@ -80,7 +80,7 @@
   font-size: 35px;
   letter-spacing: 3px;
   margin-bottom: 30px;
-  font-weight: 600;
+  font-weight: var(--semi-bold);
 }
 
 .forWhomItWorks_subtitle {
@@ -111,7 +111,7 @@
 
 .forWhomItWorks_text {
   color: var(--primary-light);
-  font-weight: 600;
+  font-weight: var(--semi-bold);
   font-size: 34px;
   margin-bottom: 25px;
   letter-spacing: 3px;
@@ -162,7 +162,7 @@
 .howItWorks-title {
   letter-spacing: 3px;
   padding-bottom: 40px;
-  font-weight: 700;
+  font-weight: var(--bold);
   font-size: 35px;
   color: var(--primary-dark);
 }
@@ -187,7 +187,7 @@
 
 .block_howItWorks_title {
   margin-top: 20px;
-  font-weight: 700;
+  font-weight: var(--bold);
   font-size: 24px;
 }
 
@@ -215,7 +215,7 @@
 .feedback_title {
   padding-bottom: 35px;
   font-size: 35px;
-  font-weight: 600;
+  font-weight: var(--semi-bold);
 }
 
 .feedback_text {
@@ -248,7 +248,7 @@
 }
 
 .feedback_input::placeholder {
-  font-weight: 500;
+  font-weight: var(--medium);
   font-size: 20px;
   font-style: italic;
   color: var(--primary-dark);
@@ -262,7 +262,7 @@
   width: 260px;
   height: 68px;
   margin: 0 auto;
-  font-weight: 600;
+  font-weight: var(--semi-bold);
   background: var(--button);
   padding: 19px 0;
   border-radius: 34px;

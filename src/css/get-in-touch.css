@@ -11,7 +11,7 @@
 }
 
 .hero__title {
-  font-weight: 800;
+  font-weight: var(--extra-bold);
   font-size: 55px;
   padding-bottom: 10px;
 }
@@ -19,7 +19,7 @@
   padding: 200px 140px;
 } 
 .hero__subtitle {
-  font-weight: 500;
+  font-weight: var(--medium);
   font-size: 30px;
 }
 
@@ -60,7 +60,7 @@
   display: block;
   background-color: var(--input-bg);
   font-size: 20px;
-  font-weight: 500;
+  font-weight: var(--medium);
   font-style: italic;
   cursor: pointer;
   border-radius: 33px;
@@ -96,7 +96,7 @@
   display: block;
   background-color: var(--button);
   font-size: 20px;
-  font-weight: 500;
+  font-weight: var(--medium);
   cursor: pointer;
   padding: 19px 0;
   margin-top: 40px;
