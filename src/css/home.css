@@ -24,16 +24,17 @@
   padding: 200px 140px;
   min-height: 520px;
 }
+
 .banner-content {
   max-width: 812px;
 }
 
-.banner h1 {
+.banner__title {
   display: block;
   width: 100%;
   text-align: left;
   font-weight: var(--extra-bold);
-  font-size: 60px;
+  font-size: var(--h1);
   line-height: 75px;
   color: var(--primary-light);
   letter-spacing: 3px;
@@ -77,7 +78,7 @@
   max-width: 658px;
   color: var(--primary-dark);
   line-height: 45px;
-  font-size: 35px;
+  font-size: var(--h2);
   letter-spacing: 3px;
   margin-bottom: 30px;
   font-weight: var(--semi-bold);
@@ -150,25 +151,25 @@
 
 /*...how works...*/
 .howItWorks {
-  padding: 200px 0;
+  padding: 140px 0;
   background: #e3e3e3;
   text-align: center;
 }
 .howItWorks-content {
-  max-width: 1089px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
 .howItWorks-title {
   letter-spacing: 3px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   font-weight: var(--bold);
-  font-size: 35px;
+  font-size: var(--h2);
   color: var(--primary-dark);
 }
 
 .block_howItWorks_flex {
-  grid-gap: 150px;
+  grid-column-gap: 70px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -176,6 +177,7 @@
 @media screen and (max-width: 1200px) {
   .block_howItWorks_flex {
     grid-template-columns: 1fr;
+    grid-row-gap: 50px;
   }
 }
 
@@ -185,19 +187,27 @@
   padding: 15px;
 }
 
+.block_howItWorks__phone-img {
+  padding-top: 13px;
+}
+
+.block_howItWorks__calendar-img {
+  padding-top: 15px;
+}
+
 .block_howItWorks_title {
   margin-top: 20px;
   font-weight: var(--bold);
-  font-size: 24px;
+  font-size: var(--h3);
 }
 
 .block_howItWorks_text {
   min-width: 240px;
-  max-width: 260px;
+  max-width: 380px;
   margin: 0 auto;
   margin-top: 15px;
-  font-size: 19px;
-  line-height: 25px;
+  font-size: var(--p);
+  line-height: 30px;
   color: var(--primary-dark);
 }
 
@@ -212,9 +222,10 @@
   text-align: left;
   grid-gap: 100px;
 }
+
 .feedback_title {
   padding-bottom: 35px;
-  font-size: 35px;
+  font-size: var(--h2);
   font-weight: var(--semi-bold);
 }
 
@@ -378,10 +389,16 @@
     width: initial;
     max-width: initial;
   }
+}
 
-  .banner h1 {
+@media screen and (max-width: 768px) {
+  .banner__title {
+    line-height: 55px;
     text-align: center;
-    font-size: 45px;
+  }
+
+  .howItWorks {
+    padding: 70px 0;
   }
 }
 
@@ -413,12 +430,6 @@
   .banner-content {
     width: 100%;
     padding: 30px 0;
-  }
-
-  .banner h1 {
-    font-size: 36px;
-    line-height: 55px;
-    text-align: center;
   }
 
   .banner-content img {

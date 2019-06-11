@@ -41,7 +41,7 @@
 }
 
 .welcome-title {
-  font-size: 55px;
+  font-size: var(--h1);
   line-height: 75px;
   font-weight: var(--extra-bold);
   color: var(--primary-light);
@@ -87,7 +87,7 @@
 
 .signup__title {
   font-weight: var(--medium);
-  font-size: 35px;
+  font-size: var(--h2);
   line-height: 60px;
   padding: 50px 15px 0 0;
 }
@@ -186,7 +186,7 @@
 
 .works-title {
   font-weight: var(--bold);
-  font-size: 35px;
+  font-size: var(--h2);
   margin-bottom: 50px;
   text-align: center;
 }
@@ -219,13 +219,13 @@
 
 .work-item__title {
   font-weight: var(--semi-bold);
-  font-size: 30px;
+  font-size: var(--h3);
   text-align: center;
   margin-bottom: 17px;
 }
 .work-item__desc {
   font-weight: var(--light);
-  font-size: 25px;
+  font-size: var(--p);
   line-height: 35px;
   text-align: center;
   min-height: 140px;
@@ -257,7 +257,7 @@
 
 .empoweringPay-title {
   font-weight: var(--extra-bold);
-  font-size: 40px;
+  font-size: var(--h2);
   margin-bottom: 40px;
 }
 
@@ -277,7 +277,7 @@
 
 .empoweringPay__text {
   font-weight: var(--light);
-  font-size: 20px;
+  font-size: var(--p);
 }
 
 /*...end empoweringPay...*/
@@ -302,7 +302,6 @@
 
   .welcome-title {
     padding: 15px;
-    font-size: 45px;
     text-align: center;
   }
 
@@ -350,9 +349,5 @@
 @media screen and (max-width: 400px) {
   .welcome.block-child-wrap {
     padding: 0;
-  }
-
-  .welcome-title {
-    font-size: 36px;
   }
 }

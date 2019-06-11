@@ -4,7 +4,7 @@
 .hero__title {
   color: var(--primary-light);
   font-weight: var(--extra-bold);
-  font-size: 70px;
+  font-size: var(--h1);
   padding: 200px 140px;
   background-size: cover;
   background-image: url(../images/faq/faq_bg.jpg);
@@ -21,10 +21,19 @@
   text-align: left;
 }
 
-.faq__wrapper p,
-a,
-span {
-  font-size: 20px
+.faq-header {
+  text-align: center;
+  padding: 110px 0 80px;
+}
+
+.faq-title {
+  font-size: var(--h2);
+  margin-bottom: 30px;
+}
+
+.faq-descr,
+.faq-content {
+  font-size: 25px;
 }
 
 .faq-section,
@@ -32,27 +41,15 @@ span {
   margin: 50px 0;
 }
 
-
-.faq-header {
-  text-align: center;
-  padding: 75px 0;
-}
-
-
-h1,
-h2 {
-  margin-bottom: 30px;
-}
-
 .link-list {
   margin-top: 16px;
   list-style: none;
+  font-size: 25px;
 }
 
 .link-list>li {
   margin: 25px 0;
 }
-
 
 .faq-qa p {
   margin-bottom: 10px;
@@ -66,28 +63,11 @@ h3 {
 h2,
 h3,
 h4 {
-  font-weight: var(--bold);
-}
-
-.faq__wrapper p,
-a,
-i,
-li {
-  font-weight: var(--light);
+  font-weight: var(--semi-bold);
 }
 
 .faq-content {
-  padding-bottom: 100px;
-}
-
-.faq__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 115px;
-}
-
-.faq__subtitle--mail {
-  padding-top: 8px;
+  padding-bottom: 120px;
 }
 
 .faq-link {
@@ -109,7 +89,6 @@ li {
 @media screen and (max-width: 768px) {
   .hero__title {
     text-align: center;
-    font-size: 50px;
     padding: 15vh 30px;
   }
 }

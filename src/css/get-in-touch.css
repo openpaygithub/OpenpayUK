@@ -8,16 +8,15 @@
   background-image: url(../images/get-in-touch/get-in-touch-bg.jpg);
   width: 100%;
   color: var(--primary-light);
+  padding: 200px 140px;
 }
 
 .hero__title {
   font-weight: var(--extra-bold);
-  font-size: 55px;
+  font-size: var(--h1);
   padding-bottom: 10px;
 }
-.hero-text {
-  padding: 200px 140px;
-} 
+
 .hero__subtitle {
   font-weight: var(--medium);
   font-size: 30px;
@@ -121,16 +120,10 @@
 }
 
 @media screen and (max-width: 768px) {
-  .hero-text {
-    padding: 15vh 30px;
-  }
   .hero {
     background-position: center;
     text-align: center;
-  }
-
-  .hero__title {
-    font-size: 44px;
+    padding: 15vh 30px;
   }
 
   .hero__subtitle {

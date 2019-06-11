@@ -23,7 +23,7 @@
 
 .hero__title {
   font-weight: var(--extra-bold);
-  font-size: 55px;
+  font-size: var(--h1);
 }
 
 .error {
@@ -32,7 +32,7 @@
 }
 
 .error__title {
-  font-size: 35px;
+  font-size: var(--h2);
   font-weight: var(--semi-bold);
   padding-bottom: 30px;
 }
@@ -70,10 +70,6 @@
 }
 
 @media screen and (max-width: 769px) {
-  .hero__title {
-    font-size: 50px;
-  }
-
   .error {
     padding: 100px 20px;
   }

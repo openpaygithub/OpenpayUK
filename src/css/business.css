@@ -12,7 +12,6 @@
   min-width: 250px;
   height: 67.53px;
   background-color: var(--button);
-  -webkit-border-radius: 50px;
   border-radius: 50px;
   border: none;
   cursor: pointer;
@@ -55,9 +54,9 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.introduction-desc {
+.introduction__title {
   font-weight: var(--extra-bold);
-  font-size: 50px;
+  font-size: var(--h1);
   line-height: 70px;
   color: var(--primary-light);
   letter-spacing: 3px;
@@ -94,14 +93,14 @@
 }
 
 .whyOpenPay-title {
-  font-size: 35px;
+  font-size: var(--h2);
   font-weight: var(--semi-bold);
   margin-bottom: 30px;
 }
 
 .whyOpenPay__text {
   max-width: 50vw;
-  font-size: 20px;
+  font-size: var(--p);
   font-weight: var(--light);
   line-height: 35px;
   margin: 0 auto 25px;
@@ -141,7 +140,7 @@
 
 .whatCanWeDo-title {
   font-weight: var(--semi-bold);
-  font-size: 35px;
+  font-size: var(--h2);
   line-height: 40px;
   padding-bottom: 125px;
 }
@@ -166,14 +165,14 @@
 
 .whatCanWeDo-item-title {
   font-weight: var(--semi-bold);
-  font-size: 25px;
+  font-size: var(--h3);
   line-height: 41px;
   padding: 12px 0 20px;
 }
 
 .whatCanWeDo-item-paragraph {
   font-weight: var(--light);
-  font-size: 20px;
+  font-size: var(--p);
   line-height: 30px;
   min-height: 180px;
 }
@@ -207,7 +206,7 @@
 }
 
 .readyToChat-title {
-  font-size: 35px;
+  font-size: var(--h2);
   font-weight: var(--semi-bold);
   color: var(--secondary-dark);
   margin: 0 97px 20px 0;
@@ -245,10 +244,9 @@
 }
 
 @media screen and (max-width: 768px) {
-  .introduction-desc {
+  .introduction__title {
     width: 100%;
     min-width: 200px;
-    font-size: 45px;
     line-height: 55px;
     padding: 15vh 30px;
   }
