@@ -31,6 +31,7 @@ Resources:
                   - s3:GetObject
                   - s3:PutObject
                   - s3:PutObjectAcl
+                  - s3:DeleteObject
                 Effect: "Allow"
                 Resource:
                   - arn:aws:s3:::www.dev.myopenpay.co.uk/*
