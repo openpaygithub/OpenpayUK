@@ -5,12 +5,12 @@
   line-height: normal;
   font-weight: 600;
   text-align: center;
-  color: #000;
+  color: var(--primary-dark);
   transition: all 0.1s;
 }
 
 .link-to:hover {
-  color: rgba(0, 0, 0, 0.7);
+  opacity: var(--opacity);
 }
 
 .block-child-wrap {
@@ -44,7 +44,7 @@
   font-size: 55px;
   line-height: 75px;
   font-weight: 800;
-  color: #fff;
+  color: var(--primary-light);
   letter-spacing: 3px;
   padding-top: 20px;
 }
@@ -59,10 +59,10 @@
 .signup {
   background: linear-gradient(
     to right,
-    #fff 0%,
-    #fff 50%,
-    #3c465a 50%,
-    #3c465a 100%
+    var(--primary-light) 0%,
+    var(--primary-light) 50%,
+    var(--secondary-dark) 50%,
+    var(--secondary-dark) 100%
   );
   position: relative;
   overflow: hidden;
@@ -103,7 +103,7 @@
 
 .signup__item--form {
   max-width: 620px;
-  background-color: #3c465a;
+  background-color: var(--secondary-dark);
   justify-self: center;
   padding-left: 15px;
 }
@@ -114,7 +114,7 @@
   font-weight: 500;
   font-size: 30px;
   line-height: 50px;
-  color: #fff;
+  color: var(--primary-light);
   padding-bottom: 40px;
 }
 
@@ -126,7 +126,7 @@
 .signup__input {
   font-size: 20px;
   margin-bottom: 40px;
-  background-color: #efefef;
+  background-color: var(--input-bg);
   border: none;
   border-radius: 33px;
   height: 66px;
@@ -145,7 +145,7 @@
   display: block;
   border: none;
   border-radius: 34px;
-  background-color: #9bffbe;
+  background-color: var(--button);
   cursor: pointer;
   font-size: 20px;
   font-weight: 500;
@@ -155,8 +155,7 @@
 }
 
 .signup__submit:hover {
-  background: rgba(155, 255, 190, 0.8);
-  color: rgba(0, 0, 0, 0.7);
+  opacity: var(--opacity);
 }
 
 .signup__submit:active {
@@ -168,7 +167,7 @@
   display: none;
   font-weight: 600;
   font-size: 25px;
-  color: #fff;
+  color: var(--primary-light);
 }
 
 /*...end signup...*/
@@ -176,7 +175,7 @@
 /*...works...*/
 .works-wrap {
   padding: 90px 0 95px;
-  background-color: #ededed;
+  background-color: var(--neutral-light);
 }
 
 .works {
@@ -308,7 +307,7 @@
   }
 
   .signup {
-    background: #fff;
+    background: var(--primary-light);
     padding: 90px 0 0;
   }
 

@@ -2,7 +2,7 @@
 @import "./nav.css?20190517";
 
 .hero__title {
-  color: #fff;
+  color: var(--primary-light);
   font-weight: 800;
   font-size: 70px;
   padding: 200px 140px;

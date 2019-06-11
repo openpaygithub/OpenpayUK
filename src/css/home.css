@@ -35,7 +35,7 @@
   font-weight: 800;
   font-size: 60px;
   line-height: 75px;
-  color: #fff;
+  color: var(--primary-light);
   letter-spacing: 3px;
 }
 
@@ -47,10 +47,10 @@
 .forWhomItWorks-wrap {
   background: linear-gradient(
     to right,
-    #fff 0%,
-    #fff 50%,
-    #3c465a 50%,
-    #3c465a 100%
+    var(--primary-light) 0%,
+    var(--primary-light) 50%,
+    var(--secondary-dark) 50%,
+    var(--secondary-dark) 100%
   );
   position: relative;
   overflow: hidden;
@@ -75,7 +75,7 @@
 
 .forWhomItWorks h2 {
   max-width: 658px;
-  color: #000;
+  color: var(--primary-dark);
   line-height: 45px;
   font-size: 35px;
   letter-spacing: 3px;
@@ -86,7 +86,7 @@
 .forWhomItWorks_subtitle {
   max-width: 768px;
   margin: 0 auto;
-  color: #000;
+  color: var(--primary-dark);
   line-height: 40px;
   font-size: 25px;
   z-index: 0;
@@ -110,7 +110,7 @@
 }
 
 .forWhomItWorks_text {
-  color: #fff;
+  color: var(--primary-light);
   font-weight: 600;
   font-size: 34px;
   margin-bottom: 25px;
@@ -129,7 +129,7 @@
 
 .forWhomItWorks div:nth-of-type(2) {
   position: relative;
-  background-color: #3c465a;
+  background-color: var(--secondary-dark);
   margin: 0 auto;
   padding: 200px 0;
   z-index: 0;
@@ -138,7 +138,7 @@
 
 .forWhomItWorks_img_bg {
   height: 100%;
-  color: #fff;
+  color: var(--primary-light);
   line-height: 50px;
   font-size: 25px;
   letter-spacing: 2px;
@@ -164,7 +164,7 @@
   padding-bottom: 40px;
   font-weight: 700;
   font-size: 35px;
-  color: #000;
+  color: var(--primary-dark);
 }
 
 .block_howItWorks_flex {
@@ -198,7 +198,7 @@
   margin-top: 15px;
   font-size: 19px;
   line-height: 25px;
-  color: #000;
+  color: var(--primary-dark);
 }
 
 /*...feedback...*/
@@ -243,7 +243,7 @@
   border: none;
   display: block;
   height: 67px;
-  background: #efefef;
+  background: var(--input-bg);
   border-radius: 33px;
 }
 
@@ -251,19 +251,19 @@
   font-weight: 500;
   font-size: 20px;
   font-style: italic;
-  color: #000;
+  color: var(--primary-dark);
 }
 
 .feedback_btn_block_link {
   outline: none;
   cursor: pointer;
   font-size: 20px;
-  color: #000;
+  color: var(--primary-dark);
   width: 260px;
   height: 68px;
   margin: 0 auto;
   font-weight: 600;
-  background: #9bffbe;
+  background: var(--button);
   padding: 19px 0;
   border-radius: 34px;
   display: inline-block;
@@ -272,8 +272,7 @@
 }
 
 .feedback_btn_block_link:hover {
-  background: rgba(155, 255, 190, 0.8);
-  color: rgba(0, 0, 0, 0.7);
+  opacity: var(--opacity);
 }
 
 .feedback_btn_block_link:active {
@@ -307,7 +306,7 @@
   }
 
   .forWhomItWorks-wrap {
-    background: #fff;
+    background: var(--primary-light);
     overflow: hidden;
   }
 

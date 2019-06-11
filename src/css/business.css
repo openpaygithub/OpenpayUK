@@ -6,12 +6,12 @@
   line-height: normal;
   font-weight: 600;
   text-align: center;
-  color: #000;
+  color: var(--primary-dark);
   width: 100%;
   max-width: 398px;
   min-width: 250px;
   height: 67.53px;
-  background-color: #9bffbe;
+  background-color: var(--button);
   -webkit-border-radius: 50px;
   border-radius: 50px;
   border: none;
@@ -20,8 +20,7 @@
 }
 
 .btn-primary:hover {
-  background: rgba(155, 255, 190, 0.8);
-  color: rgba(0, 0, 0, 0.7);
+  opacity: var(--opacity);
 }
 
 .btn-primary:active {
@@ -60,7 +59,7 @@
   font-weight: 800;
   font-size: 50px;
   line-height: 70px;
-  color: #fff;
+  color: var(--primary-light);
   letter-spacing: 3px;
   padding: 200px 140px
 }
@@ -69,7 +68,7 @@
 
 /*...whyOpenPay...*/
 .whyOpenPay-wrap {
-  background-color: #f0f0f0;
+  background-color: var(--neutral-light);
   padding: 50px 0;
   position: relative;
   overflow: hidden;
@@ -87,7 +86,6 @@
 }
 
 .whyOpenPay {
-  /* max-width: 1088px; */
   margin: 0 auto 30px;
   position: relative;
   z-index: 1;
@@ -127,18 +125,18 @@
 }
 
 .whatCanWeDo-section {
-  color: #fff;
+  color: var(--primary-light);
   text-align: center;
   padding: 140px 15px 100px;
   width: 100%;
 }
 
 .whatCanWeDo-section_1 {
-  background-color: #3c465a;
+  background-color: var(--secondary-dark);
 }
 
 .whatCanWeDo-section_2 {
-  background-color: #179ecf;
+  background-color: var(--secondary-light);
 }
 
 .whatCanWeDo-title {
@@ -199,7 +197,7 @@
 /*...readyToChat...*/
 .readyToChat-wrap {
   padding: 175px 0 145px;
-  background-color: #f0f0f0;
+  background-color: var(--neutral-light);
 }
 
 .readyToChat {
@@ -211,7 +209,7 @@
 .readyToChat-title {
   font-size: 35px;
   font-weight: 600;
-  color: #3c465a;
+  color: var(--secondary-dark);
   margin: 0 97px 20px 0;
   white-space: nowrap;
 }

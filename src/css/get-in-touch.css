@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   background-image: url(../images/get-in-touch/get-in-touch-bg.jpg);
   width: 100%;
-  color: #fff;
+  color: var(--primary-light);
 }
 
 .hero__title {
@@ -58,7 +58,7 @@
 
 .form__input {
   display: block;
-  background-color: #efefef;
+  background-color: var(--input-bg);
   font-size: 20px;
   font-weight: 500;
   font-style: italic;
@@ -94,7 +94,7 @@
 
 .form__submit {
   display: block;
-  background-color: #9bffbe;
+  background-color: var(--button);
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
@@ -106,8 +106,7 @@
 }
 
 .form__submit:hover {
-  background: rgba(155, 255, 190, 0.8);
-  color: rgba(0, 0, 0, 0.7);
+  opacity: var(--opacity);
 }
 
 .form__submit:active {

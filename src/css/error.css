@@ -17,7 +17,7 @@
 }
 
 .hero {
-  color: #fff;
+  color: var(--primary-light);
   padding: 220px 140px;
 }
 
@@ -53,7 +53,7 @@
 
 .error__link {
   font-size: 25px;
-  color: #1697c5;
+  color: var(--link-light);
   text-decoration: underline;
 }
 

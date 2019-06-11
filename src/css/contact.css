@@ -18,7 +18,7 @@
 }
 
 .hero__title {
-  color: #000;
+  color: var(--primary-dark);
   font-weight: 800;
   font-size: 70px;
   padding: 200px 140px;
@@ -97,8 +97,7 @@
 }
 
 .contact__link:hover {
-  border-color: rgba(25, 184, 233, 0.8);
-  color: rgba(0, 0, 0, 0.7);
+  opacity: var(--opacity);
 }
 
 .contact__link:active {

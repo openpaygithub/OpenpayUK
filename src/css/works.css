@@ -5,7 +5,7 @@
   font-size: 35px;
   font-weight: 600;
   line-height: 40px;
-  color: #3c465a;
+  color: var(--secondary-dark);
 }
 
 .hero {
@@ -25,7 +25,7 @@
 }
 
 .hero__title {
-  color: #000;
+  color: var(--primary-dark);
   font-weight: 800;
   font-size: 55px;
   padding: 180px 140px;
@@ -51,14 +51,14 @@
 
 .works {
   padding: 140px 0;
-  color: #fff;
-  background-color: #3c465a;
+  color: var(--primary-light);
+  background-color: var(--secondary-dark);
   text-align: center;
 }
 
 .works__title {
   padding-bottom: 100px;
-  color: #fff;
+  color: var(--primary-light);
 }
 
 .works__item {
@@ -97,12 +97,12 @@
 }
 
 .help__title--faq {
-  color: #fff;
+  color: var(--primary-light);
 }
 
 .help__faq {
-  background-color: #179ecf;
-  color: #fff;
+  background-color: var(--secondary-light);
+  color: var(--primary-light);
 }
 
 .faq__descr {
@@ -121,7 +121,7 @@
   max-width: 250px;
   margin: 0 auto;
   padding-top: 30px;
-  color: #3c465a;
+  color: var(--secondary-dark);
   font-size: 20px;
 }
 
@@ -136,7 +136,7 @@
 
 .readyToChat-wrap {
   padding: 175px 0 145px;
-  background-color: #f0f0f0;
+  background-color: var(--neutral-light);
 }
 
 .readyToChat {
@@ -146,7 +146,7 @@
 }
 
 .readyToChat-title {
-  color: #3c465a;
+  color: var(--secondary-dark);
   margin: 10px 55px 10px 0;
 }
 
@@ -155,12 +155,12 @@
   line-height: normal;
   font-weight: 600;
   text-align: center;
-  color: #000;
+  color: var(--primary-dark);
   width: 100%;
   max-width: 398px;
   min-width: 250px;
   height: 67.53px;
-  background-color: #9bffbe;
+  background-color: var(--button);
   border-radius: 50px;
   border: none;
   cursor: pointer;
@@ -169,8 +169,7 @@
 }
 
 .readyToChat-btn:hover {
-  background: rgba(155, 255, 190, 0.8);
-  color: rgba(0, 0, 0, 0.7);
+  opacity: var(--opacity);
 }
 
 .readyToChat-btn:active {
