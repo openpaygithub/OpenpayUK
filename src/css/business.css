@@ -4,15 +4,14 @@
 .btn-primary {
   font-size: 20px;
   line-height: normal;
-  font-weight: 600;
+  font-weight: var(--semi-bold);
   text-align: center;
-  color: #000;
+  color: var(--primary-dark);
   width: 100%;
   max-width: 398px;
   min-width: 250px;
   height: 67.53px;
-  background-color: #9bffbe;
-  -webkit-border-radius: 50px;
+  background-color: var(--button);
   border-radius: 50px;
   border: none;
   cursor: pointer;
@@ -20,8 +19,7 @@
 }
 
 .btn-primary:hover {
-  background: rgba(155, 255, 190, 0.8);
-  color: rgba(0, 0, 0, 0.7);
+  opacity: var(--opacity);
 }
 
 .btn-primary:active {
@@ -56,11 +54,11 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.introduction-desc {
-  font-weight: 800;
-  font-size: 50px;
+.introduction__title {
+  font-weight: var(--extra-bold);
+  font-size: var(--h1);
   line-height: 70px;
-  color: #fff;
+  color: var(--primary-light);
   letter-spacing: 3px;
   padding: 200px 140px
 }
@@ -69,7 +67,7 @@
 
 /*...whyOpenPay...*/
 .whyOpenPay-wrap {
-  background-color: #f0f0f0;
+  background-color: var(--neutral-light);
   padding: 50px 0;
   position: relative;
   overflow: hidden;
@@ -87,7 +85,6 @@
 }
 
 .whyOpenPay {
-  /* max-width: 1088px; */
   margin: 0 auto 30px;
   position: relative;
   z-index: 1;
@@ -96,15 +93,15 @@
 }
 
 .whyOpenPay-title {
-  font-size: 35px;
-  font-weight: 600;
+  font-size: var(--h2);
+  font-weight: var(--semi-bold);
   margin-bottom: 30px;
 }
 
 .whyOpenPay__text {
   max-width: 50vw;
-  font-size: 20px;
-  font-weight: 300;
+  font-size: var(--p);
+  font-weight: var(--light);
   line-height: 35px;
   margin: 0 auto 25px;
 }
@@ -127,23 +124,23 @@
 }
 
 .whatCanWeDo-section {
-  color: #fff;
+  color: var(--primary-light);
   text-align: center;
   padding: 140px 15px 100px;
   width: 100%;
 }
 
 .whatCanWeDo-section_1 {
-  background-color: #3c465a;
+  background-color: var(--secondary-dark);
 }
 
 .whatCanWeDo-section_2 {
-  background-color: #179ecf;
+  background-color: var(--secondary-light);
 }
 
 .whatCanWeDo-title {
-  font-weight: 600;
-  font-size: 35px;
+  font-weight: var(--semi-bold);
+  font-size: var(--h2);
   line-height: 40px;
   padding-bottom: 125px;
 }
@@ -167,15 +164,15 @@
 }
 
 .whatCanWeDo-item-title {
-  font-weight: 600;
-  font-size: 25px;
+  font-weight: var(--semi-bold);
+  font-size: var(--h3);
   line-height: 41px;
   padding: 12px 0 20px;
 }
 
 .whatCanWeDo-item-paragraph {
-  font-weight: 300;
-  font-size: 20px;
+  font-weight: var(--light);
+  font-size: var(--p);
   line-height: 30px;
   min-height: 180px;
 }
@@ -199,7 +196,7 @@
 /*...readyToChat...*/
 .readyToChat-wrap {
   padding: 175px 0 145px;
-  background-color: #f0f0f0;
+  background-color: var(--neutral-light);
 }
 
 .readyToChat {
@@ -209,9 +206,9 @@
 }
 
 .readyToChat-title {
-  font-size: 35px;
-  font-weight: 600;
-  color: #3c465a;
+  font-size: var(--h2);
+  font-weight: var(--semi-bold);
+  color: var(--secondary-dark);
   margin: 0 97px 20px 0;
   white-space: nowrap;
 }
@@ -247,10 +244,9 @@
 }
 
 @media screen and (max-width: 768px) {
-  .introduction-desc {
+  .introduction__title {
     width: 100%;
     min-width: 200px;
-    font-size: 45px;
     line-height: 55px;
     padding: 15vh 30px;
   }

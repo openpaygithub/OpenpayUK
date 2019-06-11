@@ -24,18 +24,19 @@
   padding: 200px 140px;
   min-height: 520px;
 }
+
 .banner-content {
   max-width: 812px;
 }
 
-.banner h1 {
+.banner__title {
   display: block;
   width: 100%;
   text-align: left;
-  font-weight: 800;
-  font-size: 60px;
+  font-weight: var(--extra-bold);
+  font-size: var(--h1);
   line-height: 75px;
-  color: #fff;
+  color: var(--primary-light);
   letter-spacing: 3px;
 }
 
@@ -47,10 +48,10 @@
 .forWhomItWorks-wrap {
   background: linear-gradient(
     to right,
-    #fff 0%,
-    #fff 50%,
-    #3c465a 50%,
-    #3c465a 100%
+    var(--primary-light) 0%,
+    var(--primary-light) 50%,
+    var(--secondary-dark) 50%,
+    var(--secondary-dark) 100%
   );
   position: relative;
   overflow: hidden;
@@ -75,18 +76,18 @@
 
 .forWhomItWorks h2 {
   max-width: 658px;
-  color: #000;
+  color: var(--primary-dark);
   line-height: 45px;
-  font-size: 35px;
+  font-size: var(--h2);
   letter-spacing: 3px;
   margin-bottom: 30px;
-  font-weight: 600;
+  font-weight: var(--semi-bold);
 }
 
 .forWhomItWorks_subtitle {
   max-width: 768px;
   margin: 0 auto;
-  color: #000;
+  color: var(--primary-dark);
   line-height: 40px;
   font-size: 25px;
   z-index: 0;
@@ -110,8 +111,8 @@
 }
 
 .forWhomItWorks_text {
-  color: #fff;
-  font-weight: 600;
+  color: var(--primary-light);
+  font-weight: var(--semi-bold);
   font-size: 34px;
   margin-bottom: 25px;
   letter-spacing: 3px;
@@ -129,7 +130,7 @@
 
 .forWhomItWorks div:nth-of-type(2) {
   position: relative;
-  background-color: #3c465a;
+  background-color: var(--secondary-dark);
   margin: 0 auto;
   padding: 200px 0;
   z-index: 0;
@@ -138,7 +139,7 @@
 
 .forWhomItWorks_img_bg {
   height: 100%;
-  color: #fff;
+  color: var(--primary-light);
   line-height: 50px;
   font-size: 25px;
   letter-spacing: 2px;
@@ -150,25 +151,25 @@
 
 /*...how works...*/
 .howItWorks {
-  padding: 200px 0;
+  padding: 140px 0;
   background: #e3e3e3;
   text-align: center;
 }
 .howItWorks-content {
-  max-width: 1089px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
 .howItWorks-title {
   letter-spacing: 3px;
-  padding-bottom: 40px;
-  font-weight: 700;
-  font-size: 35px;
-  color: #000;
+  padding-bottom: 30px;
+  font-weight: var(--bold);
+  font-size: var(--h2);
+  color: var(--primary-dark);
 }
 
 .block_howItWorks_flex {
-  grid-gap: 150px;
+  grid-column-gap: 70px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -176,6 +177,7 @@
 @media screen and (max-width: 1200px) {
   .block_howItWorks_flex {
     grid-template-columns: 1fr;
+    grid-row-gap: 50px;
   }
 }
 
@@ -185,20 +187,28 @@
   padding: 15px;
 }
 
+.block_howItWorks__phone-img {
+  padding-top: 13px;
+}
+
+.block_howItWorks__calendar-img {
+  padding-top: 15px;
+}
+
 .block_howItWorks_title {
   margin-top: 20px;
-  font-weight: 700;
-  font-size: 24px;
+  font-weight: var(--bold);
+  font-size: var(--h3);
 }
 
 .block_howItWorks_text {
   min-width: 240px;
-  max-width: 260px;
+  max-width: 380px;
   margin: 0 auto;
   margin-top: 15px;
-  font-size: 19px;
-  line-height: 25px;
-  color: #000;
+  font-size: var(--p);
+  line-height: 30px;
+  color: var(--primary-dark);
 }
 
 /*...feedback...*/
@@ -212,10 +222,11 @@
   text-align: left;
   grid-gap: 100px;
 }
+
 .feedback_title {
   padding-bottom: 35px;
-  font-size: 35px;
-  font-weight: 600;
+  font-size: var(--h2);
+  font-weight: var(--semi-bold);
 }
 
 .feedback_text {
@@ -243,27 +254,27 @@
   border: none;
   display: block;
   height: 67px;
-  background: #efefef;
+  background: var(--input-bg);
   border-radius: 33px;
 }
 
 .feedback_input::placeholder {
-  font-weight: 500;
+  font-weight: var(--medium);
   font-size: 20px;
   font-style: italic;
-  color: #000;
+  color: var(--primary-dark);
 }
 
 .feedback_btn_block_link {
   outline: none;
   cursor: pointer;
   font-size: 20px;
-  color: #000;
+  color: var(--primary-dark);
   width: 260px;
   height: 68px;
   margin: 0 auto;
-  font-weight: 600;
-  background: #9bffbe;
+  font-weight: var(--semi-bold);
+  background: var(--button);
   padding: 19px 0;
   border-radius: 34px;
   display: inline-block;
@@ -272,8 +283,7 @@
 }
 
 .feedback_btn_block_link:hover {
-  background: rgba(155, 255, 190, 0.8);
-  color: rgba(0, 0, 0, 0.7);
+  opacity: var(--opacity);
 }
 
 .feedback_btn_block_link:active {
@@ -307,7 +317,7 @@
   }
 
   .forWhomItWorks-wrap {
-    background: #fff;
+    background: var(--primary-light);
     overflow: hidden;
   }
 
@@ -379,10 +389,16 @@
     width: initial;
     max-width: initial;
   }
+}
 
-  .banner h1 {
+@media screen and (max-width: 768px) {
+  .banner__title {
+    line-height: 55px;
     text-align: center;
-    font-size: 45px;
+  }
+
+  .howItWorks {
+    padding: 70px 0;
   }
 }
 
@@ -414,12 +430,6 @@
   .banner-content {
     width: 100%;
     padding: 30px 0;
-  }
-
-  .banner h1 {
-    font-size: 36px;
-    line-height: 55px;
-    text-align: center;
   }
 
   .banner-content img {

@@ -7,19 +7,18 @@
   background-repeat: no-repeat;
   background-image: url(../images/get-in-touch/get-in-touch-bg.jpg);
   width: 100%;
-  color: #fff;
+  color: var(--primary-light);
+  padding: 200px 140px;
 }
 
 .hero__title {
-  font-weight: 800;
-  font-size: 55px;
+  font-weight: var(--extra-bold);
+  font-size: var(--h1);
   padding-bottom: 10px;
 }
-.hero-text {
-  padding: 200px 140px;
-} 
+
 .hero__subtitle {
-  font-weight: 500;
+  font-weight: var(--medium);
   font-size: 30px;
 }
 
@@ -58,9 +57,9 @@
 
 .form__input {
   display: block;
-  background-color: #efefef;
+  background-color: var(--input-bg);
   font-size: 20px;
-  font-weight: 500;
+  font-weight: var(--medium);
   font-style: italic;
   cursor: pointer;
   border-radius: 33px;
@@ -94,9 +93,9 @@
 
 .form__submit {
   display: block;
-  background-color: #9bffbe;
+  background-color: var(--button);
   font-size: 20px;
-  font-weight: 500;
+  font-weight: var(--medium);
   cursor: pointer;
   padding: 19px 0;
   margin-top: 40px;
@@ -106,8 +105,7 @@
 }
 
 .form__submit:hover {
-  background: rgba(155, 255, 190, 0.8);
-  color: rgba(0, 0, 0, 0.7);
+  opacity: var(--opacity);
 }
 
 .form__submit:active {
@@ -122,16 +120,10 @@
 }
 
 @media screen and (max-width: 768px) {
-  .hero-text {
-    padding: 15vh 30px;
-  }
   .hero {
     background-position: center;
     text-align: center;
-  }
-
-  .hero__title {
-    font-size: 44px;
+    padding: 15vh 30px;
   }
 
   .hero__subtitle {

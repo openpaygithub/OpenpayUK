@@ -3,14 +3,14 @@
 
 .link-to {
   line-height: normal;
-  font-weight: 600;
+  font-weight: var(--semi-bold);
   text-align: center;
-  color: #000;
+  color: var(--primary-dark);
   transition: all 0.1s;
 }
 
 .link-to:hover {
-  color: rgba(0, 0, 0, 0.7);
+  opacity: var(--opacity);
 }
 
 .block-child-wrap {
@@ -41,10 +41,10 @@
 }
 
 .welcome-title {
-  font-size: 55px;
+  font-size: var(--h1);
   line-height: 75px;
-  font-weight: 800;
-  color: #fff;
+  font-weight: var(--extra-bold);
+  color: var(--primary-light);
   letter-spacing: 3px;
   padding-top: 20px;
 }
@@ -59,10 +59,10 @@
 .signup {
   background: linear-gradient(
     to right,
-    #fff 0%,
-    #fff 50%,
-    #3c465a 50%,
-    #3c465a 100%
+    var(--primary-light) 0%,
+    var(--primary-light) 50%,
+    var(--secondary-dark) 50%,
+    var(--secondary-dark) 100%
   );
   position: relative;
   overflow: hidden;
@@ -86,14 +86,14 @@
 }
 
 .signup__title {
-  font-weight: 500;
-  font-size: 35px;
+  font-weight: var(--medium);
+  font-size: var(--h2);
   line-height: 60px;
   padding: 50px 15px 0 0;
 }
 
 .signup__subtitle {
-  font-weight: 800;
+  font-weight: var(--extra-bold);
   font-style: italic;
 }
 
@@ -103,7 +103,7 @@
 
 .signup__item--form {
   max-width: 620px;
-  background-color: #3c465a;
+  background-color: var(--secondary-dark);
   justify-self: center;
   padding-left: 15px;
 }
@@ -111,10 +111,10 @@
 .signup__form-title {
   display: block;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: var(--medium);
   font-size: 30px;
   line-height: 50px;
-  color: #fff;
+  color: var(--primary-light);
   padding-bottom: 40px;
 }
 
@@ -126,7 +126,7 @@
 .signup__input {
   font-size: 20px;
   margin-bottom: 40px;
-  background-color: #efefef;
+  background-color: var(--input-bg);
   border: none;
   border-radius: 33px;
   height: 66px;
@@ -138,25 +138,24 @@
 
 .signup__input::placeholder {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: var(--light);
 }
 
 .signup__submit {
   display: block;
   border: none;
   border-radius: 34px;
-  background-color: #9bffbe;
+  background-color: var(--button);
   cursor: pointer;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: var(--medium);
   height: 67px;
   width: 260px;
   transition: all 0.3s;
 }
 
 .signup__submit:hover {
-  background: rgba(155, 255, 190, 0.8);
-  color: rgba(0, 0, 0, 0.7);
+  opacity: var(--opacity);
 }
 
 .signup__submit:active {
@@ -166,9 +165,9 @@
 
 .thankyou {
   display: none;
-  font-weight: 600;
+  font-weight: var(--semi-bold);
   font-size: 25px;
-  color: #fff;
+  color: var(--primary-light);
 }
 
 /*...end signup...*/
@@ -176,7 +175,7 @@
 /*...works...*/
 .works-wrap {
   padding: 90px 0 95px;
-  background-color: #ededed;
+  background-color: var(--neutral-light);
 }
 
 .works {
@@ -186,8 +185,8 @@
 }
 
 .works-title {
-  font-weight: 700;
-  font-size: 35px;
+  font-weight: var(--bold);
+  font-size: var(--h2);
   margin-bottom: 50px;
   text-align: center;
 }
@@ -219,14 +218,14 @@
 }
 
 .work-item__title {
-  font-weight: 600;
-  font-size: 30px;
+  font-weight: var(--semi-bold);
+  font-size: var(--h3);
   text-align: center;
   margin-bottom: 17px;
 }
 .work-item__desc {
-  font-weight: 300;
-  font-size: 25px;
+  font-weight: var(--light);
+  font-size: var(--p);
   line-height: 35px;
   text-align: center;
   min-height: 140px;
@@ -257,8 +256,8 @@
 }
 
 .empoweringPay-title {
-  font-weight: 800;
-  font-size: 40px;
+  font-weight: var(--extra-bold);
+  font-size: var(--h2);
   margin-bottom: 40px;
 }
 
@@ -271,14 +270,14 @@
 }
 
 .empoweringPay__article-title {
-  font-weight: 600;
+  font-weight: var(--semi-bold);
   font-size: 20px;
   margin-bottom: 10px;
 }
 
 .empoweringPay__text {
-  font-weight: 300;
-  font-size: 20px;
+  font-weight: var(--light);
+  font-size: var(--p);
 }
 
 /*...end empoweringPay...*/
@@ -303,12 +302,11 @@
 
   .welcome-title {
     padding: 15px;
-    font-size: 45px;
     text-align: center;
   }
 
   .signup {
-    background: #fff;
+    background: var(--primary-light);
     padding: 90px 0 0;
   }
 
@@ -351,9 +349,5 @@
 @media screen and (max-width: 400px) {
   .welcome.block-child-wrap {
     padding: 0;
-  }
-
-  .welcome-title {
-    font-size: 36px;
   }
 }

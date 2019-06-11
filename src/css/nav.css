@@ -3,6 +3,48 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* colors */
+  --primary-dark: #000;
+  --primary-light: #fff;
+
+  --secondary-dark: #3c465a;
+  --secondary-light: #179ecf;
+
+  --neutral-light: #f0f0f0;
+
+  --button: #9bffbe;
+
+  --input-bg: #efefef;
+
+  --link-light: #1697c5;
+
+  /* Poppins font-weight */
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semi-bold: 600;
+  --bold: 700;
+  --extra-bold: 800;
+
+  /* font-size */
+  --h1: 55px;
+  --h2: 35px;
+  --h3: 25px;
+  --p: 20px;
+
+  /* other */
+  --opacity: .8;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --h1: 36px;
+    --h3: 24px;
+    --p: 19px;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -15,7 +57,7 @@ button {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-weight: var(--light);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -36,10 +78,10 @@ header {
 /*top menu*/
 
 .footer {
-  background-color: #3c465a;
+  background-color: var(--secondary-dark);
   padding: 80px 32px;
   text-align: center;
-  color: #fff;
+  color: var(--primary-light);
 }
 
 /*top menu hamburger*/
@@ -56,30 +98,28 @@ header {
 .paragraphSpec-3 {
   font-size: 18px;
   line-height: 29px;
-  font-weight: 600;
+  font-weight: var(--semi-bold);
   text-align: center;
-  color: #fff;
+  color: var(--primary-light);
 }
 
 .paragraphSpec-4 {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 23px;
-  font-weight: 600;
+  font-weight: var(--semi-bold);
   text-align: left;
   color: #3b455a;
   transition: all 0.1s;
 }
 
 .paragraphSpec-4:hover {
-  color: rgba(59, 69, 90, 0.8);
+  opacity: .8;
 }
 
 /*...end common styles...*/
 /*...header...*/
 .header-wrap {
   padding: 39px 0 34px;
-  -webkit-transition: height 400ms ease-out;
-  -o-transition: height 400ms ease-out;
   transition: height 400ms ease-out;
 }
 
@@ -89,6 +129,7 @@ header {
   height: 26px;
   cursor: pointer;
 }
+
 .trigger-menu .trigger-menu__line,
 .trigger-menu .trigger-menu__line:before,
 .trigger-menu .trigger-menu__line:after {
@@ -97,12 +138,14 @@ header {
   background-color: #3b455a;
   position: relative;
 }
+
 .trigger-menu .trigger-menu__line:before {
   content: "";
   display: block;
   position: absolute;
   top: 10px;
 }
+
 .trigger-menu .trigger-menu__line:after {
   content: "";
   display: block;
@@ -116,15 +159,18 @@ header {
   width: 50%;
   min-width: 503px;
 }
+
 .header-nav .nav-list {
   list-style: none;
   position: absolute;
   right: 140px;
   justify-content: flex-end;
 }
+
 .header-nav .nav-list li {
   margin-right: 35px;
 }
+
 .header-nav .nav-list li:last-child {
   margin-right: 0px !important;
 }
@@ -146,7 +192,7 @@ header {
 /*...end header...*/
 /*...footer...*/
 .footer-wrap {
-  background-color: #3c465a;
+  background-color: var(--secondary-dark);
   padding: 60px 0 45px;
 }
 
@@ -154,16 +200,20 @@ header {
   max-width: 720px;
   margin: 0 auto 100px;
 }
+
 .nav-footer .footer-nav-list {
   list-style: none;
   flex-wrap: wrap;
 }
+
 .nav-footer .footer-nav-list li {
   margin-right: 15px;
 }
+
 .nav-footer .footer-nav-list li:last-child {
   margin-right: 0;
 }
+
 .nav-footer .footer-nav-list li a {
   white-space: nowrap;
 }
@@ -176,7 +226,7 @@ header {
 
 .copyright {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: var(--medium);
   padding-top: 20px;
 }
 
@@ -256,13 +306,13 @@ header {
   z-index: 2;
   bottom: 10px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: var(--regular);
   padding: 20px 15px 20px 70px;
   margin: 0 10px;
   max-width: 360px;
   border-radius: 5px;
-  background-color: #fff;
-  color: #3c465a;
+  background-color: var(--primary-light);
+  color: var(--secondary-dark);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -279,7 +329,7 @@ header {
 
 .cookie-popup__link {
   color: #2864ff;
-  font-weight: 400;
+  font-weight: var(--regular);
   font-size: inherit;
 }
 
@@ -296,9 +346,9 @@ header {
   border: 2px solid #40354e;
   border-radius: 4px;
   color: #40354e;
-  font-weight: 600;
+  font-weight: var(--semi-bold);
   font-size: 14px;
-  background-color: #fff;
+  background-color: var(--primary-light);
   transition: all 0.1s;
 }
 

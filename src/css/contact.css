@@ -18,9 +18,9 @@
 }
 
 .hero__title {
-  color: #000;
-  font-weight: 800;
-  font-size: 70px;
+  color: var(--primary-dark);
+  font-weight: var(--extra-bold);
+  font-size: var(--h1);
   padding: 200px 140px;
 }
 
@@ -32,8 +32,8 @@
 }
 
 .contact__title {
-  font-weight: 700;
-  font-size: 35px;
+  font-weight: var(--bold);
+  font-size: var(--h2);
   padding-bottom: 50px;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .contact__subtitle {
-  font-weight: 600;
+  font-weight: var(--semi-bold);
   font-size: 30px;
 }
 
@@ -65,25 +65,32 @@
 }
 
 .contact__text {
-  font-weight: 300;
-  font-size: 20px;
+  font-weight: var(--light);
+  font-size: var(--p);
   line-height: 25px;
   max-width: 260px;
   margin: 0 auto;
   padding-bottom: 30px;
 }
 
-.contact__text-media {
-  font-weight: 300;
+.contact__media {
   font-size: 20px;
   line-height: 25px;
   margin: 0 auto;
-  padding: 50px 0 0 0;
+  padding-top: 75px;
 }
 
-.contact__text-media h4 {
-  font-weight: 600;
-  margin-top: 30px;
+.contact__media-title {
+  font-weight: var(--semi-bold);
+  padding-bottom: 20px;
+}
+
+.contact__media-link {
+  text-decoration: underline;
+}
+
+.contact__media-link:hover {
+  text-decoration: none;
 }
 
 .contact__link {
@@ -97,8 +104,7 @@
 }
 
 .contact__link:hover {
-  border-color: rgba(25, 184, 233, 0.8);
-  color: rgba(0, 0, 0, 0.7);
+  opacity: var(--opacity);
 }
 
 .contact__link:active {
@@ -114,13 +120,12 @@
 }
 
 @media screen and (max-width: 768px) {
-  .contact__text-media {
+  .contact__media {
     max-width: 300px;
   }
 
   .hero__title {
     text-align: center;
-    font-size: 50px;
     padding: 15vh 30px;
   }
 
