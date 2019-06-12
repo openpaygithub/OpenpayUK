@@ -108,7 +108,7 @@ header {
   line-height: 23px;
   font-weight: var(--semi-bold);
   text-align: left;
-  color: #3b455a;
+  color: var(--secondary-dark);
   transition: all 0.1s;
 }
 
@@ -135,7 +135,7 @@ header {
 .trigger-menu .trigger-menu__line:after {
   height: 4px;
   width: 100%;
-  background-color: #3b455a;
+  background-color: var(--secondary-dark);
   position: relative;
 }
 

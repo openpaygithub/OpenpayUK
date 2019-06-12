@@ -88,7 +88,7 @@
   margin: 0 auto 30px;
   position: relative;
   z-index: 1;
-  color: #3b455a;
+  color: var(--secondary-dark);
   text-align: center;
 }
 
