@@ -23,51 +23,53 @@
 
 .faq-header {
   text-align: center;
-  padding: 110px 0 80px;
+  padding: 110px 0 130px;
 }
 
 .faq-title {
   font-size: var(--h2);
-  margin-bottom: 30px;
+  font-weight: var(--semi-bold);
+  padding-bottom: 35px;
 }
 
-.faq-descr,
-.faq-content {
+.faq-descr {
   font-size: 25px;
 }
 
-.faq-section,
-.faq-qa {
-  margin: 50px 0;
-}
-
 .link-list {
-  margin-top: 16px;
+  padding-top: 65px;
   list-style: none;
   font-size: 25px;
 }
 
-.link-list>li {
-  margin: 25px 0;
+.link-list-item {
+  padding-bottom: 25px;
 }
 
-.faq-qa p {
+.link-list-item:last-child {
+  padding-bottom: 0;
+}
+
+.faq-content,
+.faq-qa {
+  padding-bottom: 60px;
+}
+
+.faq-section-title {
+  font-weight: var(--bold);
+  font-size: var(--h2);
+  padding-bottom: 60px;
+}
+
+.faq-qa-title {
   margin-bottom: 10px;
+  font-weight: var(--bold);
+  font-size: var(--h3);
 }
 
-h3 {
+.faq-qa-text {
   margin-bottom: 10px;
-}
-
-.faq__wrapper h1,
-h2,
-h3,
-h4 {
-  font-weight: var(--semi-bold);
-}
-
-.faq-content {
-  padding-bottom: 120px;
+  font-size: 25px;
 }
 
 .faq-link {
@@ -81,8 +83,6 @@ h4 {
 @media screen and (max-width: 1281px) {
   .faq__wrapper {
     max-width: 75%;
-    margin: 0 auto;
-    text-align: left;
   }
 }
 
@@ -90,5 +90,14 @@ h4 {
   .hero__title {
     text-align: center;
     padding: 15vh 30px;
+  }
+
+  .faq__wrapper {
+    max-width: initial;
+    padding: 0 35px;
+  }
+
+  .faq-qa-text {
+    font-size: 20px;
   }
 }
