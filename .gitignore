@@ -7,3 +7,4 @@ packaged-*.yaml
 
 backstop_data/html_report/
 bitmaps_test/
+backstop_data/scenarios/path.js
