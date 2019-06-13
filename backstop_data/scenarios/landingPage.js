@@ -4,5 +4,5 @@ module.exports = landingPage = {
     url: `${path}landingpage.html`,
     clickSelector: ".cookie-popup__button",
     selectors: ["document"],
-    misMatchThreshold: 2
+    misMatchThreshold: 0.1
 }

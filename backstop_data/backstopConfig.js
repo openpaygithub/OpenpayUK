@@ -17,7 +17,7 @@ module.exports = {
       height: 768
     },
     {
-      label: "ipnohe-5",
+      label: "iphone-5",
       width: 320,
       height: 568
     }
