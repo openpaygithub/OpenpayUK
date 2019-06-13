@@ -4,5 +4,5 @@ module.exports = contact = {
     url: `${path}contact.html`,
     clickSelector: ".cookie-popup__button",
     selectors: ["document"],
-    misMatchThreshold: 2
+    misMatchThreshold: 0.1
 }
