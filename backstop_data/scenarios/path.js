@@ -1,1 +1,0 @@
-module.exports = path = 'file:///C:/openpay/OpenpayUK/src/'
