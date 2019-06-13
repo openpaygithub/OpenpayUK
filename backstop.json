@@ -58,6 +58,20 @@
       "misMatchThreshold" : 2
     },
     {
+      "label": "FAQ",
+      "url": "file:///C:/openpay/OpenpayUK/src/faq.html",
+      "clickSelector": ".cookie-popup__button",
+      "selectors": ["document"],
+      "misMatchThreshold" : 2
+    },
+    {
+      "label": "Error",
+      "url": "file:///C:/openpay/OpenpayUK/src/error.html",
+      "clickSelector": ".cookie-popup__button",
+      "selectors": ["document"],
+      "misMatchThreshold" : 2
+    },
+    {
       "label": "Landingpage",
       "url": "file:///C:/openpay/OpenpayUK/src/landingpage.html",
       "clickSelector": ".cookie-popup__button",
