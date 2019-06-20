@@ -6,7 +6,6 @@ const faq = require('./scenarios/faq')
 const legal = require('./scenarios/legal')
 const getInTouch = require('./scenarios/getInTouch')
 const landingPage = require('./scenarios/landingPage')
-const error = require('./scenarios/error')
 
 module.exports = {
   id: "openpay_uk",
@@ -32,8 +31,7 @@ module.exports = {
     faq,
     legal,
     getInTouch,
-    landingPage,
-    error
+    landingPage
   ],
   paths: {
     bitmaps_reference: "backstop_data/bitmaps_reference",
@@ -47,7 +45,7 @@ module.exports = {
   engineOptions: {
     args: ["--no-sandbox"]
   },
-  asyncCaptureLimit: 5,
+  asyncCaptureLimit: 1,
   asyncCompareLimit: 50,
   debug: false,
   debugWindow: false
