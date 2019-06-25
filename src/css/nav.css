@@ -17,6 +17,7 @@
 
   --input-bg: #efefef;
 
+  --link-dark: #2864ff;
   --link-light: #1697c5;
 
   /* Poppins font-weight */
@@ -164,7 +165,8 @@ header {
 }
 
 .nav-list__link:hover {
-  opacity: .85;
+  text-decoration: underline;
+  color: var(--link-dark);
 }
 
 .nav-list__link--button {
@@ -178,7 +180,7 @@ header {
 .nav-list__link--button:hover {
   color: var(--primary-light);
   background-color: var(--secondary-dark);
-  opacity: 1;
+  text-decoration: none;
 }
 
 .nav-list__link--button:active {
@@ -257,6 +259,7 @@ header {
   .header-wrap {
     overflow: hidden;
     height: 90px;
+    transition: all 0.3s ease-in-out;
   }
 
   .header-logo-and-trigger {
