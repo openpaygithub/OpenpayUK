@@ -6,10 +6,12 @@ function triggerMenu() {
   btnTrigger.addEventListener('click', () => {
     if (menuBlock.classList[1] === 'header-nav_disable') {
       menuBlock.classList.remove('header-nav_disable');
-      header.style.cssText = 'height: 220px';
+      btnTrigger.classList.add('trigger-menu--active');
+      header.style.cssText = 'height: 320px';
     } else {
       menuBlock.classList.add('header-nav_disable');
-      header.style.cssText = 'height: 115px';
+      btnTrigger.classList.remove('trigger-menu--active');
+      header.style.cssText = 'height: 90px';
     }
   });
 }
