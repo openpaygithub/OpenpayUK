@@ -115,10 +115,10 @@ header {
 }
 
 .trigger-menu__line {
-  height: 4px;
+  height: 3px;
   width: 100%;
-  margin: 6px auto;
-  background-color: var(--primary-dark);
+  margin: 7px auto;
+  background-color: var(--secondary-dark);
   position: relative;
   display: block;
   transition: all 0.3s ease-in-out;
@@ -136,10 +136,17 @@ header {
   transform: translateY(-13px) rotate(-45deg);
 }
 
-.nav-list {
+.header-nav {
   display: flex;
+  list-style: none;
+}
+
+.nav-list {
+  display: inline-flex;
   align-items: center;
   list-style: none;
+  margin-right: auto;
+  padding-left: 40px;
 }
 
 .nav-list__item {
@@ -148,10 +155,6 @@ header {
 
 .nav-list__item:last-child {
   margin-right: 0px;
-}
-
-.nav-list__item--divider {
-  margin-right: auto;
 }
 
 .nav-list__link {
@@ -169,7 +172,7 @@ header {
   color: var(--link-dark);
 }
 
-.nav-list__link--button {
+.portal__link--button {
   background: transparent;
   border: 2px solid var(--secondary-dark);
   border-radius: 4px;
@@ -177,13 +180,18 @@ header {
   transition: all 150ms linear;
 }
 
-.nav-list__link--button:hover {
+.portal {
+  display: inline-flex;
+  align-items: center;
+}
+
+.portal__link--button:hover {
   color: var(--primary-light);
   background-color: var(--secondary-dark);
   text-decoration: none;
 }
 
-.nav-list__link--button:active {
+.portal__link--button:active {
   position: relative;
   bottom: -1px;
 }
@@ -246,7 +254,7 @@ header {
 /*...media for header footer...*/
 @media screen and (max-width: 1180px) {
   header {
-    padding: 0 35px;
+    padding: 0 10px;
   }
 
   .nav-list__logo {
@@ -264,25 +272,59 @@ header {
 
   .header-logo-and-trigger {
     position: absolute;
-    right: 20px;
+    right: 15px;
+    top: 32px;
+    z-index: 1;
   }
 
   .trigger-menu {
     display: block;
   }
 
+  .header-nav {
+    position: relative;
+  }
+
+  .nav-list__link--logo {
+    position: relative;
+    z-index: 1;
+  }
+
   .nav-list {
+    position: absolute;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    padding: 70px 0 0 0;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 
   .nav-list__item {
-    margin: 0 0 15px;
+    margin: 0 0 25px;
   }
 
-  .nav-list__item--divider {
-    margin: 0 0 30px;
+  .nav-list__item:last-child {
+    margin: 0;
   }
+
+  .nav-list__item--left {
+    position: absolute;
+  }
+
+  .nav-list__logo {
+    width: 85px;
+  }
+
+  .portal {
+    position: absolute;
+    right: 50px;
+    top: 8px;
+  }
+
+  .portal__item {
+    margin: 0 15px 0 0;
+  }
+
 }
 
 @media screen and (max-width: 768px) {

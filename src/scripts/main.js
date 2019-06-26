@@ -7,7 +7,7 @@ function triggerMenu() {
     if (menuBlock.classList[1] === 'header-nav_disable') {
       menuBlock.classList.remove('header-nav_disable');
       btnTrigger.classList.add('trigger-menu--active');
-      header.style.cssText = 'height: 320px';
+      header.style.cssText = 'height: 260px';
     } else {
       menuBlock.classList.add('header-nav_disable');
       btnTrigger.classList.remove('trigger-menu--active');
