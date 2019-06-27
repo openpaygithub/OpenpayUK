@@ -46,10 +46,6 @@
   padding-bottom: 25px;
 }
 
-.link-list-item:last-child {
-  padding-bottom: 0;
-}
-
 .faq-content,
 .faq-qa {
   padding-bottom: 60px;
@@ -99,5 +95,9 @@
 
   .faq-qa-text {
     font-size: 20px;
+  }
+
+  .link-list-item:last-child {
+    padding-bottom: 0;
   }
 }
