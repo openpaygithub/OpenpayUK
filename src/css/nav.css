@@ -177,8 +177,13 @@ html {
   transition: all 150ms linear;
 }
 
+.nav-list__link--active {
+  padding-bottom: 31px;
+  border-bottom: 2px solid var(--link-dark);
+  color: var(--link-dark);
+}
+
 .nav-list__link:hover {
-  text-decoration: underline;
   color: var(--link-dark);
 }
 
@@ -331,6 +336,11 @@ html {
   .nav-list__logo {
     width: 85px;
     height: 42px;
+  }
+
+  .nav-list__link--active {
+    padding-bottom: 0;
+    border-bottom: none;
   }
 
   .portal {
