@@ -174,7 +174,6 @@ html {
   text-align: left;
   color: var(--secondary-dark);
   white-space: nowrap;
-  transition: all 150ms linear;
 }
 
 .nav-list__link--active {
