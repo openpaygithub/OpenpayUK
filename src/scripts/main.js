@@ -11,7 +11,7 @@ function triggerMenu() {
       btnTrigger.classList.add('trigger-menu--active');
       header.classList.add('header--border');
       page.classList.add('page--mobile');
-      headerWrap.style.cssText = 'height: 100%';
+      headerWrap.style.cssText = 'height: 100vh';
     } else {
       menuBlock.classList.add('header-nav_disable');
       btnTrigger.classList.remove('trigger-menu--active');
