@@ -151,7 +151,7 @@ header {
 }
 
 .nav-list__link--active {
-  padding-bottom: 31px;
+  padding-bottom: 28px;
   border-bottom: 2px solid var(--link-dark);
   color: var(--link-dark);
 }
