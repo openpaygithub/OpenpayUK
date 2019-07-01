@@ -4,6 +4,7 @@ function triggerMenu() {
   const headerWrap = document.querySelector('.header-wrap');
   const header = document.querySelector('.header');
   const page = document.querySelector('body');
+  const navList = document.querySelector('.nav-list');
 
   btnTrigger.addEventListener('click', () => {
     if (menuBlock.classList[1] === 'header-nav_disable') {
@@ -11,12 +12,14 @@ function triggerMenu() {
       btnTrigger.classList.add('trigger-menu--active');
       header.classList.add('header--border');
       page.classList.add('page--mobile');
+      navList.classList.add('nav-list--active');
       headerWrap.style.cssText = 'height: 100vh';
     } else {
       menuBlock.classList.add('header-nav_disable');
       btnTrigger.classList.remove('trigger-menu--active');
       header.classList.remove('header--border');
       page.classList.remove('page--mobile');
+      navList.classList.remove('nav-list--active');
       headerWrap.style.cssText = 'height: 60px';
     }
   });
