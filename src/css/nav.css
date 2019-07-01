@@ -280,7 +280,6 @@ html {
     overflow: hidden;
     height: 60px;
     padding: 10px 0;
-    transition: all 0.3s ease-in-out;
   }
 
   .header {
@@ -314,10 +313,17 @@ html {
   .nav-list {
     position: absolute;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    width: 100%;
     padding: 85px 0 0 0;
-    left: 50%;
-    transform: translate(-50%, 0);
+    left: 0;
+    transform-origin: -100% -100%;
+    transform: translate(102%,0);
+    transition: transform .5s cubic-bezier(.77,.2,.05,1);
+  }
+
+  .nav-list--active {
+    transform: none;
   }
 
   .nav-list__item {
@@ -335,6 +341,11 @@ html {
   .nav-list__logo {
     width: 85px;
     height: 42px;
+  }
+
+  .nav-list__link--mobile {
+    font-weight: var(--light);
+    font-size: 22px;
   }
 
   .nav-list__link--active {
