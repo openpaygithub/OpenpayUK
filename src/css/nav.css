@@ -72,20 +72,6 @@ a {
   text-decoration: none;
 }
 
-header {
-  padding: 0 140px;
-}
-
-/*top menu*/
-
-.footer {
-  background-color: var(--secondary-dark);
-  padding: 80px 32px;
-  text-align: center;
-  color: var(--primary-light);
-}
-
-/*top menu hamburger*/
 html {
   height: 100%;
 }
@@ -95,26 +81,14 @@ html {
   overflow: hidden;
 }
 
-.nav-footer .footer-nav-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header {
+  padding: 0 140px;
 }
 
-/*...common styles...*/
-.paragraphSpec-3 {
-  font-size: 18px;
-  line-height: 29px;
-  font-weight: var(--semi-bold);
-  text-align: center;
-  color: var(--primary-light);
-}
-
-/*...end common styles...*/
 /*...header...*/
 .header-wrap {
-  padding: 30px 0;
-  height: 90px;
+  padding: 26px 0;
+  height: 80px;
 }
 
 .trigger-menu {
@@ -177,7 +151,7 @@ html {
 }
 
 .nav-list__link--active {
-  padding-bottom: 31px;
+  padding-bottom: 28px;
   border-bottom: 2px solid var(--link-dark);
   color: var(--link-dark);
 }
@@ -211,15 +185,22 @@ html {
 }
 
 .nav-list__logo {
-  width: 160px;
+  width: 140px;
   vertical-align: top;
 }
-
 /*...end header...*/
+
 /*...footer...*/
 .footer-wrap {
   background-color: var(--secondary-dark);
   padding: 60px 0 45px;
+}
+
+.footer {
+  background-color: var(--secondary-dark);
+  padding: 80px 32px;
+  text-align: center;
+  color: var(--primary-light);
 }
 
 .nav-footer {
@@ -227,20 +208,28 @@ html {
   margin: 0 auto 100px;
 }
 
-.nav-footer .footer-nav-list {
+.footer-nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
   flex-wrap: wrap;
 }
 
-.nav-footer .footer-nav-list li {
+.footer-nav-list li {
   margin-right: 15px;
 }
 
-.nav-footer .footer-nav-list li:last-child {
+.footer-nav-list li:last-child {
   margin-right: 0;
 }
 
-.nav-footer .footer-nav-list li a {
+.paragraphSpec-3 {
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: var(--semi-bold);
+  text-align: center;
+  color: var(--primary-light);
   white-space: nowrap;
 }
 
@@ -262,16 +251,12 @@ html {
   padding-top: 10px;
   font-size: 13px;
 }
-
 /*...end footer...*/
+
 /*...media for header footer...*/
 @media screen and (max-width: 1180px) {
   .header {
     padding: 0 10px;
-  }
-
-  .nav-list__logo {
-    width: 145px;
   }
 }
 
@@ -315,7 +300,8 @@ html {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    padding: 85px 0 0 0;
+    padding: 0;
+    top: 85px;
     left: 0;
     transform-origin: -100% -100%;
     transform: translate(102%,0);
