@@ -94,7 +94,7 @@ header {
 .trigger-menu {
   display: none;
   width: 30px;
-  height: 18px;
+  height: 30px;
   cursor: pointer;
 }
 
@@ -142,7 +142,7 @@ header {
 }
 
 .nav-list__link {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 23px;
   font-weight: var(--semi-bold);
   text-align: left;
@@ -272,18 +272,19 @@ header {
   }
 
   .header--border {
-    border-bottom: 1px solid rgba(50,50,50,0.2);
+    border-bottom: 1px solid rgba(50,50,50,.2);
   }
 
-  .header-logo-and-trigger {
+  .trigger-menu {
     position: absolute;
     right: 15px;
     top: 15px;
     z-index: 1;
+    display: block;
   }
 
-  .trigger-menu {
-    display: block;
+  .trigger-menu--active {
+    top: 18px;
   }
 
   .header-nav {
@@ -330,8 +331,7 @@ header {
   }
 
   .nav-list__link--mobile {
-    font-weight: var(--light);
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .nav-list__link--active {
