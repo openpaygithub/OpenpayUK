@@ -268,7 +268,7 @@ header {
   }
 
   .header {
-    padding: 0 10px 10px;
+    padding: 0 16px 10px;
   }
 
   .header--border {
@@ -303,7 +303,6 @@ header {
     width: 100%;
     padding: 0;
     top: 85px;
-    left: 22px;
     transform-origin: -100% -100%;
     transform: translate(102%,0);
     transition: transform .5s cubic-bezier(.77,.2,.05,1);
