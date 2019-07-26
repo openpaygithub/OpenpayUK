@@ -152,7 +152,7 @@
   text-align: center;
 }
 .howItWorks-content {
-  max-width: 1280px;
+  max-width: 1380px;
   margin: 0 auto;
 }
 
@@ -165,9 +165,8 @@
 }
 
 .block_howItWorks_flex {
-  grid-column-gap: 70px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 @media screen and (max-width: 1200px) {
@@ -180,7 +179,11 @@
 .block_howItWorks {
   margin: 5px auto;
   width: 100%;
-  padding: 15px;
+  padding: 15px 0;
+}
+
+.block_howItWorks__basket-img {
+  padding-top: 10px;
 }
 
 .block_howItWorks__phone-img {
