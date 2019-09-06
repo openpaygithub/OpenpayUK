@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600&display=swap');
+@import './nav.css?20190517';
+
+.header-wrap {
+  border-bottom: 1px solid #ddd;
+}
+
+.pci {
+  max-width: 1360px;
+  padding: 60px 140px;
+  margin: 0 auto;
+}
+
+.pci__title {
+  margin-bottom: 80px;
+  font-size: var(--h2);
+  font-weight: var(--semi-bold);
+  text-align: center;
+}
+
+.pci__item-title {
+  margin-bottom: 10px;
+  font-size: var(--h3);
+  font-weight: var(--semi-bold);
+}
+
+.pci__item-text {
+  margin-bottom: 40px;
+  font-size: var(--p);
+}
+
+.pci__item-link {
+  text-decoration: underline;
+}
+
+.pci__item-link:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1180px) {
+  .pci {
+    max-width: initial;
+    padding: 60px 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pci {
+    max-width: initial;
+    padding: 40px 16px;
+  }
+
+  .pci__title {
+    margin-bottom: 40px;
+  }
+}
