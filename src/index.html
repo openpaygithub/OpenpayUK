@@ -139,8 +139,9 @@
 
   <div class="feedback-wrap block-wap">
     <section class="feedback block-child-wrap">
+      <div class="feedback__item">
         <h2 class="feedback_title">You’re a business? Let’s chat.</h2>
-        <p class="feedback_text">
+        <p class="feedback_text feedback_text--height">
           We’re in the business of offering your customers a smarter way to
           pay. Do you need a risk-free and seamless payment solution that
           increases sales and conversions?
@@ -148,6 +149,34 @@
         <div class="feedback_btn_block">
           <a href="/business" class="feedback_btn_block_link">Learn more</a>
         </div>
+      </div>
+
+      
+          <div class="feedback_item">
+              <h2 class="feedback_title feedback_title--padding">Shop smarter.</h2>
+              <div class="feedback__Interested">
+                <label class="feedback_text feedback_text--signup" for="email">
+                  Interested? Sign up below to learn more.
+                </label>
+              </div>
+                <form class="feedback_form" name="signup" id="signup" action="https://email.myopenpay.co.uk/signup.ashx" method="post" autocomplete="off" onsubmit="return validate_signup(this, true)">
+                  <input type="hidden" name="userid" value="245455">
+                  <input type="hidden" name="SIG0b63c0a7f304988650e9e4a5ff78c47e948ca3d4a4c4cd2b93cd53936fb40eff" value="">
+                  <input type="hidden" name="addressbookid" value="1173024" />
+                  <input type="hidden" name="retURL" value="">
+                  <input type="hidden" id="ci_consenturl" name="ci_consenturl" value="">
+                  <div class="form-elements">
+                    <input id="email" class="feedback_input" type="text" name="email" placeholder="Your email address" maxlength="254" required aria-required="true"/>
+                    <div class="feedback__checkbox-wrapper">
+                      <input type="checkbox" name="policy" id="policy" class="feedback__checkbox-input" required>
+                      <label class="feedback__checkbox-label" for="policy">I agree to receive email newsletters and promotional offers via email from Openpay about its products and services and I understand that I can change my preference at any time. Please read Openpay’s <a href="./docs/privacy-policy.pdf" target="_blank" class="feedback__checkbox-link">Privacy Policy</a> for more information.</label>
+                    </div>
+                    <button class="feedback_btn_block_link" type="submit" id="btnsubmit" name="btnsubmit">
+                      Sign up
+                    </button>
+                  </div>
+                </form>
+            </div>
     </section>
   </div>
 
