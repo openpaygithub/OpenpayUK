@@ -51,7 +51,7 @@ function showCookie() {
 function preventRedirect() {
     const thankYouMessage = document.querySelector(".thankyou");
     const form = document.querySelector(".feedback_form");
-    if (thankYouMessage) {
+    if (thankYouMessage && form) {
       form.style.display = "none";
       thankYouMessage.style.display = "block";
       window.location.href = "https://www.myopenpay.co.uk/"
