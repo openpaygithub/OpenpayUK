@@ -25,6 +25,20 @@ function triggerMenu() {
   });
 }
 
+function sendEvent({ eventCategory, eventAction, eventLabel } = {}) {
+  if ('ga' in window) {
+    ga(function() {
+      const tracker = ga.create('UA-84225706-10', 'auto');
+
+      if (tracker) {
+        console.log(eventAction, eventCategory, eventLabel);
+        debugger;
+        tracker.send('event', eventCategory, eventAction, eventLabel);
+      }
+    });
+  }
+}
+
 function showCookie() {
   const cookiesList = document.cookie.split('; ');
   if (!cookiesList.includes('showCookieDialog=yes')) {
@@ -44,3 +58,35 @@ document
   .addEventListener('click', () => {
     document.querySelector('.cookie-popup').style.display = 'none';
   });
+
+function addEventOnClick (selector, event) {
+  Array.from(document.querySelectorAll(selector)).forEach((el) => {
+    el.addEventListener('click', () => {
+      sendEvent(event);
+    });
+  });
+}
+
+addEventOnClick('[href="https://consumer.myopenpay.co.uk/login"', {
+  eventCategory: 'Login',
+  eventAction: 'Click',
+  eventLabel: 'Login clicked header'
+});
+
+addEventOnClick('[href="https://consumer.myopenpay.co.uk/signup-customer"', {
+  eventCategory: 'Signup',
+  eventAction: 'Click',
+  eventLabel: 'Signup clicked header'
+});
+
+addEventOnClick('[href="https://consumer.myopenpay.co.uk/signup-customer"', {
+  eventCategory: 'Signup',
+  eventAction: 'Click',
+  eventLabel: 'Signup clicked header'
+});
+
+addEventOnClick('[href="https://consumer.myopenpay.co.uk/signup-customer"', {
+  eventCategory: 'Signup',
+  eventAction: 'Click',
+  eventLabel: 'Signup clicked header'
+});
