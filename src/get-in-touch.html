@@ -10,22 +10,16 @@
     <title>Openpay Get in touch</title>
     <meta name="description" content="Openpay Welcome to a smarter way to pay" />
     <meta property="og:image" content="https://www.myopenpay.co.uk/images/get-in-touch/get-in-touch.jpg" />
-    <!-- Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84225706-10"></script>
     <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                "gtm.start": new Date().getTime(),
-                event: "gtm.js"
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != "dataLayer" ? "&l=" + l : "";
-            j.async = true;
-            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, "script", "dataLayer", "GTM-NH9RBKG");
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-84225706-10');
     </script>
+
     <link rel="stylesheet" href="./css/get-in-touch.css?20190517" />
 </head>
 
@@ -214,7 +208,7 @@
         <button class="cookie-popup__button">Accept</button>
     </div>
 
-    <script defer src="./scripts/main.min.js"></script>
+    <script defer src="./scripts/min/main.js"></script>
 </body>
 
 </html>
