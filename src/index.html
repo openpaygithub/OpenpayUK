@@ -159,11 +159,11 @@
                   Interested? Sign up below to learn more.
                 </label>
               </div>
-                <form class="feedback_form" name="signup" id="signup" action="https://email.myopenpay.co.uk/signup.ashx" method="post" autocomplete="off" onsubmit="return validate_signup(this, true)">
+                <form class="feedback_form" name="signup" id="signup" action="https://email.myopenpay.co.uk/signup.ashx" method="post" autocomplete="off" onsubmit="return preventRedirect()">
                   <input type="hidden" name="userid" value="245455">
                   <input type="hidden" name="SIG0b63c0a7f304988650e9e4a5ff78c47e948ca3d4a4c4cd2b93cd53936fb40eff" value="">
                   <input type="hidden" name="addressbookid" value="1173024" />
-                  <input type="hidden" name="retURL" value="">
+                  <input type="hidden" name="retURL" value="https://www.myopenpay.co.uk/">
                   <input type="hidden" id="ci_consenturl" name="ci_consenturl" value="">
                   <div class="form-elements">
                     <input id="email" class="feedback_input" type="text" name="email" placeholder="Your email address" maxlength="254" required aria-required="true"/>
@@ -176,9 +176,54 @@
                     </button>
                   </div>
                 </form>
+                <div class="thankyou">
+                  <h2><em>Thank you,</em> we'll be in touch.</h2>
+                </div>
             </div>
     </section>
   </div>
+
+  <style type="text/css">
+    #signup input ~ label.wrap {
+        white-space: pre-wrap;
+    }
+</style>
+<form name="signup" id="signup" action="https://email.myopenpay.co.uk/signup.ashx" method="post" autocomplete="off" onsubmit="return validate_signup(this, true)">
+<input type="hidden" name="userid" value="245455">
+<input type="hidden" name="SIG0b63c0a7f304988650e9e4a5ff78c47e948ca3d4a4c4cd2b93cd53936fb40eff" value="">
+<input type="hidden" name="addressbookid" value="1173024" />
+<input type="hidden" name="ReturnURL" value="">
+<input type="hidden" id="ci_consenturl" name="ci_consenturl" value="">
+<div>
+<label class="wrap" for="email">Email</label>
+<input type="text" name="email" id="email" required aria-required="true">
+</div>
+<p>
+<input type="submit" id="btnsubmit" name="btnsubmit" value="Subscribe">
+</p>
+</form>
+<script type="text/javascript">
+    var urlInput = document.getElementById("ci_consenturl");
+    if (urlInput != null && urlInput != 'undefined') {
+        urlInput.value = encodeURI(window.location.href);
+    }
+    function checkbox_Clicked(element) {
+        document.getElementById(element.id + "_unchecked").value = !element.checked;
+    }
+    function validate_signup(frm, showAlert) {
+        var emailAddress = frm.email.value;
+        var errorString = '';
+        if (emailAddress == '' || emailAddress.indexOf('@') == -1) {
+            errorString = 'Please enter your email address';
+        }
+        var isError = false;
+        if (errorString.length > 0) {
+            isError = true;
+            if (showAlert) alert(errorString);
+        }
+        return !isError;
+    }
+</script>
 
 
   <div class="footer-wrap block-wap">
@@ -224,7 +269,7 @@
     <button class="cookie-popup__button">Accept</button>
   </div>
 
-  <script defer src="./scripts/main.min.js"></script>
+  <script defer src="./scripts/main.js"></script>
 
 </body>
 
