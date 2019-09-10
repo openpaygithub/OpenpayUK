@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "babel src/scripts/*.js --out-dir src/scripts/min",
+    "build:watch": "npm run build -- --watch"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "babel-preset-minify": "^0.5.1"
+  }
+}

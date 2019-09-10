@@ -6,6 +6,10 @@
 ## Deploy resources for an environment
 - Run `./deploy/Deploy-Env.ps1 <env>`
 
+## Minimizing js
+
+After changing js from scripts folder, run `yarn && yarn build` from the repo root directory 
+
 ## Workflow
 1. Create local branch from `master` and code feature or fix bug locally
 2. Cover and test your code with visual regression tests

@@ -10,22 +10,16 @@
   <title>Openpay: Welcome</title>
   <meta name="description" content="Openpay Welcome to a smarter way to pay">
   <meta property="og:image" content="https://www.myopenpay.co.uk/images/opengraph/opengraph-landingpage.jpg">
-  <!-- Google Tag Manager -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84225706-10"></script>
   <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-TF3JKHF');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-84225706-10');
   </script>
+
   <link rel="stylesheet" href="css/landingpage.css" />
 </head>
 
@@ -148,17 +142,13 @@
     </div>
   </div>
 
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TF3JKHF" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
   <div class="cookie-popup">
     We uses cookies to give you the best browsing experience. <a href="./docs/cookie-policy.pdf"
       class="cookie-popup__link" target="_blank">Find out more</a> or adjust your settings.
     <button class="cookie-popup__button">Accept</button>
   </div>
 
-  <script defer src="./scripts/landing-main.min.js"></script>
+  <script defer src="./scripts/min/landing-main.js"></script>
 </body>
 
 </html>
