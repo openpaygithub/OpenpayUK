@@ -48,13 +48,12 @@ function showCookie() {
   }
 }
 
-function preventRedirect() {
+function showThanks() {
     const thankYouMessage = document.querySelector(".thankyou");
     const form = document.querySelector(".feedback_form");
     if (thankYouMessage && form) {
       form.style.display = "none";
       thankYouMessage.style.display = "block";
-      window.location.href = "https://www.myopenpay.co.uk/"
     }
 }
 
