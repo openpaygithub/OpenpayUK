@@ -249,7 +249,7 @@
   font-size: 20px;
   margin: 0 0 30px;
   padding: 4px 45px;
-  min-width: 500px;
+  max-width: 520px;
   width: 100%;
   border: none;
   display: block;
@@ -269,6 +269,7 @@
   padding-left: 40px;
   text-align: left;
   position: relative;
+  max-width: 600px;
 }
 
 .feedback__checkbox-input {
