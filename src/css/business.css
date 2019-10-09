@@ -66,10 +66,39 @@
  
 /*...end introduction...*/
 
+.cta-section {
+  background-color: var(--neutral-light);
+  padding: 90px 0;
+  text-align: center;
+}
+
+.cta-section__title {
+  font-size: var(--h2);
+  font-weight: var(--semi-bold);
+  margin-bottom: 30px;
+}
+
+.cta-section__subtitle {
+  max-width: 50vw;
+  font-size: var(--p);
+  font-weight: var(--light);
+  line-height: 35px;
+  margin: 0 auto 15px;
+}
+
+.cta-section__subtitle--bold {
+  font-weight: var(--semi-bold);
+}
+
+.cta-section__terms {
+  font-size: 14px;
+  margin-bottom: 60px;
+}
+
 /*...whyOpenPay...*/
 .whyOpenPay-wrap {
-  background-color: var(--neutral-light);
-  padding: 50px 0;
+  background-color: var(--primary-light);
+  padding: 90px 0;
   position: relative;
   overflow: hidden;
 }
@@ -255,7 +284,8 @@
 }
 
 @media screen and (max-width: 578px) {
-  .whyOpenPay__text {
+  .whyOpenPay__text,
+  .cta-section__subtitle {
     max-width: initial;
   }
 }
