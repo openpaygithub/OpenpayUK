@@ -66,10 +66,40 @@
  
 /*...end introduction...*/
 
+.cta-section {
+  background-color: var(--neutral-light);
+  padding: 90px 0;
+  text-align: center;
+}
+
+.cta-section__title {
+  font-size: var(--h2);
+  font-weight: var(--semi-bold);
+  margin-bottom: 30px;
+}
+
+.cta-section__subtitle {
+  max-width: 50vw;
+  font-size: var(--h3);
+  font-weight: var(--light);
+  line-height: 35px;
+  margin: 0 auto 15px;
+}
+
+.cta-section__subtitle--bold {
+  font-weight: var(--semi-bold);
+}
+
+.cta-section__terms {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 60px;
+}
+
 /*...whyOpenPay...*/
 .whyOpenPay-wrap {
-  background-color: var(--neutral-light);
-  padding: 50px 0;
+  background-color: var(--primary-light);
+  padding: 90px 0;
   position: relative;
   overflow: hidden;
 }
@@ -86,10 +116,9 @@
 }
 
 .whyOpenPay {
-  margin: 0 auto 30px;
+  margin: 0 auto 65px;
   position: relative;
   z-index: 1;
-  color: var(--secondary-dark);
   text-align: center;
 }
 
@@ -100,8 +129,8 @@
 }
 
 .whyOpenPay__text {
-  max-width: 50vw;
-  font-size: var(--p);
+  max-width: 85vw;
+  font-size: var(--h3);
   font-weight: var(--light);
   line-height: 35px;
   margin: 0 auto 25px;
@@ -120,7 +149,7 @@
 /*...whatCanWeDo...*/
 .whatCanWeDo-wrap {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-items: center;
 }
 
@@ -143,7 +172,7 @@
   font-weight: var(--semi-bold);
   font-size: var(--h2);
   line-height: 40px;
-  padding-bottom: 125px;
+  padding-bottom: 110px;
 }
 
 .whatCanWeDo-title--row {
@@ -168,21 +197,13 @@
   font-weight: var(--semi-bold);
   font-size: var(--h3);
   line-height: 41px;
-  padding: 12px 0 20px;
+  padding: 30px 0;
 }
 
 .whatCanWeDo-item-paragraph {
   font-weight: var(--light);
   font-size: var(--p);
   line-height: 30px;
-  min-height: 180px;
-}
-
-@media (min-width: 1280px) and (max-width: 1650px) {
-  .whatCanWeDo-item-paragraph {
-    max-width: 500px;
-    margin: 0 auto;
-  }
 }
 
 @media (min-width: 961px) and (max-width: 1280px) {
@@ -220,10 +241,6 @@
 /*...end readyToChat...*/
 
 @media screen and (max-width: 960px) {
-  .whatCanWeDo-wrap {
-    grid-template-columns: 1fr;
-  }
-
   .whatCanWeDo-section {
     padding: 100px 15px 100px;
   }
@@ -267,7 +284,8 @@
 }
 
 @media screen and (max-width: 578px) {
-  .whyOpenPay__text {
+  .whyOpenPay__text,
+  .cta-section__subtitle {
     max-width: initial;
   }
 }
